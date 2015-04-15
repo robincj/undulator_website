@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Aorangi Undulator</title>
+
+<!-- Bootstrap -->
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- link rel="stylesheet" href="styles.css" -->
+<style>
+header {
+	background-color: black;
+	text-align: center;
+	color: #aaaaaa;
+	font-family: anton, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.navbar li {
+	text-align: center;
+}
+
+#sponsors_logos {
+	display: inline;
+}
+
+#blurb {
+	display: inline;
+	width:
+}
+
+#social_links {
+	display: inline;
+}
+</style>
+</head>
+
+<body>
+
+	<button type="button" class="btn btn-primary" data-toggle="modal"
+		data-target="#exampleModal" data-msg="@mdo">Open modal</button>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">Your entry has been submitted and
+					payment details will be sent shortly.</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	$('#exampleModal').find('.modal-body').val('Your entry has been submitted and payment details will be sent shortly.');
+	$('#exampleModal').modal('show');
+	/*
+		$('#exampleModal').on('show.bs.modal', function(event) {
+			var button = $(event.relatedTarget) // Button that triggered the modal
+			var msg = button.data('msg') // Extract info from data-* attributes
+			var modal = $(this)
+			modal.find('.modal-body input').val(msg)
+		})
+		*/
+	</script>
+
+
+</body>
+
+</html>
+
