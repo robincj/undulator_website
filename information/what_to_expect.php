@@ -19,7 +19,7 @@
 						<li class="list-group-item"><span class="badge">2,250m</span>
 							Tararua Mountain Race</li>
 						<li class="list-group-item"><span class="badge">2,700m</span>
-							Aorangi Undulator</li>
+							Aorangi Undulator (1 day)</li>
 						<li class="list-group-item"><span class="badge">2,776m</span>
 							Tarawera Ultra</li>
 						<li class="list-group-item"><span class="badge">8,000m</span>

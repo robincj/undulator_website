@@ -80,11 +80,19 @@
 					</ul></li>
 
 
-				<li><a href="/A100.php">AORANGI 100</a></li>
+				<li id="othereventlink"></li>
 			</ul>
+			
 		</div>
 		<!-- /.navbar-collapse -->
 	</div>
 	<!-- /.container-fluid -->
-
+<script>
+if ( au_event == "A100" ) {
+	document.getElementById("othereventlink").innerHTML = '<a href="/">AORANGI UNDULATOR (1 day)</a>';
+}
+else {
+	document.getElementById("othereventlink").innerHTML = '<a href="/A100.php">AORANGI UNDULATOR 100</a>';
+}
+</script>
 </nav>

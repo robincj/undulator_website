@@ -8,7 +8,7 @@
 						10 hours.
 					</p>
 					<p>Those inclined towards longer distance events may want to look
-						at the Aorangi 100, a 100km 3 day stage race starting in
+						at the <a href="A100.php" >Aorangi Undulator 100</a>, a 100km 3 day stage race starting in
 						Eastbourne and finishing at Waikuku Lodge in the Aorangi forest
 						park.</p>
 					<div class="text-center">
