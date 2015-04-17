@@ -2,27 +2,36 @@
 	<div class="row">
 		<div class="col-sm-1"></div>
 		<div class="col-sm-10">
-			<h2>Aorangi Undulator Course Notes</h2>
+			<h2 id="maincontent_title">Aorangi Undulator Course Notes</h2>
 
-			The whole course is a marked DOC route, covered the whole way by
-			triangular orange DOC markers and backed up in the less obvious
-			places (such as tree falls / junctions) by orange tape markings.
+			<p id="maincontent_toptext"></p>
+			<p>The fastest times over this course are expected to be expected
+				around 5-6 hours, and the slowest 10-12 hours.</p>
+			<p>The whole course is a marked DOC route, covered the whole way by
+				triangular orange DOC markers and backed up in the less obvious
+				places (such as tree falls / junctions) by orange tape markings.
+			
+			
 			<ul>
-				<li>IF YOU ARE IN THE BUSH AND HAVE NOT SEEN AN ORANGE MARKER
-					IN A WHILE YOU ARE OFF THE TRACK. Retrace steps to last known
-					point, DON’T JUST BLUNDER ONWARDS.
+				<li>IF YOU ARE IN THE BUSH AND HAVE NOT SEEN AN ORANGE MARKER IN A
+					WHILE YOU ARE OFF THE TRACK. Retrace steps to last known point,
+					DON’T JUST BLUNDER ONWARDS.
+				
 				<li>Orange markers are less frequent in the river valleys.
-				<li>See more specific notes below, but significant aspects of
-					the route simply follow the river’s route - so do the same but LOOK
+				
+				<li>See more specific notes below, but significant aspects of the
+					route simply follow the river’s route - so do the same but LOOK
 					REGULARLY for orange markers which signify deviations from the
 					river / creek.
-				<li>Oh, and there’re lots of nettles, gorse, rocks and roots,
-					which are not suitable for the weak.
+				
+				<li>Oh, and there’re lots of nettles, gorse, rocks and roots, which
+					are not suitable for the weak.
+			
 			</ul>
 			<h2>Maps</h2>
 			<p>
-				<a onClick="loadmaincontent('information/maps.php')">Click here
-					to view some rough maps to give you a vague idea of where you are
+				<a onClick="loadmaincontent('information/maps.php')">Click here to
+					view some rough maps to give you a vague idea of where you are
 					going.</a>
 			</p>
 			<h2>
@@ -34,10 +43,10 @@
 					island before rejoining further upstream. Take the left (true
 					right) side.<br /> Another 1km (10mins ish) there’s a river
 					junction on the right (true left). Take left river (true right) and
-					aim for the large orange DOC triangle.<br /> Travel
-					now up river, dipping in out, it is gorge like. Follow regular DOC
-					orange marks where possible.<br /> Exit fork from river well
-					marked by cut cabbage tree stump in river.
+					aim for the large orange DOC triangle.<br /> Travel now up river,
+					dipping in out, it is gorge like. Follow regular DOC orange marks
+					where possible.<br /> Exit fork from river well marked by cut
+					cabbage tree stump in river.
 
 
 					<h3>UNDULATION #1</h3>
@@ -81,9 +90,8 @@
 
 
 					<h3>WASHPOOL HUT</h3>
-					YOU MUST GET CHECKED BY MARSHAL at the Washpool hut.<br />
-					Washpool hut to Finish: Follow well signed Kopi track, up, up and
-					up.
+					YOU MUST GET CHECKED BY MARSHAL at the Washpool hut.<br /> Washpool
+					hut to Finish: Follow well signed Kopi track, up, up and up.
 
 
 					<h3>UNDULATION #4</h3>
@@ -103,7 +111,21 @@
 					You’re done.
 
 					<h3>Go party. You are not weak.</h3>
+		
 		</div>
 		<div class="col-sm-1"></div>
 	</div>
 </div>
+<script>
+	if ( au_event == "AU" ) {
+		document.getElementById("maincontent_title").innerHTML = 'Aorangi Undulator Course Notes <small>(also A100 Day 2)</small>';		
+	}
+	else if ( au_event == "A100" ) {
+		document.getElementById("maincontent_toptext").innerHTML = "You will be starting your second day with the 1-day event competitors.<br/>\
+		There is a camp site at the Pinnacles, if you camp there then at 5am on Saturday you can be transported in the support van to the Day 2 start.<br/>\
+		Day 2 finishes in the Putangirua Pinnacles car park.  Transport is available to pick you up from the finish and take you back to your accommodation.<br/>\
+		";
+		document.getElementById("maincontent_title").innerHTML = 'Aorangi Undulator 100 Course Notes: Day 2 <small>(also A.U. 1-day event)</small>';
+	}
+
+</script>
