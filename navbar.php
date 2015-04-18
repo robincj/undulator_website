@@ -26,8 +26,8 @@
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-expanded="false">ENTER <span
-						class="caret"></span>
-				</a>
+						class="caret"></span></a>
+
 					<ul class="dropdown-menu" role="menu">
 						<li><a onClick="loadmaincontent('information/prices.php')">PRICES</a></li>
 						<li><a onClick="loadmaincontent('enter.php')">ENTER</a></li>
@@ -38,61 +38,97 @@
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-expanded="false">INFORMATION<span
-						class="caret"></span>
-				</a>
+						class="caret"></span></a>
+
 					<ul class="dropdown-menu" role="menu">
-						<li class=""><a
+
+						<li class="AU"><a
+							onClick="loadmaincontent('information/directions.php')">HOW TO
+								GET THERE</a></li>
+						<li class="A100"><a
+							onClick="loadmaincontent('information/directions.php')">DAY 2
+								START: HOW TO GET THERE</a></li>
+						<li class="AU"><a
 							onClick="loadmaincontent('information/schedule.php')">RACE DAY
 								SCHEDULE</a></li>
-						<li><a onClick="loadmaincontent('information/maps.php')">RACE MAP
-								AND PROFILE</a></li>
-						<li><a onClick="loadmaincontent('information/course_notes.php')">COURSE
-								NOTES</a></li>
+						<li class="A100"><a
+							onClick="loadmaincontent('information/schedule.php')">A100 DAY 2
+								SCHEDULE</a></li>
+
 						<li><a onClick="loadmaincontent('information/what_to_expect.php')">WHAT
 								TO EXPECT</a></li>
 						<li onClick="loadmaincontent('information/q_and_a.php')"><a>Q
 								&amp; A</a></li>
 						<li onClick="loadmaincontent('information/equipment_list.php')"><a>EQUIPMENT
 								LIST</a></li>
-						<li onClick="loadmaincontent('information/aorangi_trust.php')"><a>AORANGI
-								TRUST</a></li>
+					</ul></li>
+
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-expanded="false">COURSE
+						NOTES <span class="caret"></span>
+				</a>
+					<ul id="course_notes_menu" class="dropdown-menu" role="menu">
+						<li class="AU"><a
+							onClick="loadmaincontent('information/course_notes.php')">COURSE
+								NOTES</a></li>
+						<li class="AU"><a
+							onClick="loadmaincontent('information/maps.php')">RACE MAP AND
+								PROFILE</a></li>
+						<li class="A100"><a
+							onClick="loadmaincontent('information/course_notes_A100_day_1.php')">A100
+								Day 1</a></li>
+						<li class="A100"><a
+							onClick="loadmaincontent('information/course_notes.php')">A100
+								Day 2</a></li>
+						<li class="A100"><a
+							onClick="loadmaincontent('information/course_notes_A100_day_3.php')">A100
+								Day 3</a></li>
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-expanded="false">MORE <span
-						class="caret"></span>
-				</a>
+						class="caret"></span></a>
+
 					<ul class="dropdown-menu" role="menu">
 
 						<li><a href="results/Undulator Results 2014.xls">2014 RESULTS</a></li>
 						<li class="disabled"><a>QUOTES</a></li>
 						<li class="disabled"><a>PHOTOS</a></li>
 						<li><a onClick="loadmaincontent('youtube.php')">VIDEO</a></li>
-						<li onClick="loadmaincontent('information/directions.php')"><a
-							href="#">HOW TO GET THERE</a></li>
-						<li onClick="loadmaincontent('information/accommodation.php')"><a
-							href="#">PLACES TO STAY</a></li>
+
+						<li><a onClick="loadmaincontent('information/accommodation.php')">PLACES
+								TO STAY</a></li>
 						<li class="divider"></li>
-						<li onClick="loadmaincontent('information/other_races.php')"><a
-							href="#">OTHER RACES</a></li>
-						<li onClick="loadmaincontent('information/sponsor_tailwind.php')"><a>TAILWIND
+						<li><a onClick="loadmaincontent('information/other_races.php')">OTHER
+								RACES</a></li>
+
+						<li onClick="loadmaincontent('information/aorangi_trust.php')"><a>AORANGI
+								TRUST</a></li>
+						<li><a
+							onClick="loadmaincontent('information/sponsor_tailwind.php')">TAILWIND
 								SUPPLEMENTS</a></li>
 					</ul></li>
 
 
-				<li id="othereventlink"></li>
+				<li id="othereventlink"><a class="A100" style="display: none"
+					href="/">AORANGI UNDULATOR (1 day)</a> <a class="AU"
+					style="display: none" href="/A100.php">AORANGI UNDULATOR 100</a></li>
 			</ul>
-			
+
 		</div>
 		<!-- /.navbar-collapse -->
 	</div>
 	<!-- /.container-fluid -->
-<script>
+	<script>
 if ( au_event == "A100" ) {
-	document.getElementById("othereventlink").innerHTML = '<a href="/">AORANGI UNDULATOR (1 day)</a>';
+	//document.getElementById("othereventlink").innerHTML = '<a href="/">AORANGI UNDULATOR (1 day)</a>';
+	$('.AU').css('display', 'none');
+	$('.A100').css('display', 'block');	
 }
 else {
-	document.getElementById("othereventlink").innerHTML = '<a href="/A100.php">AORANGI UNDULATOR 100</a>';
+	//document.getElementById("othereventlink").innerHTML = '<a href="/A100.php">AORANGI UNDULATOR 100</a>';
+	$('.A100').css('display', 'none');
+	$('.AU').css('display', 'block');
 }
 </script>
 </nav>

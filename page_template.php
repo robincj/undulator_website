@@ -62,6 +62,9 @@ footer {
 	color: #aaa;
 }
 
+.banner_image {
+	height: 10em;
+}
 .share-icon-col {
 	/* text-align: right; */
 	
@@ -121,7 +124,7 @@ function loadmaincontent(contentfile, nojump){
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<img class="img-responsive" src="<?php echo $banner_image ?>" />
+					<img class="banner_image img-responsive" src="<?php echo $banner_image ?>" />
 				</div>
 			</div>
 		</div>

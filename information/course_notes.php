@@ -118,14 +118,14 @@
 </div>
 <script>
 	if ( au_event == "AU" ) {
-		document.getElementById("maincontent_title").innerHTML = 'Aorangi Undulator Course Notes <small>(also A100 Day 2)</small>';		
+		document.getElementById("maincontent_title").innerHTML = 'Aorangi Undulator Course Notes<small>(also A100 Day 2)</small>';		
 	}
 	else if ( au_event == "A100" ) {
 		document.getElementById("maincontent_toptext").innerHTML = "You will be starting your second day with the 1-day event competitors.<br/>\
 		There is a camp site at the Pinnacles, if you camp there then at 5am on Saturday you can be transported in the support van to the Day 2 start.<br/>\
 		Day 2 finishes in the Putangirua Pinnacles car park.  Transport is available to pick you up from the finish and take you back to your accommodation.<br/>\
 		";
-		document.getElementById("maincontent_title").innerHTML = 'Aorangi Undulator 100 Course Notes: Day 2 <small>(also A.U. 1-day event)</small>';
+		document.getElementById("maincontent_title").innerHTML = 'Aorangi Undulator 100 Course Notes: Day 2<br/><small>(also A.U. 1-day event)</small>';
 	}
 
 </script>
