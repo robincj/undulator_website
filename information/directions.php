@@ -2,9 +2,9 @@
 	<div class="row">
 		<div class="col-sm-1"></div>
 		<div class="col-sm-10">
-			<h2>Getting there</h2>
-			<p>
-				The Aorangi Undulator one-day event starts at the entrance to the
+			<h2 class="AU">Getting There</h2>
+			<h2 class="A100">Getting to the A100 Day 2 Start</h2>
+			<p> The Aorangi Undulator one-day and A100 day-2 events start at the entrance to the
 				Mangatoetoe valley on the South Wairarapa coast.<br> It takes about
 				2.5 hours to drive there from Wellington Central.<br> From
 				Wellington head NE through the Hutt Valley and over the Rimutaka
