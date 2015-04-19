@@ -65,6 +65,7 @@ footer {
 .banner_image {
 	height: 10em;
 }
+
 .share-icon-col {
 	/* text-align: right; */
 	
@@ -96,6 +97,14 @@ footer {
 	font-size: 2em;
 	font-weight: bold;
 }
+
+.AU {
+	display: none;
+}
+
+.A100 {
+	display: none;
+}
 </style>
 
 <!-- main stylesheet to override defaults above -->
@@ -103,6 +112,18 @@ footer {
 
 <script>
 var au_event = '<?php echo $au_event ?>';
+
+$( document ).ajaxComplete(function() {
+	if ( au_event == "A100" ) {
+		$('.AU').css('display', 'none');
+		$('.A100').css('display', 'block');	
+	}
+	else {
+		$('.A100').css('display', 'none');
+		$('.AU').css('display', 'block');
+	}
+})
+
 function loadmaincontent(contentfile, nojump){
 	//$('.maincontent').slideUp(400, function(){$(this).load(contentfile).slideDown();}
 	$('.maincontent').load(contentfile).slideDown();
@@ -124,7 +145,8 @@ function loadmaincontent(contentfile, nojump){
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<img class="banner_image img-responsive" src="<?php echo $banner_image ?>" />
+					<img class="banner_image img-responsive"
+						src="<?php echo $banner_image ?>" />
 				</div>
 			</div>
 		</div>
@@ -166,7 +188,7 @@ function loadmaincontent(contentfile, nojump){
 
 	<section class="maincontent" id="main"></section>
 
-	<script>$('.maincontent').load('<?php echo $maincontent ?>')</script>
+	<script>loadmaincontent('<?php echo $maincontent ?>', true)</script>
 	<footer>
 		<br />
 		<p style="text-align: right">Contact: Chris Martin 123-455678 or

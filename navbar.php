@@ -55,34 +55,17 @@
 							onClick="loadmaincontent('information/schedule.php')">A100 DAY 2
 								SCHEDULE</a></li>
 
+						<li><a onClick="loadmaincontent('information/course_notes.php')">COURSE
+								NOTES</a></li>
+						<li><a onClick="loadmaincontent('information/maps.php')"><span
+								class="A100">Day 2 </span>RACE MAP AND PROFILE</a></li>
+
 						<li><a onClick="loadmaincontent('information/what_to_expect.php')">WHAT
 								TO EXPECT</a></li>
 						<li onClick="loadmaincontent('information/q_and_a.php')"><a>Q
 								&amp; A</a></li>
 						<li onClick="loadmaincontent('information/equipment_list.php')"><a>EQUIPMENT
 								LIST</a></li>
-					</ul></li>
-
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown" role="button" aria-expanded="false">COURSE
-						NOTES <span class="caret"></span>
-				</a>
-					<ul id="course_notes_menu" class="dropdown-menu" role="menu">
-						<li class="AU"><a
-							onClick="loadmaincontent('information/course_notes.php')">COURSE
-								NOTES</a></li>
-						<li class="AU"><a
-							onClick="loadmaincontent('information/maps.php')">RACE MAP AND
-								PROFILE</a></li>
-						<li class="A100"><a
-							onClick="loadmaincontent('information/course_notes_A100_day_1.php')">A100
-								Day 1</a></li>
-						<li class="A100"><a
-							onClick="loadmaincontent('information/course_notes.php')">A100
-								Day 2</a></li>
-						<li class="A100"><a
-							onClick="loadmaincontent('information/course_notes_A100_day_3.php')">A100
-								Day 3</a></li>
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -119,16 +102,4 @@
 		<!-- /.navbar-collapse -->
 	</div>
 	<!-- /.container-fluid -->
-	<script>
-if ( au_event == "A100" ) {
-	//document.getElementById("othereventlink").innerHTML = '<a href="/">AORANGI UNDULATOR (1 day)</a>';
-	$('.AU').css('display', 'none');
-	$('.A100').css('display', 'block');	
-}
-else {
-	//document.getElementById("othereventlink").innerHTML = '<a href="/A100.php">AORANGI UNDULATOR 100</a>';
-	$('.A100').css('display', 'none');
-	$('.AU').css('display', 'block');
-}
-</script>
 </nav>
