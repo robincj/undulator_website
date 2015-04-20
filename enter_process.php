@@ -1,5 +1,6 @@
 <?php
-$to_organiser = "robin@aorangiundulator.org";
+$to_organiser = "robin@aorangiundulator.org,chrismartinc@hotmail.com";
+$entries_dir="/data/undulator/entries";
 
 $params = array_merge ( $_POST, $_GET );
 
@@ -50,7 +51,7 @@ $msg = '';
 foreach ( $params as $pkey => $pval ) {
 	$msg .= "$pkey: $pval\n";
 }
-$filename =  "entries/{$params['firstname']}_{$params['surname']}_". date( 'YmdHis') .".txt";
+$filename =  "$entries_dir/{$params['firstname']}_{$params['surname']}_". date( 'YmdHis') .".txt";
 file_put_contents ( $filename, $msg );
 
 mail ( $to_organiser, $subj, $msg, $mailheader );
