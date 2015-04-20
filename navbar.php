@@ -105,10 +105,11 @@
 								SUPPLEMENTS</a></li>
 					</ul></li>
 
-
+			<!-- 
 				<li id="othereventlink"><a class="A100" style="display: none"
 					href="/">AORANGI UNDULATOR (1 day)</a> <a class="AU"
 					style="display: none" href="/A100.php">AORANGI UNDULATOR 100</a></li>
+			-->
 			</ul>
 
 		</div>

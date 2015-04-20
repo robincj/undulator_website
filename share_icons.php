@@ -45,12 +45,20 @@ a.share-facebook:hover {
 a.share-youtube:hover {
 	background-position: -200px -40px;
 }
+
+.other_event_link {
+	padding: 2em;
+}
 </style>
 
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({html: true})
+})
+</script>
 
 <div class="row">
-<div class="col-xs-12 col-sm-4 col-md-0">
-</div>
+	<div class="col-xs-12 col-sm-4 col-md-0"></div>
 	<div class="col-xs-12 col-sm-4 col-md-12 text-center">
 		<button class="register-button btn btn-primary btn-lg"
 			onClick="loadmaincontent('enter.php')">Register Now</button>
@@ -69,6 +77,19 @@ a.share-youtube:hover {
 			title="Follow on Twitter"></a> <a class="share-icon share-youtube"
 			target="_blank" href="http://www.youtube.com/watch?v=x3mVNYRViv4"
 			title="Undulator on YouTube"></a>
+
+	</div>
+	<div class="col-xs-12 col-sm-4 col-md-12 share-icon-block text-center">
+		<a class="A100 other_event_link" href="/"> <img class="img-responsive"
+			data-toggle="tooltip" data-placement="left"
+			title="For something a little lighter,<br/> try the 1-day Aorangi
+			Undulator"
+			src="images/logos/aorangi_undulator_banner.png" />
+		</a> <a class="AU other_event_link" href="/A100.php"> <img
+			class="img-responsive" data-toggle="tooltip" data-placement="left"
+			title="Sounds too easy? <br/> Try the Aorangi
+			Undulator 100"
+			src="A100/images/logos/A100_banner.png" /></a>
 
 	</div>
 </div>

@@ -145,8 +145,10 @@ function loadmaincontent(contentfile, nojump){
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<img class="banner_image img-responsive"
-						src="<?php echo $banner_image ?>" />
+					<img class="AU banner_image img-responsive"
+						src="images/logos/aorangi_undulator_banner.png" />
+					<img class="A100 banner_image img-responsive"
+						src="A100/images/logos/A100_banner.png" />
 				</div>
 			</div>
 		</div>
