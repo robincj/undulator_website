@@ -41,7 +41,6 @@ header {
 	background-color: black;
 	/* background-image: url(/images/logos/aorangi_undulator_banner_bgline.png) ;
 	background-repeat: repeat-x; */
-	text-align: center;
 }
 
 header .row {
@@ -63,6 +62,7 @@ footer {
 }
 
 .banner_image {
+	margin: auto;
 	height: 10em;
 }
 

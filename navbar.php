@@ -42,18 +42,23 @@
 
 					<ul class="dropdown-menu" role="menu">
 
-						<li class="AU"><a onClick="loadmaincontent('information/directions.php')">HOW TO GET THERE</a></li>
-						<li class="A100"><a onClick="loadmaincontent('information/directions.php')">DAY 2 START: HOW TO GET THERE</a></li>
 						<li class="AU"><a
-							onClick="loadmaincontent('information/schedule.php')">RACE DAY SCHEDULE</a></li>
+							onClick="loadmaincontent('information/directions.php')">HOW TO
+								GET THERE</a></li>
+						<li class="A100"><a
+							onClick="loadmaincontent('information/directions.php')">DAY 2
+								START: HOW TO GET THERE</a></li>
+						<li class="AU"><a
+							onClick="loadmaincontent('information/schedule.php')">RACE DAY
+								SCHEDULE</a></li>
 						<li class="A100"><a
 							onClick="loadmaincontent('information/schedule.php')">A100 DAY 2
 								SCHEDULE</a></li>
 
 						<li><a onClick="loadmaincontent('information/course_notes.php')">COURSE
 								NOTES</a></li>
-						<li><a onClick="loadmaincontent('information/maps.php')"><span
-								class="A100">Day 2 </span>RACE MAP AND PROFILE</a></li>
+						<li><a onClick="loadmaincontent('information/maps.php')">RACE MAPS
+								AND PROFILES</a></li>
 
 						<li><a onClick="loadmaincontent('information/what_to_expect.php')">WHAT
 								TO EXPECT</a></li>
@@ -64,14 +69,27 @@
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-expanded="false">RESULTS
+						<span class="caret"></span>
+				</a>
+
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="results/results_2013.jpg">2013 RESULTS</a></li>
+
+						<li><a href="results/Undulator Results 2014.xls">2014 RESULTS</a></li>
+
+
+					</ul></li>
+
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-expanded="false">MORE <span
 						class="caret"></span></a>
 
 					<ul class="dropdown-menu" role="menu">
 
-						<li><a href="results/Undulator Results 2014.xls">2014 RESULTS</a></li>
-						<li class="disabled"><a>QUOTES</a></li>
+						<!-- <li class="disabled"><a>QUOTES</a></li>
 						<li class="disabled"><a>PHOTOS</a></li>
+					 -->
 						<li><a onClick="loadmaincontent('youtube.php')">VIDEO</a></li>
 
 						<li><a onClick="loadmaincontent('information/accommodation.php')">PLACES
