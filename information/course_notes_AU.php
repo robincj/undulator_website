@@ -1,7 +1,7 @@
-
-<h2 class="A100">Day 2 <small>(also A.U. 1-day
-		event)</small>
-</h2>
+&nbsp;
+<h3 class="A100">
+	Day 2 <small>(also A.U. 1-day event)</small>
+</h3>
 <p class="A100">
 	You will be starting your second day with the 1-day event competitors.<br />
 	There is a camp site at the Pinnacles, if you camp there then at 5am on
@@ -33,8 +33,9 @@
 </ul>
 <h2>Maps</h2>
 <p>
-	<a onClick="loadmaincontent('information/maps.php')">Click here to view
-		some rough maps to give you a vague idea of where you are going.</a>
+	<a href="#" onClick="loadmaincontent('information/maps.php')">Click
+		here to view some rough maps to give you a vague idea of where you are
+		going.</a>
 </p>
 <h2>Detailed Route Notes</h2>
 <h3>START</h3>

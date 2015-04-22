@@ -1,5 +1,6 @@
 
-<h2>Day 3</h2>
+&nbsp;
+<h3>Day 3</h3>
 <p>Day 3 of the Aorangi Undulator 100 starts on Sunday 8th November.
 	Known as the Haurangi Crossing, it is 25km long. Expected time 4-5
 	hours. Longest could take 10</p>

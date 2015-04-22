@@ -85,12 +85,12 @@ $(function () {
 			data-toggle="tooltip" data-placement="top"
 			title="For something a little lighter,<br/> try the 1-day Aorangi
 			Undulator"
-			src="images/logos/aorangi_undulator_banner.png" />
+			src="<?php echo $banner_image_other ?>" />
 		</a> <a class="AU other_event_link" href="/A100.php"> <img
 			class="img-responsive" data-toggle="tooltip" data-placement="top"
 			title="Sounds too easy? <br/> Try the Aorangi
 			Undulator 100"
-			src="A100/images/logos/A100_banner.png" /></a>
+			src="<?php echo $banner_image_other ?>" /></a>
 
 	</div>
 </div>

@@ -6,6 +6,12 @@ $maincontent = 'home.php';
 if (isset ( $params ['page'] ) && $params ['page']) {
 	$maincontent = $params ['page'] . ".php";
 }
+
+$banner_image="images/logos/{$au_event}_banner.png";
+$banner_image_other = "images/logos/{$au_other_event}_banner.png";
+$main_css="css/{$au_event}_main.css";
+$intro = "information/{$au_event}_intro.php";
+
 ?>
 <html lang="en">
 <head>
@@ -145,10 +151,8 @@ function loadmaincontent(contentfile, nojump){
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<img class="AU banner_image img-responsive"
-						src="images/logos/aorangi_undulator_banner.png" />
-					<img class="A100 banner_image img-responsive"
-						src="A100/images/logos/A100_banner.png" />
+					<img class="<?php echo $au_event ?> banner_image img-responsive"
+						src="<?php echo $banner_image ?>" />
 				</div>
 			</div>
 		</div>

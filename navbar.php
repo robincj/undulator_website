@@ -56,7 +56,7 @@
 								SCHEDULE</a></li>
 
 						<li><a onClick="loadmaincontent('information/course_notes.php')">COURSE
-								NOTES</a></li>
+								INFORMATION</a></li>
 						<li><a onClick="loadmaincontent('information/maps.php')">RACE MAPS
 								AND PROFILES</a></li>
 

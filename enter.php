@@ -35,6 +35,8 @@
 							placeholder="Email address" required>
 					</div>
 				</div>
+				
+				<!-- 
 				<div class="form-group">
 					<label for="agecategory" class="col-sm-2 control-label">Age
 						category</label>
@@ -49,7 +51,16 @@
 						</select>
 					</div>
 				</div>
-
+				 -->
+				 
+				<div class="form-group">
+					<label for="age" class="col-xs-6 col-sm-2 control-label">Age on 7th Nov 2015</label>
+					<div class="col-xs-6 col-sm-2">
+						<input type="number" name="age" id="age"
+							class="form-control" size="2" min="10" max="100" value="20">
+					</div>
+				</div>
+				
 				<div class="form-group">
 					<label for="gender" class="col-sm-2 control-label">Gender</label>
 					<div class="col-sm-10">

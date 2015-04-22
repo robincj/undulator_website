@@ -1,9 +1,37 @@
-
+<style>
+#course_notes {
+	background-image: none;
+	background-color: #FFFFFF;
+	padding: 1em;
+}
+</style>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-1"></div>
 		<div class="col-sm-10">
-			<h2 class="A100">Aorangi Undulator 100 Course Notes</h2>
+			<h2>Course Information</h2>
+			<h3>GPX Data</h3>
+			If you use a GPS device that can import routes in GPX format then
+			please download and unzip the file from the links below.
+			<ul class="list-group">
+				<li class="AU list-group-item"><a
+					href="information/gpx/AorangiUndulator100_Day_2.gpx.zip">Aorangi
+						Undulator GPX data (Zip)</a></li>
+				<li class="A100 list-group-item"><a
+					href="information/gpx/AorangiUndulator100_Day_1.gpx.zip">Aorangi
+						Undulator 100, Day 1 GPX data (Zip)</a></li>
+				<li class="A100 list-group-item"><a
+					href="information/gpx/AorangiUndulator100_Day_2.gpx.zip">Aorangi
+						Undulator 100, Day 2 GPX data (Zip)</a></li>
+				<li class="A100 list-group-item"><a
+					href="information/gpx/AorangiUndulator100_Day_3.gpx.zip">Aorangi
+						Undulator 100, Day 3 GPX data (Zip)</a></li>
+				<li class="A100 list-group-item"><a
+					href="information/gpx/AorangiUndulator100_Days_1-3.gpx.zip">Aorangi
+						Undulator 100, Days 1-3 combined GPX data (Zip)</a></li>
+			</ul>
+
+			<h3>Course Notes</h3>
 			<div class="A100" role="tabpanel">
 				<ul class="nav nav-tabs" role="tablist" id="coursenotes_tab">
 					<li role="presentation"><a href="#coursenotes_day1" role="tab"
@@ -13,19 +41,17 @@
 					<li role="presentation"><a href="#coursenotes_day3" role="tab"
 						data-toggle="tab">A100 Day 3</a></li>
 				</ul>
-
-				<div class="tab-content">
+				<div id="course_notes" class="tab-content">
 					<div role="tabpanel" class="tab-pane fade active"
-						id="coursenotes_day1"><?php include('course_notes_A100_day_1.php');?>
-</div>
+						id="coursenotes_day1">
+							<?php include('course_notes_A100_day_1.php');?>
+						</div>
 					<div role="tabpanel" class="tab-pane fade" id="coursenotes_day2"><?php include('course_notes_AU.php'); ?></div>
 					<div role="tabpanel" class="tab-pane fade" id="coursenotes_day3"><?php include('course_notes_A100_day_3.php'); ?></div>
 
 				</div>
-
 			</div>
-			<div class="AU">
-				<h2 class="AU">Aorangi Undulator Course Notes</h2>
+			<div class="AU">				
 				<?php include('course_notes_AU.php');?>
 			</div>
 		</div>
