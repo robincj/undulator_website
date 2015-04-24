@@ -75,9 +75,9 @@
 					<label for="event" class="col-sm-2 control-label">Weakness</label>
 					<div class="col-sm-10">
 						<select name="event" id="event" class="form-control" required>
-							<option value="au" selected="selected">Not Weak: Aorangi
+							<option id="event_option_AU" value="au" selected="selected">Not Weak: Aorangi
 								Undulator (33km mountain run)</option>
-							<option value="A100">Definitly Not Weak: A100 (100km, 3 day
+							<option id="event_option_A100" value="A100">Definitely Not Weak: A100 (100km, 3 day
 								event)</option>
 						</select>
 					</div>
@@ -155,6 +155,9 @@
 </div>
 
 <script>
+
+document.getElementById("event_option_" + au_event).selected = true;
+
 function setPrice() {
 	var datenum = <?php echo date("Ymd") ?>; 
 	var event = $("#event option:selected").val();

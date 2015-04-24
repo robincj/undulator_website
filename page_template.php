@@ -173,7 +173,7 @@ function loadmaincontent(contentfile, nojump){
 					<?php include $intro;?>
 					<div>
 						<h4>
-							<a onClick="loadmaincontent('enter.php')"
+							<a href="#" onClick="loadmaincontent('enter.php')"
 								title="Click here to enter">Entries are open now!</a>
 						</h4>
 						<br />
