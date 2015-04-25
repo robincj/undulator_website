@@ -1,5 +1,4 @@
-
-&nbsp;
+ &nbsp;
 <h3>Day 3</h3>
 <p>Day 3 of the Aorangi Undulator 100 starts on Sunday 8th November.
 	Known as the Haurangi Crossing, it is 25km long. Expected time 4-5
@@ -28,6 +27,10 @@
 	until you get to the big rocky descent to Sunderlands Hut valley. Once
 	you get to bottom turn right and follow 4wd that keeps crossing river.
 	It eventually gets to a last uphill.</p>
+<p>
+	<a href="images/maps/A100/A100_Day_3_map.jpg" target="_blank"><img
+		class="img-responsive" src="images/maps/A100/A100_Day_3_map.jpg" /></a>
+</p>
 <p>At the top of this you have a final k descent then you will see
 	Waikuku Lodge and finishing flags!</p>
 <p>Transport is available to pick you up at end of day 3 and take you
@@ -38,3 +41,8 @@
 	with who is where at all times i need to know for safety...THIS IS V
 	IMPT you let me know if someone else gives you a ride etc As we need to
 	know who is on course and who isn't.</p>
+<p>
+	<a href="images/maps/A100/A100_Day_3_elev_profile.jpg" target="_blank"><img
+		class="img-responsive"
+		src="images/maps/A100/A100_Day_3_elev_profile.jpg" /></a>
+</p>

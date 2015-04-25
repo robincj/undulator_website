@@ -23,12 +23,21 @@
 	this road unless you arrange your own transport.</p>
 <p>WE WILL SUPPLY DETAILED MAPS WITH COMMENTS. YOU WILL STILL NEED YOUR
 	OWN TOPO MAPS THOUGH.</p>
-<p>Route</p>
+
+<a href="images/maps/A100/A100_Day_1_map.jpg" target="_blank"><img
+	class="img-responsive" src="images/maps/A100/A100_Day_1_map.jpg" /></a>
+
+<h4>Route</h4>
 <p>Run around the coast until a k or 2 before the end (lighthouse) there
 	is a small track that sidles up the hill to your left (this will be
 	marked) . Take that and it will take you to a stall hop over that and
 	continue down the track. Take the first left that takes you around the
 	first East Harbour Lake.</p>
+
+<a href="images/maps/A100/A100_Day_1_east_harbour_map.jpg"
+	target="_blank"><img class="img-responsive"
+	src="images/maps/A100/A100_Day_1_east_harbour_map.jpg" /></a>
+
 <p>Then once around that head down to the coast. The track branches left
 	or right near the coast take either one they both about same time.</p>
 <p>Once you hit coast run around coast track staying towards the coast
@@ -60,3 +69,6 @@
 	the finish flags at the edge of Lake Oneke. A boat will come
 	periodically to take the runers across to Lake Ferry pub.</p>
 <p>
+	<a href="images/maps/A100/A100_Day_1_elev_profile.jpg" target="_blank"><img
+		class="img-responsive"
+		src="images/maps/A100/A100_Day_1_elev_profile.jpg" /></a>

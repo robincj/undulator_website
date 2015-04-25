@@ -28,6 +28,8 @@ download and unzip the file from the links below.
 			Undulator 100, Days 1-3 combined GPX data (Zip)</a></li>
 </ul>
 
+<div class="A100" id="A100_overview_map" ></div>
+
 <h3>Course Notes</h3>
 <div class="A100" role="tabpanel">
 	<ul class="nav nav-tabs" role="tablist" id="coursenotes_tab">
@@ -53,6 +55,10 @@ download and unzip the file from the links below.
 </div>
 
 <script>
-	if ( au_event == "A100" ) { $(function () { 
-		$('#coursenotes_tab a:first').tab('show') }) }
+	if ( au_event == "A100" ) { 
+		$(function () { 
+			$('#coursenotes_tab a:first').tab('show');
+			document.getElementById('A100_overview_map').innerHTML = '<h3>Overview Map</h3><a href="images/maps/A100/A100_overview_map.jpg" target="_blank"><img width="200px" class="img-responsive" src="images/maps/A100/A100_overview_map.jpg" /></a>';
+			});		
+	 }
 </script>
