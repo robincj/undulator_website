@@ -1,42 +1,58 @@
 
-			<?php include "information/prices.php"?>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-1"></div>
-		<div class="col-xs-12 col-sm-10">
-			<h2>Entry Form</h2>
-			<div id="submittedmsgbox"></div>
-			<h4>I am not weak and therefore would love to enter the Aorangi
-				Undulator.</h4>
+<div class="panel-group" id="accordion" role="tablist"
+	aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingOne">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion"
+					href="#collapseOne" aria-expanded="true"
+					aria-controls="collapseOne"> Prices</a>
+			</h4>
+		</div>
+		<div id="collapseOne" class="panel-collapse collapse in"
+			role="tabpanel" aria-labelledby="headingOne">
+			<div class="panel-body">
+		<?php include "information/prices.php"?>
+      </div>
+		</div>
+	</div>
 
-			<p>Please complete and submit the following form. Payment details
-				will be sent to your email addresss.</p>
+</div>
 
-			<form class="form-horizontal" id="enter" name="enter">
-				<div class="form-group">
+<div>
+	<h2>Entry Form</h2>
+	<div id="submittedmsgbox"></div>
+	<h4>I am not weak and therefore would love to enter the Aorangi
+		Undulator.</h4>
 
-					<label for="firstname" class="col-sm-2 control-label">First name</label>
-					<div class="col-sm-10">
-						<input type="text" name="firstname" class="form-control"
-							id="firstname" placeholder="First name" required />
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="surname" class="col-sm-2 control-label"> Last name</label>
-					<div class="col-sm-10">
-						<input type="text" name="surname" class="form-control"
-							id="surname" placeholder="Last name" />
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-					<div class="col-sm-10">
-						<input type="email" class="form-control" id="email" name="email"
-							placeholder="Email address" required>
-					</div>
-				</div>
-				
-				<!-- 
+	<p>Please complete and submit the following form. Payment details will
+		be sent to your email addresss.</p>
+
+	<form class="form-horizontal" id="enter" name="enter">
+		<div class="form-group">
+
+			<label for="firstname" class="col-sm-2 control-label">First name</label>
+			<div class="col-sm-10">
+				<input type="text" name="firstname" class="form-control"
+					id="firstname" placeholder="First name" required />
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="surname" class="col-sm-2 control-label"> Last name</label>
+			<div class="col-sm-10">
+				<input type="text" name="surname" class="form-control" id="surname"
+					placeholder="Last name" />
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+			<div class="col-sm-10">
+				<input type="email" class="form-control" id="email" name="email"
+					placeholder="Email address" required>
+			</div>
+		</div>
+
+		<!-- 
 				<div class="form-group">
 					<label for="agecategory" class="col-sm-2 control-label">Age
 						category</label>
@@ -52,88 +68,82 @@
 					</div>
 				</div>
 				 -->
-				 
-				<div class="form-group">
-					<label for="age" class="col-xs-6 col-sm-2 control-label">Age on 7th Nov 2015</label>
-					<div class="col-xs-6 col-sm-2">
-						<input type="number" name="age" id="age"
-							class="form-control" size="2" min="10" max="100" value="20">
-					</div>
-				</div>
-				
-				<div class="form-group">
-					<label for="gender" class="col-sm-2 control-label">Gender</label>
-					<div class="col-sm-10">
-						<label class="radio-inline"><input type="radio" name="gender"
-							checked="checked" value="M" required>M</label> <label
-							class="radio-inline"><input type="radio" name="gender" value="F"
-							required>F</label>
-					</div>
-				</div>
 
-				<div class="form-group">
-					<label for="event" class="col-sm-2 control-label">Weakness</label>
-					<div class="col-sm-10">
-						<select name="event" id="event" class="form-control" required>
-							<option id="event_option_AU" value="au" selected="selected">Not Weak: Aorangi
-								Undulator (33km mountain run)</option>
-							<option id="event_option_A100" value="A100">Definitely Not Weak: A100 (100km, 3 day
-								event)</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="t-size" class="col-xs-12 col-sm-2 control-label"
-						data-toggle="modal" data-target="#t-modal" title><span
-						data-toggle="tooltip" data-placement="top"
-						title="Click to see T-Shirt">T-Shirt ($25)</span></label> <label
-						for="t-size" class="col-xs-6 col-sm-2 control-label">Size</label>
-					<div class="col-xs-6 col-sm-2">
-						<select name="t-size" id="t-size" class="form-control">
-							<option value="S">S</option>
-							<option value="M">M</option>
-							<option value="L">L</option>
-						</select>
-					</div>
-
-					<label for="t-quantity" class="col-xs-6 col-sm-2 control-label">Quantity</label>
-					<div class="col-xs-6 col-sm-2">
-						<input type="number" name="t-quantity" id="t-quantity"
-							class="form-control" size="2" min="0" max="25" value="0">
-					</div>
-				</div>
-
-
-				<div class="form-group">
-					<label for="query" class="col-sm-2 control-label">Query</label>
-					<div class="col-sm-10">
-						<textarea name="query" class="form-control" id="query"
-							placeholder="If you have any queries or messages to pass along with your entry then enter them here." />
-					</div>
-				</div>
-
-
-				<div class="form-group">
-					<label for="entryprice" class="col-sm-2 control-label">Total price</label>
-					<div class="col-sm-6">
-						<p id="entryprice" class="form-control-static"></p>
-						<input type="hidden" name="price" id="entryprice_param" />
-					</div>
-					<div class="col-sm-2">
-						<button type="submit" class="btn btn-success">Register</button>
-					</div>
-				</div>
-
-
-			</form>
-
-
+		<div class="form-group">
+			<label for="age" class="col-xs-6 col-sm-2 control-label">Age on 7th
+				Nov 2015</label>
+			<div class="col-xs-6 col-sm-2">
+				<input type="number" name="age" id="age" class="form-control"
+					size="2" min="10" max="100" value="20">
+			</div>
 		</div>
-		<div class="col-sm-1"></div>
-		<!-- /col -->
-	</div>
-	<!-- /row -->
+
+		<div class="form-group">
+			<label for="gender" class="col-sm-2 control-label">Gender</label>
+			<div class="col-sm-10">
+				<label class="radio-inline"><input type="radio" name="gender"
+					checked="checked" value="M" required>M</label> <label
+					class="radio-inline"><input type="radio" name="gender" value="F"
+					required>F</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="event" class="col-sm-2 control-label">Weakness</label>
+			<div class="col-sm-10">
+				<select name="event" id="event" class="form-control" required>
+					<option id="event_option_AU" value="au" selected="selected">Not
+						Weak: Aorangi Undulator (33km mountain run)</option>
+					<option id="event_option_A100" value="A100">Definitely Not Weak:
+						A100 (100km, 3 day event)</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="t-size" class="col-xs-12 col-sm-2 control-label"
+				data-toggle="modal" data-target="#t-modal" title><span
+				data-toggle="tooltip" data-placement="top"
+				title="Click to see T-Shirt">T-Shirt ($25)</span></label> <label
+				for="t-size" class="col-xs-6 col-sm-2 control-label">Size</label>
+			<div class="col-xs-6 col-sm-2">
+				<select name="t-size" id="t-size" class="form-control">
+					<option value="S">S</option>
+					<option value="M">M</option>
+					<option value="L">L</option>
+				</select>
+			</div>
+
+			<label for="t-quantity" class="col-xs-6 col-sm-2 control-label">Quantity</label>
+			<div class="col-xs-6 col-sm-2">
+				<input type="number" name="t-quantity" id="t-quantity"
+					class="form-control" size="2" min="0" max="25" value="0">
+			</div>
+		</div>
+
+
+		<div class="form-group">
+			<label for="query" class="col-sm-2 control-label">Query</label>
+			<div class="col-sm-10">
+				<textarea name="query" class="form-control" id="query"
+					placeholder="If you have any queries or messages to pass along with your entry then enter them here." />
+			</div>
+		</div>
+
+
+		<div class="form-group">
+			<label for="entryprice" class="col-sm-2 control-label">Total price</label>
+			<div class="col-sm-6">
+				<p id="entryprice" class="form-control-static"></p>
+				<input type="hidden" name="price" id="entryprice_param" />
+			</div>
+			<div class="col-sm-2">
+				<button type="submit" class="btn btn-success">Register</button>
+			</div>
+		</div>
+
+
+	</form>
 </div>
 
 <!-- Modal -->

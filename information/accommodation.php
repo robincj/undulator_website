@@ -1,7 +1,4 @@
-<div class="container">
-	<div class="row">
-		<div class="col-sm-1"></div>
-		<div class="col-sm-10">
+
 			<h2>Places to Stay</h2>
 			<p>There are various baches, cabins, caravans and campsites available
 				in and around ngawi.
@@ -29,6 +26,3 @@
 			</ul>
 <?php include("a100_transport_note.php")?>
 		
-		</div>
-	</div>
-</div>

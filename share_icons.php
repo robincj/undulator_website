@@ -45,53 +45,31 @@ a.share-facebook:hover {
 a.share-youtube:hover {
 	background-position: -200px -40px;
 }
-
-.other_event_link {
-	margin: auto;
-	width: 180px;
-}
 </style>
 
-<script>
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip({html: true})
-})
-</script>
-
+<br />
 <div class="row">
-	
-	<div class="col-xs-12 col-sm-4 col-md-12 text-center">
-		<button class="register-button btn btn-primary btn-lg"
-			onClick="loadmaincontent('enter.php')">Register Now</button>
-	</div>
-	<div class="col-xs-12 col-sm-4 col-md-12 share-icon-block text-center">
-
+	<div class="col-xs-4 col-sm-12">
 		<a class="share-icon share-facebook" target="_blank"
 			href="http://www.facebook.com/aorangiundulator"
 			title="Undulator on Facebook"></a>
-		<!--  <a
+	</div>
+	<!--  
+	<div class="col-xs-4 col-md-12">
+		<a
 		class="share-icon share-facebook" target="_blank"
 		href="https://www.facebook.com/groups/1548916308660466/"
-		title="A100 on Facebook"></a> -->
+		title="A100 on Facebook"></a>
+	</div>
+	 -->
+	<div class="col-xs-4 col-sm-12">
 		<a class="share-icon share-twitter" target="_blank"
 			href="https://twitter.com/intent/follow?region=follow_link&screen_name=undulator0109&tw_p=followbutton"
-			title="Follow on Twitter"></a> <a class="share-icon share-youtube"
-			target="_blank" href="http://www.youtube.com/watch?v=x3mVNYRViv4"
-			title="Undulator on YouTube"></a>
-
+			title="Follow on Twitter"></a>
 	</div>
-	<div class="col-xs-12 col-sm-4 col-md-12 share-icon-block text-center">
-		<a class="A100 other_event_link" href="/"> <img class="img-responsive"
-			data-toggle="tooltip" data-placement="top"
-			title="For something a little lighter,<br/> try the 1-day Aorangi
-			Undulator"
-			src="<?php echo $banner_image_other ?>" />
-		</a> <a class="AU other_event_link" href="/A100.php"> <img
-			class="img-responsive" data-toggle="tooltip" data-placement="top"
-			title="Sounds too easy? <br/> Try the Aorangi
-			Undulator 100"
-			src="<?php echo $banner_image_other ?>" /></a>
-
+	<div class="col-xs-4 col-sm-12">
+		<a class="share-icon share-youtube" target="_blank"
+			href="http://www.youtube.com/watch?v=x3mVNYRViv4"
+			title="Undulator on YouTube"></a>
 	</div>
 </div>
-<br/>

@@ -1,13 +1,16 @@
 
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-1 col-sm-2"></div>
-				<div class="col-xs-10 col-sm-8"> 
-					<?php include 'js/jssor_bootstrap/php/jssor_bootstrap_slider.php';?>
-		
-				</div>
-				<div class="col-xs-1 col-sm-2"></div>
-				<!-- /col -->
-			</div>
-			<!-- /row -->
-		</div>
+<div id="intro"></div>
+<script>
+$("#intro").load("information/" + au_event + "_intro.php");
+</script>
+
+<div class="text-center">
+	<h4>
+		<a href="#" onClick="loadmaincontent('enter.php')"
+			title="Click here to enter">Entries are open now!</a>
+	</h4>
+	<br />
+</div>
+<?php
+include 'js/jssor_bootstrap/php/jssor_bootstrap_slider.php';
+?>

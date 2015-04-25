@@ -7,10 +7,9 @@ if (isset ( $params ['page'] ) && $params ['page']) {
 	$maincontent = $params ['page'] . ".php";
 }
 
-$banner_image="images/logos/{$au_event}_banner.png";
+$banner_image = "images/logos/{$au_event}_banner.png";
 $banner_image_other = "images/logos/{$au_other_event}_banner.png";
-$main_css="css/{$au_event}_main.css";
-$intro = "information/{$au_event}_intro.php";
+$main_css = "css/{$au_event}_main.css";
 
 ?>
 <html lang="en">
@@ -36,82 +35,7 @@ $intro = "information/{$au_event}_intro.php";
 <link href='http://fonts.googleapis.com/css?family=Jockey+One'
 	rel='stylesheet' type='text/css'>
 
-<style>
-body {
-	background-image: url(/images/textures/p2.png);
-	background-repeat: repeat;
-	font-family: 'Montserrat', sans-serif;
-}
-
-header {
-	background-color: black;
-	/* background-image: url(/images/logos/aorangi_undulator_banner_bgline.png) ;
-	background-repeat: repeat-x; */
-}
-
-header .row {
-	position: relative;
-}
-
-.header-right {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
-footer {
-	height: 4em;
-	margin: 2em;
-	font-size: 90%;
-	background-color: black;
-	color: #aaa;
-}
-
-.banner_image {
-	margin: auto;
-	height: 10em;
-}
-
-.share-icon-col {
-	/* text-align: right; */
-	
-}
-
-.register-button {
-	margin: .5em;
-}
-
-.navbar li {
-	text-align: center;
-}
-
-#sponsors_logos {
-	display: inline;
-}
-
-#blurb {
-	display: inline;
-	width:
-}
-
-#social_links {
-	display: inline;
-}
-
-.event-date {
-	color: #aaaaaa;
-	font-size: 2em;
-	font-weight: bold;
-}
-
-.AU {
-	display: none;
-}
-
-.A100 {
-	display: none;
-}
-</style>
+<link href='css/main.css' rel='stylesheet' type='text/css'>
 
 <!-- main stylesheet to override defaults above -->
 <link rel="stylesheet" href="<?php echo $main_css ?>">
@@ -161,45 +85,34 @@ function loadmaincontent(contentfile, nojump){
 <?php include 'navbar.php';?>
 
 	<section>
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-sm-2 col-md-3 text-center">
-					<?php include 'sponsors.php';?>
-				
+				<div class="col-xs-12 col-md-3 text-center">
+					<?php include 'links_col.php';?>				
 				</div>
 				<!-- /col -->
 
-				<div class="col-sm-10 col-md-6 text-center">
-					<?php include $intro;?>
-					<div>
-						<h4>
-							<a href="#" onClick="loadmaincontent('enter.php')"
-								title="Click here to enter">Entries are open now!</a>
-						</h4>
-						<br />
-					</div>
+				<div id="main"
+					class="maincontent col-xs-12 col-sm-10 col-md-8"></div>
 
-				</div>
-				<!-- /col -->
-
-				<div class="col-md-3 share-icon-col text-center">
-				<?php include 'share_icons.php';?>
-
+				<div class="col-xs-12 col-sm-1 share-icon-col text-center">
+					<?php include 'share_icons.php';?>
 				</div>
 				<!-- /col -->
 			</div>
 			<!-- /row -->
 		</div>
+
 	</section>
 
-	<section class="maincontent" id="main"></section>
 
 	<script>loadmaincontent('<?php echo $maincontent ?>', true)</script>
 	<footer>
 		<br />
-		<p style="text-align: right">Contact: Chris Martin 123-455678 or
-			email: info@aorangiundulator.org &nbsp;&nbsp;
-	
+		<p style="text-align: right">Contact: Chris Martin 021 2166436 or
+			email: info@aorangiundulator.org &nbsp;&nbsp;</p>
+		<br /> &nbsp;
+
 	</footer>
 
 </body>
