@@ -34,7 +34,7 @@ $main_css = "css/{$au_event}_main.css";
 	rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Jockey+One'
 	rel='stylesheet' type='text/css'>
-
+<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
 <link href='css/main.css' rel='stylesheet' type='text/css'>
 
 <!-- main stylesheet to override defaults above -->
@@ -92,8 +92,7 @@ function loadmaincontent(contentfile, nojump){
 				</div>
 				<!-- /col -->
 
-				<div id="main"
-					class="maincontent col-xs-12 col-sm-10 col-md-8"></div>
+				<div id="main" class="maincontent col-xs-12 col-sm-10 col-md-8"></div>
 
 				<div class="col-xs-12 col-sm-1 share-icon-col text-center">
 					<?php include 'share_icons.php';?>
