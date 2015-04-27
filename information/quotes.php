@@ -7,7 +7,7 @@
 	border: 2px solid gray;
 	border-radius: 5px;
 	padding: 1em;
-	font-size: +1;
+	font-size: 120%;
 	min-height: 5em;
 }
 
@@ -73,19 +73,26 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 function display_quote(qkey) {
 	var qel = document.getElementById("quote");
 	var ael = document.getElementById("quote_author");
+	if (quotes[qkey] == undefined ) { return false; }
 	var q = quotes[qkey];
-	var author = q["author"] ? q["author"] : "Anon.";
+	var author = q.hasOwnProperty("author") ? q["author"] : "Anon.";
 	var quote = q["quote"];
 	qel.innerHTML = quote;
 	ael.innerHTML = author;
 }
 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-var qnum = 0;
-
+var qnum = getRandomInt(0, quotes.length -1); // counter for current quote key
+// display the first quote before starting the interval loop.
 display_quote(qnum);
 $("#quote, #quote_author").fadeIn("slow");
-clearInterval(qint);
+// clear the interval if it has been used already.
+if ( typeof qint !== 'intervalID' ){
+	clearInterval(qint);
+}
 var qint = setInterval( function(){
 		if (qnum++ >= quotes.length) { 
 			qnum = 0;
@@ -93,6 +100,7 @@ var qint = setInterval( function(){
 		$("#quote, #quote_author").fadeOut( "slow", function(){ display_quote(qnum) }).delay(200).fadeIn("slow");
 		;
 }, 6000);
+
 
 </script>
 
