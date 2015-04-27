@@ -53,14 +53,14 @@ nav .other_event_link img {
 						<li class="AU"><a  href="#"
 							onClick="loadmaincontent('information/directions.php')">HOW TO
 								GET THERE</a></li>
-						<li class="A100"><a href="#" onClick="loadmaincontent('information/directions.php')">DAY 2
-								START: HOW TO GET THERE</a></li>
+						<!-- <li class="A100"><a href="#" onClick="loadmaincontent('information/directions.php')">DAY 2
+								START: HOW TO GET THERE</a></li> -->
 						<li class="AU"><a  href="#"
 							onClick="loadmaincontent('information/schedule.php')">RACE DAY
 								SCHEDULE</a></li>
-						<li class="A100"><a
+						<!-- <li class="A100"><a
 						  href="#"	onClick="loadmaincontent('information/schedule.php')">A100 DAY 2
-								SCHEDULE</a></li>
+								SCHEDULE</a></li> -->
 
 						<li><a  href="#" onClick="loadmaincontent('information/course_notes.php')">COURSE
 								INFORMATION</a></li>
