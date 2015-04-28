@@ -1,15 +1,15 @@
 
-<div class="panel-group" id="accordion" role="tablist"
+<div class="panel-group" id="prices_accordion" role="tablist"
 	aria-multiselectable="true">
 	<div class="panel panel-default">
 		<div class="panel-heading" role="tab" id="headingOne">
 			<h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion"
+				<a data-toggle="collapse" data-parent="#prices_accordion"
 					href="#collapseOne" aria-expanded="true"
 					aria-controls="collapseOne"> Prices</a>
 			</h4>
 		</div>
-		<div id="collapseOne" class="panel-collapse collapse in"
+		<div id="collapseOne" class="panel-collapse collapse"
 			role="tabpanel" aria-labelledby="headingOne">
 			<div class="panel-body">
 		<?php include "information/prices.php"?>
@@ -121,6 +121,13 @@
 			</div>
 		</div>
 
+		<div class="form-group">
+			<label for="previous_events" class="col-sm-2 control-label">Running Resum&eacute;</label>
+			<div class="col-sm-10">
+				<textarea name="previous_events" class="form-control" id="previous_events"
+					placeholder="Please let us know some of your previous running events and times." />
+			</div>
+		</div>
 
 		<div class="form-group">
 			<label for="query" class="col-sm-2 control-label">Query</label>
