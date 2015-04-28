@@ -41,7 +41,7 @@ $(function () {
  -->
 
 		<div class="col-xs-6 col-md-12">
-			<a href="http://www.aorangitrust.org.nz/"><img class="img-responsive"
+			<a href="#" onClick="loadmaincontent('information/aorangi_trust.php')"><img class="img-responsive"
 				width="165px" src="images/logos/aorangi_trust_logo.png" /></a>
 		</div>
 	</div>
