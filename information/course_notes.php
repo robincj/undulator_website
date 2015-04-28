@@ -7,28 +7,63 @@
 </style>
 
 <h2>Course Information</h2>
-<h3>GPX Data</h3>
-If you use a GPS device that can import routes in GPX format then please
-download and unzip the file from the links below.
-<ul class="list-group">
-	<li class="AU list-group-item"><a
-		href="information/gpx/AorangiUndulator100_Day_2.gpx.zip">Aorangi
-			Undulator GPX data (Zip)</a></li>
-	<li class="A100 list-group-item"><a
-		href="information/gpx/AorangiUndulator100_Day_1.gpx.zip">Aorangi
-			Undulator 100, Day 1 GPX data (Zip)</a></li>
-	<li class="A100 list-group-item"><a
-		href="information/gpx/AorangiUndulator100_Day_2.gpx.zip">Aorangi
-			Undulator 100, Day 2 GPX data (Zip)</a></li>
-	<li class="A100 list-group-item"><a
-		href="information/gpx/AorangiUndulator100_Day_3.gpx.zip">Aorangi
-			Undulator 100, Day 3 GPX data (Zip)</a></li>
-	<li class="A100 list-group-item"><a
-		href="information/gpx/AorangiUndulator100_Days_1-3.gpx.zip">Aorangi
-			Undulator 100, Days 1-3 combined GPX data (Zip)</a></li>
-</ul>
 
-<div class="A100" id="A100_overview_map" ></div>
+<div class="panel-group" id="course_info_accordion" role="tablist"
+	aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="gpx_accordion_heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#course_info_accordion"
+					href="#gpx_downloads" aria-expanded="true"
+					aria-controls="collapseOne"> GPX Data Downloads </a>
+			</h4>
+		</div>
+		<div id="gpx_downloads" class="panel-collapse collapse" role="tabpanel"
+			aria-labelledby="gpx_accordion_heading">
+			<div class="panel-body">
+				If you use a GPS device that can import routes in GPX format then
+				please download and unzip the file from the links below.
+				<ul class="list-group">
+					<li class="AU list-group-item"><a
+						href="information/gpx/AorangiUndulator100_Day_2.gpx.zip">Aorangi
+							Undulator GPX data (Zip)</a></li>
+					<li class="A100 list-group-item"><a
+						href="information/gpx/AorangiUndulator100_Day_1.gpx.zip">Aorangi
+							Undulator 100, Day 1 GPX data (Zip)</a></li>
+					<li class="A100 list-group-item"><a
+						href="information/gpx/AorangiUndulator100_Day_2.gpx.zip">Aorangi
+							Undulator 100, Day 2 GPX data (Zip)</a></li>
+					<li class="A100 list-group-item"><a
+						href="information/gpx/AorangiUndulator100_Day_3.gpx.zip">Aorangi
+							Undulator 100, Day 3 GPX data (Zip)</a></li>
+					<li class="A100 list-group-item"><a
+						href="information/gpx/AorangiUndulator100_Days_1-3.gpx.zip">Aorangi
+							Undulator 100, Days 1-3 combined GPX data (Zip)</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="A100 panel panel-default">
+		<div class="panel-heading" role="tab" id="A100_overview_map_panel_heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#course_info_accordion"
+					href="#A100_overview_map_panel" aria-expanded="true"
+					aria-controls="collapseOne"> Aorangi Undulator 100 Overview Diagram </a>
+			</h4>
+		</div>
+		<div id="A100_overview_map_panel" class=" panel-collapse collapse" role="tabpanel"
+			aria-labelledby="A100_overview_map_panel_heading">
+			<div class="panel-body">
+				Click on the image below to enlarge it.
+				<div class="A100" id="A100_overview_map"></div>				
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="A100" id="A100_overview_map"></div>
 
 <h3>Course Notes</h3>
 <div class="A100" role="tabpanel">

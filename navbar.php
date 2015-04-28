@@ -45,7 +45,7 @@ nav .other_event_link img {
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown" role="button" aria-expanded="false">INFORMATION<span
+					data-toggle="dropdown" role="button" aria-expanded="false">EVENT INFORMATION<span
 						class="caret"></span></a>
 
 					<ul class="dropdown-menu" role="menu">
