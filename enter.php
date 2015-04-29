@@ -9,8 +9,8 @@
 					aria-controls="collapseOne"> Prices</a>
 			</h4>
 		</div>
-		<div id="collapseOne" class="panel-collapse collapse"
-			role="tabpanel" aria-labelledby="headingOne">
+		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+			aria-labelledby="headingOne">
 			<div class="panel-body">
 		<?php include "information/prices.php"?>
       </div>
@@ -18,9 +18,15 @@
 	</div>
 
 </div>
-
+<div class="A100">
+	<h4 style="color: red;">
+		The Aorangi Undulator 100 event has reached its entry limit!<br />Use
+		the entry form below to put yourself on the wait-list.
+	</h4>
+</div>
 <div>
 	<h2>Entry Form</h2>
+
 	<div id="submittedmsgbox"></div>
 	<h4>I am not weak and therefore would love to enter the Aorangi
 		Undulator.</h4>
@@ -122,9 +128,11 @@
 		</div>
 
 		<div class="form-group">
-			<label for="previous_events" class="col-sm-2 control-label">Running Resum&eacute;</label>
+			<label for="previous_events" class="col-sm-2 control-label">Running
+				Resum&eacute;</label>
 			<div class="col-sm-10">
-				<textarea name="previous_events" class="form-control" id="previous_events"
+				<textarea name="previous_events" class="form-control"
+					id="previous_events"
 					placeholder="Please let us know some of your previous running events and times." />
 			</div>
 		</div>
