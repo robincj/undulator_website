@@ -8,7 +8,7 @@
 	border-radius: 5px;
 	padding: 1em;
 	font-size: 120%;
-	min-height: 5em;
+	min-height: 6em;
 }
 
 #quote {
@@ -66,41 +66,50 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "The 'Comfort Zone' is the problem in life. Imagine you wake on a rainy morning. The rain bangs on your windows. It's easier to stay in your nice bed than go for a walk in the rain. But in the evening you think 'what a boring day." },
 { quote: "If you do it, if you get out of bed and walk in the rain then you will look back on the day and think 'what a wonderful day." },
 { quote: "Comfort really is a bad thing. We are striving for comfort all the time. But it kills you." },
-{ quote: "Why does one do these things? It's definitely a powerful experience . In some ways it's a very pointless but at one time, not so long ago there was enough risk in life that you did not want to go out pursuing these things for fun whereas now everything is so safe and sanitised and boring that there are some people myself included who feel the need to experience the danger , the apprehension, the sensations, the power, the decision making…you know.  With your seat belt on and your central heating turned up you need to get away from all that .............to get back to something a little more fundamental.", author: "Leo Holding" },
+{ quote: "Why does one do these things? It's definitely a powerful experience. In some ways it's a very pointless but at one time, not so long ago there was enough risk in life that you did not want to go out pursuing these things for fun whereas now everything is so safe and sanitised and boring that there are some people myself included who feel the need to experience the danger , the apprehension, the sensations, the power, the decision making…you know.  With your seat belt on and your central heating turned up you need to get away from all that .............to get back to something a little more fundamental.", author: "Leo Holding" },
 	]
 ;
 
-function display_quote(qkey) {
-	var qel = document.getElementById("quote");
-	var ael = document.getElementById("quote_author");
-	if (quotes[qkey] == undefined ) { return false; }
-	var q = quotes[qkey];
-	var author = q.hasOwnProperty("author") ? q["author"] : "Anon.";
-	var quote = q["quote"];
-	qel.innerHTML = quote;
-	ael.innerHTML = author;
+function doSetTimeout(qkey, delay) {
+	if ( typeof au_global.quoteTimeouts !== 'object' ) {
+		au_global.quoteTimeouts = [];
+	}
+	au_global.quoteTimeouts[au_global.quoteTimeouts.length] = setTimeout( function() {
+		$("#quote, #quote_author").fadeOut( "slow", function(){
+			document.getElementById("quote").innerHTML = quotes[qkey].quote;
+			document.getElementById("quote_author").innerHTML = quotes[qkey].hasOwnProperty("author") ? quotes[qkey].author : "Anon.";
+		}).delay(200).fadeIn("slow");
+		if ( qkey == quotes.length ) {
+			 startQuoteBox(0);
+		}
+	}, delay);
+}
+
+function startQuoteBox(qnum) {
+	// prevent problems with many timeouts being set if this is displayed more than once on a page (ajax) by cleaning up current ones 
+	clearQuoteTimeouts();
+	var delay = 0;
+	for ( qkey = qnum ; qkey < quotes.length ; qkey++ ){
+	//for ( qkey in quotes ){	
+		if (quotes[qkey] == undefined ) { continue; }
+		doSetTimeout(qkey, delay); // keep setTimout in separate function so that it uses copies of variable values
+		var newinterval = 	( quotes[qkey].quote.length / 15 ) * 1000; // calculate next interval
+		if ( newinterval < 3000 ) { newinterval = 3000;} // set newinterval to a minimum of 3s
+		delay += ( quotes[qkey].quote.length / 15 ) * 1000 ;
+	}
 }
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var qnum = getRandomInt(0, quotes.length -1); // counter for current quote key
-// display the first quote before starting the interval loop.
-display_quote(qnum);
-$("#quote, #quote_author").fadeIn("slow");
-// clear the interval if it has been used already.
-if ( typeof qint !== 'intervalID' ){
-	clearInterval(qint);
+function clearQuoteTimeouts() {
+	for ( tkey in au_global.quoteTimeouts ) {
+		clearTimeout(au_global.quoteTimeouts[tkey])
+	}	
 }
-var qint = setInterval( function(){
-		if (qnum++ >= quotes.length) { 
-			qnum = 0;
-		}		
-		$("#quote, #quote_author").fadeOut( "slow", function(){ display_quote(qnum) }).delay(200).fadeIn("slow");
-		;
-}, 6000);
 
+startQuoteBox(getRandomInt(0, quotes.length -1));
 
 </script>
 

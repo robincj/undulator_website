@@ -41,6 +41,8 @@ $main_css = "css/{$au_event}_main.css";
 <link rel="stylesheet" href="<?php echo $main_css ?>">
 
 <script>
+var au_global = {};
+
 var au_event = '<?php echo $au_event ?>';
 
 $( document ).ajaxComplete(function() {
