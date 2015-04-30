@@ -41,12 +41,13 @@ nav .other_event_link img {
 							onClick="loadmaincontent('information/prices.php')">PRICES</a></li>
 						<li><a href="#" onClick="loadmaincontent('enter.php')">ENTER</a></li>
 						<li><a href="#" onClick="loadmaincontent('t-shirt.php')">T-SHIRT</a></li>
-
-						<li class="disabled"><a href="#">ENTRIES SO FAR</a></li>
+						<li><a href="#" onClick="loadmaincontent('information/entries.php')">ENTRIES SO FAR</a></li>
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown" role="button" aria-expanded="false">EVENT INFORMATION<span class="caret"></span></a>
+					data-toggle="dropdown" role="button" aria-expanded="false">EVENT
+						INFORMATION<span class="caret"></span>
+				</a>
 
 					<ul class="dropdown-menu" role="menu">
 
@@ -104,7 +105,7 @@ nav .other_event_link img {
 						<!-- <li class="disabled"><a  href="#">QUOTES</a></li>
 						<li class="disabled"><a  href="#">PHOTOS</a></li>
 					 -->
-					 <!--
+						<!--
 					   <li><a href="#" onClick="loadmaincontent('gallery.php')">PHOTOS</a></li>
 					 -->
 						<li><a href="#" onClick="loadmaincontent('youtube.php')">VIDEOS</a></li>
