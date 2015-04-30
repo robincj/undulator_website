@@ -54,7 +54,8 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "Make friends with pain and you will never be lonely again", author: "Joss Naylor" },
 { quote: "You paid to do this." },
 { quote: "If your brain is saying it hurts tell your brain it feels nice" },
-{ quote: "Is the bach near the sea?" },
+{ quote: "Is the bach near the sea?", author: "Mr. T. Crumpton" },
+{ quote: "You can do it.", author: "Soren Haubrock" },
 { quote: "If someone kicks you in the b*lls Think at least they didn't kick me in the b*lls twice (aka glass half full theory)", author: "Swallow" },
 { quote: "Think flat and the undulation IS  flat", author: "D Kettles" },
 { quote: "Alley of Thorns - No crying out or you will be booed. Weakness is not tolerated" },
@@ -79,7 +80,7 @@ function doSetTimeout(qkey, delay) {
 			document.getElementById("quote").innerHTML = quotes[qkey].quote;
 			document.getElementById("quote_author").innerHTML = quotes[qkey].hasOwnProperty("author") ? quotes[qkey].author : "Anon.";
 		}).delay(200).fadeIn("slow");
-		if ( qkey == quotes.length ) {
+		if ( qkey >= quotes.length -1 ) {
 			 startQuoteBox(0);
 		}
 	}, delay);
