@@ -1,5 +1,4 @@
 
-
 <style>
 /* @import url(http://fonts.googleapis.com/css?family=Handlee);
 */
@@ -28,6 +27,8 @@
 	<div id="quote"></div>
 	<div id="quote_author"></div>
 </div>
+
+<script src="js/quotebox.js"></script>
 
 <script>
 var quotes = [{ quote: "We had seen God in His splendors, heard the text that Nature renders. We had reached the naked soul of man.", author: "Earnest Shakleton" },
@@ -71,47 +72,5 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 	]
 ;
 
-function doSetTimeout(qkey, delay) {
-	if ( typeof au_global.quoteTimeouts !== 'object' ) {
-		au_global.quoteTimeouts = [];
-	}
-	au_global.quoteTimeouts[au_global.quoteTimeouts.length] = setTimeout( function() {
-		$("#quote, #quote_author").fadeOut( "slow", function(){
-			document.getElementById("quote").innerHTML = quotes[qkey].quote;
-			document.getElementById("quote_author").innerHTML = quotes[qkey].hasOwnProperty("author") ? quotes[qkey].author : "Anon.";
-		}).delay(200).fadeIn("slow");
-		if ( qkey >= quotes.length -1 ) {
-			 startQuoteBox(0);
-		}
-	}, delay);
-}
-
-function startQuoteBox(qnum) {
-	// prevent problems with many timeouts being set if this is displayed more than once on a page (ajax) by cleaning up current ones 
-	clearQuoteTimeouts();
-	var delay = 0;
-	for ( qkey = qnum ; qkey < quotes.length ; qkey++ ){
-	//for ( qkey in quotes ){	
-		if (quotes[qkey] == undefined ) { continue; }
-		doSetTimeout(qkey, delay); // keep setTimout in separate function so that it uses copies of variable values
-		var newinterval = 	( quotes[qkey].quote.length / 15 ) * 1000; // calculate next interval
-		if ( newinterval < 3000 ) { newinterval = 3000;} // set newinterval to a minimum of 3s
-		delay += ( quotes[qkey].quote.length / 15 ) * 1000 ;
-	}
-}
-
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function clearQuoteTimeouts() {
-	for ( tkey in au_global.quoteTimeouts ) {
-		clearTimeout(au_global.quoteTimeouts[tkey])
-	}	
-}
-
-startQuoteBox(getRandomInt(0, quotes.length -1));
-
+randomStartQuoteBox(quotes);
 </script>
-
-<?php
