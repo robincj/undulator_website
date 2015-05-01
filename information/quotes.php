@@ -71,5 +71,8 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 	]
 ;
 
-randomStartQuoteBox(quotes);
+var qBox = new QuoteBox(quotes);
+qBox.randomStart();
+
+//randomStartQuoteBox(quotes);
 </script>
