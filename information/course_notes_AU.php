@@ -1,7 +1,4 @@
 &nbsp;
-<h3 class="A100">
-	Day 2 <small>(also A.U. 1-day event)</small>
-</h3>
 <p class="A100">
 	You will be starting your second day with the 1-day event competitors.<br />
 	There is a camp site at the Pinnacles, if you camp there then at 5am on

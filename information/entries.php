@@ -11,6 +11,7 @@
 	<tbody>
 <?php
 $csvfile = 'entries/entries_a100_2015.csv';
+$csvfile = '/data/undulator/entries/entries_a100_2015.csv';
 foreach ( array_map ( 'str_getcsv', file ( $csvfile ) ) as $entry ) {
 	list ( $name, $email, $cat, $paid, $previous ) = $entry;
 	print "<tr><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";

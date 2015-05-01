@@ -4,6 +4,10 @@
 	background-color: #FFFFFF;
 	padding: 1em;
 }
+.tabtitle {
+	font-size: 200%;
+	font-style: bold;
+}
 </style>
 
 <h2>Course Information</h2>
@@ -65,15 +69,15 @@
 
 <div class="A100" id="A100_overview_map"></div>
 
-<h3>Course Notes</h3>
+<h3>Route Details</h3>
 <div class="A100" role="tabpanel">
 	<ul class="nav nav-tabs" role="tablist" id="coursenotes_tab">
-		<li role="presentation"><a href="#coursenotes_day1" role="tab"
-			data-toggle="tab">A100 Day 1</a></li>
-		<li role="presentation"><a href="#coursenotes_day2" role="tab"
-			data-toggle="tab">A100 Day 2</a></li>
-		<li role="presentation"><a href="#coursenotes_day3" role="tab"
-			data-toggle="tab">A100 Day 3</a></li>
+		<li role="presentation"><a class="tabtitle" href="#coursenotes_day1" role="tab"
+			data-toggle="tab">Day 1</a></li>
+		<li role="presentation"><a class="tabtitle" href="#coursenotes_day2" role="tab"
+			data-toggle="tab">Day 2</a></li>
+		<li role="presentation"><a class="tabtitle" href="#coursenotes_day3" role="tab"
+			data-toggle="tab">Day 3</a></li>
 	</ul>
 	<div id="course_notes" class="tab-content">
 		<div role="tabpanel" class="tab-pane fade active"

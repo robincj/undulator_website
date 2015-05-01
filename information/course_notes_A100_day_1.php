@@ -1,5 +1,4 @@
 &nbsp;
-<h3>Day 1</h3>
 
 <p>Day 1 of the Aorangi Undulator 100 starts on Fri 6th November at 7am
 	at the end of Muritai Road, at the gate where the where 4WD road
