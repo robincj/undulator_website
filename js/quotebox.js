@@ -10,18 +10,22 @@ if (typeof quoteTimeouts === 'undefined') {
  * 
  * Example:
  * 
- * var quotes = [{ quote: "Gidday", author: "Earnest Shakleton" }, { quote:
- * "Hi", author: "Bob" }];
+ * <div id="quotebox"> <div id="quote"></div> <div id="quote_author"></div>
+ * </div>
+ * 
+ *  <script> var quotes = [{ quote: "Gidday", author: "Earnest Shakleton" }, {
+ * quote: "Hi", author: "Bob" }];
  * 
  * var qBox = new QuoteBox(quotes);
  * 
  * qBox.randomStart();
- * 
+ * </script>
  */
 function QuoteBox(quotes) {
 	this.quotes = quotes;
 	this.quoteCssId = "quote";
 	this.authorCssId = "quote_author";
+	this.minDelay = 4000;
 	var startAt = 0;
 
 	this.start = function(quotes, qnum) {
@@ -47,8 +51,8 @@ function QuoteBox(quotes) {
 		// on the size of the previous quote
 		var delay = Math.round((current_q.quote.length / 15) * 1000);
 		// set newinterval to a minimum of 4s
-		if (delay < 4000) {
-			delay = 4000;
+		if (delay < this.minDelay) {
+			delay = this.minDelay;
 		}
 		// Get the details of the next quote
 		var q = this.quotes[++this.startAt];

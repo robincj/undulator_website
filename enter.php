@@ -108,7 +108,7 @@
 
 		<div class="form-group">
 			<label for="t-size" class="col-xs-12 col-sm-2 control-label"
-				data-toggle="modal" data-target="#t-modal" title><span
+				data-toggle="modal" data-target="#t-modal" ><span
 				data-toggle="tooltip" data-placement="top"
 				title="Click to see T-Shirt">T-Shirt ($25)</span></label> <label
 				for="t-size" class="col-xs-6 col-sm-2 control-label">Size</label>
@@ -133,7 +133,7 @@
 			<div class="col-sm-10">
 				<textarea name="previous_events" class="form-control"
 					id="previous_events"
-					placeholder="Please let us know some of your previous running events and times." />
+					placeholder="Please let us know some of your previous running events and times."></textarea>
 			</div>
 		</div>
 
@@ -141,7 +141,7 @@
 			<label for="query" class="col-sm-2 control-label">Query</label>
 			<div class="col-sm-10">
 				<textarea name="query" class="form-control" id="query"
-					placeholder="If you have any queries or messages to pass along with your entry then enter them here." />
+					placeholder="If you have any queries or messages to pass along with your entry then enter them here."></textarea>
 			</div>
 		</div>
 

@@ -1,19 +1,20 @@
 <?php
 $to_organiser = "robin@aorangiundulator.org,chrismartinc@hotmail.com";
-$entries_dir="/data/undulator/entries";
+$entries_dir = "/data/undulator/entries";
 
 $params = array_merge ( $_POST, $_GET );
 
 $price = $params ['price'];
+$A100 = false;
 
-$event_full = "Aorangi Undulator";
-if ($params ['event'] == "A100")
-	$event_full = "A100 - 3 day 100km";
+$event_fullname = "Aorangi Undulator";
+if ($params ['event'] == "A100") {
+	$event_fullname = "A100 - 3 day 100km";
+	$A100 = true;
+}
+$mailheader = 'From: info@aorangiundulator.org' . "\r\n" . 'Reply-To: info@aorangiundulator.org' . "\r\n";
 
-$mailheader = 'From: info@aorangiundulator.org' . "\r\n" .
- 'Reply-To: info@aorangiundulator.org' . "\r\n";
-
-$msg = "Hi {$params['firstname']}, thank you for entering the $event_full race.<p>
+$msg = "Hi {$params['firstname']}, thank you for entering the $event_fullname race.<p>
 Your entry has been submitted and payment details will be sent to {$params['email']} shortly.<p>
 If you have any queries please contact: <p>
 Chris Martin, phone: 123-455678 or email: info@aorangiundulator.org ";
@@ -46,28 +47,35 @@ EOH;
 
 // bool mail ( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] )
 
-$subj = "$event_full entry for {$params['firstname']} {$params['surname']}";
+$subj = "$event_fullname entry for {$params['firstname']} {$params['surname']}";
 $msg = '';
 foreach ( $params as $pkey => $pval ) {
 	$msg .= "$pkey: $pval\n";
 }
-$filename =  "$entries_dir/{$params['firstname']}_{$params['surname']}_". date( 'YmdHis') .".txt";
+$filename = "$entries_dir/{$params['firstname']}_{$params['surname']}_" . date ( 'YmdHis' ) . ".txt";
 file_put_contents ( $filename, $msg );
 
 mail ( $to_organiser, $subj, $msg, $mailheader );
 
-$subj = "$event_full entry";
+$subj = "$event_fullname entry";
 
 $msg = <<<EOT
-Hi, thank you for entering the $event_full race.
+Hi, thank you for entering the $event_fullname race.
 Please check your details:
 $msg
+EOT;
 
+if ($A100)
+	$msg .= " Unfortunately the event has reached maximum entry capacity so your entry will be put on a wait-list.
+ If a vacancy comes available we will contact you and let you know that we are able to assist you with proving You Are Not Weak.";
+
+else
+	$msg .= "
 Then kindly deposit the entry fee of $price into this account:
 Account name: Aorangi Undulator
 Account num:  02 0576 0059160 01
 Use your full name as the reference.
 
-EOT;
+";
 
 mail ( $params ['email'], $subj, $msg, $mailheader );
