@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 <style>
 /* @import url(http://fonts.googleapis.com/css?family=Handlee);
 */

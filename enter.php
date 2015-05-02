@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 <div class="panel-group" id="prices_accordion" role="tablist"
 	aria-multiselectable="true">
 	<div class="panel panel-default">

@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 			<h2>Places to Stay</h2>
 			<p>There are various baches, cabins, caravans and campsites available
 				in and around ngawi.

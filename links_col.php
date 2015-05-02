@@ -18,7 +18,7 @@ $(function () {
 <div class="links_col">
 	<div class="row">
 
-		<div class="col-xs-6 col-md-12" text-center>
+		<div class="col-xs-6 col-md-12" >
 			<a href="#">
 				<button class="register-button btn btn-primary btn-md"
 					onClick="loadmaincontent('enter.php')">Enter Now</button>

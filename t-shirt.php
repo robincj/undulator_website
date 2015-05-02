@@ -1,3 +1,4 @@
+<?php include 'piwik_track.php' ?>
 <div class="text-center">
 <h3>T-Shirts</h3>
 T-shirts are $25 and can be purchased with your entry.

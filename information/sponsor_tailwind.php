@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 <div class="text-center">
 	<a href="http://www.tailwindnutrition.co.nz/"> <img
 		class="img-responsive" style="margin: 0 auto;"
@@ -37,3 +37,4 @@
 			scenery)."
 	
 	</div>
+</div>

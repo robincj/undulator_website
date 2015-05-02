@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 <div id="intro"></div>
 <script>
 $("#intro").load("information/" + au_event + "_intro.php");

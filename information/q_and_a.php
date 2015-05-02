@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 <h2>Q &amp; A</h2>
 <table class="table">
 	<tr class="success">

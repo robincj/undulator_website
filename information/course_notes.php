@@ -1,3 +1,4 @@
+<?php include 'piwik_track.php' ?>
 <style>
 #course_notes {
 	background-image: none;

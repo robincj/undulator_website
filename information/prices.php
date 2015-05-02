@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 <div id="prices-table">
 	<h2>Prices</h2>
 	<table class="table table-condensed">

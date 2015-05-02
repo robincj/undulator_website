@@ -34,7 +34,8 @@ $main_css = "css/{$au_event}_main.css";
 	rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Jockey+One'
 	rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Handlee'
+	rel='stylesheet' type='text/css'>
 <link href='css/main.css' rel='stylesheet' type='text/css'>
 
 <!-- main stylesheet to override defaults above -->
@@ -68,9 +69,12 @@ function loadmaincontent(contentfile, nojump){
 	
 }
 </script>
+
 </head>
 
 <body>
+	<script type="text/javascript" src="/piwik/piwik.js"></script>
+<?php include 'piwik_track.php'?>
 
 	<header>
 		<div class="container">

@@ -1,3 +1,4 @@
+<?php include 'piwik_track.php' ?>
 <h2>Entries So Far</h2>
 <h3>Aorangi Undulator 100</h3>
 <table class="table">

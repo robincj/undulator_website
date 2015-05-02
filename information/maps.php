@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 <div class="text-center">
 	<h2>Maps and Profiles</h2>
 	<p>

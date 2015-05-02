@@ -1,4 +1,4 @@
-
+<?php include 'piwik_track.php' ?>
 <h2>Mandatory Equipment</h2>
 <p>The following items of equipment must be carried by all Aorangi
 	Undulator participants. The reasons for this should be obvious!
