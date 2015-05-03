@@ -48,6 +48,32 @@ header {
 
 <body>
 
+	<div style="border: black 1px solid; min-height: 4em; min-width: 20em;"
+		id="quotebox">
+		<div id="quote"></div>
+		<div id="quote_author"></div>
+	</div>
+	<script src="js/quotebox.js"></script>
+	<script>
+		var quotes = [
+				{
+					quote : "Gidday",
+					author : "Earnest Shakleton"
+				},
+				{
+					quote : "So many things cost these days. Pain doesn't.    With this race  you have an all you can eat pain buffet voucher."
+				}, {
+					x : "xxx"
+				}, {
+					quote : "Hi",
+					author : "Bob"
+				} ];
+
+		var qBox = new QuoteBox(quotes);
+
+		qBox.start(0);
+	</script>
+
 	<button type="button" class="btn btn-primary" data-toggle="modal"
 		data-target="#exampleModal" data-msg="@mdo">Open modal</button>
 
@@ -71,16 +97,19 @@ header {
 	</div>
 
 	<script>
-	$('#exampleModal').find('.modal-body').val('Your entry has been submitted and payment details will be sent shortly.');
-	$('#exampleModal').modal('show');
-	/*
-		$('#exampleModal').on('show.bs.modal', function(event) {
-			var button = $(event.relatedTarget) // Button that triggered the modal
-			var msg = button.data('msg') // Extract info from data-* attributes
-			var modal = $(this)
-			modal.find('.modal-body input').val(msg)
-		})
-		*/
+		$('#exampleModal')
+				.find('.modal-body')
+				.val(
+						'Your entry has been submitted and payment details will be sent shortly.');
+		$('#exampleModal').modal('show');
+		/*
+			$('#exampleModal').on('show.bs.modal', function(event) {
+				var button = $(event.relatedTarget) // Button that triggered the modal
+				var msg = button.data('msg') // Extract info from data-* attributes
+				var modal = $(this)
+				modal.find('.modal-body input').val(msg)
+			})
+		 */
 	</script>
 
 

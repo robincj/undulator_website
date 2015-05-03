@@ -13,22 +13,21 @@ if (typeof quoteTimeouts === 'undefined') {
  * <div id="quotebox"> <div id="quote"></div> <div id="quote_author"></div>
  * </div>
  * 
- *  <script> var quotes = [{ quote: "Gidday", author: "Earnest Shakleton" }, {
+ * <script> var quotes = [{ quote: "Gidday", author: "Earnest Shakleton" }, {
  * quote: "Hi", author: "Bob" }];
  * 
  * var qBox = new QuoteBox(quotes);
  * 
- * qBox.randomStart();
- * </script>
+ * qBox.randomStart(); </script>
  */
 function QuoteBox(quotes) {
 	this.quotes = quotes;
 	this.quoteCssId = "quote";
 	this.authorCssId = "quote_author";
 	this.minDelay = 4000;
-	var startAt = 0;
+	this.startAt = 0;
 
-	this.start = function(quotes, qnum) {
+	this.start = function() {
 		// prevent problems with many timeouts being set if this is displayed
 		// more
 		// than once on a page (ajax) by cleaning up current ones
@@ -54,20 +53,28 @@ function QuoteBox(quotes) {
 		if (delay < this.minDelay) {
 			delay = this.minDelay;
 		}
+		// Get the next quote key
+		++this.startAt;
+		// Check quote exists and looks ok, if not then try the next one
+		while (this.startAt < this.quotes.length
+				&& (this.quotes[this.startAt] === undefined || !this.quotes[this.startAt]
+						.hasOwnProperty("quote"))) {
+			++this.startAt;
+		}
+		// If this is the last quote being displayed then reset to the first one
+		if (this.startAt >= this.quotes.length) {
+			this.startAt = 0;
+		}
 		// Get the details of the next quote
-		var q = this.quotes[++this.startAt];
+		var q = this.quotes[this.startAt];
 		var self = this;
 		quoteTimeouts[quoteTimeouts.length] = setTimeout(function() {
-			if (q != undefined) {
+			if (q !== undefined) {
 				$("#" + self.quoteCssId + ", #" + self.authorCssId).fadeOut(
 						"slow", function() {
 							self.displayQuote(q)
 						}).delay(200).fadeIn("slow");
 			}
-			if (self.startAt >= self.quotes.length - 1) {
-				self.startAt = 0;
-			}
-
 			self.doSetTimeout()
 		}, delay);
 	}
