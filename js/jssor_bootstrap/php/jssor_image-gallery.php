@@ -1,12 +1,22 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+include_once 'php/createthumbs.php';
+$originals = "images/photos/originals";
+$photodir = "images/photos";
+$thumbdir = "images/photos/thumbs";
+createThumbs ( $originals, $photodir, 1140 );
+createThumbs ( $originals, $thumbdir, 100 );
+?>
+<!DOCTYPE html>
 <html>
-	<!-- it works the same with all jquery version from 1.x to 2.x -->
-	<!--  <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script> -->
-	<!-- use jssor.slider.mini.js (40KB) instead for release -->
-	<!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
-	<!-- <script type="text/javascript" src="/js/jssor_bootstrap/js/jssor.js"></script> -->
-	<script type="text/javascript" src="/js/jssor_bootstrap/js/jssor.slider.mini.js"></script>
-	<script>
+<!-- it works the same with all jquery version from 1.x to 2.x -->
+<!--  <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script> -->
+<!-- use jssor.slider.mini.js (40KB) instead for release -->
+<!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+<!-- <script type="text/javascript" src="/js/jssor_bootstrap/js/jssor.js"></script> -->
+<script type="text/javascript"
+	src="/js/jssor_bootstrap/js/jssor.slider.mini.js"></script>
+<script>
 		jQuery(document)
 				.ready(
 						function($) {
@@ -402,26 +412,25 @@
 							//responsive code end
 						});
 	</script>
-	<!-- Jssor Slider Begin -->
-	<!-- You can move inline styles to css file or css block. -->
-	<div id="slider1_container"
-		style="position: relative; top: 0px; left: 0px; width: 800px; height: 456px; background: #191919; overflow: hidden;">
+<!-- Jssor Slider Begin -->
+<!-- You can move inline styles to css file or css block. -->
+<div id="slider1_container"
+	style="position: relative; top: 0px; left: 0px; width: 800px; height: 456px; background: #191919; overflow: hidden;">
 
-		<!-- Loading Screen -->
-		<div u="loading" style="position: absolute; top: 0px; left: 0px;">
-			<div
-				style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; background-color: #000000; top: 0px; left: 0px; width: 100%; height: 100%;">
-			</div>
-			<div
-				style="position: absolute; display: block; background: url(/js/jssor_bootstrap/img/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;">
-			</div>
+	<!-- Loading Screen -->
+	<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+		<div
+			style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; background-color: #000000; top: 0px; left: 0px; width: 100%; height: 100%;">
 		</div>
+		<div
+			style="position: absolute; display: block; background: url(/js/jssor_bootstrap/img/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;">
+		</div>
+	</div>
 
-		<!-- Slides Container -->
-		<div u="slides"
-			style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
+	<!-- Slides Container -->
+	<div u="slides"
+		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
 			<?php
-			$photodir = "images/photos";
 			
 			foreach ( scandir ( $photodir ) as $file ) {
 				if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ))
@@ -429,15 +438,15 @@
 				echo <<<EOH
 							<div>
 							<img u="image" src="$photodir/$file" />
-							<img u="thumb" src="$photodir/$file" />
+							<img u="thumb" src="$thumbdir/$file" />
 							</div>
 EOH;
 			}
 			?>
 		</div>
 
-		<!-- Arrow Navigator Skin Begin -->
-		<style>
+	<!-- Arrow Navigator Skin Begin -->
+	<style>
 /* jssor slider arrow navigator skin 05 css */
 /*
             .jssora05l              (normal)
@@ -479,19 +488,19 @@ EOH;
 	background-position: -310px -40px;
 }
 </style>
-		<!-- Arrow Left -->
-		<span u="arrowleft" class="jssora05l"
-			style="width: 40px; height: 40px; top: 158px; left: 8px;"> </span>
-		<!-- Arrow Right -->
-		<span u="arrowright" class="jssora05r"
-			style="width: 40px; height: 40px; top: 158px; right: 8px"> </span>
-		<!-- Arrow Navigator Skin End -->
+	<!-- Arrow Left -->
+	<span u="arrowleft" class="jssora05l"
+		style="width: 40px; height: 40px; top: 158px; left: 8px;"> </span>
+	<!-- Arrow Right -->
+	<span u="arrowright" class="jssora05r"
+		style="width: 40px; height: 40px; top: 158px; right: 8px"> </span>
+	<!-- Arrow Navigator Skin End -->
 
-		<!-- Thumbnail Navigator Skin Begin -->
-		<div u="thumbnavigator" class="jssort01"
-			style="position: absolute; width: 800px; height: 100px; left: 0px; bottom: 0px;">
-			<!-- Thumbnail Item Skin Begin -->
-			<style>
+	<!-- Thumbnail Navigator Skin Begin -->
+	<div u="thumbnavigator" class="jssort01"
+		style="position: absolute; width: 800px; height: 100px; left: 0px; bottom: 0px;">
+		<!-- Thumbnail Item Skin Begin -->
+		<style>
 /* jssor slider thumbnail navigator skin 01 css */
 /*
                 .jssort01 .p           (normal)
@@ -534,19 +543,19 @@ EOH;
 	border: #fff 1px solid;
 }
 </style>
-			<div u="slides" style="cursor: move;">
-				<div u="prototype" class="p"
-					style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-					<div class=w>
-						<div u="thumbnailtemplate"
-							style="width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0;"></div>
-					</div>
-					<div class=c></div>
+		<div u="slides" style="cursor: move;">
+			<div u="prototype" class="p"
+				style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
+				<div class=w>
+					<div u="thumbnailtemplate"
+						style="width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0;"></div>
 				</div>
+				<div class=c></div>
 			</div>
-			<!-- Thumbnail Item Skin End -->
 		</div>
-		<!-- Thumbnail Navigator Skin End -->
-		<a style="display: none" href="http://www.jssor.com">jQuery Carousel</a>
+		<!-- Thumbnail Item Skin End -->
 	</div>
-	<!-- Jssor Slider End -->
+	<!-- Thumbnail Navigator Skin End -->
+	<a style="display: none" href="http://www.jssor.com">jQuery Carousel</a>
+</div>
+<!-- Jssor Slider End -->
