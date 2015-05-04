@@ -7,6 +7,24 @@ if (typeof quoteTimeouts === 'undefined') {
 /**
  * QuoteBox() object constructor (Class)
  * 
+ * Configurable Properties:
+ * 
+ * quotes - array of objects with string properties: quote, author (author
+ * defaults to Anon.)
+ * 
+ * startAt - quote key to start from. Default: 0, or random if randomStart() is
+ * used.
+ * 
+ * quoteCssId - the ID of the HTML element that you want to display the quote
+ * text in.
+ * 
+ * authorCssId - the ID of the HTML element that you want to display the
+ * author's name in.
+ * 
+ * minDelay - the minimum time, in ms, that a quote will be displayed for
+ * 
+ * authorDefault - the string value to display for the author if none is
+ * provided with the quotes. Defaults to 'Anon.'.
  * 
  * Example:
  * 
@@ -17,15 +35,16 @@ if (typeof quoteTimeouts === 'undefined') {
  * quote: "Hi", author: "Bob" }];
  * 
  * var qBox = new QuoteBox(quotes);
- * 
+ * qbox.authorDefault = "Unknown";
  * qBox.randomStart(); </script>
  */
 function QuoteBox(quotes) {
 	this.quotes = quotes;
 	this.quoteCssId = "quote";
 	this.authorCssId = "quote_author";
-	this.minDelay = 4000;
+	this.minDelay = 6000;
 	this.startAt = 0;
+	this.authorDefault = 'Anon.';
 
 	this.start = function() {
 		// prevent problems with many timeouts being set if this is displayed
@@ -82,7 +101,7 @@ function QuoteBox(quotes) {
 	this.displayQuote = function(q) {
 		document.getElementById(this.quoteCssId).innerHTML = q.quote;
 		document.getElementById(this.authorCssId).innerHTML = q
-				.hasOwnProperty("author") ? q.author : "Anon.";
+				.hasOwnProperty("author") ? q.author : this.authorDefault;
 	}
 
 	this.getRandomInt = function(min, max) {

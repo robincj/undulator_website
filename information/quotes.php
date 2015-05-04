@@ -1,12 +1,8 @@
-<?php include 'piwik_track.php' ?>
+<?php include 'piwik_track.php'?>
 <style>
 /* @import url(http://fonts.googleapis.com/css?family=Handlee);
 */
-#quotebox {
-	border: 2px solid gray;
-	border-radius: 5px;
-	padding: 1em;
-	font-size: 120%;
+.quotebox {
 	min-height: 6em;
 }
 
@@ -23,7 +19,7 @@
 </style>
 
 
-<div id="quotebox">
+<div class="bordered-box quotebox">
 	<div id="quote"></div>
 	<div id="quote_author"></div>
 </div>
@@ -35,6 +31,7 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "Impossible is just a word that makes me try harder" },
 { quote: "Strong is what you have left when you have used up all your weak." },
 { quote: "Don't trust the grown ups! You need courage. You have to be a rebel." },
+{ quote: "Why does one do these things? It's definitely a powerful experience. In some ways it's a very pointless but at one time, not so long ago there was enough risk in life that you did not want to go out pursuing these things for fun whereas now everything is so safe and sanitised and boring that there are some people myself included who feel the need to experience the danger , the apprehension, the sensations, the power, the decision making…you know.  With your seat belt on and your central heating turned up you need to get away from all that .............to get back to something a little more fundamental.", author: "Leo Holding" },
 { quote: "Most people would be better off with more pain in their lives" },
 { quote: "The only distance you need to conquer in this race is 5 inches....The five inches between your ears." },
 { quote: "You are a middle aged man with a heart of a lion." },
@@ -67,8 +64,8 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "If you exercise your body you also look after your mind." },
 { quote: "The 'Comfort Zone' is the problem in life. Imagine you wake on a rainy morning. The rain bangs on your windows. It's easier to stay in your nice bed than go for a walk in the rain. But in the evening you think 'what a boring day.<br/>If you do it, if you get out of bed and walk in the rain then you will look back on the day and think 'what a wonderful day." },
 { quote: "Comfort really is a bad thing. We are striving for comfort all the time. But it kills you." },
-{ quote: "Why does one do these things? It's definitely a powerful experience. In some ways it's a very pointless but at one time, not so long ago there was enough risk in life that you did not want to go out pursuing these things for fun whereas now everything is so safe and sanitised and boring that there are some people myself included who feel the need to experience the danger , the apprehension, the sensations, the power, the decision making…you know.  With your seat belt on and your central heating turned up you need to get away from all that .............to get back to something a little more fundamental.", author: "Leo Holding" },
-	]
+{quote: "Mountains are made to look down from, not up at – so get on with it", author: "Sherman" },
+{quote: "Try to be a rainbow in someone's cloud."},	]
 ;
 
 var qBox = new QuoteBox(quotes);

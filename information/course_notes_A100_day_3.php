@@ -8,7 +8,10 @@
 		Waikuku Lodge</a>
 
 </p>
-<p>http://www.mapmyrun.com/workout/878817049</p>
+<p>
+	Last year's route can be viewed here on <a
+		href="http://www.mapmyrun.com/workout/878817049" target="_blank">Mapmyrun</a>.
+</p>
 <p>Start at Pinnacles car park (20 min down road from bach) and runs up
 	the main river valley for a few minutes on left side of valley you will
 	see a sign that says Pinnacles The High Way , take this route up to the

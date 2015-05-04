@@ -1,6 +1,5 @@
 @CHARSET "UTF-8";
 
-
 body {
 	background-image: url(/images/textures/p2.png);
 	background-repeat: repeat;
@@ -74,4 +73,12 @@ footer {
 
 .A100 {
 	display: none;
+}
+
+.bordered-box {
+	border: 2px solid gray;
+	border-radius: 5px;
+	padding: 1em;
+	font-size: 120%;
+	min-height: 3em;
 }

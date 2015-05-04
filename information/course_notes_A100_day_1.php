@@ -9,8 +9,8 @@
 	4wd track to get to the ferry which will carry you across lake after
 	you finish.</p>
 <p>
-	Last year's route can be viewed here on Mapmyrun: <a
-		href="http://www.mapmyrun.com/workout/878711367" target="_blank">http://www.mapmyrun.com/workout/878711367</a>
+	Last year's route can be viewed here on <a
+		href="http://www.mapmyrun.com/workout/878711367" target="_blank">Mapmyrun</a>.
 </p>
 <p>Race officials will be at the edge of Lake Oneke (which is the new
 	finish of Day 1) from 12- 6pm.</p>
