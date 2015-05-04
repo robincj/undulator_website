@@ -16,11 +16,14 @@
    -->
 	<div class="row">
 		<div class="col-sm-6">
-			<img src="images/maps/elevation.jpg" /> <img
-				src="images/maps/crap_map.jpg" />
+			<a href="images/maps/elevation.jpg" target="_blank">
+				<img src="images/maps/elevation.jpg" /></a> 
+			<a href="images/maps/crap_map.jpg" target="_blank">
+				<img src="images/maps/crap_map.jpg" /></a>
 		</div>
 		<div class="col-sm-6">
-			<img src="images/maps/better_map.jpg" />
+			<a href="images/maps/better_map.jpg" target="_blank">
+				<img src="images/maps/better_map.jpg" /></a>
 		</div>
 	</div>
 

@@ -9,7 +9,7 @@ if (isset ( $params ['page'] ) && $params ['page']) {
 
 $banner_image = "images/logos/{$au_event}_banner.png";
 $banner_image_other = "images/logos/{$au_other_event}_banner.png";
-$main_css = "css/{$au_event}_main.css";
+$main_css = "css/{$au_event}_main.css?" . date("YmdHis");
 
 ?>
 <html lang="en">
