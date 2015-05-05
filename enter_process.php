@@ -20,7 +20,7 @@ $mailheader = 'From: info@aorangiundulator.org' . "\r\n" . 'Reply-To: info@aoran
 $msg = "Hi {$params['firstname']}, thank you for entering the $event_fullname race.<p>
 Your entry has been submitted and payment details will be sent to {$params['email']} shortly.<p>
 If you have any queries please contact: <p>
-Chris Martin, phone: 123-455678 or email: info@aorangiundulator.org ";
+Chris Martin, phone: 021 2166436 or email: info@aorangiundulator.org ";
 
 // Launch a modal with the message
 echo <<<EOH
