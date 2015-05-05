@@ -20,7 +20,11 @@ $mailheader = 'From: info@aorangiundulator.org' . "\r\n" . 'Reply-To: info@aoran
 $msg = "Hi {$params['firstname']}, thank you for entering the $event_fullname race.<p>
 Your entry has been submitted and payment details will be sent to {$params['email']} shortly.<p>
 If you have any queries please contact: <p>
-Chris Martin, phone: 021 2166436 or email: info@aorangiundulator.org ";
+Chris Martin, phone: 021 2166436 or email: info@aorangiundulator.org
+<p>
+Payment would be appreciated within 7 days of registering.<br>
+Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
+";
 
 // Launch a modal with the message
 echo <<<EOH
@@ -107,6 +111,8 @@ Account name: Aorangi Undulator
 Account num:  02 0576 0059160 01
 Use your full name as the reference.
 
+Payment would be appreciated within 7 days of registering. 
+Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
 ";
 
 mail ( $params ['email'], $subj, $msg, $mailheader );
