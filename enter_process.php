@@ -1,7 +1,9 @@
-<?php include 'piwik_track.php' ?>
+<?php include 'piwik_track.php'?>
 <?php
+
 $to_organiser = "robin@aorangiundulator.org,chrismartinc@hotmail.com";
-$entries_dir = "/data/undulator/entries";
+//$entries_dir = "/data/undulator/entries";
+$entries_dir = "information/entries";
 
 $params = array_merge ( $_POST, $_GET );
 
@@ -46,6 +48,26 @@ echo <<<EOH
 
 EOH;
 
+
+// Add to entrylist csv file
+$entrylist_file = "information/entries/entries_au_2015.csv";
+$entrylimit = 200;
+if ($params ['event'] == "A100") {
+	$entrylist_file = "information/entries/entries_a100_2015.csv";
+	$entrylimit = 30;
+}
+$entrycount = file_rowcount($entrylist_file, TRUE);
+
+$params ['previous_events'] = str_replace ( '"', "'", $params ['previous_events'] );
+$row = "\n{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$params['previous_events']}\",";
+if ( $entrycount >= $entrylimit ){
+	$row .= "W";
+}
+
+file_put_contents ( $entrylist_file, $row, FILE_APPEND ) ;
+
+
+// Email organiser
 // bool mail ( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] )
 
 $subj = "$event_fullname entry for {$params['firstname']} {$params['surname']}";
@@ -58,6 +80,8 @@ file_put_contents ( $filename, $msg );
 
 mail ( $to_organiser, $subj, $msg, $mailheader );
 
+
+// Build entrant email message
 $subj = "$event_fullname entry";
 
 $msg = <<<EOT
@@ -80,3 +104,23 @@ Use your full name as the reference.
 ";
 
 mail ( $params ['email'], $subj, $msg, $mailheader );
+/**
+ * 
+ * @param unknown $filename
+ * @return number
+ */
+function file_rowcount($filename, $ignoreblanks = FALSE) {
+	$linecount = 0;
+	$handle = fopen ( $filename, "r" );
+	while ( ! feof ( $handle ) ) {
+		$line = fgets ( $handle );
+		if ($ignoreblanks && preg_match("/^\s*$/", $line)){
+			continue;
+		}
+		$linecount ++;
+	}
+	
+	fclose ( $handle );
+	
+	return $linecount;
+}

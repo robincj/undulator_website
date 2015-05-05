@@ -1,0 +1,11 @@
+firstname: Mary
+surname: McBride
+email: maudiemcb@actrix.co.nz
+age: 49
+gender: F
+event: A100
+t-size: S
+t-quantity: 0
+previous_events: I think you know my credentials.  However, this weekend just finished, I ran the Milford on Saturday (61km including Mt Hart ascent) The Routeburn on Sunday (35km including Conical Hill ascent) and McIntosh Track (20km including 1300m of ascent).  It was excellent.  I know I am on the waiting list but hopefully someone will get sick or injured to my benefit :)
+query: 
+price: 150

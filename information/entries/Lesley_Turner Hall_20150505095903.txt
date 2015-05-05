@@ -1,0 +1,16 @@
+firstname: Lesley
+surname: Turner Hall
+email: lesleyturnerhall@hotmail.com
+age: 43
+gender: F
+event: A100
+t-size: S
+t-quantity: 0
+previous_events: Tarawera 100km ultra (2014)
+Kepler 60km (2005, 2006, 2011, 2014)
+Personal best marathon 2:51:52 Rotorua 2007
+2012-Winner T42 Marathon, DUAL Marathon, Waihi Trail marathon and the Legend Marathon
+Winner Waihi Nugget, winner-Huntly Half, Winner Xterra Trail Series Auckland 2012
+
+query: 
+price: 150

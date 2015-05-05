@@ -1,0 +1,13 @@
+firstname: Kerry
+surname: Suter
+email: dj.eponymous@gmail.com
+age: 38
+gender: M
+event: A100
+t-size: S
+t-quantity: 0
+previous_events: National 100km Champs - 7:40
+Won Tarawera Ultra a couple times, Kauri70 3 times, T42 4 times.... etc.
+Im probably fit enough to survive this aye.
+query: Team, excited at the opportunity to help promote and support this event.  Please let me know how I can contribute and what financial commitment is expected from me.
+price: 150
