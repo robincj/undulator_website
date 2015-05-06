@@ -22,11 +22,12 @@ Your entry has been submitted and payment details will be sent to {$params['emai
 If you have any queries please contact: <p>
 Chris Martin, phone: 021 2166436 or email: info@aorangiundulator.org
 <p>
-Payment would be appreciated within 7 days of registering.<br>
-Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
-";
-
-// Launch a modal with the message
+Payment would be appreciated within 7 days of registering.<br>";
+if (date ( "Ymd" ) < 20150601)
+	$msg .= "Please also note that to secure the early-bird entry fee, 
+		full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable.";
+	
+	// Launch a modal with the message
 echo <<<EOH
 	<div class="modal fade" id="enteredModal" tabindex="-1" role="dialog"
 		aria-labelledby="enteredModalLabel" aria-hidden="true">
@@ -111,8 +112,10 @@ Account name: Aorangi Undulator
 Account num:  02 0576 0059160 01
 Use your full name as the reference.
 
-Payment would be appreciated within 7 days of registering. 
-Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
+Payment would be appreciated within 7 days of registering.
+";
+if (date ( "Ymd" ) < 20150601)
+	$msg .= "Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
 ";
 
 mail ( $params ['email'], $subj, $msg, $mailheader );
