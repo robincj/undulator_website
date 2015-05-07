@@ -10,8 +10,17 @@
 	you finish.</p>
 <p>
 	Last year's route can be viewed here on <a
-		href="http://www.mapmyrun.com/workout/878711367" target="_blank">Mapmyrun</a>.
+		href="http://www.mapmyrun.com/courses/1494334" target="_blank">Mapmyrun</a>.
 </p>
+<iframe
+	src="http://www.mapmyrun.com/courses/embedded/1494334?width=600&height=400&info=true&line_color=7f0000ff&distance_markers=1&map_mode=TERRAIN"
+	height="401px" width="100%" frameborder="0"></iframe>
+<!-- 
+<div style="text-align: right; padding-right: 20px;">
+	<a href="http://www.mapmyrun.com/courses/1494334" target="_blank">View
+		this Course</a> on <a href="http://mapmyrun.com" target="_blank">MapMyRun</a>
+</div>
+ -->
 <p>Race officials will be at the edge of Lake Oneke (which is the new
 	finish of Day 1) from 12- 6pm.</p>
 <p>This year there will be a boat that will take you across Lake Oneke
