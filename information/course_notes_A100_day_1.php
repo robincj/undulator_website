@@ -32,8 +32,8 @@
 <p>WE WILL SUPPLY DETAILED MAPS WITH COMMENTS. YOU WILL STILL NEED YOUR
 	OWN TOPO MAPS THOUGH.</p>
 
-<a href="images/maps/A100/A100_Day_1_map.jpg" target="_blank"><img
-	class="img-responsive" src="images/maps/A100/A100_Day_1_map.jpg" /></a>
+<a href="images/maps/A100/A100_Day_1_map.jpg?2" target="_blank"><img
+	class="img-responsive" src="images/maps/A100/A100_Day_1_map.jpg?2" /></a>
 
 <h4>Route</h4>
 <p>Run around the coast until a k or 2 before the end (lighthouse) there
