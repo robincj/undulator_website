@@ -31,7 +31,7 @@
 <h2>Maps</h2>
 <p>
 	<a href="#" onClick="loadmaincontent('information/maps.php')">Click
-		here to view some rough maps to give you a vague idea of where you are
+		here to view some rough maps to give you an idea of where you are
 		going.</a>
 </p>
 <h2>Detailed Route Notes</h2>

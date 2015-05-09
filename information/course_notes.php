@@ -86,8 +86,8 @@
 	<div id="course_notes" class="tab-content">
 		<div role="tabpanel" class="tab-pane fade"
 			id="coursenotes_day1">
-							<?php include('course_notes_A100_day_1.php');?>
-						</div>
+			<?php include('course_notes_A100_day_1.php');?>
+		</div>
 		<div role="tabpanel" class="tab-pane fade" id="coursenotes_day2"><?php include('course_notes_AU.php'); ?></div>
 		<div role="tabpanel" class="tab-pane fade" id="coursenotes_day3"><?php include('course_notes_A100_day_3.php'); ?></div>
 
