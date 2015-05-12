@@ -1,4 +1,17 @@
 <style>
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
 .navbar li {
 	text-align: center;
 }
@@ -106,7 +119,7 @@ nav .other_event_link img {
 							onClick="loadmaincontent('information/quotes.php')">INSPIRATIONAL
 								QUOTES</a></li>						
 					 -->
-					   <li><a href="#" onClick="loadmaincontent('gallery.php')">PHOTOS</a></li>
+						<li><a href="#" onClick="loadmaincontent('gallery.php')">PHOTOS</a></li>
 						<li><a href="#" onClick="loadmaincontent('youtube.php')">VIDEOS</a></li>
 
 						<li><a href="#"
@@ -132,14 +145,12 @@ nav .other_event_link img {
 			-->
 				<li><a class="A100 other_event_link" href="/"> <img
 						class="img-responsive" data-toggle="tooltip" data-placement="top"
-						title="For something a little lighter,<br/> try the 1-day Aorangi
-						Undulator"
-            src="<?php echo $banner_image_other ?>" />
+						title="For something a little lighter, try the 1-day Aorangi Undulator"
+						src="<?php echo $banner_image_other ?>" />
 				</a> <a class="AU other_event_link" href="/A100.php"> <img
 						class="img-responsive" data-toggle="tooltip" data-placement="top"
-						title="Sounds too easy? <br/> Try the Aorangi
-						Undulator 100"
-            src="<?php echo $banner_image_other ?>" /></a></li>
+						title="Sounds too easy? Try the Aorangi	Undulator 100"
+						src="<?php echo $banner_image_other ?>" /></a></li>
 
 			</ul>
 
