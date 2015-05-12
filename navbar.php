@@ -102,11 +102,9 @@ nav .other_event_link img {
 						class="caret"></span></a>
 
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#"
+						<!-- <li><a href="#"
 							onClick="loadmaincontent('information/quotes.php')">INSPIRATIONAL
-								QUOTES</a></li>
-						<!-- <li class="disabled"><a  href="#">QUOTES</a></li>
-						<li class="disabled"><a  href="#">PHOTOS</a></li>
+								QUOTES</a></li>						
 					 -->
 					   <li><a href="#" onClick="loadmaincontent('gallery.php')">PHOTOS</a></li>
 						<li><a href="#" onClick="loadmaincontent('youtube.php')">VIDEOS</a></li>
