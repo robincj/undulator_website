@@ -51,6 +51,7 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "Life is a pain sandwich. You need to ask yourself what sauces would you like with your sandwich" },
 { quote: "Make friends with pain and you will never be lonely again", author: "Joss Naylor" },
 { quote: "You paid to do this." },
+{quote: "A day in the mountains beats any day inside."},
 { quote: "If your brain is saying it hurts tell your brain it feels nice" },
 { quote: "Is the bach near the sea?", author: "Mr. T. Crumpton" },
 { quote: "You can do it.", author: "Soren Haubrock" },
@@ -65,7 +66,7 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "The 'Comfort Zone' is the problem in life. Imagine you wake on a rainy morning. The rain bangs on your windows. It's easier to stay in your nice bed than go for a walk in the rain. But in the evening you think 'what a boring day.<br/>If you do it, if you get out of bed and walk in the rain then you will look back on the day and think 'what a wonderful day." },
 { quote: "Comfort really is a bad thing. We are striving for comfort all the time. But it kills you." },
 {quote: "Mountains are made to look down from, not up at – so get on with it", author: "Sherman" },
-{quote: "Try to be a rainbow in someone's cloud."},	]
+{quote: "Try to be a rainbow in someone's cloud."}	]
 ;
 
 var qBox = new QuoteBox(quotes);
