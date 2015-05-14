@@ -1,0 +1,11 @@
+firstname: paul 
+surname: Dalley
+email: paul.dalley@ccdhb.org.nz
+age: 41
+gender: M
+event: A100
+t-size: M
+t-quantity: 1
+previous_events: TMR, Kepler, Tarawera 100, Kaweka 50, Abel Tasman, 
+query: At a minimum I'd like to do the 1 day event. 
+price: 175
