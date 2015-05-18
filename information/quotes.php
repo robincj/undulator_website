@@ -28,6 +28,7 @@
 
 <script>
 var quotes = [{ quote: "We had seen God in His splendors, heard the text that Nature renders. We had reached the naked soul of man.", author: "Earnest Shakleton" },
+{ quote: "You have to go look for happiness in life, find it in the things that make you feel alive. Life is not something to be preserved or protected, it is to explored and lived to the full.", author: "Kilian Jornet"},
 { quote: "Impossible is just a word that makes me try harder" },
 { quote: "Strong is what you have left when you have used up all your weak." },
 { quote: "Don't trust the grown ups! You need courage. You have to be a rebel." },
