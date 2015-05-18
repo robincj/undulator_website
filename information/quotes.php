@@ -52,6 +52,7 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "Life is a pain sandwich. You need to ask yourself what sauces would you like with your sandwich" },
 { quote: "Make friends with pain and you will never be lonely again", author: "Joss Naylor" },
 { quote: "You paid to do this." },
+{ quote: "This undulation insulted your mother." },
 {quote: "A day in the mountains beats any day inside."},
 { quote: "If your brain is saying it hurts tell your brain it feels nice" },
 { quote: "Is the bach near the sea?", author: "Mr. T. Crumpton" },

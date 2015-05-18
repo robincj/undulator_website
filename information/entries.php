@@ -1,4 +1,10 @@
 <?php include 'piwik_track.php'?>
+<?php
+
+$max_entries_au = 120;
+$max_entries_a100 = 30;
+
+?>
 <style>
 #entries_panels {
 	background-image: none;
@@ -30,17 +36,17 @@
 
 	<div id="entries_panels" class="tab-content">
 		<div role="tabpanel" class="tab-pane fade" id="entries_AU">
-			<?php entries_table ( "Aorangi Undulator", 'entries/entries_au_2015.csv' ); ?>
+			<?php entries_table ( "Aorangi Undulator", 'entries/entries_au_2015.csv',$max_entries_au ); ?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="entries_A100">
-			<?php entries_table ( "Aorangi Undulator 100", 'entries/entries_a100_2015.csv' ); ?>
+			<?php entries_table ( "Aorangi Undulator 100", 'entries/entries_a100_2015.csv', $max_entries_a100 ); ?>
 		</div>
 
 		<div role="tabpanel" class="tab-pane fade" id="waitlist_AU">
-			<?php waitlist_table ( "Aorangi Undulator", 'entries/entries_au_2015.csv' ); ?>
+			<?php waitlist_table ( "Aorangi Undulator", 'entries/entries_au_2015.csv', $max_entries_au ); ?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="waitlist_A100">
-			<?php waitlist_table ( "Aorangi Undulator 100", 'entries/entries_a100_2015.csv' ); ?>
+			<?php waitlist_table ( "Aorangi Undulator 100", 'entries/entries_a100_2015.csv', $max_entries_a100 ); ?>
 		</div>
 
 	</div>
@@ -51,7 +57,7 @@
 </script>
 
 <?php
-function entries_table($title, $csvfile) {
+function entries_table($title, $csvfile, $max_entries) {
 	// $waitlist = array ();
 	echo "<h3>$title</h3>";
 	?>
@@ -65,13 +71,13 @@ function entries_table($title, $csvfile) {
 	</thead>
 	<tbody>
 <?php
+	$count = 1;
 	foreach ( array_map ( 'str_getcsv', file ( $csvfile ) ) as $entry ) {
-		if (! $entry)
+		if (! $entry )
 			continue;
 		list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
-		if ($wait == "W") {
-			// $waitlist [] = $entry;
-			continue;
+		if ($count ++ >= $max_entries) {
+			break;
 		}
 		
 		print "<tr><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
@@ -81,24 +87,21 @@ function entries_table($title, $csvfile) {
 </tbody>
 </table>
 <?php
-	// if ($waitlist) waitlist_table ( "$title Wait-List", $waitlist );
 }
 /**
  *
  * @param unknown $title        	
  * @param unknown $csvdata        	
  */
-function waitlist_table($title, $csv) {
+function waitlist_table($title, $csv, $max_entries) {
 	// $csvdata could be an array of data already processed, or it could be a filename
+	$count = 1;
 	if (! is_array ( $csv )) {
 		foreach ( array_map ( 'str_getcsv', file ( $csv ) ) as $entry ) {
-			if (! $entry)
+			if (! $entry || $count ++ <= $max_entries)
 				continue;
 			list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
-			if ($wait == "W") {
-				$csvdata [] = $entry;
-				continue;
-			}
+			$csvdata [] = $entry;
 		}
 	} else
 		$csvdata = $csv;
