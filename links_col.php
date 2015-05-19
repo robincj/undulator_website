@@ -69,8 +69,8 @@ $(function () {
 				</div>
 				
 				<div class="col-xs-6 col-md-12">
-					<a href="http://www.salomon.com/"><img
-						class="img-responsive" width="125px"
+					<a href="http://www.snoworld.co.nz/"><img
+						class="img-responsive" width="115px" style="padding: 3px;"
 						src="images/sponsors/Salomon-Primary-Logo.black_lo_91512-small-tr.png" /></a>
 				</div>
 				
