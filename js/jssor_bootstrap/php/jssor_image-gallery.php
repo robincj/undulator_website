@@ -1,5 +1,4 @@
 ﻿<?php
-
 include_once 'php/createthumbs.php';
 $originals = "images/photos/originals";
 $photodir = "images/photos";
@@ -431,10 +430,12 @@ createThumbs ( $originals, $thumbdir, 100 );
 	<div u="slides"
 		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
 			<?php
-			
+			$count = 1;
 			foreach ( scandir ( $photodir ) as $file ) {
 				if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ))
 					continue;
+				if ($count++ > 12)
+					break;
 				echo <<<EOH
 							<div>
 							<img u="image" src="$photodir/$file" />

@@ -17,19 +17,22 @@
 
 	<!-- Slides Container -->
 	<div u="slides"
-		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 642px; overflow: hidden; background-color: #000;" >
-							<?php
-							$photodir = "images/photos";
-							foreach ( scandir ( $photodir ) as $file ) {
-								if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ))
-									continue;
-								echo <<<EOH
+		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 642px; overflow: hidden; background-color: #000;">
+	<?php
+	$photodir = "images/photos";
+	$count = 1;
+	foreach ( scandir ( $photodir ) as $file ) {
+		if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ))
+			continue;
+		if ($count ++ > 6)
+			break;
+		echo <<<EOH
 							<div>
 							<img u="image" src2="$photodir/$file" />
 							</div>
 EOH;
-							}
-							?>							
+	}
+	?>							
 						</div>
 	<!-- Bullet Navigator Skin Begin -->
 	<style>
