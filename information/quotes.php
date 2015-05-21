@@ -43,6 +43,7 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "LOVE THE PAIN, FEEL THE PAIN, EMBRACE THE PAIN, BE THE PAIN...." },
 { quote: "If you can't take the pain. take the bus.", author: "C Swallow" },
 { quote: "You can't be bored when you are in pain." },
+{ quote: "Slow runners make fast runners look good." },
 { quote: "So many things cost these days. Pain doesn't.    With this race  you have an all you can eat pain buffet voucher." },
 { quote: "tell your partners...I am going out for a while. I may be some time." },
 { quote: "You only know how strong you are when strong is the only option." },
