@@ -22,10 +22,12 @@
 	$photodir = "images/photos";
 	$count = 1;
 	foreach ( scandir ( $photodir ) as $file ) {
-		if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ))
+		if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ) )
 			continue;
-		if ($count ++ > 6)
+		
+		if ($count ++ > 7)
 			break;
+		if ($count < 3) continue;
 		echo <<<EOH
 							<div>
 							<img u="image" src2="$photodir/$file" />
