@@ -19,8 +19,9 @@ class Tiler {
 		});
 	</script>
 <style>
-.tiler {
-	margin: 3px;
+.tiler img {
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 </style>
 <div id='tiler'>
