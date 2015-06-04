@@ -1,0 +1,11 @@
+firstname: Lyn
+surname: Clark
+email: aquamarina@clear.net.nz
+age: 50
+gender: F
+event: au
+t-size: S
+t-quantity: 1
+previous_events: Tarawera 100km in 2011 (14 hrs), 2012 (13hrs15mins), 70km 2014 (not a good year)and 60km in 2015(7hrs 57mins). The Goat 2010 (3hrs 40min), 2012, 2013 (3hrs 37mins), 2014 (3hrs 24mins). Bedrock 50 2012 (7hrs 11mins). Attempted Kaweka Klassic 50km in 2014 pulled out at 42kms due to exhaustion.
+query: 
+price: 60
