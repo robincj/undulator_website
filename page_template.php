@@ -9,7 +9,7 @@ if (isset ( $params ['page'] ) && $params ['page']) {
 
 $banner_image = "images/logos/{$au_event}_banner.png";
 $banner_image_other = "images/logos/{$au_other_event}_banner.png";
-$main_css = "css/{$au_event}_main.css?" . date("YmdHis");
+$main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
 
 ?>
 <html lang="en">
@@ -37,6 +37,9 @@ $main_css = "css/{$au_event}_main.css?" . date("YmdHis");
 <link href='http://fonts.googleapis.com/css?family=Handlee'
 	rel='stylesheet' type='text/css'>
 <link href='css/main.css' rel='stylesheet' type='text/css'>
+
+<link type="text/css" href="js/timepicker/css/bootstrap-timepicker.min.css" />
+<script type="text/javascript" src="js/timepicker/js/bootstrap-timepicker.min.js"></script>
 
 <!-- main stylesheet to override defaults above -->
 <link rel="stylesheet" href="<?php echo $main_css ?>">

@@ -1,4 +1,4 @@
-<?php include 'piwik_track.php' ?>
+<?php include 'piwik_track.php'?>
 <div class="panel-group" id="prices_accordion" role="tablist"
 	aria-multiselectable="true">
 	<div class="panel panel-default">
@@ -76,25 +76,6 @@
 				 -->
 
 		<div class="form-group">
-			<label for="age" class="col-xs-6 col-sm-2 control-label">Age on 7th
-				Nov 2015</label>
-			<div class="col-xs-6 col-sm-2">
-				<input type="number" name="age" id="age" class="form-control"
-					size="2" min="10" max="100" value="20">
-			</div>
-		</div>
-
-		<div class="form-group">
-			<label for="gender" class="col-sm-2 control-label">Gender</label>
-			<div class="col-sm-10">
-				<label class="radio-inline"><input type="radio" name="gender"
-					checked="checked" value="M" required>M</label> <label
-					class="radio-inline"><input type="radio" name="gender" value="F"
-					required>F</label>
-			</div>
-		</div>
-
-		<div class="form-group">
 			<label for="event" class="col-sm-2 control-label">Weakness</label>
 			<div class="col-sm-10">
 				<select name="event" id="event" class="form-control" required>
@@ -107,24 +88,33 @@
 		</div>
 
 		<div class="form-group">
-			<label for="t-size" class="col-xs-12 col-sm-2 control-label"
-				data-toggle="modal" data-target="#t-modal" ><span
-				data-toggle="tooltip" data-placement="top"
-				title="Click to see T-Shirt">T-Shirt ($25)</span></label> <label
-				for="t-size" class="col-xs-6 col-sm-2 control-label">Size</label>
-			<div class="col-xs-6 col-sm-2">
-				<select name="t-size" id="t-size" class="form-control">
-					<option value="S">S</option>
-					<option value="M">M</option>
-					<option value="L">L</option>
-				</select>
+			<label for="age" class="col-xs-3 col-sm-2 control-label">Age on 7th
+				Nov 2015</label>
+			<div class="col-xs-3 col-sm-2">
+				<input type="number" name="age" id="age" class="form-control"
+					size="2" min="10" max="100" value="20">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="gender" class="col-xs-2 control-label">Gender</label>
+			<div class="col-xs-4">
+				<label class="radio-inline"><input type="radio" name="gender"
+					checked="checked" value="M" required>M</label> <label
+					class="radio-inline"><input type="radio" name="gender" value="F"
+					required>F</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="estimated_time" class="col-xs-3 col-sm-2 control-label">Estimated
+				time</label>
+			<div class="col-xs-3 col-sm-3">
+				<input type='time' name="estimated_time" class="form-control"
+					id="estimated_time"
+					title="If this is your first event of this type then estimate your road-marathon (42km) time and double it." />
 			</div>
 
-			<label for="t-quantity" class="col-xs-6 col-sm-2 control-label">Quantity</label>
-			<div class="col-xs-6 col-sm-2">
-				<input type="number" name="t-quantity" id="t-quantity"
-					class="form-control" size="2" min="0" max="25" value="0">
-			</div>
 		</div>
 
 		<div class="form-group">
@@ -134,6 +124,33 @@
 				<textarea name="previous_events" class="form-control"
 					id="previous_events"
 					placeholder="Please let us know some of your previous running events and times."></textarea>
+			</div>
+		</div>
+
+
+		<div class="form-group">
+			<label for="t-size" class="col-xs-12 col-sm-2 control-label"
+				data-toggle="modal" data-target="#t-modal"><span
+				data-toggle="tooltip" data-placement="top"
+				title="Click to see T-Shirt">T-Shirt ($25)</span></label>
+			<div class="col-xs-12 col-sm-10">
+				<div class="row">
+					<label for="t-size" class="col-xs-4 col-sm-2 control-label">Size</label>
+					<div class="col-xs-3 col-sm-3">
+						<select name="t-size" id="t-size" class="form-control">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<label for="t-quantity" class="col-xs-4 col-sm-2 control-label">Quantity</label>
+					<div class="col-xs-3 col-sm-3">
+						<input type="number" name="t-quantity" id="t-quantity"
+							class="form-control" size="2" min="0" max="25" value="0">
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -156,7 +173,6 @@
 				<button type="submit" class="btn btn-success">Register</button>
 			</div>
 		</div>
-
 
 	</form>
 </div>
