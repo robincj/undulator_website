@@ -1,0 +1,12 @@
+firstname: Shane
+surname: Petersen
+email: thone@nowmail.co.nz
+event: au
+age: 42
+gender: M
+estimated_time: 07:30
+previous_events: Triple Peaks 08<br>Ironmaori 1/2 IM 09<br>Rotorua  Marathon 13<br>5x 1/2 marathons<br>Auckland & Rotorua 1/2 IM
+t-size: L
+t-quantity: 1
+query: 
+price: 75
