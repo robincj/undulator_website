@@ -1,7 +1,7 @@
 <?php include 'piwik_track.php'?>
 <?php
 
-$to_organiser = "robin@aorangiundulator.org,chrismartinc@hotmail.com";
+$to_organiser = "robin@aorangiundulator.org";//,chrismartinc@hotmail.com";
 // $entries_dir = "/data/undulator/entries";
 $entries_dir = "information/entries";
 
@@ -15,7 +15,7 @@ if ($params ['event'] == "A100") {
 	$event_fullname = "A100 - 3 day 100km";
 	$A100 = true;
 }
-$mailheader = 'From: info@aorangiundulator.org' . "\r\n" . 'Reply-To: info@aorangiundulator.org' . "\r\n";
+$mailheader_from = 'From: info@aorangiundulator.org' . "\r\n" . 'Reply-To: info@aorangiundulator.org' . "\r\n";
 
 $msg = "Hi {$params['firstname']}, thank you for entering the $event_fullname race.<p>
 Your entry has been submitted and payment details will be sent to {$params['email']} shortly.<p>
@@ -67,15 +67,27 @@ foreach ( array_keys ( $params ) as $key ) {
 	// Replace double-quotes with singles.
 	$params [$key] = str_replace ( '"', "'", $params [$key] );
 	// Replace line-breaks
+	$params [$key] = str_replace ( "\r\n", "<br>", $params [$key] );
 	$params [$key] = str_replace ( "\n", "<br>", $params [$key] );
 	$params [$key] = str_replace ( "\r", "", $params [$key] );
 }
 
+/* params:
+firstname: Daniel
+surname: McIlroy
+email: dmcilroyiii@gmail.com
+event: au
+age: 32
+gender: M
+estimated_time: 7-8 hours
+previous_events: Goat Tongariro 2013: 4:08, Goat Tongariro 2014: 3:35, Holdsworth Jumbo 2015: 3:54, Goat Kaimai 2015: 2:57
+t-size: M
+t-quantity: 1
+query:
+price: 75
+*/
 $row = "\n{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$params['previous_events']}\",";
-
-if ($entrycount >= $entrylimit) {
-	$row .= "W";
-}
+$row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},{$params['t-size']},{$params['t-quantity']},{$params['price']}";
 
 file_put_contents ( $entrylist_file, $row, FILE_APPEND );
 
@@ -90,7 +102,34 @@ foreach ( $params as $pkey => $pval ) {
 $filename = "$entries_dir/{$params['firstname']}_{$params['surname']}_" . date ( 'YmdHis' ) . ".txt";
 file_put_contents ( $filename, $msg );
 
-mail ( $to_organiser, $subj, $msg, $mailheader );
+//create a boundary string. It must be unique
+//so we use the MD5 algorithm to generate a random hash
+$mimeboundary = "MIME-BOUNDARY-". md5(date('r', time()));
+$mailheaders = $mailheader_from . "\r\nContent-Type: multipart/mixed; boundary=\"$mimeboundary\"";
+//read the atachment file contents into a string,
+//encode it with MIME base64,
+//and split it into smaller chunks
+$attachment = chunk_split(base64_encode(file_get_contents($entrylist_file)));
+$organiser_msg = <<<EOM
+--$mimeboundary
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+$msg
+
+--$mimeboundary
+
+Content-Type: application/zip; name="$entrylist_file"  
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment
+
+$attachment
+
+--$mimeboundary--
+EOM;
+//send the organiser update email
+mail ( $to_organiser, $subj, $organiser_msg, $mailheaders );
+
 
 // Build entrant email message
 $subj = "$event_fullname entry";
@@ -118,7 +157,7 @@ if (date ( "Ymd" ) < 20150601)
 	$msg .= "Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
 ";
 
-mail ( $params ['email'], $subj, $msg, $mailheader );
+mail ( $params ['email'], $subj, $msg, $mailheader_from );
 /**
  *
  * @param unknown $filename        	
