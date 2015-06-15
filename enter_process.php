@@ -1,7 +1,7 @@
 <?php include 'piwik_track.php'?>
 <?php
 
-$to_organiser = "robin@aorangiundulator.org";//,chrismartinc@hotmail.com";
+$to_organiser = "robin@aorangiundulator.org,chrismartinc@hotmail.com";
 // $entries_dir = "/data/undulator/entries";
 $entries_dir = "information/entries";
 
@@ -105,7 +105,8 @@ file_put_contents ( $filename, $msg );
 //create a boundary string. It must be unique
 //so we use the MD5 algorithm to generate a random hash
 $mimeboundary = "MIME-BOUNDARY-". md5(date('r', time()));
-$mailheaders = $mailheader_from . "\r\nContent-Type: multipart/mixed; boundary=\"$mimeboundary\"";
+//$mailheaders = $mailheader_from . "\r\nContent-Type: multipart/mixed; boundary=\"$mimeboundary\"";
+$mailheaders = $mailheader_from. "Content-Type: multipart/mixed; boundary=\"$mimeboundary\"\r\n";
 //read the atachment file contents into a string,
 //encode it with MIME base64,
 //and split it into smaller chunks
@@ -118,7 +119,6 @@ Content-Transfer-Encoding: 7bit
 $msg
 
 --$mimeboundary
-
 Content-Type: application/zip; name="$entrylist_file"  
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment
