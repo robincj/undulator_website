@@ -78,7 +78,7 @@ function entries_table($title, $csvfile, $max_entries) {
 		if (! $entry )
 			continue;
 		list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
-		if ($count ++ >= $max_entries) {
+		if ($count ++ > $max_entries) {
 			break;
 		}
 		ucname_($name);
