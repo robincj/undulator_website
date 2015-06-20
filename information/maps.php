@@ -2,7 +2,10 @@
 <div class="text-center">
 	<h2>Maps and Profiles</h2>
 	<p>
-		For GPS route data go to <a target="_blank"
+		For GPS route data go to
+		<a target="_blank"
+			href="http://www.wildernessmag.co.nz/trips/trip/aorangi-crossing/">Wilderness Magazine</a>, 		
+		<a target="_blank"
 			href="http://connect.garmin.com/activity/392807672">Garmin</a> or <a
 			target="_blank"
 			href="http://www.mapmyrun.com/nz/upper-hutt-wellington/aorangi-undulator-route-322964533">MapMyRun</a>.
