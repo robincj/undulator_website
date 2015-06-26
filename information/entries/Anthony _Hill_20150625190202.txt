@@ -1,0 +1,12 @@
+firstname: Anthony 
+surname: Hill
+email: anthonyjameshill@gmail.com
+event: au
+age: 46
+gender: M
+estimated_time: 
+previous_events: Last year's Undulator about 8:55. Last year's Tararua Mountain Race about 6:55
+t-size: S
+t-quantity: 0
+query: 
+price: 50
