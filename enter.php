@@ -110,7 +110,7 @@
 			<label for="estimated_time" class="col-xs-3 col-sm-2 control-label">Estimated
 				time</label>
 			<div class="col-xs-3 col-sm-3">
-				<input type='time' name="estimated_time" class="form-control"
+				<input type='text' name="estimated_time" class="form-control"
 					id="estimated_time"
 					title="If this is your first event of this type then estimate your road-marathon (42km) time and double it." />
 			</div>
