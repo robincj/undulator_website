@@ -238,11 +238,12 @@ $("#t-quantity").keypress(function(event) {
 });
 
 $("#enter").submit(function( event ) {
-	  event.preventDefault();
-	  var ser = $("#enter").serialize();
-	  $('#submittedmsgbox').load("enter_process.php", ser);
-	  $('#enter')[0].reset();
-	 	setPrice();
+	event.preventDefault();
+	var ser = $("#enter").serialize();
+	$('#submittedmsgbox').load("enter_process.php", ser);
+	$('#enter')[0].reset();
+	setPrice();
+	return false;
 	});
 
 </script>
