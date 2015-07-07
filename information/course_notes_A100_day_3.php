@@ -43,8 +43,7 @@
 	with who is where at all times i need to know for safety...THIS IS V
 	IMPT you let me know if someone else gives you a ride etc As we need to
 	know who is on course and who isn't.</p>
-<p>
-	<a href="images/maps/A100/A100_Day_3_elev_profile.jpg" target="_blank"><img
-		class="img-responsive"
-		src="images/maps/A100/A100_Day_3_elev_profile.jpg" /></a>
-</p>
+
+<a href="images/maps/A100/A100-day3-route.png" target="_blank"> <img
+	class="img-responsive" src="images/maps/A100/A100-day3-route.png" />
+</a>
