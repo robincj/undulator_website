@@ -12,8 +12,11 @@
 
 	<div class="row">
 		<div class="col-sm-12">
+			<a href="images/maps/AU_route.png" target="_blank"> <img
+				class="AU img-responsive" src="images/maps/AU_route.png" />
+			</a>
 			<a href="images/maps/A100/A100-day2-route.png" target="_blank"> <img
-				class="img-responsive" src="images/maps/A100/A100-day2-route.png" />
+				class="A100 img-responsive" src="images/maps/A100/A100-day2-route.png" />
 			</a>
 		</div>
 	</div>
@@ -40,10 +43,10 @@
 			<!--
 			<a href="images/maps/elevation.jpg" target="_blank">
 				<img src="images/maps/elevation.jpg" /></a> 
-			 -->
-
 			<a href="images/maps/crap_map.jpg" target="_blank"> <img
 				src="images/maps/crap_map.jpg" /></a>
+				
+			 -->
 		</div>
 		<div class="col-sm-6">
 			<a href="images/maps/better_map.jpg" target="_blank"> <img
