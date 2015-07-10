@@ -64,6 +64,7 @@ $entrycount = file_rowcount ( $entrylist_file, TRUE );
 
 // Prepare params for CSV
 foreach ( array_keys ( $params ) as $key ) {
+	$params [$key] = trim($params [$key]);
 	// Replace double-quotes with singles.
 	$params [$key] = str_replace ( '"', "'", $params [$key] );
 	// Replace line-breaks
@@ -86,9 +87,9 @@ t-quantity: 1
 query:
 price: 75
 */
-$row = "\n{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$params['previous_events']}\",";
+$row = "{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$params['previous_events']}\",";
 $row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},{$params['t-size']},{$params['t-quantity']},{$params['price']}";
-
+$row = trim($row)."\n";
 file_put_contents ( $entrylist_file, $row, FILE_APPEND );
 
 // Email organiser
