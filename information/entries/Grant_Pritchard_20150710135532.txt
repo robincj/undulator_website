@@ -1,0 +1,12 @@
+firstname: Grant
+surname: Pritchard
+email: grantpritchard@hotmail.co.nz
+event: au
+age: 36
+gender: M
+estimated_time: 6:45
+previous_events: Mukamuka Munter, Abel Tasman, Crazy Man, 2 Day C2C, Great Forest Marathon, The Goat 2x, TMR, Tarawera 100, entered Kepler & Hillary races      
+t-size: M
+t-quantity: 1
+query: 
+price: 75

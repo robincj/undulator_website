@@ -95,8 +95,10 @@ nav .other_event_link img {
 						<li class="AU"><a href="#"
 							onClick="loadmaincontent('information/what_to_expect.php')">WHAT
 								TO EXPECT</a></li>
+						<!--
 						<li onClick="loadmaincontent('information/q_and_a.php')"><a
 							href="#">Q &amp; A</a></li>
+						-->
 						<li onClick="loadmaincontent('information/equipment_list.php')"><a
 							href="#">EQUIPMENT LIST</a></li>
 					</ul></li>
