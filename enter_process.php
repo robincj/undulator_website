@@ -73,6 +73,10 @@ foreach ( array_keys ( $params ) as $key ) {
 	$params [$key] = str_replace ( "\r", "", $params [$key] );
 }
 
+// Don't need t-shirt size if quantity is zero
+if (! isset($params['t-quantity']) || $params['t-quantity'] == '0')
+	$params['t-size'] = '';
+
 /* params:
 firstname: Daniel
 surname: McIlroy

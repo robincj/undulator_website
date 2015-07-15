@@ -1,3 +1,4 @@
+#NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE
 Mark Leone ,markleone@gmail.com,vet,y,North Face 100  Tarawera 60,
 Andrew Hudson,,,,Tarawera 50 A100,
 Richard Fletcher,,super vet,,Tarawera 100,
@@ -33,4 +34,4 @@ Paul Dalley,paul.dalley@ccdhb.org.nz,,,"TMR, Kepler, Tarawera 100, Kaweka 50, Ab
 Jean Beaumont,jeanbeaumont@me.com,,,UTMB Leadville ,W
 Billie Marshall,billiem13@gmail.com,,,"last (sthn crossing route)TMR 2011  6.31, TMR 2014 (kaitoke-holdsworth 5.26, HJTR 2015 3.26, Surfcoast Cenrury 2014, 11.26",W
 David Oliver,dkmo@mac.com,,,"",W
-Michael Shaw,mikekshaw@gmail.com,,,"Tara Ultra, TNF100",,42,M,not fast, not slow,S,0,180
+Michael Shaw,mikekshaw@gmail.com,,,"Tara Ultra, TNF100",,42,M,not fast, not slow,,0,180
