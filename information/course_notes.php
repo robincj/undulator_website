@@ -46,9 +46,20 @@
 						href="information/gpx/AorangiUndulator100_Days_1-3.gpx.zip">Aorangi
 							Undulator 100, Days 1-3 combined GPX data (Zip)</a></li>
 				</ul>
+				<p>
+					For more GPS route data go to <a target="_blank"
+						href="http://www.wildernessmag.co.nz/trips/trip/aorangi-crossing/">Wilderness
+						Magazine</a>, <a target="_blank"
+						href="http://connect.garmin.com/activity/392807672">Garmin</a> or
+					<a target="_blank"
+						href="http://www.mapmyrun.com/nz/upper-hutt-wellington/aorangi-undulator-route-322964533">MapMyRun</a>.
+				</p>
+
+
 			</div>
 		</div>
 	</div>
+	<p></p>
 
 	<div class="A100 panel panel-default">
 		<div class="panel-heading" role="tab"
@@ -76,16 +87,15 @@
 <h3>Route Details</h3>
 <div class="A100" role="tabpanel">
 	<ul class="nav nav-tabs" role="tablist" id="coursenotes_tab">
-		<li role="presentation"><a class="tabtitle"
-			href="#coursenotes_day1" role="tab" data-toggle="tab">Day 1</a></li>
+		<li role="presentation"><a class="tabtitle" href="#coursenotes_day1"
+			role="tab" data-toggle="tab">Day 1</a></li>
 		<li role="presentation"><a class="tabtitle" href="#coursenotes_day2"
 			role="tab" data-toggle="tab">Day 2</a></li>
 		<li role="presentation"><a class="tabtitle" href="#coursenotes_day3"
 			role="tab" data-toggle="tab">Day 3</a></li>
 	</ul>
 	<div id="course_notes" class="tab-content">
-		<div role="tabpanel" class="tab-pane fade"
-			id="coursenotes_day1">
+		<div role="tabpanel" class="tab-pane fade" id="coursenotes_day1">
 			<?php include('course_notes_A100_day_1.php');?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="coursenotes_day2"><?php include('course_notes_AU.php'); ?></div>

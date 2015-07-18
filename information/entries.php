@@ -75,7 +75,7 @@ function entries_table($title, $csvfile, $max_entries) {
 <?php
 	$count = 1;
 	foreach ( array_map ( 'str_getcsv', file ( $csvfile ) ) as $entry ) {
-		if (! $entry )
+		if (! $entry || preg_match('/^#/', $entry) )
 			continue;
 		list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
 		if ($count ++ > $max_entries) {

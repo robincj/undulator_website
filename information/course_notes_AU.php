@@ -28,6 +28,40 @@
 		not suitable for the weak.
 
 </ul>
+<p>
+<div class="row">
+	<div class="col-sm-12">
+		<a href="images/maps/AU_route.png" target="_blank"> <img
+			class="AU img-responsive" src="images/maps/AU_route.png" />
+		</a> <a href="images/maps/A100/A100-day2-route.png" target="_blank"> <img
+			class="A100 img-responsive"
+			src="images/maps/A100/A100-day2-route.png" />
+		</a>
+	</div>
+</div>
+</p>
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab"
+			id="A100_overview_map_panel_heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#course_info_accordion"
+					href="#AU_map_panel" aria-expanded="true"
+					aria-controls="collapseOne"> Aorangi Undulator 100 Overview Diagram
+				</a>
+			</h4>
+		</div>
+		<div id="AU_map_panel" class=" panel-collapse collapse"
+			role="tabpanel" aria-labelledby="AU_map_panel_heading">
+			<div class="panel-body">
+				Click on the image below to enlarge it.
+				<div class="A100" id="A100_overview_map"></div>
+			</div>
+		</div>
+	</div>
+
+
 <h2>Maps</h2>
 <p>
 	<a href="#" onClick="loadmaincontent('information/maps.php')">Click
