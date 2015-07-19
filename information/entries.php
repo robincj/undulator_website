@@ -75,13 +75,13 @@ function entries_table($title, $csvfile, $max_entries) {
 <?php
 	$count = 1;
 	foreach ( array_map ( 'str_getcsv', file ( $csvfile ) ) as $entry ) {
-		if (! $entry || preg_match('/^#/', $entry) )
+		if (! $entry || preg_match ( '/^#/', $entry ))
 			continue;
 		list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
 		if ($count ++ > $max_entries) {
 			break;
 		}
-		ucname_($name);
+		ucname_ ( $name );
 		print "<tr><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
 	}
 	?>
@@ -100,8 +100,10 @@ function waitlist_table($title, $csv, $max_entries) {
 	$count = 1;
 	if (! is_array ( $csv )) {
 		foreach ( array_map ( 'str_getcsv', file ( $csv ) ) as $entry ) {
+			if (! $entry || preg_match ( '/^#/', $entry ))
+				continue;
 			if (! $entry || $count ++ <= $max_entries)
-				continue;			
+				continue;
 			list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
 			$csvdata [] = $entry;
 		}
@@ -126,7 +128,7 @@ function waitlist_table($title, $csv, $max_entries) {
 	<?php
 	foreach ( $csvdata as $entry ) {
 		list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
-		ucname_($name);
+		ucname_ ( $name );
 		print "<tr><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
 	}
 	?>
