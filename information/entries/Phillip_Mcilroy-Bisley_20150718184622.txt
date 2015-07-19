@@ -1,0 +1,12 @@
+firstname: Phillip
+surname: Mcilroy-Bisley
+email: phillipbisley@hotmail.co.nz
+event: au
+age: 21
+gender: M
+estimated_time: 6 hours ish
+previous_events: Rotorua off road half marathon 1hr 27, Kinloch half marathon 1hr 40, kawerau king of the mountain 57 min.
+t-size: 
+t-quantity: 0
+query: 
+price: 50
