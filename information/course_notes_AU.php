@@ -41,7 +41,7 @@
 </div>
 </p>
 
-
+<!-- 
 	<div class="panel panel-default">
 		<div class="panel-heading" role="tab"
 			id="A100_overview_map_panel_heading">
@@ -60,7 +60,7 @@
 			</div>
 		</div>
 	</div>
-
+ -->
 
 <h2>Maps</h2>
 <p>

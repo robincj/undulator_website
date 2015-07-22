@@ -8,6 +8,11 @@
 	will take you 6km past the location of last year's finish line, along
 	4wd track to get to the ferry which will carry you across lake after
 	you finish.</p>
+
+	
+<iframe src='https://connect.garmin.com/activity/embed/817983777' width='465' height='500' frameborder='0' align='middle'></iframe>
+
+<!-- 
 <p>
 	Last year's route can be viewed here on <a
 		href="http://www.mapmyrun.com/courses/1494334" target="_blank">Mapmyrun</a>.
@@ -15,7 +20,7 @@
 <iframe
 	src="http://www.mapmyrun.com/courses/embedded/1494334?width=600&height=400&info=true&line_color=7f0000ff&distance_markers=1&map_mode=TERRAIN"
 	height="401px" width="100%" frameborder="0"></iframe>
-<!-- 
+	
 <div style="text-align: right; padding-right: 20px;">
 	<a href="http://www.mapmyrun.com/courses/1494334" target="_blank">View
 		this Course</a> on <a href="http://mapmyrun.com" target="_blank">MapMyRun</a>
