@@ -59,6 +59,39 @@ $max_entries_a100 = 30;
 </script>
 
 <?php
+/**
+ *
+ * @param unknown $age        	
+ * @return string
+ */
+function category($age) {
+	// Chris' age category info:
+	// 40 open.to 50 vet-to 60 super vet-plus 60 super duper vet sub 25 young legend
+	// translation:
+	$cats = array (
+			25 => 'young legend',
+			40 => 'open',
+			50 => 'vet',
+			60 => 'super vet',
+			150 => 'super duper vet' 
+	);
+	$category = 'unknown';
+	if (is_numeric ( $age )) {
+		foreach ( $cats as $limit => $cat ) {
+			if ($age < $limit) {
+				$category = $cat;
+				break;
+			}
+		}
+	}
+	return ucwords ( $category );
+}
+/**
+ *
+ * @param unknown $title        	
+ * @param unknown $csvfile        	
+ * @param unknown $max_entries        	
+ */
 function entries_table($title, $csvfile, $max_entries) {
 	// $waitlist = array ();
 	echo "<h3>$title</h3>";
@@ -77,7 +110,15 @@ function entries_table($title, $csvfile, $max_entries) {
 	foreach ( array_map ( 'str_getcsv', file ( $csvfile ) ) as $entry ) {
 		if (! $entry || preg_match ( '/^#/', reset ( $entry ) ))
 			continue;
-		list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
+			// Fields:
+			// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE
+		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender ) = $entry;
+		
+		// use existing cat if no age supplied
+		if (! $cat || is_numeric ( $age ))
+			$cat = category ( $age );
+		$cat = ucwords ( $cat );
+		
 		if ($count ++ > $max_entries) {
 			break;
 		}
@@ -104,7 +145,7 @@ function waitlist_table($title, $csv, $max_entries) {
 				continue;
 			if ($count ++ <= $max_entries)
 				continue;
-			list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
+			
 			$csvdata [] = $entry;
 		}
 	} else
@@ -127,8 +168,16 @@ function waitlist_table($title, $csv, $max_entries) {
 	
 	<?php
 	foreach ( $csvdata as $entry ) {
-		list ( $name, $email, $cat, $paid, $previous, $wait ) = $entry;
+		// Fields:
+		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE
+		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender ) = $entry;
+		
+		// use existing cat if no age supplied
+		if (! $cat || is_numeric ( $age ))
+			$cat = category ( $age );
+		$cat = ucwords ( $cat );
 		ucname_ ( $name );
+		
 		print "<tr><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
 	}
 	?>
