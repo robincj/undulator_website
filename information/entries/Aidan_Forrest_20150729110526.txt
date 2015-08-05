@@ -1,0 +1,12 @@
+firstname: Aidan
+surname: Forrest
+email: aidanforrest@gmail.com
+event: au
+age: 35
+gender: M
+estimated_time: 5:30
+previous_events: Wgtn Round the Bays 21km, circa 1:20. Porirua Grand Traverse 19km, second team, don't recall time but only dropped one place. Historically not a competitive runner but maintain a good pace over distance on own runs. Happy to knock a 33km out this weekend and get back to you if nec. https://www.strava.com/athletes/1613248
+t-size: 
+t-quantity: 0
+query: 
+price: 50

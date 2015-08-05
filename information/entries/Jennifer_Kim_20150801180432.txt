@@ -1,0 +1,12 @@
+firstname: Jennifer
+surname: Kim
+email: eunajenkim@gmail.com
+event: au
+age: 36
+gender: F
+estimated_time: 7-8
+previous_events: Just started after recovering from a back injury 3 yrs ago.
+t-size: M
+t-quantity: 1
+query: 
+price: 75

@@ -1,0 +1,12 @@
+firstname: Roger
+surname: Jones
+email: rogerj@jsnp.co.nz
+event: au
+age: 57
+gender: M
+estimated_time: 6 hrs
+previous_events: Chch marathon 4hrs , Tongariro Goat 3hrs 26 , Cape Brett Challenge 6hrs 59
+t-size: L
+t-quantity: 1
+query: 
+price: 75

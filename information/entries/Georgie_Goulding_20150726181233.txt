@@ -1,0 +1,12 @@
+firstname: Georgie
+surname: Goulding
+email: g.g.goulding@gmail.com
+event: A100
+age: 24
+gender: F
+estimated_time: 
+previous_events: 2 half marathons run at 1.56.42
+t-size: 
+t-quantity: 0
+query: 
+price: 180
