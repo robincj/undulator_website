@@ -1,0 +1,12 @@
+firstname: Simon
+surname: Maister
+email: si_maister@yahoo.com
+event: au
+age: 36
+gender: M
+estimated_time: 5:00-5:30
+previous_events: Plenty of Marathons, Kepler, Abel Tasman, Coast to Coast. Did this last year, kids want to see the bulldozers at Ngawi again.
+t-size: 
+t-quantity: 0
+query: 
+price: 50
