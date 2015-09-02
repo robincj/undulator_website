@@ -1,0 +1,12 @@
+firstname: Dan
+surname: Pringle
+email: danielpringle75@gmail.com
+event: au
+age: 49
+gender: M
+estimated_time: 8hrs?
+previous_events: Inaugural Aorangi Undulator Invitational yo! (10 hrs GZ team mission); Goat Tongariro and Kaimai (both 2:30 ish); Holdsworth Jumbo 3:20ish, Equinox marathon off road Fairbanks AK <4 hrs; kept up with Martini on an after work run once :o
+t-size: 
+t-quantity: 0
+query: 
+price: 50
