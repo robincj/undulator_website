@@ -99,6 +99,7 @@ function entries_table($title, $csvfile, $max_entries) {
 <table class="table">
 	<thead>
 		<tr>
+			<th>#</th>
 			<th>Name</th>
 			<th>Category</th>
 			<th>Running Resum&eacute;</th>
@@ -119,11 +120,12 @@ function entries_table($title, $csvfile, $max_entries) {
 			$cat = category ( $age );
 		$cat = ucwords ( $cat );
 		
-		if ($count ++ > $max_entries) {
+		if ($count > $max_entries) {
 			break;
 		}
 		ucname_ ( $name );
-		print "<tr><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
+		print "<tr><td>$count</td><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
+		$count++;
 	}
 	?>
 
@@ -159,6 +161,7 @@ function waitlist_table($title, $csv, $max_entries) {
 <table class="table">
 	<thead>
 		<tr>
+			<th>#</th>
 			<th>Name</th>
 			<th>Category</th>
 			<th>Running Resum&eacute;</th>
@@ -167,6 +170,7 @@ function waitlist_table($title, $csv, $max_entries) {
 	<tbody>
 	
 	<?php
+	$count = 1;
 	foreach ( $csvdata as $entry ) {
 		// Fields:
 		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE
@@ -178,7 +182,8 @@ function waitlist_table($title, $csv, $max_entries) {
 		$cat = ucwords ( $cat );
 		ucname_ ( $name );
 		
-		print "<tr><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
+		print "<tr><td>$count</td><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
+		$count++;
 	}
 	?>
 	
@@ -187,4 +192,3 @@ function waitlist_table($title, $csv, $max_entries) {
 <?php
 }
 ?>
-
