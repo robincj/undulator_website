@@ -20,14 +20,16 @@
 		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 642px; overflow: hidden; background-color: #000;">
 	<?php
 	$photodir = "images/photos";
-	$count = 1;
+	$start = 18; // Photo number to start on
+	$maxnum = 7; // Number of photos to use
+	$count = 0;
+
 	foreach ( scandir ( $photodir ) as $file ) {
-		if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ) )
-			continue;
-		
-		if ($count ++ > 7)
-			break;
-		if ($count < 3) continue;
+		if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ) ) continue;
+		$count++;
+		if ($count < $start) continue;
+		if ($count > $start + $maxnum) break;
+
 		echo <<<EOH
 							<div>
 							<img u="image" src2="$photodir/$file" />
