@@ -1,0 +1,14 @@
+firstname: Michael
+surname: Lejeune
+email: miclejeune@gmail.com
+homelocation: miclejeune@gmail.com
+event: au
+age: 31
+gender: M
+estimated_time: 5:30
+previous_events: Trail running in France since 5 years<br>Maxi-Race Annecy 2015 (85k/5000m+), Restonica Trail 2014 (65k/4000m+)<br>Marathon 3h04 (2010)
+medical: 
+t-size: M
+t-quantity: 1
+query: 
+price: 75
