@@ -61,8 +61,8 @@
 		<div class="form-group">
 			<label for="homelocation" class="col-sm-2 control-label">Home</label>
 			<div class="col-sm-10">
-				<input type="email" class="form-control" id="homelocation"
-					name="homelocation" placeholder="Your home town/region" required>
+				<input type="text" class="form-control" id="homelocation"
+					name="homelocation" placeholder="Your home town/region" >
 			</div>
 		</div>
 		<!-- 
