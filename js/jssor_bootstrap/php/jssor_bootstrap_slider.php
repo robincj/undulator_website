@@ -20,15 +20,17 @@
 		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 642px; overflow: hidden; background-color: #000;">
 	<?php
 	$photodir = "images/photos";
-	$start = 18; // Photo number to start on
+	$start = 65; // Photo number to start on
 	$maxnum = 7; // Number of photos to use
 	$count = 0;
+	$photolist = explode(", ", "10689813_10152947587125695_4811765621027737093_n.jpg, 20.jpg, 10619916_10154865765765287_6749377587880673130_o.jpg, 5.jpg, A100_undies.jpg, image003.jpg, 11203537_977989312212363_6885734874301767830_o.jpg");
 
-	foreach ( scandir ( $photodir ) as $file ) {
+	#foreach ( scandir ( $photodir ) as $file ) {
+	foreach ( $photolist as $file ) {
 		if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ) ) continue;
 		$count++;
-		if ($count < $start) continue;
-		if ($count > $start + $maxnum) break;
+		#if ($count < $start) continue;
+		#if ($count > $start + $maxnum) break;
 
 		echo <<<EOH
 							<div>
