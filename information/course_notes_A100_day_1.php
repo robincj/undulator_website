@@ -62,7 +62,9 @@
 	obvious until you approach them (this will be marked this year) onto
 	the beach .There will be a marshal here to direct you as last year
 	people did not take the beach route and they ned to follow the beach
-	around the inlet. There may be a shallow inlet crossing if at all.</p>
+	around the inlet. There may be a shallow inlet crossing if at all.
+	<img src='images/maps/A100/A100_Day_1_coast_photo.jpg' width='50%' style='float: left; margin: 1em;' />
+	</p>
 <p>Run along the sand bypassing the Wainuiomata river that lagoons into
 	an inlet. You can bypass this by running through the rocks and along
 	the sand on the beach . Along the sane you will then head up to the
