@@ -90,9 +90,12 @@ t-size: M
 t-quantity: 1
 query:
 price: 75
+homelocation:
+medical:
 */
 $row = "{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$params['previous_events']}\",";
 $row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},{$params['t-size']},{$params['t-quantity']},{$params['price']}";
+$row .= ",{$params['homelocation']},{$params['medical']}".
 $row = trim($row)."\n";
 file_put_contents ( $entrylist_file, $row, FILE_APPEND );
 

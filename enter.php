@@ -1,14 +1,14 @@
 <?php include 'piwik_track.php'?>
 <div class="panel-group" id="prices_accordion" role="tablist"
 	aria-multiselectable="true">
+
 	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#prices_accordion"
-					href="#collapseOne" aria-expanded="true"
-					aria-controls="collapseOne"> Prices</a>
-			</h4>
-		</div>
+		<a data-toggle="collapse" data-parent="#prices_accordion"
+			href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">View Prices</h4>
+			</div>
+		</a>
 		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
 			aria-labelledby="headingOne">
 			<div class="panel-body">
@@ -16,8 +16,8 @@
       </div>
 		</div>
 	</div>
-
 </div>
+
 <div class="A100">
 	<h4 style="color: red;">
 		The Aorangi Undulator 100 event has reached its entry limit!<br />Use
@@ -51,13 +51,20 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+			<label for="email" class="col-sm-2 control-label">Email</label>
 			<div class="col-sm-10">
 				<input type="email" class="form-control" id="email" name="email"
 					placeholder="Email address" required>
 			</div>
 		</div>
 
+		<div class="form-group">
+			<label for="homelocation" class="col-sm-2 control-label">Home</label>
+			<div class="col-sm-10">
+				<input type="email" class="form-control" id="homelocation"
+					name="homelocation" placeholder="Your home town/region" required>
+			</div>
+		</div>
 		<!-- 
 				<div class="form-group">
 					<label for="agecategory" class="col-sm-2 control-label">Age
@@ -123,7 +130,18 @@
 			<div class="col-sm-10">
 				<textarea name="previous_events" class="form-control"
 					id="previous_events"
-					placeholder="Please let us know some of your previous running events and times."></textarea>
+					placeholder="Please let us know some of your previous running events and times"></textarea>
+			</div>
+		</div>
+
+
+		<div class="form-group"
+			title="Runners are responsible for managing their own medical needs as marshals will only carry basic first aid supplies.">
+			<label for="medical" class="col-sm-2 control-label">Medical
+				Conditions</label>
+			<div class="col-sm-10">
+				<textarea name="medical" class="form-control" id="medical"
+					placeholder="Medical conditions and medications"></textarea>
 			</div>
 		</div>
 
