@@ -108,6 +108,7 @@ foreach ( $params as $pkey => $pval ) {
 	$msg .= "$pkey: $pval\n";
 }
 $filename = "$entries_dir/{$params['firstname']}_{$params['surname']}_" . date ( 'YmdHis' ) . ".txt";
+$filename = str_replace(" ", "_", $filename);
 file_put_contents ( $filename, $msg );
 
 //create a boundary string. It must be unique

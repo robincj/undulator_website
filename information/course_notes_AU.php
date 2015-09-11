@@ -28,9 +28,9 @@
 		not suitable for the weak.
 
 </ul>
-<p>
+
 <div class="row">
-	<div class="col-sm-12">
+	<div class="col-sm-12" title="Click to enlarge" >
 		<a href="images/maps/AU_route.png" target="_blank"> <img
 			class="AU img-responsive" src="images/maps/AU_route.png" />
 		</a> <a href="images/maps/A100/A100-day2-route.png" target="_blank"> <img
@@ -39,7 +39,6 @@
 		</a>
 	</div>
 </div>
-</p>
 
 <!-- 
 	<div class="panel panel-default">
@@ -62,13 +61,18 @@
 	</div>
  -->
 
-<h2>Maps</h2>
-<p>
-	<a href="#" onClick="loadmaincontent('information/maps.php')">Click
-		here to view some rough maps to give you an idea of where you are
-		going.</a>
-</p>
-<h2>Detailed Route Notes</h2>
+<iframe id="mapmyfitness_route"
+	src="http://snippets.mapmycdn.com/routes/view/embedded/322964533?width=600&height=400&elevation=true&info=true&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=1&unit_type=metric&map_mode=TERRAIN&last_updated=2014-08-25T10:44:33+12:00&show_marker_every=2"
+	height="640px" width="100%" frameborder="0"></iframe>
+<div style="text-align: right; padding-right: 20px;">
+	<!-- 
+		<a target="_blank" href="http://www.mapmyrun.com/routes/create/">Create
+			Maps</a> or find more routes in <a target="_blank"
+			href="/nz/upper-hutt-wellington/"> Upper Hutt </a> from millions at <a
+			href="http://www.mapmyrun.com">MapMyRun</a>
+			 -->
+</div>
+
 <h3>START</h3>
 Start at Mangatoetoe river end to Kawakawa Hut. Follow river upstream.
 <br />
@@ -85,15 +89,19 @@ DOC orange marks where possible.
 Exit fork from river well marked by cut cabbage tree stump in river.
 
 
+<a href="images/maps/better_map.jpg" target="_blank" title="Click to enlarge" > <img
+	src="images/maps/better_map.jpg"
+	style="width: 50%; margin: 1em; float: left;" /></a>
+
 <h3>UNDULATION #1</h3>
-Approx. 130m vertical climb. Steep climb, sidle over saddle, then very
+Approx. 130m steep vertical climb.  Cross the saddle, then a very
 steep descent, TAKE CARE. Descent ends by waterfall and pool – follow
-river down stream, rocky boulder hopping for 4km.
+river downstream, rocky boulder-hopping for 4km.
 <br />
-At that 4km point make sure you scanning the right of river as there
-will be abig DOC triangle marking where you leave the river bed. You
+At that 4km point make sure you are scanning the true right of river as there
+will be a big DOC triangle marking where you leave the river bed. You
 must spot this or you will miss the turn off and head down the river.
-The triangle leads you into acopse of trees and a track that leads to
+The triangle leads you into a copse of trees and a track that leads to
 <b>Kawakawa Hut</b>
 .
 
@@ -165,6 +173,7 @@ Look out for BLUE WARATAHS WITH ORANGE TRIANGLES. There are 2 and will
 put you on the track to the finish. If you miss them it’s not a major
 you’ll just be running on rougher terrain and it will take longer.
 <br />
+
 You’re done.
 
 <h3>Go party. You are not weak.</h3>

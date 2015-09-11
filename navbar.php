@@ -87,10 +87,11 @@ nav .other_event_link img {
 
 						<li><a href="#"
 							onClick="loadmaincontent('information/course_notes.php')">COURSE
-								INFORMATION</a></li>
-						<li class="AU"><a href="#"
+								INFO & MAPS</a></li>
+						<!-- <li class="AU"><a href="#"
 							onClick="loadmaincontent('information/maps.php')">RACE MAPS AND
 								PROFILES</a></li>
+								 -->
 
 						<li class="AU"><a href="#"
 							onClick="loadmaincontent('information/what_to_expect.php')">WHAT
