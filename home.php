@@ -21,6 +21,7 @@ function file_rowcount($filename, $ignoreblanks = FALSE) {
 $entrylist_file = "information/entries/entries_au_2015.csv";
 $entrycount = file_rowcount ( $entrylist_file, TRUE );
 $entrylimit = 200;
+$entriesLeft = $entrylimit - $entrycount;
 $notFull = <<<EOH
 		<h4>
 			<a href="#" onClick="loadmaincontent('enter.php')"
@@ -39,21 +40,24 @@ $full = <<<EOH
 EOH;
 
 $auMsg = '<div class="AU">';
-if ($entrycount >= $entrylimit)
+if ($entriesLeft <= 0)
 	$auMsg .= $full;
-else
+else {
 	$auMsg .= $notFull;
-
+	$auMsg .=  $entriesLeft <21 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+}
 $entrylist_file = "information/entries/entries_a100_2015.csv";
 $entrycount = file_rowcount ( $entrylist_file, TRUE );
 $entrylimit = 30;
+$entriesLeft = $entrylimit - $entrycount;
 $a100Msg = '<div class="A100">';
 
-if ($entrycount >= $entrylimit)
+if ($entriesLeft <= 0)
 	$a100Msg .= $full;
-else
+else {
 	$a100Msg .= $notFull;
-
+	$auMsg .=  $entriesLeft <21 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+}
 ?>
 <div id="intro"></div>
 <script>
