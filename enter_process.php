@@ -149,7 +149,7 @@ Please check your details:
 $msg
 EOT;
 
-if ($A100)
+if ($entrycount >= $entrylimit)
 	$msg .= " Unfortunately the event has reached maximum entry capacity so your entry will be put on a wait-list.
  If a vacancy comes available we will contact you and let you know that we are able to assist you with proving You Are Not Weak.";
 
@@ -177,7 +177,7 @@ function file_rowcount($filename, $ignoreblanks = FALSE) {
 	$handle = fopen ( $filename, "r" );
 	while ( ! feof ( $handle ) ) {
 		$line = fgets ( $handle );
-		if ($ignoreblanks && preg_match ( "/^\s*$/", $line )) {
+		if ($ignoreblanks && preg_match ( "/^(#.*|\s*)$/", $line )) {
 			continue;
 		}
 		$linecount ++;
