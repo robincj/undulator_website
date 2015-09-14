@@ -75,6 +75,8 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 {quote: "Try to be a rainbow in someone's cloud."},
 {quote: "You came here to eat your gel and kick ass....<br/>......And you just finished your gel"},
 {quote: "You have the key to the hurt locker.<br/>Open it."},
+{quote: "A few people live the dream but the some of us just snatch glimpses of it.", author: "A Shelton"},
+{quote: "Most people convince themselves are all grown up but deep down they are not.", author: "A Shelton"},
 ]
 ;
 
