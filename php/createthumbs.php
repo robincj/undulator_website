@@ -37,7 +37,8 @@ function createThumbs($pathToImages, $pathToThumbs, $thumbWidth) {
 			$tmp_img = imagecreatetruecolor ( $new_width, $new_height );
 			
 			// copy and resize old image into new image
-			imagecopyresized ( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
+			//imagecopyresized ( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
+			imagecopyresampled ( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
 			
 			// save thumbnail into a file
 			call_user_func ( "image$format", $tmp_img, $thpath );
