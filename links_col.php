@@ -56,17 +56,6 @@ $(function () {
 						class="img-responsive" width="165px"
 						src="images/sponsors/tailwind_nutrition_tr.png" /></a>
 				</div>
-
-				<div class="col-xs-4 col-md-12">
-					<a><img class="img-responsive" width="165px"
-						src="images/sponsors/lifestyle_sports_tr.png" /></a>
-				</div>
-
-				<div class="col-xs-4 col-md-12">
-					<a href="http://www.balancesportsnutrition.com/"><img
-						class="img-responsive" width="165px"
-						src="images/sponsors/balance_tr.png" /></a>
-				</div>
 				
 				<div class="col-xs-6 col-md-12">
 					<a href="http://www.snoworld.co.nz/"><img
