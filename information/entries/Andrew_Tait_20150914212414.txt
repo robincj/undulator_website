@@ -1,0 +1,14 @@
+firstname: Andrew
+surname: Tait
+email: andrewtait@ihug.co.nz
+homelocation: Lower Hutt
+event: au
+age: 45
+gender: M
+estimated_time: 6-7 hours
+previous_events: 11 X Mt Lowry 2.45, 5 X Goat Tongariro 3.00, 2X Jumbo Holdsworth 3.35, Able Tasman 3.53, 2 X Mukamuka Munter 3.55, lots of Xterra long course
+medical: nil
+t-size: 
+t-quantity: 0
+query: 
+price: 50
