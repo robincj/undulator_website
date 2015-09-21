@@ -61,9 +61,10 @@
 	</div>
  -->
 
-<iframe id="mapmyfitness_route"
+<iframe
 	src="http://snippets.mapmycdn.com/routes/view/embedded/322964533?width=600&height=400&elevation=true&info=true&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=1&unit_type=metric&map_mode=TERRAIN&last_updated=2014-08-25T10:44:33+12:00&show_marker_every=2"
-	height="640px" width="100%" frameborder="0"></iframe>
+	height="640px" width="100%" frameborder="1"></iframe>
+	
 <div style="text-align: right; padding-right: 20px;">
 	<!-- 
 		<a target="_blank" href="http://www.mapmyrun.com/routes/create/">Create

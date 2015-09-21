@@ -102,6 +102,7 @@ function entries_table($title, $csvfile, $max_entries) {
 			<th>#</th>
 			<th>Name</th>
 			<th>Category</th>
+			<th>Home Town</th>
 			<th>Running Resum&eacute;</th>
 		</tr>
 	</thead>
@@ -112,8 +113,8 @@ function entries_table($title, $csvfile, $max_entries) {
 		if (! $entry || preg_match ( '/^#/', reset ( $entry ) ))
 			continue;
 			// Fields:
-			// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE
-		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender ) = $entry;
+			// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE,LOCATION,MEDICAL
+		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender, $predicted, $tsize, $tquantity, $fee, $location ) = $entry;
 		
 		// use existing cat if no age supplied
 		if (! $cat || is_numeric ( $age ))
@@ -124,7 +125,7 @@ function entries_table($title, $csvfile, $max_entries) {
 			break;
 		}
 		ucname_ ( $name );
-		print "<tr><td>$count</td><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
+		print "<tr><td>$count</td><td>$name</td><td>$cat</td><td>$location</td><td>$previous</td></tr>\n";
 		$count++;
 	}
 	?>
