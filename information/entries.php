@@ -96,7 +96,8 @@ function entries_table($title, $csvfile, $max_entries) {
 	// $waitlist = array ();
 	echo "<h3>$title</h3>";
 	?>
-<table class="table">
+<div class="table-responsive">
+<table class="table table-striped">
 	<thead>
 		<tr>
 			<th>#</th>
@@ -132,6 +133,7 @@ function entries_table($title, $csvfile, $max_entries) {
 
 </tbody>
 </table>
+</div>
 <?php
 }
 /**
@@ -158,8 +160,8 @@ function waitlist_table($title, $csv, $max_entries) {
 	The following people have missed out on $title entries for the moment but are in line to get one as soon as any become available.
 	";
 	?>
-
-<table class="table">
+<div class="table-responsive">
+<table class="table table-striped">
 	<thead>
 		<tr>
 			<th>#</th>
@@ -190,6 +192,7 @@ function waitlist_table($title, $csv, $max_entries) {
 	
 	</tbody>
 </table>
+</div>
 <?php
 }
 ?>

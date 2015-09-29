@@ -57,13 +57,13 @@ $(function () {
 						src="images/sponsors/tailwind_nutrition_tr.png" /></a>
 				</div>
 				
-				<div class="col-xs-6 col-md-12">
+				<div class="col-xs-4 col-md-12">
 					<a href="http://www.snoworld.co.nz/"><img
 						class="img-responsive" width="115px" style="padding: 3px;"
 						src="images/sponsors/Salomon-Primary-Logo.black_lo_91512-small-tr.png" /></a>
 				</div>
 				
-				<div class="col-xs-6 col-md-12">
+				<div class="col-xs-4 col-md-12">
 					<a href="http://www.sportsandpain.co.nz/"><img
 						class="img-responsive" width="160px" style="padding: 3px;"
 						src="images/sponsors/SportsAndPain-Logo_small.jpg" /></a>
