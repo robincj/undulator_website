@@ -1,0 +1,14 @@
+firstname: John
+surname: Sneddon
+email: sixfoottrackjohnno@yahoo.com.au
+homelocation: Sydney / Australia
+event: au
+age: 65
+gender: M
+estimated_time: 9h 30 min
+previous_events: 
+medical: 
+t-size: M
+t-quantity: 1
+query: I have entered this on behalf of my mate 'Spike' John Sneddon - I will get him to  fill out details re medical conditions etc. Slightly mad - does that count?
+price: 75
