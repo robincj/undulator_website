@@ -37,6 +37,7 @@ $main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
 <link href='http://fonts.googleapis.com/css?family=Handlee'
 	rel='stylesheet' type='text/css'>
 <link href='css/main.css' rel='stylesheet' type='text/css'>
+<link href='css/unseen-column.css' rel='stylesheet' type='text/css'>
 
 <link type="text/css" href="js/timepicker/css/bootstrap-timepicker.min.css" />
 <script type="text/javascript" src="js/timepicker/js/bootstrap-timepicker.min.js"></script>

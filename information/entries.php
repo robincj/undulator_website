@@ -96,7 +96,7 @@ function entries_table($title, $csvfile, $max_entries) {
 	// $waitlist = array ();
 	echo "<h3>$title</h3>";
 	?>
-<div class="table-responsive">
+<div class="table-responsive unseen">
 <table class="table table-striped">
 	<thead>
 		<tr>
@@ -121,12 +121,12 @@ function entries_table($title, $csvfile, $max_entries) {
 		if (! $cat || is_numeric ( $age ))
 			$cat = category ( $age );
 		$cat = ucwords ( $cat );
-		
+		$previousEnc = htmlentities($previous, ENT_QUOTES, NULL, FALSE);
 		if ($count > $max_entries) {
 			break;
 		}
 		ucname_ ( $name );
-		print "<tr><td>$count</td><td>$name</td><td>$cat</td><td>$location</td><td>$previous</td></tr>\n";
+		print "<tr data-toggle='tooltip' title='$previousEnc' data-placement='top' ><td>$count</td><td>$name</td><td>$cat</td><td>$location</td><td>$previous</td></tr>\n";
 		$count++;
 	}
 	?>
@@ -134,6 +134,7 @@ function entries_table($title, $csvfile, $max_entries) {
 </tbody>
 </table>
 </div>
+
 <?php
 }
 /**
@@ -183,9 +184,10 @@ function waitlist_table($title, $csv, $max_entries) {
 		if (! $cat || is_numeric ( $age ))
 			$cat = category ( $age );
 		$cat = ucwords ( $cat );
+		$previousEnc = htmlentities($previous, ENT_QUOTES, NULL, FALSE);
 		ucname_ ( $name );
 		
-		print "<tr><td>$count</td><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
+		print "<tr data-toggle='tooltip' title='$previousEnc' data-placement='top' ><td>$count</td><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
 		$count++;
 	}
 	?>
