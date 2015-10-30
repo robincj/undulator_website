@@ -1,0 +1,14 @@
+firstname: Hayden
+surname: Munro
+email: haydenonline@gmail.com
+homelocation: Wellington
+event: au
+age: 42
+gender: M
+estimated_time: 6:23
+previous_events: 2015 xterra wellington makara - 2:00<br>2015 xterra wellington orongorongs - 2:05<br>2015 xterra wellington west wind - 1:38
+medical: N/A
+t-size: L
+t-quantity: 1
+query: Planning to run as team of 3 with Charlie Crighton and Jackson Arlidge - Team 'Partly Cloudy', pre-arranged 8am start (we'll be driving out from Welly in the morning)
+price: 75

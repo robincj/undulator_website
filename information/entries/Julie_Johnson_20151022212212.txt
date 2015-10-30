@@ -1,0 +1,14 @@
+firstname: Julie
+surname: Johnson
+email: joh01618@hotmail.com
+homelocation: Lower Hutt
+event: au
+age: 29
+gender: F
+estimated_time: 7:30
+previous_events: Goat 2014 <3Hr, Jumbo 2014 <3Hr, Rotorua Marathon 3:34 Entered in Kepler 2015
+medical: 
+t-size: 
+t-quantity: 0
+query: 
+price: 50

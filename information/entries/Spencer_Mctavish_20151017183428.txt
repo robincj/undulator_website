@@ -1,0 +1,14 @@
+firstname: Spencer
+surname: Mctavish
+email: chrismartinc@hotmail.com
+homelocation: 
+event: au
+age: 20
+gender: M
+estimated_time: 
+previous_events: 
+medical: 
+t-size: 
+t-quantity: 0
+query: 
+price: 50

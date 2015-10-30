@@ -1,0 +1,14 @@
+firstname: Cameron
+surname: Sims
+email: hello@camsims.nz
+homelocation: Martinborough
+event: au
+age: 23
+gender: M
+estimated_time: 5h
+previous_events: Casual as. 39km run in Tonga 5h. Love trail running and going down hill but havnt tried long distance.
+medical: 
+t-size: 
+t-quantity: 0
+query: 
+price: 50

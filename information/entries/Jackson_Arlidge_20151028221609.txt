@@ -1,0 +1,14 @@
+firstname: Jackson
+surname: Arlidge
+email: jackson.arlidge@gmail.com
+homelocation: Wellington
+event: au
+age: 24
+gender: M
+estimated_time: 6.5h
+previous_events: 2013, 2015 Xterra Series
+medical: 
+t-size: 
+t-quantity: 0
+query: 
+price: 50
