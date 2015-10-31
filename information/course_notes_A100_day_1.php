@@ -9,9 +9,10 @@
 	4wd track to get to the ferry which will carry you across lake after
 	you finish.</p>
 
-	
-<iframe src='https://connect.garmin.com/activity/embed/817983777' width='465' height='500' frameborder='0' align='middle'></iframe>
+<div id="day1-garmin" ></div>
 
+<!-- <iframe src='https://connect.garmin.com/activity/embed/817983777' width='465' height='500' frameborder='0' align='middle'></iframe>
+-->
 <!-- 
 <p>
 	Last year's route can be viewed here on <a

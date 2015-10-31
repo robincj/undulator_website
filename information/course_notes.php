@@ -87,11 +87,11 @@
 <h3>Route Details</h3>
 <div class="A100" role="tabpanel">
 	<ul class="nav nav-tabs" role="tablist" id="coursenotes_tab">
-		<li role="presentation"><a class="tabtitle" href="#coursenotes_day1"
+		<li role="presentation"><a class="tabtitle" href="#coursenotes_day1" id="tab_coursenotes_day1"
 			role="tab" data-toggle="tab">Day 1</a></li>
-		<li role="presentation"><a class="tabtitle" href="#coursenotes_day2"
+		<li role="presentation"><a class="tabtitle" href="#coursenotes_day2" id="tab_coursenotes_day2"
 			role="tab" data-toggle="tab">Day 2</a></li>
-		<li role="presentation"><a class="tabtitle" href="#coursenotes_day3"
+		<li role="presentation"><a class="tabtitle" href="#coursenotes_day3" id="tab_coursenotes_day3"
 			role="tab" data-toggle="tab">Day 3</a></li>
 	</ul>
 	<div id="course_notes" class="tab-content">
@@ -113,6 +113,28 @@
 			$('#coursenotes_tab a:first').tab('show');
 			document.getElementById('A100_overview_map').innerHTML = '<h3>Overview Map</h3><a href="images/maps/A100/A100_overview_map.jpg" target="_blank"><img width="200px" class="img-responsive" src="images/maps/A100/A100_overview_map.jpg" /></a>';
 		});
-	};		
-	 
+	};	
+	
+	function loadDay1GarminMap(){
+		$('#day1-garmin').html(
+				"<iframe src='https://connect.garmin.com/activity/embed/817983777' width='465' height='500' frameborder='0' align='middle'></iframe>"
+		);
+				
+	}
+	function loadDay2MmrMap(){
+		$('#day2-mmr').html(
+				'<iframe src="http://snippets.mapmycdn.com/routes/view/embedded/322964533?width=600&height=400&elevation=true&info=true&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=1&unit_type=metric&map_mode=TERRAIN&last_updated=2014-08-25T10:44:33+12:00&show_marker_every=2"'+
+				'height="640px" width="100%" frameborder="1"></iframe>'
+		);
+				
+	}
+	
+	$(document).ready( function(){
+		if ( $('#coursenotes_day1').hasClass('active') ) { loadDay1GarminMap() }
+		$('.tabtitle').on('click', function(){ 
+			if ( $('#coursenotes_day1').hasClass('active') ) { loadDay1GarminMap() }
+			else if ( $('#coursenotes_day2').hasClass('active') ) { loadDay2MmrMap() }
+		});
+		
+	});
 </script>

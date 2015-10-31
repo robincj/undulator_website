@@ -68,6 +68,17 @@ $(function () {
 						class="img-responsive" width="160px" style="padding: 3px;"
 						src="images/sponsors/SportsAndPain-Logo_small.jpg" /></a>
 				</div>
+				
+				<div class="col-xs-4 col-md-12">
+					<a href="http://www.bivouac.co.nz/"><img
+						class="img-responsive" width="160px" style="padding: 3px;"
+						src="images/sponsors/bivouac.png" /></a>
+				</div>
+				<div class="col-xs-4 col-md-12">
+					<a href="http://www.thewarehouse.co.nz/"><img
+						class="img-responsive" width="160px" style="padding: 3px;"
+						src="images/sponsors/warehouse-logo.png" /></a>
+				</div>
 			</div>
 		</div>
 	</div>
