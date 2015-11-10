@@ -58,6 +58,11 @@ else {
 	$a100Msg .= $notFull;
 	$auMsg .=  $entriesLeft <21 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
+
+// OVERRIDE ENTRY MESSAGE FOR RESULTS
+$a100Msg = '';
+$auMsg = '<div><a href="results/AU_A100_2015_V4.xlsx">Preliminary results for 2015 are now available here.</a></div>';
+
 ?>
 <div id="intro"></div>
 <script>
