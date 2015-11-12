@@ -61,7 +61,7 @@ else {
 
 // OVERRIDE ENTRY MESSAGE FOR RESULTS
 $a100Msg = '';
-$auMsg = '<div><a href="results/AU_A100_2015_V4.xlsx">Preliminary results for 2015 are now available here.</a></div>';
+$auMsg = '<div><a href="results/AU_A100_2015_V5.xlsx">Preliminary results for 2015 are now available here.</a></div>';
 
 ?>
 <div id="intro"></div>
