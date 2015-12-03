@@ -7,7 +7,7 @@
 		competitors through five valleys and four <i>undulations</i> among the
 		mountains of the Aorangi Forest Park, situated in the south-east of
 		the Wairarapa. The November 2014 Aorangi Undulator was the first
-		official race and the 2015 event is looking to be even more popular.
+		official race and the 2015 event was even more popular.
 		Winners are expected to finish in around 5 hours while others will
 		take up to 10 hours.
 	</p>
