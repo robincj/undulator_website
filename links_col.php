@@ -62,6 +62,11 @@ $(function () {
 						src="images/sponsors/warehouse-logo.png" /></a>
 				</div>
 				<div class="col-xs-4 col-md-12">
+					<a href="http://www.spotnz.com/"><img
+						class="img-responsive" width="160px" style="padding: 3px; background-color: #354041;"
+						src="images/sponsors/spotnzlogo.png" /></a>
+				</div>
+				<div class="col-xs-4 col-md-12">
 					<a href="http://www.macpac.co.nz/"><img
 						class="img-responsive" width="160px" style="padding: 3px;"
 						src="images/sponsors/macpac.png" /></a>
