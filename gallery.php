@@ -3,9 +3,9 @@
 
 include_once 'php/createthumbs.php';
 
-$originals = "images/photos/originals";
-$photodir = "images/photos";
-$thumbdir = "images/photos/thumbs";
+$originals = "images/photos/2015/originals";
+$photodir = "images/photos/2015";
+$thumbdir = "images/photos/2015/thumbs";
 createThumbs ( $originals, $photodir, 600 );
 createThumbs ( $originals, $thumbdir, 100 );
 echo "<div>";
@@ -13,7 +13,7 @@ echo "<div>";
 include 'tiler/tiler.php';
 $tiler = new Tiler ();
 $tiler->photodir = $photodir;
-$tiler->photodir_url = "/images/photos";
+$tiler->photodir_url = "/images/photos/2015";
 $tiler->show ();
 echo "</div>";
 

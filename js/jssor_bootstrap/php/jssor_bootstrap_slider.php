@@ -2,6 +2,7 @@
 <!-- Jssor Slider Begin -->
 <!-- You can move inline styles to css file or css block. -->
 <!-- ================================================== -->
+
 <div id="slider1_container"
 	style="display: none; position: relative; margin: 0 auto; width: 980px; height: 580px; overflow: hidden;">
 
@@ -19,24 +20,31 @@
 	<div u="slides"
 		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 642px; overflow: hidden; background-color: #000;">
 	<?php
-	$photodir = "images/photos";
-	$start = 65; // Photo number to start on
-	$maxnum = 7; // Number of photos to use
+	$photodir = "images/photos/2015";
+	$rands = array ();
+	for($i = 1; $i <= 7; $i ++) {
+		$rands [] = rand ( 1, 192 );
+	}
+	// $photolist = explode(", ", "10689813_10152947587125695_4811765621027737093_n.jpg, 20.jpg, 10619916_10154865765765287_6749377587880673130_o.jpg, 5.jpg, A100_undies.jpg, image006.jpg, 11203537_977989312212363_6885734874301767830_o.jpg");
+	
 	$count = 0;
-	$photolist = explode(", ", "10689813_10152947587125695_4811765621027737093_n.jpg, 20.jpg, 10619916_10154865765765287_6749377587880673130_o.jpg, 5.jpg, A100_undies.jpg, image006.jpg, 11203537_977989312212363_6885734874301767830_o.jpg");
-
-	#foreach ( scandir ( $photodir ) as $file ) {
-	foreach ( $photolist as $file ) {
-		if (! preg_match ( "/(jpg|png|jpeg)$/i", $file ) ) continue;
-		$count++;
-		#if ($count < $start) continue;
-		#if ($count > $start + $maxnum) break;
-
-		echo <<<EOH
+	foreach ( scandir ( $photodir ) as $filename ) {
+		// foreach ( $photolist as $file ) {
+		if (! preg_match ( "/(jpg|png|jpeg)$/i", $filename ))
+			continue;
+		$file = "$photodir/$filename";
+		// We only want portrait style photos
+		list ( $width, $height ) = getimagesize ( $file );		
+		if ($height > $width)
+			continue;
+		$count ++;
+		if (in_array ( $count, $rands )) {
+			echo <<<EOH
 							<div>
-							<img u="image" src2="$photodir/$file" />
+							<img u="image" src2="$file" />
 							</div>
 EOH;
+		}
 	}
 	?>							
 						</div>

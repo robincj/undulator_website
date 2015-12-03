@@ -1,8 +1,9 @@
 @CHARSET "UTF-8";
 
 body {
-	background-image: url(/images/textures/p2.png);
-	background-repeat: repeat;
+	background-image: url(/images/textures/background.png);
+	background-size: cover;
+	background-repeat:  no-repeat;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,6 +17,14 @@ header .row {
 	position: relative;
 }
 
+#main {
+	background-color: #dedede;
+	background-image: url(/images/textures/p2.png);
+	background-repeat:  repeat;
+	border-radius: 10px;
+	padding: 1em;
+}
+
 .header-right {
 	position: absolute;
 	bottom: 0;
@@ -26,7 +35,8 @@ footer {
 	height: 4em;
 	margin: 2em;
 	font-size: 90%;
-	background-color: black;
+	background-color: #2e3436;
+	border-radius: 10px;
 	color: #aaa;
 }
 
