@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <?php
 // Allow urls to be used to trigger the index page to load s specific maincontent by ajax.
-$params = array_merge ( $_POST, $_GET );
 $maincontent = 'home.php';
-if (isset ( $params ['page'] ) && $params ['page']) {
-	$maincontent = $params ['page'] . ".php";
+if (isset ( $_REQUEST ['page'] ) && $_REQUEST ['page']) {
+	$maincontent = $_REQUEST ['page'] . ".php?";
+}
+if (isset ( $_REQUEST ['gallerypage'] )) {
+	$maincontent .= "&gallerypage=".$_REQUEST ['gallerypage'];
+}
+if (isset ( $_REQUEST ['year'] )) {
+	$maincontent .= "&year=".$_REQUEST ['year'];
 }
 
 $banner_image = "images/logos/{$au_event}_banner.png";
@@ -39,8 +44,10 @@ $main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
 <link href='css/main.css' rel='stylesheet' type='text/css'>
 <link href='css/unseen-column.css' rel='stylesheet' type='text/css'>
 
-<link type="text/css" href="js/timepicker/css/bootstrap-timepicker.min.css" />
-<script type="text/javascript" src="js/timepicker/js/bootstrap-timepicker.min.js"></script>
+<link type="text/css"
+	href="js/timepicker/css/bootstrap-timepicker.min.css" />
+<script type="text/javascript"
+	src="js/timepicker/js/bootstrap-timepicker.min.js"></script>
 
 <!-- main stylesheet to override defaults above -->
 <link rel="stylesheet" href="<?php echo $main_css ?>">

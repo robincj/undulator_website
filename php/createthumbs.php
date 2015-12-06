@@ -1,8 +1,21 @@
 <?php
+/**
+ * 
+ // call createThumb function and pass to it as parameters the path
+ // to the directory that contains images, the path to the directory
+ // in which thumbnails will be placed and the thumbnail's width.
+ // We are assuming that the path will be a relative path working
+ // both in the filesystem, and through the web for links
+ * @param unknown $pathToImages
+ * @param unknown $pathToThumbs
+ * @param unknown $thumbWidth
+ */
 function createThumbs($pathToImages, $pathToThumbs, $thumbWidth) {
 	// open the directory
 	$dir = opendir ( $pathToImages );
-	
+	if (! file_exists ( $pathToThumbs )) {
+		mkdir ( $pathToThumbs );
+	}
 	// loop through it, looking for any/all JPG files:
 	while ( false !== ($fname = readdir ( $dir )) ) {
 		$fpath = "$pathToImages/$fname";
@@ -37,7 +50,7 @@ function createThumbs($pathToImages, $pathToThumbs, $thumbWidth) {
 			$tmp_img = imagecreatetruecolor ( $new_width, $new_height );
 			
 			// copy and resize old image into new image
-			//imagecopyresized ( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
+			// imagecopyresized ( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
 			imagecopyresampled ( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
 			
 			// save thumbnail into a file
@@ -47,8 +60,3 @@ function createThumbs($pathToImages, $pathToThumbs, $thumbWidth) {
 	// close the directory
 	closedir ( $dir );
 }
-// call createThumb function and pass to it as parameters the path
-// to the directory that contains images, the path to the directory
-// in which thumbnails will be placed and the thumbnail's width.
-// We are assuming that the path will be a relative path working
-// both in the filesystem, and through the web for links
