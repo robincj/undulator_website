@@ -1,22 +1,20 @@
 <?php
-$tstamp = date("Ymdhis");
- ?>
+$tstamp = date ( "Ymdhis" );
+?>
 <script>
 	var tstamp = <?= $tstamp ?>;
 </script>
 
 <style>
-
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
-
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+@media ( min-width : 768px) {
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
 }
 
 .navbar li {
@@ -62,8 +60,8 @@ nav .other_event_link img {
 						<li><a href="#" onClick="loadmaincontent('enter.php')">ENTER</a></li>
 						<li><a href="#" onClick="loadmaincontent('t-shirt.php')">T-SHIRT</a></li>
 						<li><a href="#"
-							onClick="loadmaincontent('information/entries.php?'+tstamp)">ENTRIES SO
-								FAR</a></li>
+							onClick="loadmaincontent('information/entries.php?'+tstamp)">ENTRIES
+								SO FAR</a></li>
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -110,7 +108,7 @@ nav .other_event_link img {
 				</a>
 
 					<ul class="dropdown-menu" role="menu">
-					
+
 						<li><a href="results/AU_A100_2015_V5.xlsx">2015 RESULTS</a></li>
 
 						<li><a class="AU" href="results/Undulator Results 2014.xls">2014
@@ -133,7 +131,7 @@ nav .other_event_link img {
 					 -->
 						<li><a href="#" onClick="loadmaincontent('gallery.php')">PHOTOS</a></li>
 						<li><a href="#" onClick="loadmaincontent('youtube.php')">VIDEOS</a></li>
-
+						<li><a href="#" onClick="loadmaincontent('articles.php')">ARTICLES</a></li>
 						<li><a href="#"
 							onClick="loadmaincontent('information/accommodation.php')">PLACES
 								TO STAY</a></li>

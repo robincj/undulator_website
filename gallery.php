@@ -42,7 +42,7 @@ foreach ( $years as $y ) {
 if ($ylinks)
 	echo "Other years: " . implode ( " | ", $ylinks );
 
-echo "<h3> Gallery Pages </h3>";
+echo "<h4> Gallery Pages: </h4>";
 $links = array ();
 if ($page > 1) {
 	$url = "gallery.php?gallerypage=" . ($page - 1) . "&year=$year";
