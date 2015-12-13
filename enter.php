@@ -1,4 +1,13 @@
 <?php include 'piwik_track.php'?>
+
+<div>
+	<h4 style="color: red;">
+		Entries are not open for the 2016 event yet.<br> Please keep an eye on
+		this website, or the <a
+			href="http://www.facebook.com/aorangiundulator">Facebook</a> page for
+		updates.
+	</h4>
+</div>
 <div class="panel-group" id="prices_accordion" role="tablist"
 	aria-multiselectable="true">
 
@@ -6,7 +15,7 @@
 		<a data-toggle="collapse" data-parent="#prices_accordion"
 			href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 			<div class="panel-heading" role="tab" id="headingOne">
-				<h4 class="panel-title">View Prices</h4>
+				<h4 class="panel-title">View 2015 Prices</h4>
 			</div>
 		</a>
 		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
@@ -18,12 +27,16 @@
 	</div>
 </div>
 
+
+<?php function entryForm(){ ?>
+<!-- 
 <div class="A100">
 	<h4 style="color: red;">
 		The Aorangi Undulator 100 event has reached its entry limit!<br />Use
 		the entry form below to put yourself on the wait-list.
 	</h4>
 </div>
+-->
 <div>
 	<h2>Entry Form</h2>
 
@@ -62,7 +75,7 @@
 			<label for="homelocation" class="col-sm-2 control-label">Home</label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control" id="homelocation"
-					name="homelocation" placeholder="Your home town/region" >
+					name="homelocation" placeholder="Your home town/region">
 			</div>
 		</div>
 		<!-- 
@@ -265,3 +278,4 @@ $("#enter").submit(function( event ) {
 	});
 
 </script>
+<?php } ?>
