@@ -18,7 +18,9 @@ function file_rowcount($filename, $ignoreblanks = FALSE) {
 	return $linecount;
 }
 
-$entrylist_file = "information/entries/entries_au_2015.csv";
+$entrylist_file = "information/entries/entries_au_2016.csv";
+if (! file_exists ( $filename ))
+	file_put_contents ( $entrylist_file, '' );
 $entrycount = file_rowcount ( $entrylist_file, TRUE );
 $entrylimit = 200;
 $entriesLeft = $entrylimit - $entrycount;
@@ -44,9 +46,11 @@ if ($entriesLeft <= 0)
 	$auMsg .= $full;
 else {
 	$auMsg .= $notFull;
-	$auMsg .=  $entriesLeft <21 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+	$auMsg .= $entriesLeft < 21 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
-$entrylist_file = "information/entries/entries_a100_2015.csv";
+$entrylist_file = "information/entries/entries_a100_2016.csv";
+if (! file_exists ( $filename ))
+	file_put_contents ( $entrylist_file, '' );
 $entrycount = file_rowcount ( $entrylist_file, TRUE );
 $entrylimit = 30;
 $entriesLeft = $entrylimit - $entrycount;
@@ -56,12 +60,12 @@ if ($entriesLeft <= 0)
 	$a100Msg .= $full;
 else {
 	$a100Msg .= $notFull;
-	$auMsg .=  $entriesLeft <21 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+	$auMsg .= $entriesLeft < 21 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
 
 // OVERRIDE ENTRY MESSAGE FOR RESULTS
 $a100Msg = '';
-$auMsg = '<div><a href="results/AU_A100_2015_V6.xlsx">Preliminary results for 2015 are now available here.</a></div>';
+$auMsg = '<div><a href="results/AU_A100_2015_V6.xlsx">Results for 2015 are here.</a></div>';
 
 ?>
 <div id="intro"></div>

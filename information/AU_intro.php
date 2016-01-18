@@ -1,6 +1,6 @@
 <?php include 'piwik_track.php' ?>
 <div class="text-center">
-	<h3>SATURDAY 7th NOVEMBER, 2015</h3>
+	<h3>SATURDAY 5th NOVEMBER, 2016</h3>
 
 	<p>
 		The Aorangi Undulator is a 33km trail-running race which takes

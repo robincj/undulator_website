@@ -1,11 +1,11 @@
 &nbsp;
 
-<p>Day 1 of the Aorangi Undulator 100 starts on Fri 6th November at 7am
+<p>Day 1 of the Aorangi Undulator 100 starts on Fri 4th November at 7am
 	at the end of Muritai Road, at the gate where the where 4WD road
 	starts. You will be running 50km which is expected to take competitors
 	from 5 to 11 hours.</p>
-<p>Note that this year the course is longer than last year (2014) as we
-	will take you 6km past the location of last year's finish line, along
+<p>Note that this year the course is longer than 2014 as we
+	now take you 6km past the location of 2014's finish line, along a
 	4wd track to get to the ferry which will carry you across lake after
 	you finish.</p>
 
