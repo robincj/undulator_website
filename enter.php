@@ -108,8 +108,8 @@
 		</div>
 
 		<div class="form-group">
-			<label for="age" class="col-xs-3 col-sm-2 control-label">Age on 7th
-				Nov 2015</label>
+			<label for="age" class="col-xs-3 col-sm-2 control-label">Age on 4th
+				Nov 2016</label>
 			<div class="col-xs-3 col-sm-2">
 				<input type="number" name="age" id="age" class="form-control"
 					size="2" min="10" max="100" value="20">
@@ -236,7 +236,7 @@ function setPrice() {
 	var price = 0 ;
 	var note = '';
 	if (datenum < 20150601 ){
-		note = "(Early bird price before June 1, 2015)";
+		note = "(Early bird price before June 1, 2016)";
 		if (event == "A100" ){
 			price += 150;			
 		}

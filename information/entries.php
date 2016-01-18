@@ -38,17 +38,17 @@ $max_entries_a100 = 30;
 
 	<div id="entries_panels" class="tab-content">
 		<div role="tabpanel" class="tab-pane fade" id="entries_AU">
-			<?php entries_table ( "Aorangi Undulator", 'entries/entries_au_2015.csv',$max_entries_au ); ?>
+			<?php entries_table ( "Aorangi Undulator", 'entries/entries_au_2016.csv',$max_entries_au ); ?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="entries_A100">
-			<?php entries_table ( "Aorangi Undulator 100", 'entries/entries_a100_2015.csv', $max_entries_a100 ); ?>
+			<?php entries_table ( "Aorangi Undulator 100", 'entries/entries_a100_2016.csv', $max_entries_a100 ); ?>
 		</div>
 
 		<div role="tabpanel" class="tab-pane fade" id="waitlist_AU">
-			<?php waitlist_table ( "Aorangi Undulator", 'entries/entries_au_2015.csv', $max_entries_au ); ?>
+			<?php waitlist_table ( "Aorangi Undulator", 'entries/entries_au_2016.csv', $max_entries_au ); ?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="waitlist_A100">
-			<?php waitlist_table ( "Aorangi Undulator 100", 'entries/entries_a100_2015.csv', $max_entries_a100 ); ?>
+			<?php waitlist_table ( "Aorangi Undulator 100", 'entries/entries_a100_2016.csv', $max_entries_a100 ); ?>
 		</div>
 
 	</div>
