@@ -27,6 +27,6 @@
 			</tr>
 		</tbody>
 	</table>
-	<small>* Early bird price applies before June 1 2015.</small><br />
+	<small>* Early bird price applies before June 1 2016.</small><br />
 	Team entries cost the same amount per person as individual entries.
 </div>
