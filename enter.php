@@ -2,10 +2,7 @@
 
 <div>
 	<h4 style="color: red;">
-		Entries are not open for the 2016 event yet.<br> Please keep an eye on
-		this website, or the <a
-			href="http://www.facebook.com/aorangiundulator">Facebook</a> page for
-		updates.
+		Entries are now open for the 2016 event.
 	</h4>
 </div>
 <div class="panel-group" id="prices_accordion" role="tablist"
@@ -15,7 +12,7 @@
 		<a data-toggle="collapse" data-parent="#prices_accordion"
 			href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 			<div class="panel-heading" role="tab" id="headingOne">
-				<h4 class="panel-title">View 2015 Prices</h4>
+				<h4 class="panel-title">View Prices</h4>
 			</div>
 		</a>
 		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
@@ -278,4 +275,7 @@ $("#enter").submit(function( event ) {
 	});
 
 </script>
-<?php } ?>
+<?php }
+
+entryForm();
+?>
