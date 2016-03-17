@@ -98,6 +98,7 @@ $row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},{$par
 $row .= ",{$params['homelocation']},{$params['medical']}";
 $row = trim($row)."\n";
 file_put_contents ( $entrylist_file, $row, FILE_APPEND );
+echo $entrylist_file;
 
 // Email organiser
 // bool mail ( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] )
