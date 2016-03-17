@@ -41,7 +41,7 @@
 	
 	// Randomly pick $displayNum photos from the list
 	$count = 0;
-	while ( $count < $displayNum && $cont <= count ( $imgFileList ) ) {		
+	while ( $count < $displayNum && $count <= count ( $imgFileList ) ) {		
 		$rand = rand ( 1, count ( $imgFileList ) - 1 );
 		$file = $imgFileList [$rand];
 		echo <<<EOH
