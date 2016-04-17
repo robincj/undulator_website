@@ -232,7 +232,7 @@ function setPrice() {
 	var event = $("#event option:selected").val();
 	var price = 0 ;
 	var note = '';
-	if (datenum < 20150601 ){
+	if (datenum < 20160601 ){
 		note = "(Early bird price before June 1, 2016)";
 		if (event == "A100" ){
 			price += 150;			
