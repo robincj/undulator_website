@@ -139,7 +139,7 @@
 				Resum&eacute;</label>
 			<div class="col-sm-10">
 				<textarea name="previous_events" class="form-control"
-					id="previous_events"
+					id="previous_events" required
 					placeholder="Please let us know some of your previous running events and times"></textarea>
 			</div>
 		</div>
