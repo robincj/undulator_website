@@ -1,0 +1,14 @@
+firstname: Angus
+surname: Watson
+email: wsugna@gmail.com
+homelocation: 46 McFarlane St, Mt Vic, Wellington
+event: au
+age: 25
+gender: M
+estimated_time: 4.30
+previous_events: Have won a couple of the Xterra runs; have got lost in a few others.
+medical: 
+t-size: 
+t-quantity: 0
+query: 
+price: 35

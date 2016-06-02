@@ -1,0 +1,14 @@
+firstname: Shane
+surname: Petersen
+email: thone@nowmail.co.nz
+homelocation: Hastings Hawkes Bay
+event: au
+age: 43
+gender: M
+estimated_time: 8hr+
+previous_events: Aorangi undulator 2015<br>Wellington Marathon (June '16)<br>Rotorua Marathon 4hr<br>6x 1/2 marathons<br>3x 1/2 ironmans
+medical: 
+t-size: L
+t-quantity: 1
+query: 
+price: 75
