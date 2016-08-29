@@ -1,0 +1,14 @@
+firstname: Scott
+surname: Macalister
+email: scott@tarawera.co.nz
+homelocation: Rotorua
+event: au
+age: 20
+gender: M
+estimated_time: 9 hours
+previous_events: Thailand Ultramarathon (79km & 50km)
+medical: 
+t-size: 
+t-quantity: 0
+query: 
+price: 50

@@ -1,0 +1,14 @@
+firstname: Sherman
+surname: Smith
+email: sherman.smith@mpi.govt.nz
+homelocation: Nelson
+event: A100
+age: 39
+gender: M
+estimated_time: Slower than Tim and faster than last year
+previous_events: I used to do a bit of running from time to time. Did almost the full A100 last year as tail end Charlie.
+medical: 
+t-size: M
+t-quantity: 1
+query: 
+price: 205

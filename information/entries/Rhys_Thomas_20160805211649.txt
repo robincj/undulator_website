@@ -1,0 +1,14 @@
+firstname: Rhys
+surname: Thomas
+email: rhysthomasinnz@yahoo.com
+homelocation: Wellington
+event: au
+age: 40
+gender: M
+estimated_time: 4 Hours
+previous_events: Running, running, running, but not as much as some<br>Kepler<br>A100 - Best race in the country (does this get me in?)
+medical: None
+t-size: 
+t-quantity: 0
+query: 
+price: 50

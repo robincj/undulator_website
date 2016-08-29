@@ -1,0 +1,14 @@
+firstname: Lyn
+surname: Clark
+email: aquamarina@clear.net.nz
+homelocation: Wellington
+event: au
+age: 51
+gender: F
+estimated_time: 7 hours
+previous_events: Did the Undulator last year and would love to do it again! Tarawera 102km, 13hr31min; Waitomo trailrun 33km; the Goat 21km, 3hrs20ish.
+medical: None
+t-size: S
+t-quantity: 1
+query: 
+price: 75

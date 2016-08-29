@@ -1,0 +1,14 @@
+firstname: Donald
+surname: Bate
+email: donbate@yahoo.co.nz
+homelocation: No Fixed Abode!
+event: au
+age: 54
+gender: M
+estimated_time: 9
+previous_events: Countless half marathons all around 1:35 to 1:50
+medical: Allergic to Penicillin otherwise perfectly healthy and no medication
+t-size: 
+t-quantity: 0
+query: 
+price: 50

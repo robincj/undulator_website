@@ -1,0 +1,14 @@
+firstname: Roger
+surname: Jones
+email: claudiajutta.germanynz@yahoo.co.nz
+homelocation: Masterton
+event: au
+age: 52
+gender: M
+estimated_time: 
+previous_events: 2xUndolator, JH,Mukamuka 4x,Tora long2x
+medical: 
+t-size: 
+t-quantity: 0
+query: 
+price: 50
