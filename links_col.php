@@ -52,16 +52,16 @@ $(function () {
 		<div class="panel-body">
 			<small>Sponsors</small>
 			<div class="row">
+				<div class="col-xs-4 col-md-12">
+					<a href="http://www.powerco.co.nz/"><img class="img-responsive"
+						width="160px" style="padding: 3px;"
+						src="images/sponsors/powerco_logo.png" /></a>
+				</div>
 
 				<div class="col-xs-4 col-md-12">
 					<a href="http://www.bivouac.co.nz/"><img class="img-responsive"
 						width="160px" style="padding: 3px;"
 						src="images/sponsors/bivouac.png" /></a>
-				</div>
-				<div class="col-xs-4 col-md-12">
-					<a href="http://www.thewarehouse.co.nz/"><img
-						class="img-responsive" width="160px" style="padding: 3px;"
-						src="images/sponsors/warehouse-logo.png" /></a>
 				</div>
 				<div class="col-xs-4 col-md-12">
 					<a href="http://www.spotnz.com/"><img class="img-responsive"

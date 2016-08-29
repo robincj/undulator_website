@@ -78,6 +78,11 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 {quote: "A few people live the dream but the some of us just snatch glimpses of it.", author: "A Shelton"},
 {quote: "Most people convince themselves are all grown up but deep down they are not.", author: "A Shelton"},
 {quote: "It's a terrible thing, I think, in life to wait until you're ready. I have this feeling now that actually no one is ever ready to do anything. There is almost no such thing as ready. There is only now. And you may as well do it now. Generally speaking, now is as good a time as any.", author: "Hugh Laurie"},
+{quote: "Take a hard pill."},
+{quote: "In our hearts we are all Kenyan."},
+{quote: "Ed Hillary didnt have aid stations every 3k."},
+{quote: "Balance is incredibly important, but I’m a big believer in finding your passion. With passion and happiness in life, balance will follow."},
+{quote: "Ultrarunners admire each other because we all love the same exercise in self sacrifice and pursuit of transcendence (I do think ultra running and ultra swimming have meditative properties).	We are all chasing the zone where we are performing at our peak where we think we cant go on...	but we do go on. We all know the way that moment feels, how rarely it occurs and the pain we endure to grab it back again.	The longer an ultra runner competes the more he grows to love not only the sport but his fellow ultra runners and the human condition.	We all try to find meaning in a sometimes painful world", author: "Scott Jurek"	}
 ]
 ;
 

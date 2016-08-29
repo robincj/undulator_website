@@ -1,7 +1,11 @@
-<?php include 'piwik_track.php' ?>
+<?php
+include 'piwik_track.php';
+
+$eventDate = 'Sat Nov 5th';
+?>
 <h2>Aorangi Undulator Race Day Schedule</h2>
 <h3>
-	<small>Sat Nov 7th, 6-7am</small> <br /> Gear Check
+	<small><?=$eventDate?>, 6-7am</small> <br /> Gear Check
 </h3>
 Meet at the Mangatoetoe valley entrance for the compulsory pre-race gear
 check.
@@ -9,16 +13,16 @@ check.
 This is about a 5 min drive east of Ngawi. There will be flags up so you
 will see.
 <h3>
-	<small>Sat Nov 7th, 6:30am</small> <br /> Race Briefing
+	<small><?=$eventDate?>, 6:30am</small> <br /> Race Briefing
 </h3>
 The race briefing will take place at the Mangatoetoe valley entrance at
 around 6:30am.
 <h3>
-	<small>Sat Nov 7th, 7am</small> <br /> Race Start
+	<small><?=$eventDate?>, 7am</small> <br /> Race Start
 </h3>
 The race will start from the Mangatoetoe valley entrance at 7am.
 <h3>
-	<small>Sat Nov 7th</small> <br /> Race Finish
+	<small><?=$eventDate?></small> <br /> Race Finish
 </h3>
 The race finishes at the Putangirua Pinnacles' carpark.
 <br>

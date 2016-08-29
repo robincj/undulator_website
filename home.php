@@ -17,7 +17,6 @@ function file_rowcount($filename, $ignoreblanks = FALSE) {
 	
 	return $linecount;
 }
-
 $entrylist_file = "information/entries/entries_au_2016.csv";
 if (! file_exists ( $entrylist_file ))
 	file_put_contents ( $entrylist_file, '' );
