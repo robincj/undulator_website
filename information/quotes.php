@@ -82,7 +82,9 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 {quote: "In our hearts we are all Kenyan."},
 {quote: "Ed Hillary didnt have aid stations every 3k."},
 {quote: "Balance is incredibly important, but I’m a big believer in finding your passion. With passion and happiness in life, balance will follow."},
-{quote: "Ultrarunners admire each other because we all love the same exercise in self sacrifice and pursuit of transcendence (I do think ultra running and ultra swimming have meditative properties).	We are all chasing the zone where we are performing at our peak where we think we cant go on...	but we do go on. We all know the way that moment feels, how rarely it occurs and the pain we endure to grab it back again.	The longer an ultra runner competes the more he grows to love not only the sport but his fellow ultra runners and the human condition.	We all try to find meaning in a sometimes painful world", author: "Scott Jurek"	}
+{quote: "Ultrarunners admire each other because we all love the same exercise in self sacrifice and pursuit of transcendence (I do think ultra running and ultra swimming have meditative properties).	We are all chasing the zone where we are performing at our peak where we think we cant go on...	but we do go on. We all know the way that moment feels, how rarely it occurs and the pain we endure to grab it back again.	The longer an ultra runner competes the more he grows to love not only the sport but his fellow ultra runners and the human condition.	We all try to find meaning in a sometimes painful world", author: "Scott Jurek"	},
+{quote: "More Hills == More Fun"},
+{quote: "Flat is boring"},
 ]
 ;
 
