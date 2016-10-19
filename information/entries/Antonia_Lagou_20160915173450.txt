@@ -1,0 +1,14 @@
+firstname: Antonia
+surname: Lagou
+email: antonialagou_118@hotmail.com
+homelocation: UK
+event: A100
+age: 23
+gender: F
+estimated_time: No idea
+previous_events: I have ran the toughest trail marathon in UK south and many half marathons. I love running and train a lot and want to test myself whilst here in NZ
+medical: None
+t-size: M
+t-quantity: 1
+query: How does the race work? Is there somewhere to stay over as its across 3 days?
+price: 205

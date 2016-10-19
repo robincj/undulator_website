@@ -1,0 +1,14 @@
+firstname: Mark
+surname: Wilcox
+email: markwilcox99@gmail.com
+homelocation: Wellington
+event: au
+age: 54
+gender: M
+estimated_time: 7-8 hours ish
+previous_events: Various mountain jogs in the naughties incl TMR, JHTR, Routeburn, Kepler. I have been to dark places. But at least Steve is sightly weaker
+medical: Nil
+t-size: S
+t-quantity: 1
+query: 
+price: 75
