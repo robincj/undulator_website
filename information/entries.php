@@ -111,7 +111,7 @@ function entries_table($title, $csvfile, $max_entries) {
 <?php
 	$count = 1;
 	foreach ( array_map ( 'str_getcsv', file ( $csvfile ) ) as $entry ) {
-		if (! $entry || preg_match ( '/^#/', reset ( $entry ) ))
+		if (! $entry || preg_match ( '/^#/', reset ( $entry ) ) || preg_match ( '/^\s*$/', reset ( $entry ) ))
 			continue;
 			// Fields:
 			// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE,LOCATION,MEDICAL

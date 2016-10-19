@@ -6,10 +6,10 @@ if (isset ( $_REQUEST ['page'] ) && $_REQUEST ['page']) {
 	$maincontent = $_REQUEST ['page'] . ".php?";
 }
 if (isset ( $_REQUEST ['gallerypage'] )) {
-	$maincontent .= "&gallerypage=".$_REQUEST ['gallerypage'];
+	$maincontent .= "&gallerypage=" . $_REQUEST ['gallerypage'];
 }
 if (isset ( $_REQUEST ['year'] )) {
-	$maincontent .= "&year=".$_REQUEST ['year'];
+	$maincontent .= "&year=" . $_REQUEST ['year'];
 }
 
 $banner_image = "images/logos/{$au_event}_banner.png";
@@ -122,12 +122,20 @@ function loadmaincontent(contentfile, nojump){
 
 
 	<script>loadmaincontent('<?php echo $maincontent ?>', true)</script>
-	<footer>
-		<br />
-		<p style="text-align: right">Contact: Chris Martin 021 2166436 or
-			email: info@aorangiundulator.org &nbsp;&nbsp;</p>
-		<br /> &nbsp;
 
+	<footer>
+		<div class="row">
+			<div class='col-sm-6'>
+				<div>
+					Main sponsor <a href="http://www.powerco.co.nz/"><img
+						style="padding: 3px;" src="images/sponsors/powerco_logo.png" /></a>
+				</div>
+			</div>
+			<div class='col-sm-6 contact'>
+				<span style="text-align: right"><br />Contact: Chris Martin 021
+					2166436 or email: info@aorangiundulator.org</span>
+			</div>
+		</div>
 	</footer>
 
 </body>

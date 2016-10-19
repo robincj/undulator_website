@@ -63,22 +63,43 @@ else {
 }
 
 // OVERRIDE ENTRY MESSAGE FOR RESULTS
-$a100Msg = '';
-$auMsg = '<div><a href="results/AU_A100_2015_V6.xlsx">Results for 2015 are here.</a></div>';
+// $a100Msg = '';
+// $auMsg = '<div><a href="results/AU_A100_2015_V6.xlsx">Results for 2015 are here.</a></div>';
 
 ?>
-<div id="intro"></div>
+<div class="row">
+	<div class='col-xs-12'>
+		<div id="intro"></div>
+	</div>
+</div>
 <script>
 $("#intro").load("information/" + au_event + "_intro.php");
 </script>
-
-<div class="text-center">
-	<?php echo $a100Msg . $auMsg?>
-
-	<br />
-<?php include "information/quotes.php"?>
-<br />
+<div class="row">
+	<div class='col-xs-12'>
+		<div class="text-center"><?= $a100Msg . $auMsg?></div>
+	</div>
 </div>
-<?php
-include 'js/jssor_bootstrap/php/jssor_bootstrap_slider.php';
-?>
+<div class="row">
+	<div class='col-xs-12'>
+		<div class="text-center">
+			<a href="results/AU_A100_2015_V6.xlsx">Results for 2015 are here.</a>
+		</div>
+	</div>
+</div>
+<br />
+<div class="row">
+	<div class='mainsponsor col-xs-12' style='background-color: #662d91; color: white;' >
+	Brought to you with a big thanks to our main sponsor 
+		<a href="http://www.powerco.co.nz/"><img style="padding: 3px;" src="images/sponsors/powerco_logo.png" /></a>
+	</div>
+	<div class='quotebox col-xs-12' style='display: none;' ><?php include "information/quotes.php"?></div>
+</div>
+<script>$(document).ready(function(){
+	setTimeout(function(){ $('.mainsponsor').hide('slow'); $('.quotebox').show('slow');}, 8000);
+});
+	</script>
+<br />
+<div class="row">
+	<div class='col-xs-12'><?php include 'js/jssor_bootstrap/php/jssor_bootstrap_slider.php';?>	</div>
+</div>
