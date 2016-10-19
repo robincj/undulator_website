@@ -1,0 +1,14 @@
+firstname: Karen
+surname: Murray
+email: k.a.murray@gmail.com
+homelocation: Wellington
+event: A100
+age: 38
+gender: F
+estimated_time: Longer than last year
+previous_events: Going for the A100 triple. Please advise if any cut off times!!
+medical: None
+t-size: 
+t-quantity: 0
+query: Can you get any women's XS tshirts? The small size is too big. I'm patient and don't mind waiting as much as a year 😀
+price: 180

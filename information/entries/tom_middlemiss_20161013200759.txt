@@ -1,0 +1,14 @@
+firstname: tom
+surname: middlemiss
+email: tommiddlemiss@hotmail.com
+homelocation: Wellington
+event: au
+age: 37
+gender: M
+estimated_time: 5.30
+previous_events: Loads of stuff. Mostly 5-10km around the bays. Ready for the next challenge
+medical: Worried I have undiagnosed weakness
+t-size: 
+t-quantity: 0
+query: Look forward to this weekend.
+price: 50

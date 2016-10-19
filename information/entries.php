@@ -147,7 +147,7 @@ function waitlist_table($title, $csv, $max_entries) {
 	$count = 1;
 	if (! is_array ( $csv )) {
 		foreach ( array_map ( 'str_getcsv', file ( $csv ) ) as $entry ) {
-			if (! $entry || preg_match ( '/^#/', reset ( $entry ) ))
+			if (! $entry || preg_match ( '/^#/', reset ( $entry ) ) || preg_match ( '/^\s*$/', reset ( $entry ) ))
 				continue;
 			if ($count ++ <= $max_entries)
 				continue;

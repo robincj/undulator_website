@@ -1,0 +1,14 @@
+firstname: Mike
+surname: Brown
+email: mike@runfest.org.nz
+homelocation: Wellington
+event: au
+age: 54
+gender: M
+estimated_time: ??
+previous_events: Kepler x2, Wuu2K, Barkley Fall Classic
+medical: 
+t-size: L
+t-quantity: 1
+query: 
+price: 75

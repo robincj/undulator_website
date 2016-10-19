@@ -1,0 +1,14 @@
+firstname: Andrew
+surname: Thompson
+email: bassdrop@gmail.com
+homelocation: Wellington
+event: au
+age: 37
+gender: M
+estimated_time: 5:45
+previous_events: I've done a park run once.
+medical: No medical conditions
+t-size: 
+t-quantity: 0
+query: 
+price: 50
