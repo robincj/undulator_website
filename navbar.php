@@ -108,6 +108,8 @@ nav .other_event_link img {
 				</a>
 
 					<ul class="dropdown-menu" role="menu">
+						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
+								Records</a></li>
 
 						<li><a href="results/AU_A100_2015_V6.xlsx">2015 RESULTS</a></li>
 
