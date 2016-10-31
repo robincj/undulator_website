@@ -86,57 +86,63 @@ function loadmaincontent(contentfile, nojump){
 <body>
 	<script type="text/javascript" src="/piwik/piwik.js"></script>
 <?php include 'piwik_track.php'?>
-
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<img class="<?php echo $au_event ?> banner_image img-responsive"
-						src="<?php echo $banner_image ?>" />
+<div id='wrap'>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<img class="<?php echo $au_event ?> banner_image img-responsive"
+							src="<?php echo $banner_image ?>" />
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
 <?php include 'navbar.php';?>
 
 	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-2 text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-2 text-center">
 					<?php include 'links_col.php';?>				
 				</div>
-				<!-- /col -->
+					<!-- /col -->
 
-				<div id="main" class="maincontent col-xs-12 col-md-8"></div>
+					<div id="main" class="maincontent col-xs-12 col-md-8"></div>
 
-				<div class="col-xs-12 col-md-2 share-icon-col text-center">
+					<div class="col-xs-12 col-md-2 share-icon-col text-center">
 					<?php include 'share_icons.php';?>
 				</div>
-				<!-- /col -->
+					<!-- /col -->
+				</div>
+				<!-- /row -->
 			</div>
-			<!-- /row -->
-		</div>
 
-	</section>
+		</section>
 
 
-	<script>loadmaincontent('<?php echo $maincontent ?>', true)</script>
-
-	<footer>
-		<div class="row">
-			<div class='col-sm-6'>
-				<div>
-					Main sponsor <a href="http://www.powerco.co.nz/"><img
-						style="padding: 3px;" src="images/sponsors/powerco_logo.png" /></a>
+		<script>loadmaincontent('<?php echo $maincontent ?>', true)</script>
+		
+		<div id="push"></div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class='col-sm-6'>
+					<div>
+						Main sponsor <a href="http://www.powerco.co.nz/"><img
+							style="padding: 3px;" src="images/sponsors/powerco_logo.png" /></a>
+					</div>
+				</div>
+				<div class='col-sm-6 contact'>
+					<div style="text-align: right">
+						<br />Contact: Chris Martin 021 2166436 or email:
+						info@aorangiundulator.org
+					</div>
 				</div>
 			</div>
-			<div class='col-sm-6 contact'>
-				<span style="text-align: right"><br />Contact: Chris Martin 021
-					2166436 or email: info@aorangiundulator.org</span>
-			</div>
 		</div>
-	</footer>
+	</div>
 
 </body>
 

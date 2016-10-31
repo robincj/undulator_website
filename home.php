@@ -75,6 +75,19 @@ else {
 <script>
 $("#intro").load("information/" + au_event + "_intro.php");
 </script>
+
+<div class="row">
+	<div class='col-xs-12'>
+		<div class="text-center">
+			<h4>
+				<a href="#"
+					onClick="loadmaincontent('information/course_notes.php')">Detailed
+					course maps now available HERE.</a>
+			</h4>
+		</div>
+	</div>
+</div>
+
 <div class="row">
 	<div class='col-xs-12'>
 		<div class="text-center"><?= $a100Msg . $auMsg?></div>
@@ -89,11 +102,13 @@ $("#intro").load("information/" + au_event + "_intro.php");
 </div>
 <br />
 <div class="row">
-	<div class='mainsponsor col-xs-12' style='background-color: #662d91; color: white;' >
-	Brought to you with a big thanks to our main sponsor 
-		<a href="http://www.powerco.co.nz/"><img style="padding: 3px;" src="images/sponsors/powerco_logo.png" /></a>
+	<div class='mainsponsor col-xs-12'
+		style='background-color: #662d91; color: white;'>
+		Brought to you with a big thanks to our main sponsor <a
+			href="http://www.powerco.co.nz/"><img style="padding: 3px;"
+			src="images/sponsors/powerco_logo.png" /></a>
 	</div>
-	<div class='quotebox col-xs-12' style='display: none;' ><?php include "information/quotes.php"?></div>
+	<div class='quotebox col-xs-12' style='display: none;'><?php include "information/quotes.php"?></div>
 </div>
 <script>$(document).ready(function(){
 	setTimeout(function(){ $('.mainsponsor').hide('slow'); $('.quotebox').show('slow');}, 8000);
