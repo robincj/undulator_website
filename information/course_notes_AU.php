@@ -30,7 +30,7 @@
 </ul>
 
 <div class="row">
-	<div class="col-sm-12" title="Click to enlarge" >
+	<div class="col-sm-12" title="Click to enlarge">
 		<a href="images/maps/AU_route.png" target="_blank"> <img
 			class="AU img-responsive" src="images/maps/AU_route.png" />
 		</a> <a href="images/maps/A100/A100-day2-route.png" target="_blank"> <img
@@ -60,8 +60,8 @@
 		</div>
 	</div>
  -->
-<div id='day2-mmr' ></div>
-	
+<div id='day2-mmr'></div>
+
 <div style="text-align: right; padding-right: 20px;">
 	<!-- 
 		<a target="_blank" href="http://www.mapmyrun.com/routes/create/">Create
@@ -86,20 +86,22 @@ DOC orange marks where possible.
 <br />
 Exit fork from river well marked by cut cabbage tree stump in river.
 
-
-<a href="images/maps/better_map.jpg" target="_blank" title="Click to enlarge" > <img
-	src="images/maps/better_map.jpg"
-	style="width: 50%; margin: 1em; float: left;" /></a>
+<a target='_blank' title='Click to download full size version from dropbox'
+	href="https://www.dropbox.com/s/0hqpbfqtns1zoc6/Undulator_Day2_A3_Print_Size_with_MagneticNorth.jpg?dl=0">
+	<img src="images/maps/topo/day2_topo_small.jpg" class="img-responsive" 
+	style="width: 50%; margin: 1em; float: left;" />
+</a>
 
 <h3>UNDULATION #1</h3>
-Approx. 130m steep vertical climb.  Cross the saddle, then a very
-steep descent, TAKE CARE. Descent ends by waterfall and pool – follow
-river downstream, rocky boulder-hopping for 4km.
+Approx. 130m steep vertical climb. Cross the saddle, then a very steep
+descent, TAKE CARE. Descent ends by waterfall and pool – follow river
+downstream, rocky boulder-hopping for 4km.
 <br />
-At that 4km point make sure you are scanning the true right of river as there
-will be a big DOC triangle marking where you leave the river bed. You
-must spot this or you will miss the turn off and head down the river.
-The triangle leads you into a copse of trees and a track that leads to
+At that 4km point make sure you are scanning the true right of river as
+there will be a big DOC triangle marking where you leave the river bed.
+You must spot this or you will miss the turn off and head down the
+river. The triangle leads you into a copse of trees and a track that
+leads to
 <b>Kawakawa Hut</b>
 .
 

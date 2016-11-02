@@ -8,7 +8,7 @@
 	now take you 6km past the location of 2014's finish line, along a
 	4wd track to get to the ferry which will carry you across lake after
 	you finish.</p>
-
+	
 <div id="day1-garmin" ></div>
 
 <!-- <iframe src='https://connect.garmin.com/activity/embed/817983777' width='465' height='500' frameborder='0' align='middle'></iframe>
@@ -85,6 +85,14 @@
 	down to coast. At coast turn left and follow the 4wd or the beach to
 	the finish flags at the edge of Lake Oneke. A boat will come
 	periodically to take the runers across to Lake Ferry pub.</p>
+	
+<p>
+<a target='_blank' title='Click to download full size version from dropbox'
+	href="https://www.dropbox.com/s/v7qjylj2wnfvfrt/Undulator_Day1_A3_Print_Size_with_MagneticNorth.jpg?dl=0">
+	<img src="images/maps/topo/day1_topo_small.jpg" class="img-responsive" 
+	style="margin: 1em;" />
+</a>
+</p>
 <p>
 	<a href="images/maps/A100/A100_Day_1_elev_profile.jpg" target="_blank"><img
 		class="img-responsive"

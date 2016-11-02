@@ -30,8 +30,11 @@
 	you get to bottom turn right and follow 4wd that keeps crossing river.
 	It eventually gets to a last uphill.</p>
 <p>
-	<a href="images/maps/A100/A100_Day_3_map.jpg" target="_blank"><img
-		class="img-responsive" src="images/maps/A100/A100_Day_3_map.jpg" /></a>
+<a target='_blank' title='Click to download full size version from dropbox'
+	href="https://www.dropbox.com/s/yrpe93ryelddb8m/Undulator_Day3_A3_Print_Size_MagneticNorth.jpg?dl=0">
+	<img src="images/maps/topo/day3_topo_small.jpg" class="img-responsive" 
+	style="margin: 1em;" />
+</a>
 </p>
 <p>At the top of this you have a final k descent then you will see
 	Waikuku Lodge and finishing flags!</p>
