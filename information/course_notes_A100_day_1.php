@@ -87,6 +87,7 @@
 	periodically to take the runers across to Lake Ferry pub.</p>
 	
 <p>
+Topo Map - please note that the route on this map does not show the final 6km to Lake Oneke.<br/>
 <a target='_blank' title='Click to download full size version from dropbox'
 	href="https://www.dropbox.com/s/v7qjylj2wnfvfrt/Undulator_Day1_A3_Print_Size_with_MagneticNorth.jpg?dl=0">
 	<img src="images/maps/topo/day1_topo_small.jpg" class="img-responsive" 
