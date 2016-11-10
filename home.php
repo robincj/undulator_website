@@ -17,6 +17,8 @@ function file_rowcount($filename, $ignoreblanks = FALSE) {
 	
 	return $linecount;
 }
+
+$open = FALSE;
 $entrylist_file = "information/entries/entries_au_2016.csv";
 if (! file_exists ( $entrylist_file ))
 	file_put_contents ( $entrylist_file, '' );
@@ -55,16 +57,18 @@ $entrylimit = 30;
 $entriesLeft = $entrylimit - $entrycount;
 $a100Msg = '<div class="A100">';
 
-if ($entriesLeft <= 0)
+if (! $open) {
+	$a100Msg = '';
+	$auMsg = "<div><h5>Entries are not yet open for the next event.</h5></div>";
+} elseif ($entriesLeft <= 0)
 	$a100Msg .= $full;
 else {
 	$a100Msg .= $notFull;
 	$auMsg .= $entriesLeft < 21 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
-
 // OVERRIDE ENTRY MESSAGE FOR RESULTS
 // $a100Msg = '';
-// $auMsg = '<div><a href="results/AU_A100_2015_V6.xlsx">Results for 2015 are here.</a></div>';
+// $auMsg = '<div><a href="https://drive.google.com/file/d/0B0kHo5rD1yVIUmpKa1FfSTJpU01tcno4YlNqWlNKem52QU5J/view?usp=sharing">Results for 2016 are here.</a></div>';
 
 ?>
 <div class="row">
@@ -76,14 +80,23 @@ else {
 $("#intro").load("information/" + au_event + "_intro.php");
 </script>
 
+
 <div class="row">
 	<div class='col-xs-12'>
 		<div class="text-center">
 			<h4>
-				<a href="#"
-					onClick="loadmaincontent('information/course_notes.php')">Detailed
-					course maps now available HERE.</a>
+				<a target="_blank"
+					href="https://drive.google.com/file/d/0B0kHo5rD1yVIUmpKa1FfSTJpU01tcno4YlNqWlNKem52QU5J/view?usp=sharing">Results
+					for 2016 are here.</a>
 			</h4>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class='col-xs-12'>
+		<div class="text-center">
+			<a href="#" onClick="loadmaincontent('information/course_notes.php')">Detailed
+				course maps available HERE.</a>
 		</div>
 	</div>
 </div>
@@ -93,13 +106,7 @@ $("#intro").load("information/" + au_event + "_intro.php");
 		<div class="text-center"><?= $a100Msg . $auMsg?></div>
 	</div>
 </div>
-<div class="row">
-	<div class='col-xs-12'>
-		<div class="text-center">
-			<a href="results/AU_A100_2015_V6.xlsx">Results for 2015 are here.</a>
-		</div>
-	</div>
-</div>
+
 <br />
 <div class="row">
 	<div class='mainsponsor col-xs-12'
