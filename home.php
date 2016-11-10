@@ -86,7 +86,7 @@ $("#intro").load("information/" + au_event + "_intro.php");
 		<div class="text-center">
 			<h4>
 				<a target="_blank"
-					href="https://drive.google.com/file/d/0B0kHo5rD1yVIUmpKa1FfSTJpU01tcno4YlNqWlNKem52QU5J/view?usp=sharing">Results
+					href="https://docs.google.com/spreadsheets/d/1fVN-G5ftA--eqb1DRrJAubYEgSs8e3siQcyB5TtFnRY/edit#gid=0">Results
 					for 2016 are here.</a>
 			</h4>
 		</div>

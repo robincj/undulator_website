@@ -110,7 +110,9 @@ nav .other_event_link img {
 					<ul class="dropdown-menu" role="menu">
 						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
 								Records</a></li>
-						<li><a href="https://drive.google.com/file/d/0B0kHo5rD1yVIUmpKa1FfSTJpU01tcno4YlNqWlNKem52QU5J/view?usp=sharing">2016 RESULTS</a></li>
+						<li><a target="_blank"
+							href="https://docs.google.com/spreadsheets/d/1fVN-G5ftA--eqb1DRrJAubYEgSs8e3siQcyB5TtFnRY/edit#gid=0">2016
+								RESULTS</a></li>
 						<li><a href="results/AU_A100_2015_V6.xlsx">2015 RESULTS</a></li>
 
 						<li><a class="AU" href="results/Undulator Results 2014.xls">2014
