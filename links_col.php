@@ -52,38 +52,24 @@ $(function () {
 		<div class="panel-body">
 			<small>Sponsors</small>
 			<div class="row">
-				<div class="col-xs-4 col-md-12">
+				<div class="col-xs-12">
 					<a href="http://www.powerco.co.nz/"><img class="img-responsive"
-						width="160px" style="padding: 3px;"
-						src="images/sponsors/powerco_logo.png" /></a>
-				</div>
-
-				<div class="col-xs-4 col-md-12">
-					<a href="http://www.bivouac.co.nz/"><img class="img-responsive"
-						width="160px" style="padding: 3px;"
-						src="images/sponsors/bivouac.png" /></a>
-				</div>
-				<div class="col-xs-4 col-md-12">
-					<a href="http://www.spotnz.com/"><img class="img-responsive"
-						width="160px" style="padding: 3px; background-color: #354041;"
-						src="images/sponsors/spotnzlogo.png" /></a>
-				</div>
-				<div class="col-xs-4 col-md-12">
-					<a href="http://www.macpac.co.nz/"><img class="img-responsive"
-						width="160px" style="padding: 3px;"
+						width="160px" style="padding: 3px; display: inline;"
+						src="images/sponsors/powerco_logo.png" /></a><a
+						href="http://www.thriveadventure.com/"><img class="img-responsive"
+						width="160px" style="padding: 3px; display: inline;"
+						title="ThLuxurious gateway to the Tararuas"
+						src="images/sponsors/thrive.jpg" /></a> <a
+						href="http://www.bivouac.co.nz/"><img class="img-responsive"
+						width="160px" style="padding: 3px; display: inline;"
+						src="images/sponsors/bivouac.png" /></a> <a
+						href="http://www.spotnz.com/"><img class="img-responsive"
+						width="160px" style="padding: 3px;  display: inline;background-color: #354041;"
+						src="images/sponsors/spotnzlogo.png" /></a> <a
+						href="http://www.macpac.co.nz/"><img class="img-responsive"
+						width="160px" style="padding: 3px; display: inline;"
 						src="images/sponsors/macpac.png" /></a>
 				</div>
-				<div class="col-xs-4 col-md-12">
-					<a href="http://www.tailwindnutrition.co.nz/"><img
-						class="img-responsive" width="165px"
-						src="images/sponsors/tailwind_nutrition_tr.png" /></a>
-				</div>
-				<div class="col-xs-4 col-md-12">
-					<a href="http://www.sportsandpain.co.nz/"><img
-						class="img-responsive" width="160px" style="padding: 3px;"
-						src="images/sponsors/SportsAndPain-Logo_small.jpg" /></a>
-				</div>
-
 			</div>
 		</div>
 	</div>

@@ -71,7 +71,7 @@ var quotes = [{ quote: "We had seen God in His splendors, heard the text that Na
 { quote: "If you exercise your body you also look after your mind." },
 { quote: "The 'Comfort Zone' is the problem in life. Imagine you wake on a rainy morning. The rain bangs on your windows. It's easier to stay in your nice bed than go for a walk in the rain. But in the evening you think 'what a boring day.<br/>If you do it, if you get out of bed and walk in the rain then you will look back on the day and think 'what a wonderful day." },
 { quote: "Comfort really is a bad thing. We are striving for comfort all the time. But it kills you." },
-{quote: "Mountains are made to look down from, not up at â€“ so get on with it", author: "Sherman" },
+{quote: "Mountains are made to look down from, not up at, so get on with it", author: "Sherman" },
 {quote: "Try to be a rainbow in someone's cloud."},
 {quote: "You came here to eat your gel and kick ass....<br/>......And you just finished your gel"},
 {quote: "You have the key to the hurt locker.<br/>Open it."},

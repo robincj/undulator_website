@@ -147,9 +147,6 @@ nav .other_event_link img {
 						<li><a href="#"
 							onClick="loadmaincontent('information/aorangi_trust.php')">AORANGI
 								TRUST</a></li>
-						<li><a href="#"
-							onClick="loadmaincontent('information/sponsor_tailwind.php')">TAILWIND
-								SUPPLEMENTS</a></li>
 					</ul></li>
 
 				<!-- 
