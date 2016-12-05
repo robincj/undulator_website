@@ -108,6 +108,7 @@ nav .other_event_link img {
 				</a>
 
 					<ul class="dropdown-menu" role="menu">
+						<li onClick="loadmaincontent('results/spirit_award.php')"><a href="#">A100 Spirit Award</a></li>
 						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
 								Records</a></li>
 						<li><a target="_blank"
