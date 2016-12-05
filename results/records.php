@@ -14,7 +14,7 @@
 			<tr>
 				<td>Chris Swallow</td>
 				<td>AU/OM</td>
-				<td>4:14:00</td>
+				<td>3:57:00</td>
 			</tr>
 			<tr>
 				<td>Tim Sutton</td>
