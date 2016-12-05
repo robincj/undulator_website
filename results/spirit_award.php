@@ -25,11 +25,15 @@
 	<img class="img-responsive" alt="Spirit Award Trophy"
 		src="/images/trophies/spirit_award_cr.jpg">
 </p>
-</p>
 <p>
 <h3>Spirit Award Recipients</h3>
 <ul>
-	<li>2014 Steve Neary</li>
-	<li>2015 Susanne Ebert</li>
-	<li>2016 Seanoa Isaac</li>
+	<li>2014 - Steve Neary who managed to embody the Spirit of the A100
+		while blitzing the field in it's inagural year.</li>
+	<li>2015 - Susanne Ebert who trained for the A100 using the stairwells
+		of Dubai's skyscrapers and described the A100 as a "very pleasant
+		run".</li>
+	<li>2016 - Seanoa Isaac well and truly stretched his comfort zone in
+		the A100 while still being the most helpful and jolly competitor out
+		there.</li>
 </ul>
