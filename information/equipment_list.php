@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php' ?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <h2>Mandatory Equipment</h2>
 <p>The following items of equipment must be carried by all Aorangi
 	Undulator participants. The reasons for this should be obvious!

@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php'?>
+<?php require_once 'config.php'?>
 <?php
 
 include_once 'php/createthumbs.php';

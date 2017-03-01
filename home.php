@@ -1,5 +1,5 @@
 <?php include 'piwik_track.php'?>
-
+<?php require_once 'config.php'?>
 
 <?php
 function file_rowcount($filename, $ignoreblanks = FALSE) {
@@ -18,8 +18,8 @@ function file_rowcount($filename, $ignoreblanks = FALSE) {
 	return $linecount;
 }
 
-$open = FALSE;
-$entrylist_file = "information/entries/entries_au_2016.csv";
+$open = TRUE;
+$entrylist_file = "information/entries/entries_au_2017.csv";
 if (! file_exists ( $entrylist_file ))
 	file_put_contents ( $entrylist_file, '' );
 $entrycount = file_rowcount ( $entrylist_file, TRUE );
@@ -49,7 +49,7 @@ else {
 	$auMsg .= $notFull;
 	$auMsg .= $entriesLeft < 21 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
-$entrylist_file = "information/entries/entries_a100_2016.csv";
+$entrylist_file = "information/entries/entries_a100_2017.csv";
 if (! file_exists ( $entrylist_file ))
 	file_put_contents ( $entrylist_file, '' );
 $entrycount = file_rowcount ( $entrylist_file, TRUE );

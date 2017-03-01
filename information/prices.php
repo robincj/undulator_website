@@ -1,4 +1,5 @@
-<?php include 'piwik_track.php' ?>
+<?php include 'piwik_track.php'?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <div id="prices-table">
 	<h2>Prices</h2>
 	<table class="table table-condensed">
@@ -27,6 +28,6 @@
 			</tr>
 		</tbody>
 	</table>
-	<small>* Early bird price applies before June 1 2016.</small><br />
+	<small>* Early bird price applies before June 1st <?php echo $event_year?>.</small><br />
 	Team entries cost the same amount per person as individual entries.
 </div>

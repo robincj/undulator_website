@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php' ?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <h2>Other Great Races</h2>
 These are a few of our favourite nearby mountain races which have a
 similar vibe to the Aorangi Undulator:

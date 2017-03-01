@@ -1,7 +1,11 @@
+
 <?php
+require_once '../config.php'?>
+<?php
+
 include 'piwik_track.php';
 
-$eventDate = 'Sat Nov 5th';
+$eventDate = 'Sat Nov 4th';
 ?>
 <h2>Aorangi Undulator Race Day Schedule</h2>
 <h3>

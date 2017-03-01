@@ -1,4 +1,4 @@
-
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <h4>IMPORTANT Note For A100 Competitors</h4>
 <p>People doing the 3 day Aorangi 100 event will need to book
 	accommodation somewhere between Putangirua Pinnacles and Mangatoetoe,

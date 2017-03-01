@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php' ?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <h2 class="AU">Getting There</h2>
 <h2 class="A100">Getting to the A100 Day 2 Start</h2>
 <p>

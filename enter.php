@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php'?>
+<?php require_once 'config.php'?>
 
 <div>
 	<h4 style="color: red;">
@@ -105,8 +106,8 @@
 		</div>
 
 		<div class="form-group">
-			<label for="age" class="col-xs-3 col-sm-2 control-label">Age on 4th
-				Nov 2016</label>
+			<label for="age" class="col-xs-3 col-sm-2 control-label">Age on 3rd
+				Nov 2017</label>
 			<div class="col-xs-3 col-sm-2">
 				<input type="number" name="age" id="age" class="form-control"
 					size="2" min="10" max="100" value="20">

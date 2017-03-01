@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php' ?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <h2>Q &amp; A</h2>
 <table class="table">
 	<tr class="success">

@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php'?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <div class="text-center">
 	<h2>Maps and Profiles</h2>
 	<p>

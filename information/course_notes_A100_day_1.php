@@ -1,6 +1,7 @@
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 &nbsp;
 
-<p>Day 1 of the Aorangi Undulator 100 starts on Fri 4th November at 7am
+<p>Day 1 of the Aorangi Undulator 100 starts on Fri 3rd November at 7am
 	at the end of Muritai Road, at the gate where the where 4WD road
 	starts. You will be running 50km which is expected to take competitors
 	from 5 to 11 hours.</p>

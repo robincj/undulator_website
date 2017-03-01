@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php' ?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 			<h2>Places to Stay</h2>
 			<p>There are various baches, cabins, caravans and campsites available
 				in and around ngawi.

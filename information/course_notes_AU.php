@@ -1,3 +1,4 @@
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 &nbsp;
 <p class="A100">
 	You will be starting your second day with the 1-day event competitors.<br />

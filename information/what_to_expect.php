@@ -1,4 +1,5 @@
-<?php include 'piwik_track.php' ?>
+<?php include 'piwik_track.php'?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <h2>What to Expect</h2>
 <h3>Total Undulation</h3>
 <p>

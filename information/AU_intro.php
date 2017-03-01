@@ -1,13 +1,14 @@
 <?php include 'piwik_track.php' ?>
+<?php require_once '../config.php'?>
 <div class="text-center">
-	<h3>SATURDAY 5th NOVEMBER, 2016</h3>
+	<h3>SATURDAY 4th NOVEMBER, 2017</h3>
 
 	<p>
 		The Aorangi Undulator is a 33km trail-running race which takes
 		competitors through five valleys and four <i>undulations</i> among the
 		mountains of the Aorangi Forest Park, situated in the south-east of
 		the Wairarapa. The November 2014 Aorangi Undulator was the first
-		official race and the 2015 event was even more popular.
+		official race and the subsequent events have been even more popular.
 		Winners are expected to finish in around 5 hours while others will
 		take up to 10 hours.
 	</p>

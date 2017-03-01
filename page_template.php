@@ -1,3 +1,4 @@
+<?php require_once 'config.php'?>
 <!DOCTYPE html>
 <?php
 // Allow urls to be used to trigger the index page to load s specific maincontent by ajax.
@@ -43,12 +44,12 @@ $main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
 	rel='stylesheet' type='text/css'>
 <link href='css/main.css' rel='stylesheet' type='text/css'>
 <link href='css/unseen-column.css' rel='stylesheet' type='text/css'>
-
+<!-- 
 <link type="text/css"
 	href="js/timepicker/css/bootstrap-timepicker.min.css" />
 <script type="text/javascript"
 	src="js/timepicker/js/bootstrap-timepicker.min.js"></script>
-
+ -->
 <!-- main stylesheet to override defaults above -->
 <link rel="stylesheet" href="<?php echo $main_css ?>">
 

@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php'?>
+<?php require_once 'config.php'?>
 <?php
 
 $to_organiser = "robin@aorangiundulator.org,chrismartinc@hotmail.com";
@@ -54,10 +55,10 @@ echo <<<EOH
 EOH;
 
 // Add to entrylist csv file
-$entrylist_file = "information/entries/entries_au_2016.csv";
+$entrylist_file = $entries_file_au;
 $entrylimit = 200;
 if ($params ['event'] == "A100") {
-	$entrylist_file = "information/entries/entries_a100_2016.csv";
+	$entrylist_file = $entries_file_a100;
 	$entrylimit = 30;
 }
 $entrycount = file_rowcount ( $entrylist_file, TRUE );

@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php'?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <style>
 /* @import url(http://fonts.googleapis.com/css?family=Handlee);
 */

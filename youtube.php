@@ -1,3 +1,4 @@
+<?php require_once 'config.php'?>
 <?php include 'piwik_track.php'?>
 
 <h3>Videos</h3>

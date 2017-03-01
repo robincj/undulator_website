@@ -1,5 +1,6 @@
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
  &nbsp;
-<p>Day 3 of the Aorangi Undulator 100 starts on Sunday 6th November.
+<p>Day 3 of the Aorangi Undulator 100 starts on Sunday 5th November.
 	Known as the Haurangi Crossing, it is 25km long. Expected time 4-5
 	hours. Longest could take 10</p>
 <p>

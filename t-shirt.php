@@ -1,3 +1,4 @@
+<?php require_once 'config.php'?>
 <?php include 'piwik_track.php' ?>
 <div class="text-center">
 <h3>T-Shirts</h3>

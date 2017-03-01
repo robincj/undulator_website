@@ -1,4 +1,5 @@
 <?php include 'piwik_track.php' ?>
+<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <div class="row text-center">
 	<a href="http://www.aorangitrust.org.nz/"> <img class="img-responsive"
 		style="margin: 0 auto;" src="images/logos/aorangi_trust_logo.png" />
