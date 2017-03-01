@@ -1,0 +1,14 @@
+firstname: Charlie
+surname: Swart
+email: charles_swart@yahoo.com
+homelocation: Wellington
+event: au
+age: 30
+gender: M
+estimated_time: 7.5-8 hours
+previous_events: this will be my first race of this type.  I have done some of the great walks (abel tasman, tongariro), and some local tramps in Tararua's.  I am currently training for the half iron man in Taupo in Dec.  I heard about the race through my friend Jimmie Fourie who has registered for the 100km.  My plan is to pair up with him for the undulator.
+medical: nil
+t-size: 
+t-quantity: 0
+query: 
+price: 50

@@ -1,0 +1,14 @@
+firstname: Martin
+surname: Durney
+email: martindurneynz@gmail.com
+homelocation: Wellington
+event: au
+age: 34
+gender: M
+estimated_time: 
+previous_events: B Pack - Tuesday night running from the SC.
+medical: I suffer from bouts of Awesomeness followed by extended periods of extreme laziness. No other medical conditions.
+t-size: 
+t-quantity: 0
+query: 
+price: 50

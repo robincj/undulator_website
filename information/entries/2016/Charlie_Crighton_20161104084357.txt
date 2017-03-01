@@ -1,0 +1,14 @@
+firstname: Charlie
+surname: Crighton
+email: charlie@crighton.net.nz
+homelocation: Wellington
+event: au
+age: 20
+gender: M
+estimated_time: 
+previous_events: Previous competitor
+medical: None
+t-size: L
+t-quantity: 1
+query: 
+price: 75
