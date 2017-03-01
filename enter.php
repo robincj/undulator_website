@@ -239,7 +239,7 @@ function setPrice() {
 			price += 150;			
 		}
 		else if (event == "au" ){
-			price += 35;
+			price += 60;
 		}
 	}
 	else {
@@ -247,7 +247,7 @@ function setPrice() {
 			price += 180;
 		}
 		else if (event == "au" ){
-			price += 50;
+			price += 80;
 		}
 	}
 	price += $("#t-quantity").val() * 25; // 25 for each t-shirt

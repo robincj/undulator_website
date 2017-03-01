@@ -13,8 +13,8 @@
 		<tbody>
 			<tr>
 				<td>Aorangi Undulator</td>
-				<td>$50</td>
-				<td>$35</td>
+				<td>$80</td>
+				<td>$60</td>
 			</tr>
 			<tr>
 				<td>A100</td>
