@@ -37,17 +37,17 @@ include_once '../php/string_functions.php';
 
 	<div id="entries_panels" class="tab-content">
 		<div role="tabpanel" class="tab-pane fade" id="entries_AU">
-			<?php entries_table ( "Aorangi Undulator", $entries_file_au,$max_entries_au ); ?>
+			<?php entries_table ( "Aorangi Undulator", ENTRIES_FILE_AU,MAX_ENTRIES_AU ); ?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="entries_A100">
-			<?php entries_table ( "Aorangi Undulator 100", $entries_file_a100, $max_entries_a100 ); ?>
+			<?php entries_table ( "Aorangi Undulator 100", ENTRIES_FILE_A100, MAX_ENTRIES_A100 ); ?>
 		</div>
 
 		<div role="tabpanel" class="tab-pane fade" id="waitlist_AU">
-			<?php waitlist_table ( "Aorangi Undulator", $entries_file_au, $max_entries_au ); ?>
+			<?php waitlist_table ( "Aorangi Undulator", ENTRIES_FILE_AU, MAX_ENTRIES_AU ); ?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="waitlist_A100">
-			<?php waitlist_table ( "Aorangi Undulator 100", $entries_file_a100, $max_entries_a100 ); ?>
+			<?php waitlist_table ( "Aorangi Undulator 100", ENTRIES_FILE_A100, MAX_ENTRIES_A100 ); ?>
 		</div>
 
 	</div>

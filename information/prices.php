@@ -13,21 +13,21 @@
 		<tbody>
 			<tr>
 				<td>Aorangi Undulator</td>
-				<td>$80</td>
-				<td>$60</td>
+				<td>$<?=PRICE_AU?></td>
+				<td>$<?=PRICE_AU_EARLY?></td>
 			</tr>
 			<tr>
 				<td>A100</td>
-				<td>$180</td>
-				<td>$150</td>
+				<td>$<?=PRICE_A100?></td>
+				<td>$<?=PRICE_A100_EARLY?></td>
 			</tr>
 			<tr>
 				<td>T-Shirts</td>
-				<td>$25</td>
-				<td>$25</td>
+				<td>$<?=PRICE_TSHIRT?></td>
+				<td>$<?=PRICE_TSHIRT?></td>
 			</tr>
 		</tbody>
 	</table>
-	<small>* Early bird price applies before June 1st <?php echo $event_year?>.</small><br />
+	<small>* Early bird price applies before <?=EARLY_ENTRY_DATE?>.</small><br />
 	Team entries cost the same amount per person as individual entries.
 </div>

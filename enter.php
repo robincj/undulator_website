@@ -3,7 +3,7 @@
 
 <div>
 	<h4 style="color: red;">
-		Entries are now open for the 2016 event.
+		Entries are now open for the <?=EVENT_YEAR?> event.
 	</h4>
 </div>
 <div class="panel-group" id="prices_accordion" role="tablist"
@@ -225,21 +225,21 @@
 </div>
 
 <script>
-
 document.getElementById("event_option_" + au_event).selected = true;
 
 function setPrice() {
-	var datenum = <?php echo date("Ymd") ?>; 
+	var datenum = <?= date("Ymd") ?>,earlydate = <?= date("Ymd", strtotime(EARLY_ENTRY_DATE)) ?> ; 
 	var event = $("#event option:selected").val();
 	var price = 0 ;
 	var note = '';
-	if (datenum < 20160601 ){
-		note = "(Early bird price before June 1, 2016)";
+	note = <?= time() ?> +" <?= EARLY_ENTRY_DATE ?>";
+	if (datenum < earlydate ){
+		note = "(Early bird price before <?= EARLY_ENTRY_DATE ?>)";
 		if (event == "A100" ){
 			price += 150;			
 		}
 		else if (event == "au" ){
-			price += 60;
+			price += 50;
 		}
 	}
 	else {
@@ -247,7 +247,7 @@ function setPrice() {
 			price += 180;
 		}
 		else if (event == "au" ){
-			price += 80;
+			price += 70;
 		}
 	}
 	price += $("#t-quantity").val() * 25; // 25 for each t-shirt
@@ -276,7 +276,9 @@ $("#enter").submit(function( event ) {
 	});
 
 </script>
-<?php }
+<?php
 
-entryForm();
+}
+
+entryForm ();
 ?>

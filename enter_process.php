@@ -55,10 +55,10 @@ echo <<<EOH
 EOH;
 
 // Add to entrylist csv file
-$entrylist_file = $entries_file_au;
+$entrylist_file = ENTRIES_FILE_AU;
 $entrylimit = 200;
 if ($params ['event'] == "A100") {
-	$entrylist_file = $entries_file_a100;
+	$entrylist_file = ENTRIES_FILE_A100;
 	$entrylimit = 30;
 }
 $entrycount = file_rowcount ( $entrylist_file, TRUE );

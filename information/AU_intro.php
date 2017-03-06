@@ -1,4 +1,4 @@
-<?php include 'piwik_track.php' ?>
+<?php include_once '../piwik_track.php' ?>
 <?php require_once '../config.php'?>
 <div class="text-center">
 	<h3>SATURDAY 4th NOVEMBER, 2017</h3>
