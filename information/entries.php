@@ -1,9 +1,8 @@
-<?php include 'piwik_track.php'?>
+<?php file_exists('piwik_track.php')?include_once 'piwik_track.php':include_once '../piwik_track.php'?>
 <?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
 <?php
 
 include_once '../php/string_functions.php';
-
 
 ?>
 <style>
@@ -37,17 +36,17 @@ include_once '../php/string_functions.php';
 
 	<div id="entries_panels" class="tab-content">
 		<div role="tabpanel" class="tab-pane fade" id="entries_AU">
-			<?php entries_table ( "Aorangi Undulator", ENTRIES_FILE_AU,MAX_ENTRIES_AU ); ?>
+			<?php entries_table ( "Aorangi Undulator", "entries/".ENTRIES_FILE_AU,MAX_ENTRIES_AU ); ?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="entries_A100">
-			<?php entries_table ( "Aorangi Undulator 100", ENTRIES_FILE_A100, MAX_ENTRIES_A100 ); ?>
+			<?php entries_table ( "Aorangi Undulator 100", "entries/".ENTRIES_FILE_A100, MAX_ENTRIES_A100 ); ?>
 		</div>
 
 		<div role="tabpanel" class="tab-pane fade" id="waitlist_AU">
-			<?php waitlist_table ( "Aorangi Undulator", ENTRIES_FILE_AU, MAX_ENTRIES_AU ); ?>
+			<?php waitlist_table ( "Aorangi Undulator", "entries/".ENTRIES_FILE_AU, MAX_ENTRIES_AU ); ?>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="waitlist_A100">
-			<?php waitlist_table ( "Aorangi Undulator 100", ENTRIES_FILE_A100, MAX_ENTRIES_A100 ); ?>
+			<?php waitlist_table ( "Aorangi Undulator 100", "entries/".ENTRIES_FILE_A100, MAX_ENTRIES_A100 ); ?>
 		</div>
 
 	</div>
@@ -96,17 +95,17 @@ function entries_table($title, $csvfile, $max_entries) {
 	echo "<h3>$title</h3>";
 	?>
 <div class="table-responsive unseen">
-<table class="table-responsive table table-striped">
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>Name</th>
-			<th>Category</th>
-			<th>Home Town</th>
-			<th>Running Resum&eacute;</th>
-		</tr>
-	</thead>
-	<tbody>
+	<table class="table-responsive table table-striped">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Category</th>
+				<th>Home Town</th>
+				<th>Running Resum&eacute;</th>
+			</tr>
+		</thead>
+		<tbody>
 <?php
 	$count = 1;
 	foreach ( array_map ( 'str_getcsv', file ( $csvfile ) ) as $entry ) {
@@ -120,18 +119,18 @@ function entries_table($title, $csvfile, $max_entries) {
 		if (! $cat || is_numeric ( $age ))
 			$cat = category ( $age );
 		$cat = ucwords ( $cat );
-		$previousEnc = htmlentities($previous, ENT_QUOTES, NULL, FALSE);
+		$previousEnc = htmlentities ( $previous, ENT_QUOTES, NULL, FALSE );
 		if ($count > $max_entries) {
 			break;
 		}
 		ucname_ ( $name );
 		print "<tr data-toggle='tooltip' title='$previousEnc' data-placement='top' ><td>$count</td><td>$name</td><td>$cat</td><td>$location</td><td>$previous</td></tr>\n";
-		$count++;
+		$count ++;
 	}
 	?>
 
 </tbody>
-</table>
+	</table>
 </div>
 
 <?php
@@ -161,16 +160,16 @@ function waitlist_table($title, $csv, $max_entries) {
 	";
 	?>
 <div class="table-responsive unseen">
-<table class="table table-striped">
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>Name</th>
-			<th>Category</th>
-			<th>Running Resum&eacute;</th>
-		</tr>
-	</thead>
-	<tbody>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Category</th>
+				<th>Running Resum&eacute;</th>
+			</tr>
+		</thead>
+		<tbody>
 	
 	<?php
 	$count = 1;
@@ -183,16 +182,16 @@ function waitlist_table($title, $csv, $max_entries) {
 		if (! $cat || is_numeric ( $age ))
 			$cat = category ( $age );
 		$cat = ucwords ( $cat );
-		$previousEnc = htmlentities($previous, ENT_QUOTES, NULL, FALSE);
+		$previousEnc = htmlentities ( $previous, ENT_QUOTES, NULL, FALSE );
 		ucname_ ( $name );
 		
 		print "<tr data-toggle='tooltip' title='$previousEnc' data-placement='top' ><td>$count</td><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
-		$count++;
+		$count ++;
 	}
 	?>
 	
 	</tbody>
-</table>
+	</table>
 </div>
 <script>
 $(function () {
