@@ -55,10 +55,10 @@ echo <<<EOH
 EOH;
 
 // Add to entrylist csv file
-$entrylist_file = "information/entries/".ENTRIES_FILE_AU;
+$entrylist_file = "information/entries/" . ENTRIES_FILE_AU;
 $entrylimit = 200;
 if ($params ['event'] == "A100") {
-	$entrylist_file = "information/entries/".ENTRIES_FILE_A100;
+	$entrylist_file = "information/entries/" . ENTRIES_FILE_A100;
 	$entrylimit = 30;
 }
 $entrycount = file_rowcount ( $entrylist_file, TRUE );
@@ -100,7 +100,6 @@ $row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},{$par
 $row .= ",{$params['homelocation']},{$params['medical']}";
 $row = trim ( $row ) . "\n";
 file_put_contents ( $entrylist_file, $row, FILE_APPEND );
-echo $entrylist_file;
 
 // Email organiser
 // bool mail ( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] )
@@ -164,7 +163,7 @@ Use your full name as the reference.
 
 Payment would be appreciated within 7 days of registering.
 ";
-if (date ( "Ymd" ) < 20160601)
+if (date ( "Ymd" ) < date ( "Ymd", EARLY_ENTRY_DATE ))
 	$msg .= "Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
 ";
 
