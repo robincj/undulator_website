@@ -1,0 +1,14 @@
+firstname: Mira
+surname: Horak
+email: mirahorakojc@gmail.com
+homelocation: WELLINGTON
+event: au
+age: 32
+gender: M
+estimated_time: 6:15-30
+previous_events: Aorangi 2015 , Aorangi 2016 , couple of marathons , half marathons , Xterra 2017
+medical: 
+t-size: 
+t-quantity: 0
+query: 
+price: 50
