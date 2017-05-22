@@ -94,7 +94,7 @@ class Tiler {
 		</span>
 EOH;
 		}
-		echo "</div>";
+		?></div><?php
 	}
 }
 ?>

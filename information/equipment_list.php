@@ -19,20 +19,22 @@
 			
 			<li class="list-group-item">Emergency (Survival) Blanket
 			
-			<li class="list-group-item">Poly Prop top and bottoms, a size that
-				can be worn by the competitor
+			<li class="list-group-item">Thermal top and bottoms (e.g.
+				polypropylene), a size that can be worn by the competitor
 			
 			<li class="list-group-item">Head torch with fresh batteries
 			
 			<li class="list-group-item">Whistle
 			
-			<li class="list-group-item">Hat
+			<li class="list-group-item">Warm Hat
 			
 			<li class="list-group-item">Compass
 			
-			<li class="list-group-item">Topo-map
+			<li class="list-group-item">Topo-map covering the entire route
 			
-			<li class="list-group-item">Sufficient food and water
+			<li class="list-group-item">GPS unit with built-in maps (e.g. Garmin
+				Etrex 10), ViewRanger phone app, or equivalent. Unit must have
+				1:50000 scale, or better, topo maps covering the entire route.
 			
 			<li class="list-group-item">Mobile Phone - with organiser's number
 				stored: 021 216 6436 (Chris Martin)
@@ -50,6 +52,11 @@
 					<li>Plasters
 				
 				</ul>
+			
+			<li class="list-group-item">Sufficient food for at least 1 day
+			
+			<li class="list-group-item">Container (bottle/bladder) which can hold
+				at least 1 litre of water
 		
 		</ul>
 	</div>
