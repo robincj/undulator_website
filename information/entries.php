@@ -143,6 +143,7 @@ function entries_table($title, $csvfile, $max_entries) {
 function waitlist_table($title, $csv, $max_entries) {
 	// $csvdata could be an array of data already processed, or it could be a filename
 	$count = 1;
+	$csvdata = array();
 	if (! is_array ( $csv )) {
 		foreach ( array_map ( 'str_getcsv', file ( $csv ) ) as $entry ) {
 			if (! $entry || preg_match ( '/^#/', reset ( $entry ) ) || preg_match ( '/^\s*$/', reset ( $entry ) ))
