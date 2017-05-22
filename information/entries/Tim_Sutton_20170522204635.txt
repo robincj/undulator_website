@@ -1,0 +1,14 @@
+firstname: Tim
+surname: Sutton
+email: timstar4@hotmail.com
+homelocation: Wellington
+event: A100
+age: 39
+gender: M
+estimated_time: 10hr56min
+previous_events: I was coming second in an egg and spoon race once...   ...till I dropped the egg.
+medical: None
+t-size: 
+t-quantity: 0
+query: 
+price: 150
