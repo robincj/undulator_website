@@ -101,6 +101,13 @@ nav .other_event_link img {
 						-->
 						<li onClick="loadmaincontent('information/equipment_list.php')"><a
 							href="#">EQUIPMENT LIST</a></li>
+
+						<li class="A100"><a href="#"
+							onClick="loadmaincontent('results/spirit_award.php')"> A100
+								Spirit Award Trophy</a></li>
+						<li><a href="#"
+							onClick="loadmaincontent('information/prizes.php')">
+								Prizes</a></li>
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -109,7 +116,8 @@ nav .other_event_link img {
 				</a>
 
 					<ul class="dropdown-menu" role="menu">
-						<li onClick="loadmaincontent('results/spirit_award.php')"><a href="#">A100 Spirit Award</a></li>
+						<li onClick="loadmaincontent('results/spirit_award.php')"><a
+							href="#">A100 Spirit Award</a></li>
 						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
 								Records</a></li>
 						<li><a target="_blank"
