@@ -107,7 +107,7 @@ nav .other_event_link img {
 								Spirit Award Trophy</a></li>
 						<li><a href="#"
 							onClick="loadmaincontent('information/prizes.php')">
-								Prizes</a></li>
+								PRIZES</a></li>
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"

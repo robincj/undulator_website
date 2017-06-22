@@ -78,6 +78,8 @@ function loadmaincontent(contentfile, nojump){
 		else {
 			$('html, body').animate({ scrollTop: 0  }, 500);  
     	}
+    	var pageref = contentfile.replace(/\.[^\.]+$/,"");
+		window.window.history.pushState({},"","/?page="+pageref);
 	
 }
 </script>
