@@ -80,26 +80,40 @@ else {
 $("#intro").load("information/" + au_event + "_intro.php");
 </script>
 
-
 <div class="row">
 	<div class='col-xs-12'>
+		<div class="text-center"><?= $a100Msg . $auMsg?></div>
+	</div>
+</div>
+
+<div class="row AU">
+	<div class='col-xs-12'>
 		<div class="text-center">
-			<h4><a href="#" onClick="loadmaincontent('results/spirit_award.php')">
-				A100 Spirit Award Trophy</a>
+			<h4>
+				<a href="#" onClick="loadmaincontent('information/prizes.php')">Prizes</a>
 			</h4>
 		</div>
 	</div>
 </div>
+<div class="row A100">
 	<div class='col-xs-12'>
 		<div class="text-center">
-			<h5>
-				<a target="_blank"
-					href="https://docs.google.com/spreadsheets/d/1fVN-G5ftA--eqb1DRrJAubYEgSs8e3siQcyB5TtFnRY/edit#gid=0">Results
-					for 2016</a>
-			</h5>
+			<a href="#" onClick="loadmaincontent('results/spirit_award.php')">
+				A100 Spirit Award Trophy</a>
 		</div>
 	</div>
 </div>
+<div class='col-xs-12'>
+	<div class="text-center">
+		<h5>
+			<a target="_blank"
+				href="https://docs.google.com/spreadsheets/d/1fVN-G5ftA--eqb1DRrJAubYEgSs8e3siQcyB5TtFnRY/edit#gid=0">Results
+				for 2016</a>
+		</h5>
+	</div>
+</div>
+</div>
+<!-- 
 <div class="row">
 	<div class='col-xs-12'>
 		<div class="text-center">
@@ -108,12 +122,7 @@ $("#intro").load("information/" + au_event + "_intro.php");
 		</div>
 	</div>
 </div>
-
-<div class="row">
-	<div class='col-xs-12'>
-		<div class="text-center"><?= $a100Msg . $auMsg?></div>
-	</div>
-</div>
+ -->
 
 <br />
 <div class="row">
