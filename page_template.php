@@ -3,13 +3,18 @@
 <?php
 // Allow urls to be used to trigger the index page to load s specific maincontent by ajax.
 $maincontent = 'home.php';
-if (isset ( $_REQUEST ['page'] ) && $_REQUEST ['page']) {
+if (! empty ( $_REQUEST ['page'] )) {
 	$maincontent = $_REQUEST ['page'] . ".php?";
 }
-if (isset ( $_REQUEST ['gallerypage'] )) {
+if (! empty ( $_REQUEST ['event'] ) && $_REQUEST ['event'] != $au_event) {
+	$previous = $au_event;
+	$au_event = $_REQUEST ['event'];
+	$au_other_event = $previous;
+}
+if (! empty ( $_REQUEST ['gallerypage'] )) {
 	$maincontent .= "&gallerypage=" . $_REQUEST ['gallerypage'];
 }
-if (isset ( $_REQUEST ['year'] )) {
+if (! empty ( $_REQUEST ['year'] )) {
 	$maincontent .= "&year=" . $_REQUEST ['year'];
 }
 
@@ -79,7 +84,7 @@ function loadmaincontent(contentfile, nojump){
 			$('html, body').animate({ scrollTop: 0  }, 500);  
     	}
     	var pageref = contentfile.replace(/\.[^\.]+$/,"");
-		window.window.history.pushState({},"","/?page="+pageref);
+		window.window.history.pushState({},"","/?event="+au_event+"&page="+pageref);
 	
 }
 </script>
@@ -125,7 +130,7 @@ function loadmaincontent(contentfile, nojump){
 
 
 		<script>loadmaincontent('<?php echo $maincontent ?>', true)</script>
-		
+
 		<div id="push"></div>
 	</div>
 	<div id="footer">
