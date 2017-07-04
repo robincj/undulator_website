@@ -106,8 +106,7 @@
 		</div>
 
 		<div class="form-group">
-			<label for="age" class="col-xs-3 col-sm-2 control-label">Age on 3rd
-				Nov 2017</label>
+			<label for="age" class="col-xs-3 col-sm-2 control-label">Age on <?=date("jS F Y",strtotime(DATE_A100_DAY1))?></label>
 			<div class="col-xs-3 col-sm-2">
 				<input type="number" name="age" id="age" class="form-control"
 					size="2" min="10" max="100" value="20">
