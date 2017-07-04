@@ -78,11 +78,11 @@ nav .other_event_link img {
 						<!-- <li class="A100"><a href="#" onClick="loadmaincontent('information/directions.php')">DAY 2
 								START: HOW TO GET THERE</a></li> -->
 						<li class="AU"><a href="#"
-							onClick="loadmaincontent('information/schedule.php')">RACE DAY
+							onClick="loadmaincontent('information/schedule_AU.php')">RACE DAY
 								SCHEDULE</a></li>
-						<!-- <li class="A100"><a
-						  href="#"	onClick="loadmaincontent('information/schedule.php')">A100 DAY 2
-								SCHEDULE</a></li> -->
+						<li class="A100"><a href="#"
+							onClick="loadmaincontent('information/schedule_A100.php')">A100
+								RACE SCHEDULE</a></li>
 
 						<li><a href="#"
 							onClick="loadmaincontent('information/course_notes.php')">COURSE
@@ -106,8 +106,7 @@ nav .other_event_link img {
 							onClick="loadmaincontent('results/spirit_award.php')"> A100
 								Spirit Award Trophy</a></li>
 						<li><a href="#"
-							onClick="loadmaincontent('information/prizes.php')">
-								PRIZES</a></li>
+							onClick="loadmaincontent('information/prizes.php')"> PRIZES</a></li>
 					</ul></li>
 
 				<li class="dropdown"><a href="#" class="dropdown-toggle"

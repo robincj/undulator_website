@@ -1,11 +1,9 @@
-
 <?php
 require_once '../config.php'?>
 <?php
-
 include 'piwik_track.php';
-
-$eventDate = 'Sat Nov 4th';
+$eventDate = date("D M jS",strtotime(DATE_AU));
+//$eventDate = 'Sat Nov 4th';
 ?>
 <h2>Aorangi Undulator Race Day Schedule</h2>
 <h3>
@@ -42,5 +40,12 @@ if you left it at the start.
 	
 	<li>A massage table for a post run massage; this is not part of race
 		entry so bring some cash.
-
 </ul>
+
+<p>Ring Chris Martin on 0212166436 if you have any questions.</p>
+<h3>MOBILE RECEPTION: THERE ISN'T ANY</h3>
+<p>
+	THE AORANGI COAST AREA HAS NO CELLUAR NETWORK COVERAGE, SO YOU CAN'T USE
+	PHONE!!! <br /> But this is the beauty of the region, it's back to
+	basics...
+</p>
