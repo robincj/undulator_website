@@ -1,5 +1,5 @@
 <?php
-// Config - set some variables (TBA: may change these to constants)
+// Config - define some constants
 define ("EVENT_YEAR", 2017);
 $event_year = EVENT_YEAR;
 define ("DATE_AU", "$event_year-11-04");
