@@ -23,8 +23,7 @@ $entrylist_file = "information/entries/entries_au_2017.csv";
 if (! file_exists ( $entrylist_file ))
 	file_put_contents ( $entrylist_file, '' );
 $entrycount = file_rowcount ( $entrylist_file, TRUE );
-$entrylimit = 200;
-$entriesLeft = $entrylimit - $entrycount;
+$entriesLeft = MAX_ENTRIES_AU - $entrycount;
 $notFull = <<<EOH
 		<h4>
 			<a href="#" onClick="loadmaincontent('enter.php')"
@@ -47,14 +46,13 @@ if ($entriesLeft <= 0)
 	$auMsg .= $full;
 else {
 	$auMsg .= $notFull;
-	$auMsg .= $entriesLeft < 21 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+	$auMsg .= $entriesLeft < MAX_ENTRIES_AU*0.8? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
 $entrylist_file = "information/entries/entries_a100_2017.csv";
 if (! file_exists ( $entrylist_file ))
 	file_put_contents ( $entrylist_file, '' );
 $entrycount = file_rowcount ( $entrylist_file, TRUE );
-$entrylimit = 30;
-$entriesLeft = $entrylimit - $entrycount;
+$entriesLeft = MAX_ENTRIES_A100 - $entrycount;
 $a100Msg = '<div class="A100">';
 
 if (! $open) {
@@ -64,7 +62,7 @@ if (! $open) {
 	$a100Msg .= $full;
 else {
 	$a100Msg .= $notFull;
-	$auMsg .= $entriesLeft < 21 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+	$auMsg .= $entriesLeft < MAX_ENTRIES_A100*0.6? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
 // OVERRIDE ENTRY MESSAGE FOR RESULTS
 // $a100Msg = '';
