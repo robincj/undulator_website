@@ -68,6 +68,7 @@ else {
 // $a100Msg = '';
 // $auMsg = '<div><a href="https://drive.google.com/file/d/0B0kHo5rD1yVIUmpKa1FfSTJpU01tcno4YlNqWlNKem52QU5J/view?usp=sharing">Results for 2016 are here.</a></div>';
 
+echo "<!-- max: ".MAX_ENTRIES_A100 ." count:  $entrycount Left: $entriesLeft -->";
 ?>
 <div class="row">
 	<div class='col-xs-12'>
