@@ -108,7 +108,7 @@ $("#intro").load("information/" + au_event + "_intro.php");
 	<div class='col-xs-12'>
 		<div class="text-center">
 			<h4>
-				<a target="_blank" href="results/AU_A100_2017_Results.pdf">2017 RESULTS</a>
+				<a target="_blank" href="https://www.dropbox.com/sh/1a0dumdxuh6wzlo/AACEDHJWNpwI1ApPzbrojxKVa?dl=0">2017 RESULTS</a>
 			</h4>
 		</div>
 	</div>
