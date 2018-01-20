@@ -1,11 +1,11 @@
 <?php
 // Config - define some constants
-define ("EVENT_YEAR", 2017);
+define ("EVENT_YEAR", 2018);
 $event_year = EVENT_YEAR;
-define ("DATE_AU", "$event_year-11-04");
-define ("DATE_A100_DAY1", "$event_year-11-03");
+define ("DATE_AU", "$event_year-11-03");
+define ("DATE_A100_DAY1", "$event_year-11-02");
 define ("DATE_A100_DAY2", DATE_AU);
-define ("DATE_A100_DAY3", "$event_year-11-05");
+define ("DATE_A100_DAY3", "$event_year-11-04");
 define ("ENTRIES_FILE_AU", "entries_au_$event_year.csv");
 define ("ENTRIES_FILE_A100", "entries_a100_$event_year.csv");
 define ("MAX_ENTRIES_AU", 120);

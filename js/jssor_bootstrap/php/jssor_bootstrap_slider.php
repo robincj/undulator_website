@@ -20,7 +20,7 @@
 	<div u="slides"
 		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 642px; overflow: hidden; background-color: #000;">
 	<?php
-	$photodir = "images/photos/2015";
+	$photodir = "images/photos";
 	$displayNum = 7;
 	// $photolist = explode(", ", "10689813_10152947587125695_4811765621027737093_n.jpg, 20.jpg, 10619916_10154865765765287_6749377587880673130_o.jpg, 5.jpg, A100_undies.jpg, image006.jpg, 11203537_977989312212363_6885734874301767830_o.jpg");
 	$imgFileList = array ();

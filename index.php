@@ -1,4 +1,5 @@
-<?php require_once 'config.php'?>
+<?php 
+require_once 'config.php'?>
 <?php
 $au_event = "AU";
 $au_other_event = "A100";

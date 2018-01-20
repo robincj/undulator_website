@@ -76,12 +76,12 @@ $( document ).ajaxComplete(function() {
 function loadmaincontent(contentfile, nojump){
 	//$('.maincontent').slideUp(400, function(){$(this).load(contentfile).slideDown();}
 	$('.maincontent').load(contentfile).slideDown();
-		if (!nojump){	
-		 $('html, body').animate({
-		        scrollTop: $("#main").offset().top -30
-		    }, 500); }
-		else {
-			$('html, body').animate({ scrollTop: 0  }, 500);  
+	if (!nojump){	
+	 $('html, body').animate({
+	        scrollTop: $("#main").offset().top -30
+	    }, 500); }
+	else {
+		$('html, body').animate({ scrollTop: 0  }, 500);  
     	}
     	var pageref = contentfile.replace(/\.[^\.]+$/,"");
 		window.window.history.pushState({},"","/?event="+au_event+"&page="+pageref);
