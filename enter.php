@@ -3,19 +3,20 @@
 
 <div>
 	<h4 style="color: red;">
-		Entries are now open for the <?=EVENT_YEAR?> event.
+	<?= ENTRIES_OPEN? "Entries are not yet open for the next event.":"Entries are now open for the ".EVENT_YEAR." event."?>
 	</h4>
 </div>
 <div class="panel-group" id="prices_accordion" role="tablist"
 	aria-multiselectable="true">
 
 	<div class="panel panel-default">
-		<a data-toggle="collapse" data-parent="#prices_accordion"
-			href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h4 class="panel-title">View Prices</h4>
-			</div>
-		</a>
+		<div class="panel-heading" role="tab" id="headingOne">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#prices_accordion"
+					href="#collapseOne" aria-expanded="true"
+					aria-controls="collapseOne"> View Prices </a>
+			</h4>
+		</div>
 		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
 			aria-labelledby="headingOne">
 			<div class="panel-body">
@@ -280,11 +281,5 @@ $("#enter").submit(function( event ) {
 
 if (ENTRIES_OPEN)
 	entryForm ();
-else {
-	?>
-<div>
-	<h5>Entries are not yet open for the next event.</h5>
-</div>
-<?php
-}
+
 ?>
