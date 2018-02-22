@@ -2,28 +2,26 @@
 <?php require_once 'config.php'?>
 
 <?php
-
-function file_rowcount($filename, $ignoreblanks = FALSE)
-{
-    $linecount = 0;
-    $handle = fopen($filename, "r");
-    while (! feof($handle)) {
-        $line = fgets($handle);
-        if ($ignoreblanks && preg_match("/^(#.*|\s*)$/", $line)) {
-            continue;
-        }
-        $linecount ++;
-    }
-    
-    fclose($handle);
-    
-    return $linecount;
+function file_rowcount($filename, $ignoreblanks = FALSE) {
+	$linecount = 0;
+	$handle = fopen ( $filename, "r" );
+	while ( ! feof ( $handle ) ) {
+		$line = fgets ( $handle );
+		if ($ignoreblanks && preg_match ( "/^(#.*|\s*)$/", $line )) {
+			continue;
+		}
+		$linecount ++;
+	}
+	
+	fclose ( $handle );
+	
+	return $linecount;
 }
 
-$entrylist_file = "information/entries/entries_au_2017.csv";
-if (! file_exists($entrylist_file))
-    file_put_contents($entrylist_file, '');
-$entrycount = file_rowcount($entrylist_file, TRUE);
+$entrylist_file = "information/entries/" . ENTRIES_FILE_AU;
+if (! file_exists ( $entrylist_file ))
+	file_put_contents ( $entrylist_file, '' );
+$entrycount = file_rowcount ( $entrylist_file, TRUE );
 $entriesLeft = MAX_ENTRIES_AU - $entrycount;
 $notFull = <<<EOH
 		<h4>
@@ -44,26 +42,27 @@ EOH;
 
 $auMsg = '<div class="AU">';
 if ($entriesLeft <= 0)
-    $auMsg .= $full;
+	$auMsg .= $full;
 else {
-    $auMsg .= $notFull;
-    $auMsg .= $entriesLeft < MAX_ENTRIES_AU * 0.8 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+	$auMsg .= $notFull;
+	$auMsg .= $entriesLeft < MAX_ENTRIES_AU * 0.8 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
-$entrylist_file = "information/entries/entries_a100_2017.csv";
-if (! file_exists($entrylist_file))
-    file_put_contents($entrylist_file, '');
-$entrycount = file_rowcount($entrylist_file, TRUE);
+
+$entrylist_file = "information/entries/" . ENTRIES_FILE_A100;
+if (! file_exists ( $entrylist_file ))
+	file_put_contents ( $entrylist_file, '' );
+$entrycount = file_rowcount ( $entrylist_file, TRUE );
 $entriesLeft = MAX_ENTRIES_A100 - $entrycount;
 $a100Msg = '<div class="A100">';
 
 if (! ENTRIES_OPEN) {
-    $a100Msg = '';
-    $auMsg = "<div><h5>Entries are not yet open for the next event.</h5></div>";
+	$a100Msg = '';
+	$auMsg = "<div><h5>Entries are not yet open for the next event.</h5></div>";
 } elseif ($entriesLeft <= 0)
-    $a100Msg .= $full;
+	$a100Msg .= $full;
 else {
-    $a100Msg .= $notFull;
-    $auMsg .= $entriesLeft < MAX_ENTRIES_A100 * 0.6 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+	$a100Msg .= $notFull;
+	$auMsg .= $entriesLeft < MAX_ENTRIES_A100 * 0.6 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
 // OVERRIDE ENTRY MESSAGE FOR RESULTS
 // $a100Msg = '';
@@ -107,7 +106,9 @@ $("#intro").load("information/" + au_event + "_intro.php");
 	<div class='col-xs-12'>
 		<div class="text-center">
 			<h4>
-				<a target="_blank" href="https://www.dropbox.com/sh/1a0dumdxuh6wzlo/AACEDHJWNpwI1ApPzbrojxKVa?dl=0">2017 RESULTS</a>
+				<a target="_blank"
+					href="https://www.dropbox.com/sh/1a0dumdxuh6wzlo/AACEDHJWNpwI1ApPzbrojxKVa?dl=0">2017
+					RESULTS</a>
 			</h4>
 		</div>
 	</div>
