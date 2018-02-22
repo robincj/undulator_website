@@ -3,7 +3,7 @@
 
 <div>
 	<h4 style="color: red;">
-	<?= ENTRIES_OPEN? "Entries are not yet open for the next event.":"Entries are now open for the ".EVENT_YEAR." event."?>
+	<?= ENTRIES_OPEN? "Entries are now open for the ".EVENT_YEAR." event.":"Entries are not yet open for the next event."?>
 	</h4>
 </div>
 <div class="panel-group" id="prices_accordion" role="tablist"
