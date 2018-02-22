@@ -30,12 +30,13 @@
 		<div id="topo_map_panel" class=" panel-collapse collapse"
 			role="tabpanel" aria-labelledby="topo_map_panel_heading">
 			<div class="panel-body">
-			
-			Use these links to download from DropBox (fast)
-				<ul class="list-group">				
+
+				Use these links to download from DropBox (fast)
+				<ul class="list-group">
 					<li class="A100 list-group-item"><a target='_blank'
 						href="https://www.dropbox.com/s/v7qjylj2wnfvfrt/Undulator_Day1_A3_Print_Size_with_MagneticNorth.jpg?dl=0">
-							A100 Day 1 Course Map</a> <br/>Please note that the route on this map does not show the final 6km to Lake Oneke.</li>				
+							A100 Day 1 Course Map</a> <br />Please note that the route on
+						this map does not show the final 6km to Lake Oneke.</li>
 					<li class="AU list-group-item"><a target='_blank'
 						href="https://www.dropbox.com/s/0hqpbfqtns1zoc6/Undulator_Day2_A3_Print_Size_with_MagneticNorth.jpg?dl=0">
 							Aorangi Undulator 1-day Course Map</a></li>
@@ -46,22 +47,21 @@
 						href="https://www.dropbox.com/s/yrpe93ryelddb8m/Undulator_Day3_A3_Print_Size_MagneticNorth.jpg?dl=0">
 							A100 Day 3 Course Map</a></li>
 				</ul>
-				
-				
-			Use these links to download from Aorangi Undulator site (slow)
-				<ul class="list-group">				
+
+
+				Use these links to download from Aorangi Undulator site (slow)
+				<ul class="list-group">
 					<li class="A100 list-group-item"><a target='_blank' download
-						href="images/maps/topo/day1_topo.jpg">
-							A100 Day 1 Course Map</a> <br/>Please note that the route on this map does not show the final 6km to Lake Oneke.</li>				
+						href="images/maps/topo/day1_topo.jpg"> A100 Day 1 Course Map</a> <br />Please
+						note that the route on this map does not show the final 6km to
+						Lake Oneke.</li>
 					<li class="AU list-group-item"><a target='_blank' download
-						href="images/maps/topo/day2_topo.jpg">
-							Aorangi Undulator 1-day Course Map</a></li>
+						href="images/maps/topo/day2_topo.jpg"> Aorangi Undulator 1-day
+							Course Map</a></li>
 					<li class="A100 list-group-item"><a target='_blank' download
-						href="images/maps/topo/day2_topo.jpg">
-							A100 Day 2 Course Map</a></li>
+						href="images/maps/topo/day2_topo.jpg"> A100 Day 2 Course Map</a></li>
 					<li class="A100 list-group-item"><a target='_blank' download
-						href="images/maps/topo/day3_topo.jpg">
-							A100 Day 3 Course Map</a></li>
+						href="images/maps/topo/day3_topo.jpg"> A100 Day 3 Course Map</a></li>
 				</ul>
 			</div>
 		</div>

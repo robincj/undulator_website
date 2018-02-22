@@ -91,6 +91,5 @@ echo "</div>";
 		<li><a href='https://www.dropbox.com/l/3CzfVe7fseKF2ATSC21Inn'>Anne
 				Rose's Dropbox</a></li>
 	</ul>
-	</p>
 
 </div>

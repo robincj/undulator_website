@@ -15,16 +15,16 @@
 		<div class="col-sm-12">
 			<a href="images/maps/AU_route.png" target="_blank"> <img
 				class="AU img-responsive" src="images/maps/AU_route.png" />
-			</a>
-			<a href="images/maps/A100/A100-day2-route.png" target="_blank"> <img
-				class="A100 img-responsive" src="images/maps/A100/A100-day2-route.png" />
+			</a> <a href="images/maps/A100/A100-day2-route.png" target="_blank">
+				<img class="A100 img-responsive"
+				src="images/maps/A100/A100-day2-route.png" />
 			</a>
 		</div>
 	</div>
 
 	<iframe id="mapmyfitness_route"
 		src="http://snippets.mapmycdn.com/routes/view/embedded/322964533?width=600&height=400&elevation=true&info=true&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=1&unit_type=metric&map_mode=TERRAIN&last_updated=2014-08-25T10:44:33+12:00&show_marker_every=2"
-		height="640px" width="100%" frameborder="0"></iframe>
+		style='height: 640px; width: 100%; border-width: 0px'></iframe>
 	<div style="text-align: right; padding-right: 20px;">
 		<!-- 
 		<a target="_blank" href="http://www.mapmyrun.com/routes/create/">Create

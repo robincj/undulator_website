@@ -20,7 +20,6 @@ function file_rowcount($filename, $ignoreblanks = FALSE)
     return $linecount;
 }
 
-$open = FALSE;
 $entrylist_file = "information/entries/entries_au_2017.csv";
 if (! file_exists($entrylist_file))
     file_put_contents($entrylist_file, '');
@@ -57,7 +56,7 @@ $entrycount = file_rowcount($entrylist_file, TRUE);
 $entriesLeft = MAX_ENTRIES_A100 - $entrycount;
 $a100Msg = '<div class="A100">';
 
-if (! $open) {
+if (! ENTRIES_OPEN) {
     $a100Msg = '';
     $auMsg = "<div><h5>Entries are not yet open for the next event.</h5></div>";
 } elseif ($entriesLeft <= 0)

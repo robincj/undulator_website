@@ -276,8 +276,15 @@ $("#enter").submit(function( event ) {
 
 </script>
 <?php
-
 }
 
-entryForm ();
+if (ENTRIES_OPEN)
+	entryForm ();
+else {
+	?>
+<div>
+	<h5>Entries are not yet open for the next event.</h5>
+</div>
+<?php
+}
 ?>
