@@ -17,4 +17,4 @@ define ( "PRICE_AU", 70 );
 define ( "PRICE_AU_EARLY", 50 );
 define ( "PRICE_TSHIRT", 25 );
 define ( "ENTRIES_OPEN_DATE", '2018-02-22' );
-define ( "ENTRIES_OPEN", (strtotime ( ENTRIES_OPEN_DATE ) < time ()) );
+define ( "ENTRIES_OPEN", (strtotime ( ENTRIES_OPEN_DATE ) < time () && strtotime ( DATE_A100_DAY1 ) > time ()) );
