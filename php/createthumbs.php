@@ -6,9 +6,9 @@
  // in which thumbnails will be placed and the thumbnail's width.
  // We are assuming that the path will be a relative path working
  // both in the filesystem, and through the web for links
- * @param unknown $pathToImages
- * @param unknown $pathToThumbs
- * @param unknown $thumbWidth
+ * @param string $pathToImages
+ * @param string $pathToThumbs
+ * @param integer $thumbWidth
  */
 function createThumbs($pathToImages, $pathToThumbs, $thumbWidth) {
 	// open the directory
@@ -22,11 +22,11 @@ function createThumbs($pathToImages, $pathToThumbs, $thumbWidth) {
 		$thpath = "$pathToThumbs/$fname";
 		if (file_exists ( $thpath ))
 			continue;
-			// parse path for the extension
+		// parse path for the extension
 		$info = pathinfo ( $fpath );
 		if (! array_key_exists ( 'extension', $info ))
 			continue;
-			// continue only if this is a JPEG/PNG image
+		// continue only if this is a JPEG/PNG image
 		$format = NULL;
 		$ext = strtolower ( $info ['extension'] );
 		if ($ext == 'jpg' || $ext == 'jpeg')

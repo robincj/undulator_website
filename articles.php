@@ -1,7 +1,7 @@
 <?php require_once 'config.php'?>
 <?php include 'piwik_track.php' ?>
 
-<h3>Articles & Celebrity Endorsements</h5>
+<h3>Articles &amp; Celebrity Endorsements</h3>
 <p>Visit these sites to find out what previous participants have to say about the Undulator events.</p>
 
 <p>

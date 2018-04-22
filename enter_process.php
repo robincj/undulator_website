@@ -170,7 +170,7 @@ if (date ( "Ymd" ) < date ( "Ymd", EARLY_ENTRY_DATE ))
 mail ( $params ['email'], $subj, $msg, $mailheader_from );
 /**
  *
- * @param unknown $filename        	
+ * @param string $filename        	
  * @return number
  */
 function file_rowcount($filename, $ignoreblanks = FALSE) {
