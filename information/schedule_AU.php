@@ -1,7 +1,7 @@
 <?php
 require_once '../config.php'?>
 <?php
-include 'piwik_track.php';
+include_once '../piwik_track.php';
 $eventDate = date("D M jS",strtotime(DATE_AU));
 //$eventDate = 'Sat Nov 4th';
 ?>
