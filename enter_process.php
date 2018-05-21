@@ -163,7 +163,7 @@ Use your full name as the reference.
 
 Payment would be appreciated within 7 days of registering.
 ";
-if (date ( "Ymd" ) < date ( "Ymd", EARLY_ENTRY_DATE ))
+if ( time() < strtotime(EARLY_ENTRY_DATE) )
 	$msg .= "Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
 ";
 
