@@ -59,7 +59,7 @@ include_once '../php/string_functions.php';
 <?php
 /**
  *
- * @param unknown $age        	
+ * @param int $age
  * @return string
  */
 function category($age) {
@@ -86,9 +86,9 @@ function category($age) {
 }
 /**
  *
- * @param unknown $title        	
- * @param unknown $csvfile        	
- * @param unknown $max_entries        	
+ * @param string $title
+ * @param string $csvfile
+ * @param int $max_entries
  */
 function entries_table($title, $csvfile, $max_entries) {
 	// $waitlist = array ();
@@ -111,8 +111,8 @@ function entries_table($title, $csvfile, $max_entries) {
 	foreach ( array_map ( 'str_getcsv', file ( $csvfile ) ) as $entry ) {
 		if (! $entry || preg_match ( '/^#/', reset ( $entry ) ) || preg_match ( '/^\s*$/', reset ( $entry ) ))
 			continue;
-			// Fields:
-			// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE,LOCATION,MEDICAL
+		// Fields:
+		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE,LOCATION,MEDICAL
 		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender, $predicted, $tsize, $tquantity, $fee, $location ) = $entry;
 		
 		// use existing cat if no age supplied
@@ -137,13 +137,13 @@ function entries_table($title, $csvfile, $max_entries) {
 }
 /**
  *
- * @param unknown $title        	
- * @param unknown $csvdata        	
+ * @param string $title
+ * @param array|string $csvdata
  */
 function waitlist_table($title, $csv, $max_entries) {
 	// $csvdata could be an array of data already processed, or it could be a filename
 	$count = 1;
-	$csvdata = array();
+	$csvdata = array ();
 	if (! is_array ( $csv )) {
 		foreach ( array_map ( 'str_getcsv', file ( $csv ) ) as $entry ) {
 			if (! $entry || preg_match ( '/^#/', reset ( $entry ) ) || preg_match ( '/^\s*$/', reset ( $entry ) ))

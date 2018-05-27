@@ -26,7 +26,7 @@ Chris Martin, phone: 021 2166436 or email: info@aorangiundulator.org
 Payment would be appreciated within 7 days of registering.<br>";
 if (date ( "Ymd" ) < 20160601)
 	$msg .= "Please also note that to secure the early-bird entry fee, 
-		full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable.";
+		full payment is required to be processed by ".EARLY_ENTRY_DATE.", after this date and the standard entry fee will be payable.";
 	
 	// Launch a modal with the message
 echo <<<EOH
@@ -164,13 +164,13 @@ Use your full name as the reference.
 Payment would be appreciated within 7 days of registering.
 ";
 if ( time() < strtotime(EARLY_ENTRY_DATE) )
-	$msg .= "Please also note that to secure the early-bird entry fee, full payment is required to be processed by the 1st of June, after this date and the standard entry fee will be payable
+	$msg .= "Please also note that to secure the early-bird entry fee, full payment is required to be processed by ".EARLY_ENTRY_DATE.", after this date and the standard entry fee will be payable
 ";
 
 mail ( $params ['email'], $subj, $msg, $mailheader_from );
 /**
  *
- * @param unknown $filename        	
+ * @param string $filename        	
  * @return number
  */
 function file_rowcount($filename, $ignoreblanks = FALSE) {
