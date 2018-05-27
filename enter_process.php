@@ -2,7 +2,7 @@
 <?php require_once 'config.php'?>
 <?php
 
-$to_organiser = "robin@aorangiundulator.org,chrismartinc@hotmail.com";
+$to_organiser = "fitnessmad@gmail.com,chrismartinc@hotmail.com";
 // $entries_dir = "/data/undulator/entries";
 $entries_dir = "information/entries";
 
