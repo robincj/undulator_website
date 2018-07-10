@@ -116,9 +116,9 @@ function loadmaincontent(contentfile, nojump){
 				</div>
 					<!-- /col -->
 
-					<div id="main" class="maincontent col-xs-12 col-md-8"></div>
+					<div id="main" class="maincontent col-xs-12 col-md-9"></div>
 
-					<div class="col-xs-12 col-md-2 share-icon-col text-center">
+					<div class="col-md-1 share-icon-col text-center">
 					<?php include 'share_icons.php';?>
 				</div>
 					<!-- /col -->

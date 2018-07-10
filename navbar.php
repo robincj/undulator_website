@@ -59,7 +59,7 @@ nav .other_event_link img {
 						<li><a href="#"
 							onClick="loadmaincontent('information/prices.php')">PRICES</a></li>
 						<li><a href="#" onClick="loadmaincontent('enter.php')">ENTER</a></li>
-						<li><a href="#" onClick="loadmaincontent('t-shirt.php')">T-SHIRT</a></li>
+						<li><a href="#" onClick="loadmaincontent('merchandise.php')">MERCHANDISE</a></li>
 						<li><a href="#"
 							onClick="loadmaincontent('information/entries.php?'+tstamp)">ENTRIES
 								SO FAR</a></li>
