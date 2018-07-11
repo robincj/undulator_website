@@ -27,7 +27,14 @@
 </div>
 
 
-<?php function entryForm(){ ?>
+<?php
+
+function entryForm()
+{
+    $labelClass = "col-sm-3 control-label";
+    $inputDiv = "col-sm-9";
+    ?>
+
 <!-- 
 <div class="A100">
 	<h4 style="color: red;">
@@ -49,39 +56,39 @@
 	<form class="form-horizontal" id="enter" name="enter">
 		<div class="form-group">
 
-			<label for="firstname" class="col-sm-2 control-label">First name</label>
-			<div class="col-sm-10">
+			<label for="firstname" class="<?=$labelClass?>">First name</label>
+			<div class="<?=$inputDiv?>">
 				<input type="text" name="firstname" class="form-control"
 					id="firstname" placeholder="First name" required />
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="surname" class="col-sm-2 control-label"> Last name</label>
-			<div class="col-sm-10">
+			<label for="surname" class="<?=$labelClass?>"> Last name</label>
+			<div class="<?=$inputDiv?>">
 				<input type="text" name="surname" class="form-control" id="surname"
 					placeholder="Last name" />
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="email" class="col-sm-2 control-label">Email</label>
-			<div class="col-sm-10">
+			<label for="email" class="<?=$labelClass?>">Email</label>
+			<div class="<?=$inputDiv?>">
 				<input type="email" class="form-control" id="email" name="email"
 					placeholder="Email address" required>
 			</div>
 		</div>
 
 		<div class="form-group">
-			<label for="homelocation" class="col-sm-2 control-label">Home</label>
-			<div class="col-sm-10">
+			<label for="homelocation" class="<?=$labelClass?>">Home</label>
+			<div class="<?=$inputDiv?>">
 				<input type="text" class="form-control" id="homelocation"
 					name="homelocation" placeholder="Your home town/region">
 			</div>
 		</div>
 		<!-- 
 				<div class="form-group">
-					<label for="agecategory" class="col-sm-2 control-label">Age
+					<label for="agecategory" class="<?=$labelClass?>">Age
 						category</label>
-					<div class="col-sm-10">
+					<div class="<?=$inputDiv?>">
 						<select name="agecategory" id="agecategory" class="form-control"
 							required>
 							<option value="u20">Under 20</option>
@@ -95,8 +102,8 @@
 				 -->
 
 		<div class="form-group">
-			<label for="event" class="col-sm-2 control-label">Weakness</label>
-			<div class="col-sm-10">
+			<label for="event" class="<?=$labelClass?>">Weakness</label>
+			<div class="<?=$inputDiv?>">
 				<select name="event" id="event" class="form-control" required>
 					<option id="event_option_AU" value="au" selected="selected">Not
 						Weak: Aorangi Undulator (33km mountain run)</option>
@@ -107,16 +114,16 @@
 		</div>
 
 		<div class="form-group">
-			<label for="age" class="col-xs-3 col-sm-2 control-label">Age on <?=date("jS F Y",strtotime(DATE_A100_DAY1))?></label>
-			<div class="col-xs-3 col-sm-2">
+			<label for="age" class="<?=$labelClass?>">Age on <?=date("jS F Y",strtotime(DATE_A100_DAY1))?></label>
+			<div class="<?=$inputDiv?>">
 				<input type="number" name="age" id="age" class="form-control"
-					size="2" min="10" max="100" value="20">
+					size="2" min="10" max="100" value="20" style="width: 6em;">
 			</div>
 		</div>
 
 		<div class="form-group">
-			<label for="gender" class="col-xs-2 control-label">Gender</label>
-			<div class="col-xs-4">
+			<label for="gender" class="<?=$labelClass?>">Gender</label>
+			<div class="<?=$inputDiv?>">
 				<label class="radio-inline"><input type="radio" name="gender"
 					checked="checked" value="M" required>M</label> <label
 					class="radio-inline"><input type="radio" name="gender" value="F"
@@ -125,8 +132,7 @@
 		</div>
 
 		<div class="form-group">
-			<label for="estimated_time" class="col-xs-3 col-sm-2 control-label">Estimated
-				time</label>
+			<label for="estimated_time" class="<?=$labelClass?>">Estimated time</label>
 			<div class="col-xs-3 col-sm-3">
 				<input type='text' name="estimated_time" class="form-control"
 					id="estimated_time"
@@ -136,56 +142,110 @@
 		</div>
 
 		<div class="form-group">
-			<label for="previous_events" class="col-sm-2 control-label">Running
+			<label for="previous_events" class="<?=$labelClass?>">Running
 				Resum&eacute;</label>
-			<div class="col-sm-10">
+			<div class="<?=$inputDiv?>">
 				<textarea name="previous_events" class="form-control"
 					id="previous_events" required
 					placeholder="Please let us know some of your previous running events and times"></textarea>
 			</div>
 		</div>
-
+		<div class="form-group">
+			<label for="undulator_events" class="<?=$labelClass?>">Undulator
+				Events Completed</label>
+			<div class="<?=$inputDiv?>">
+				<label for="completed_AU"
+					style='display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+					1-Day AU </label> <input type="number" name="completed_AU"
+					id="completed_AU" class="form-control" size="2" min="0" max="100"
+					value="0"
+					style='width: 6em; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+				<label for="completed_A100"
+					style='display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+					A100 </label> <input type="number" name="completed_A100"
+					id="completed_A100" class="form-control" size="2" min="0" max="100"
+					value="0"
+					style='width: 6em; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+			</div>
+		</div>
 
 		<div class="form-group"
 			title="Runners are responsible for managing their own medical needs as marshals will only carry basic first aid supplies.">
-			<label for="medical" class="col-sm-2 control-label">Medical
-				Conditions</label>
-			<div class="col-sm-10">
+			<label for="medical" class="<?=$labelClass?>">Medical Conditions</label>
+			<div class="<?=$inputDiv?>">
 				<textarea name="medical" class="form-control" id="medical"
 					placeholder="Medical conditions and medications"></textarea>
 			</div>
 		</div>
 
 
-		<div class="form-group">
-			<label for="t-size" class="col-xs-12 col-sm-2 control-label"
-				data-toggle="modal" data-target="#t-modal"><span
-				data-toggle="tooltip" data-placement="top"
-				title="Click to see T-Shirt">T-Shirt ($25)</span></label>
-			<div class="col-xs-12 col-sm-10">
-				<div class="row">
-					<label for="t-size" class="col-xs-4 col-sm-2 control-label">Size</label>
-					<div class="col-xs-3 col-sm-3">
-						<select name="t-size" id="t-size" class="form-control">
-							<option value="S">S</option>
-							<option value="M">M</option>
-							<option value="L">L</option>
+<?php
+    foreach (MERCHANDISE as $ref => $item) :
+        $name = $item['display_name'];
+        ?>
+		<div class="row">
+			<div class="form-group merchandise">
+				<label class="col-xs-12 <?=$labelClass?>" data-toggle="modal"
+					data-target="#<?=$ref."-modal"?>"><span data-toggle="tooltip"
+					data-placement="top" title="Click to see <?=$name?>"><?=$name?> ($<?=$item['price']?>)</span></label>
+
+				<div class="<?=$inputDiv?>">
+					<label for="<?=$ref."-quantity"?>"
+						style='display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+						Quantity </label> <input type="number"
+						name="<?=$ref."-quantity"?>" data-price="<?=$item['price']?>"
+						id="<?=$ref."-quantity"?>" class="form-control merch-quantity"
+						size="2" min="0" max="25" value="0"
+						style='width: 6em; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+					<?php if ($item['sizes']):?>
+					<label for="<?=$ref."-size"?>"
+						style='display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+						Size </label> <select name="<?=$ref."-size"?>"
+						id="<?=$ref."-size"?>" class="form-control merch-size"
+						style='width: 6em; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+							<?php foreach ($item['sizes'] as $size):?>
+							<option value="<?=$size?>"><?=$size?></option>
+							<?php endforeach;?>
 						</select>
-					</div>
-				</div>
-				<div class="row">
-					<label for="t-quantity" class="col-xs-4 col-sm-2 control-label">Quantity</label>
-					<div class="col-xs-3 col-sm-3">
-						<input type="number" name="t-quantity" id="t-quantity"
-							class="form-control" size="2" min="0" max="25" value="0">
-					</div>
+					<?php endif;?>
 				</div>
 			</div>
 		</div>
+		<?php if (!empty($item['image'])):?>
 
+		<!-- Modal -->
+		<div class="modal fade" id="<?=$ref."-modal"?>" tabindex="-1"
+			role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+        <?php //include "merchandise.php"; ?></div>
+					<div class="text-center">
+						<h3><?=$name?></h3>
+	The <?=$item['description']?> can be purchased with your entry for $<?=$item['price']?>.
+							<br /> <br /> <img style="display: inline;"
+							class="img-responsive" alt="<?=$name?>" src="<?=$item['image']?>">
+
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+			<?php endif;
+        
+    endforeach
+    ;
+    ?>
+		
 		<div class="form-group">
-			<label for="query" class="col-sm-2 control-label">Query</label>
-			<div class="col-sm-10">
+			<label for="query" class="<?=$labelClass?>">Query</label>
+			<div class="<?=$inputDiv?>">
 				<textarea name="query" class="form-control" id="query"
 					placeholder="If you have any queries or messages to pass along with your entry then enter them here."></textarea>
 			</div>
@@ -193,7 +253,7 @@
 
 
 		<div class="form-group">
-			<label for="entryprice" class="col-sm-2 control-label">Total price</label>
+			<label for="entryprice" class="<?=$labelClass?>">Total price</label>
 			<div class="col-sm-6">
 				<p id="entryprice" class="form-control-static"></p>
 				<input type="hidden" name="price" id="entryprice_param" />
@@ -204,24 +264,6 @@
 		</div>
 
 	</form>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="t-modal" tabindex="-1" role="dialog"
-	aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"
-					aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-        <?php include "t-shirt.php"; ?></div>
-			<div class="modal-footer"></div>
-		</div>
-	</div>
 </div>
 
 <script>
@@ -250,18 +292,20 @@ function setPrice() {
 			price += 70;
 		}
 	}
-	price += $("#t-quantity").val() * 25; // 25 for each t-shirt
+	$(".merch-quantity").each( function(){
+		price += $(this).val() * $(this).data('price'); // 25 for each t-shirt
+	});
 	$("#entryprice").html("$" + price + " " + note);
 	$("#entryprice_param").val(price);
 }
 setPrice();
 $("#event").change(function(){setPrice();});
-$("#t-quantity").change(function(){setPrice();});
+$(".merch-quantity").change(function(){setPrice();});
 // Prevent accidental submission of form when setting quantity (especially in IE which requires text entry)
-$("#t-quantity").keypress(function(event) { 
+$(".merch-quantity").keypress(function(event) { 
 	if ( event.keyCode == 13 ) {
 		// trigger a change event to trigger a setPrice()
-		$("#t-quantity").change();
+		$(event.target).change();
 		return false;
 	}
 });
@@ -280,6 +324,6 @@ $("#enter").submit(function( event ) {
 }
 
 if (ENTRIES_OPEN)
-	entryForm ();
+    entryForm();
 
 ?>

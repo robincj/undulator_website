@@ -47,7 +47,7 @@ $main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
 	rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Handlee'
 	rel='stylesheet' type='text/css'>
-<link href='css/main.css' rel='stylesheet' type='text/css'>
+<link href='css/main.css?v=1' rel='stylesheet' type='text/css'>
 <link href='css/unseen-column.css' rel='stylesheet' type='text/css'>
 <!-- 
 <link type="text/css"
@@ -116,9 +116,9 @@ function loadmaincontent(contentfile, nojump){
 				</div>
 					<!-- /col -->
 
-					<div id="main" class="maincontent col-xs-12 col-md-8"></div>
+					<div id="main" class="maincontent col-xs-12 col-md-9"></div>
 
-					<div class="col-xs-12 col-md-2 share-icon-col text-center">
+					<div class="col-xs-12 col-md-1 share-icon-col text-center">
 					<?php include 'share_icons.php';?>
 				</div>
 					<!-- /col -->
@@ -129,7 +129,7 @@ function loadmaincontent(contentfile, nojump){
 		</section>
 
 
-		<script>loadmaincontent('<?php echo $maincontent ?>', true)</script>
+		<script>loadmaincontent('<?= $maincontent ?>', true)</script>
 
 		<div id="push"></div>
 	</div>
