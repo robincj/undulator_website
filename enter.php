@@ -114,16 +114,16 @@ function entryForm()
 		</div>
 
 		<div class="form-group">
-			<label for="age" class="col-xs-3 <?=$labelClass?>">Age on <?=date("jS F Y",strtotime(DATE_A100_DAY1))?></label>
-			<div class="col-xs-3 col-sm-2">
+			<label for="age" class="<?=$labelClass?>">Age on <?=date("jS F Y",strtotime(DATE_A100_DAY1))?></label>
+			<div class="<?=$inputDiv?>">
 				<input type="number" name="age" id="age" class="form-control"
-					size="2" min="10" max="100" value="20">
+					size="2" min="10" max="100" value="20" style="width: 6em;">
 			</div>
 		</div>
 
 		<div class="form-group">
-			<label for="gender" class="col-xs-2 control-label">Gender</label>
-			<div class="col-xs-4">
+			<label for="gender" class="<?=$labelClass?>">Gender</label>
+			<div class="<?=$inputDiv?>">
 				<label class="radio-inline"><input type="radio" name="gender"
 					checked="checked" value="M" required>M</label> <label
 					class="radio-inline"><input type="radio" name="gender" value="F"
@@ -132,8 +132,7 @@ function entryForm()
 		</div>
 
 		<div class="form-group">
-			<label for="estimated_time" class="col-xs-3 <?=$labelClass?>">Estimated
-				time</label>
+			<label for="estimated_time" class="<?=$labelClass?>">Estimated time</label>
 			<div class="col-xs-3 col-sm-3">
 				<input type='text' name="estimated_time" class="form-control"
 					id="estimated_time"
@@ -151,7 +150,24 @@ function entryForm()
 					placeholder="Please let us know some of your previous running events and times"></textarea>
 			</div>
 		</div>
-
+		<div class="form-group">
+			<label for="undulator_events" class="<?=$labelClass?>">Undulator
+				Events Completed</label>
+			<div class="<?=$inputDiv?>">
+				<label for="completed_AU"
+					style='display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+					1-Day AU </label> <input type="number" name="completed_AU"
+					id="completed_AU" class="form-control" size="2" min="0" max="100"
+					value="0"
+					style='width: 6em; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+				<label for="completed_A100"
+					style='display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+					A100 </label> <input type="number" name="completed_A100"
+					id="completed_A100" class="form-control" size="2" min="0" max="100"
+					value="0"
+					style='width: 6em; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+			</div>
+		</div>
 
 		<div class="form-group"
 			title="Runners are responsible for managing their own medical needs as marshals will only carry basic first aid supplies.">
@@ -180,13 +196,13 @@ function entryForm()
 						name="<?=$ref."-quantity"?>" data-price="<?=$item['price']?>"
 						id="<?=$ref."-quantity"?>" class="form-control merch-quantity"
 						size="2" min="0" max="25" value="0"
-						style='width: 80px; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+						style='width: 6em; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
 					<?php if ($item['sizes']):?>
 					<label for="<?=$ref."-size"?>"
 						style='display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
 						Size </label> <select name="<?=$ref."-size"?>"
 						id="<?=$ref."-size"?>" class="form-control merch-size"
-						style='width: 80px; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
+						style='width: 6em; display: inline-block; vertical-align: middle; text-align: right; float: left; margin-right: 10px;'>
 							<?php foreach ($item['sizes'] as $size):?>
 							<option value="<?=$size?>"><?=$size?></option>
 							<?php endforeach;?>
@@ -213,9 +229,8 @@ function entryForm()
 					<div class="text-center">
 						<h3><?=$name?></h3>
 	The <?=$item['description']?> can be purchased with your entry for $<?=$item['price']?>.
-							<br /><br />
-						<img style="display: inline;" class="img-responsive"
-							alt="<?=$name?>" src="<?=$item['image']?>">
+							<br /> <br /> <img style="display: inline;"
+							class="img-responsive" alt="<?=$name?>" src="<?=$item['image']?>">
 
 					</div>
 					<div class="modal-footer"></div>
