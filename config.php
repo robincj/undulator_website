@@ -32,18 +32,18 @@ define("MERCHANDISE", [
         'description' => 'Undulator T-shirt',
         'image' => "images/logos/t-shirt_black.png"
     ],
-    'Thirs-Undulator-headscarf' => [
-        'display_name' => 'Thirs Undulator headscarf',
+    'THIR-Undulator-headband' => [
+        'display_name' => 'THIR Undulator headband',
         'price' => 30,
         'sizes' => NULL,
         'colours' => NULL,
-        'description' => 'Thirs mountain runner headscarf with the Undulator logo'
+        'description' => '<a href="http://www.thir.co.nz/thirbands.php">THIR multi-sport headband</a> with the Undulator logo'
     ],
-    'Thirs-BSR-headscarf' => [
-        'display_name' => 'Thirs BSR headscarf',
+    'THIR-BSR-headband' => [
+        'display_name' => 'THIR BSR headband',
         'price' => 30,
         'sizes' => NULL,
         'colours' => NULL,
-        'description' => 'Thirs mountain runner headscarf with the BSR (Big Sunday Run group) logo'
+        'description' => '<a href="http://www.thir.co.nz/thirbands.php">THIR multi-sport headband</a> with the BSR (Big Sunday Run group) logo'
     ]
 ]);
