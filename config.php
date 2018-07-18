@@ -18,6 +18,14 @@ define("PRICE_AU_EARLY", 50);
 define("ENTRIES_OPEN_DATE", '2018-02-22');
 define("ENTRIES_OPEN", (strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_A100_DAY1) > time()));
 define("MERCHANDISE", [
+    'THIR-Undulator-headband' => [
+        'display_name' => 'THIR Undulator headband',
+        'price' => 30,
+        'sizes' => NULL,
+        'colours' => NULL,
+        'description' => '<a href="http://www.thir.co.nz/thirbands.php">THIR multi-sport headband</a> with the Undulator logo',
+        'image' => "images/logos/Undulator THIR.jpg"
+    ],
     'T-Shirt' => [
         'display_name' => 'T-Shirt',
         'price' => 25,
@@ -31,13 +39,6 @@ define("MERCHANDISE", [
         ],
         'description' => 'Undulator T-shirt',
         'image' => "images/logos/t-shirt_black.png"
-    ],
-    'THIR-Undulator-headband' => [
-        'display_name' => 'THIR Undulator headband',
-        'price' => 30,
-        'sizes' => NULL,
-        'colours' => NULL,
-        'description' => '<a href="http://www.thir.co.nz/thirbands.php">THIR multi-sport headband</a> with the Undulator logo'
     ],
     /*
     'THIR-BSR-headband' => [
