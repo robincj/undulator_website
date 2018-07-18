@@ -39,6 +39,7 @@ define("MERCHANDISE", [
         'colours' => NULL,
         'description' => '<a href="http://www.thir.co.nz/thirbands.php">THIR multi-sport headband</a> with the Undulator logo'
     ],
+    /*
     'THIR-BSR-headband' => [
         'display_name' => 'THIR BSR headband',
         'price' => 30,
@@ -46,4 +47,5 @@ define("MERCHANDISE", [
         'colours' => NULL,
         'description' => '<a href="http://www.thir.co.nz/thirbands.php">THIR multi-sport headband</a> with the BSR (Big Sunday Run group) logo'
     ]
+    */
 ]);
