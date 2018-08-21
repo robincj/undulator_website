@@ -112,8 +112,8 @@ function entries_table($title, $csvfile, $max_entries) {
 		if (! $entry || preg_match ( '/^#/', reset ( $entry ) ) || preg_match ( '/^\s*$/', reset ( $entry ) ))
 			continue;
 		// Fields:
-		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE,LOCATION,MEDICAL
-		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender, $predicted, $tsize, $tquantity, $fee, $location ) = $entry;
+		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,MERCHANDISE,FEE,LOCATION,MEDICAL
+		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender, $predicted, $merchandise, $fee, $location ) = $entry;
 		
 		// use existing cat if no age supplied
 		if (! $cat || is_numeric ( $age ))

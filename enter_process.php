@@ -81,9 +81,11 @@ foreach ($params as $key => &$val) {
         $val = str_replace("\n", "<br>", $val);
         $val = str_replace("\r", "", $val);
     }
+	$params['merchandise'] = $merchandise;
 }
 
-$merchandise = $merchandise ? json_encode($merchandise) : '';
+//$merchandise = $merchandise ? json_encode($merchandise, true) : '';
+$params['merchandise'] = str_replace("}",'"',str_replace("{",'"',str_replace('"',"'",json_encode($merchandise))));
 
 /*
  * params:
@@ -95,15 +97,15 @@ $merchandise = $merchandise ? json_encode($merchandise) : '';
  * gender: M
  * estimated_time: 7-8 hours
  * previous_events: Goat Tongariro 2013: 4:08, Goat Tongariro 2014: 3:35, Holdsworth Jumbo 2015: 3:54, Goat Kaimai 2015: 2:57
- * t-size: M
- * t-quantity: 1
+ * t-shirt_size: M
+ * t-shirt_quantity: 1
  * query:
  * price: 75
  * homelocation:
  * medical:
  */
 $row = "{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$params['previous_events']}\",";
-$row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},$merchandise,{$params['price']}";
+$row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},{$params['merchandise']},{$params['price']}";
 $row .= ",{$params['homelocation']},{$params['medical']}";
 $row = trim($row) . "\n";
 file_put_contents($entrylist_file, $row, FILE_APPEND);
