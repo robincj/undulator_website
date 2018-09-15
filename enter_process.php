@@ -165,7 +165,7 @@ if ($entrycount >= $entrylimit)
 
 else
     $msg .= "
-Then kindly deposit the entry fee of $price into this account:
+Then kindly deposit the entry fee of \$$price into this account:
 Account name: Aorangi Undulator
 Account num:  02 0576 0059160 01
 Use your full name as the reference.
