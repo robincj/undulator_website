@@ -19,8 +19,7 @@
 			
 			<li class="list-group-item">Emergency (Survival) Blanket
 			
-			<li class="list-group-item">Thermal top and bottoms (e.g.
-				polypropylene), a size that can be worn by the competitor
+			<li class="list-group-item">Thermal top and bottoms (e.g. polypropylene or lycra), a size that can be worn by the competitor
 			
 			<li class="list-group-item">Head torch with fresh batteries
 			
@@ -32,8 +31,7 @@
 			
 			<li class="list-group-item">Topo-map covering the entire route
 			
-			<li class="list-group-item">GPS unit with built-in maps (e.g. Garmin
-				Etrex 10), ViewRanger phone app, or equivalent. Unit must have
+			<li class="list-group-item">GPS unit with built-in maps (e.g. Garmin Etrex 10), or ViewRanger phone app, or equivalent. Unit must have
 				1:50000 scale, or better, topo maps covering the entire route.
 			
 			<li class="list-group-item">Mobile Phone - with organiser's number
