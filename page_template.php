@@ -41,11 +41,11 @@ $main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap/js/bootstrap.min.js"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700'
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
 	rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Jockey+One'
+<link href='https://fonts.googleapis.com/css?family=Jockey+One'
 	rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Handlee'
+<link href='https://fonts.googleapis.com/css?family=Handlee'
 	rel='stylesheet' type='text/css'>
 <link href='css/main.css?v=1' rel='stylesheet' type='text/css'>
 <link href='css/unseen-column.css' rel='stylesheet' type='text/css'>

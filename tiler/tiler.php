@@ -29,7 +29,7 @@ class Tiler {
 		return $this->show ();
 	}
 	public function getNumberOfPages() {
-		return ( int ) ($this->dirFileCount ( $photodir, "/(jpg|png|jpeg)$/i" ) / $this->maxPerPage);
+		return ( int ) ($this->dirFileCount ( $this->photodir, "/(jpg|png|jpeg)$/i" ) / $this->maxPerPage);
 	}
 	public function dirFileCount($dir, $pattern = NULL) {
 		$count = 0;

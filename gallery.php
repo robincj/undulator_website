@@ -15,7 +15,7 @@ $years = array (
 		2015 
 );
 $year = 2015;
-if ($_REQUEST ['year']) {
+if (!empty($_REQUEST ['year'])) {
 	$year = $_REQUEST ['year'];
 }
 

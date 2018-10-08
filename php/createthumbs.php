@@ -11,6 +11,8 @@
  * @param integer $thumbWidth
  */
 function createThumbs($pathToImages, $pathToThumbs, $thumbWidth) {
+		if (! file_exists ( $pathToImages ) || ! is_dir($pathToImages) )
+			return false;
 	// open the directory
 	$dir = opendir ( $pathToImages );
 	if (! file_exists ( $pathToThumbs )) {

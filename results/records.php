@@ -1,5 +1,27 @@
 <?php include 'piwik_track.php'?>
 
+
+<h2>A100 Day 1 Course Records</h2>
+<div class="table-responsive">
+        <table class="table table-hover">
+                <thead>
+                        <tr>
+                                <th>Competitor</th>
+                                <th>Event/Category</th>
+                                <th>Time</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                                <td>Tim Sutton</td>
+                                <td>AU/OM</td>
+                                <td>4:14:00</td>
+                        </tr>
+                </tbody>
+        </table>
+</div>
+
+
 <h2>Aorangi Undulator/A100 Day 2 Course Records</h2>
 <div class="table-responsive">
 	<table class="table table-hover">
@@ -110,4 +132,24 @@
 			</tr>
 		</tbody>
 	</table>
+</div>
+
+<h2>A100 Day 3 Course Records</h2>
+<div class="table-responsive">
+        <table class="table table-hover">
+                <thead>
+                        <tr>
+                                <th>Competitor</th>
+                                <th>Event/Category</th>
+                                <th>Time</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                                <td>Tim Sutton</td>
+                                <td>AU/OM</td>
+                                <td>2:24:00</td>
+                        </tr>
+                </tbody>
+        </table>
 </div>

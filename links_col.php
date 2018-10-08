@@ -56,20 +56,32 @@ $(function () {
 				<div class="col-xs-12">
 					<a href="http://www.powerco.co.nz/"><img class="img-responsive"
 						width="160px" style="padding: 3px; display: inline;"
-						src="images/sponsors/powerco_logo.png" /></a><a
-						href="http://www.thriveadventure.com/"><img class="img-responsive"
-						width="160px" style="padding: 3px; display: inline;"
-						title="ThLuxurious gateway to the Tararuas"
-						src="images/sponsors/thrive.jpg" /></a> <a
-						href="http://www.bivouac.co.nz/"><img class="img-responsive"
-						width="160px" style="padding: 3px; display: inline;"
-						src="images/sponsors/bivouac.png" /></a> <a
+						src="images/sponsors/powerco_logo.png" /></a>
+ <a
 						href="http://www.spotnz.com/"><img class="img-responsive"
 						width="160px" style="padding: 3px;  display: inline;background-color: #354041;"
-						src="images/sponsors/spotnzlogo.png" /></a> <a
+						src="images/sponsors/spotnzlogo.png" /></a> 
+<a
+						href="http://www.bivouac.co.nz/"><img class="img-responsive"
+						width="160px" style="padding: 3px; display: inline;"
+						src="images/sponsors/bivouac.png" /></a>
+<a
 						href="http://www.macpac.co.nz/"><img class="img-responsive"
 						width="160px" style="padding: 3px; display: inline;"
 						src="images/sponsors/macpac.png" /></a>
+<a
+						href="http://www.thriveadventure.com/">
+						<img class="img-responsive"
+						width="160px" style="padding: 3px; display: inline;"
+						title="The Luxurious gateway to the Tararuas"
+						src="images/sponsors/thrive.jpg" /></a> 
+<a
+						href="http://www.sandpit.kiwi/">
+						<img class="img-responsive"
+						width="160px" style="padding: 3px; display: inline;"
+						title="Architectural Design & Draughting for your residential projects"
+						src="images/sponsors/sandpit.jpg" /></a> 
+<a
 				</div>
 			</div>
 		</div>
