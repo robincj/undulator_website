@@ -119,6 +119,7 @@ nav .other_event_link img {
 							href="#">A100 Spirit Award</a></li>
 						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
 								Records</a></li>
+						<li><a target="_blank" href="https://docs.google.com/spreadsheets/d/14x0hCkAPMbertFb8YOBZupYoh1EFa_ATBfazKcHZ6NQ">2018 RESULTS</a></li>
 						<li><a target="_blank" href="https://www.dropbox.com/sh/1a0dumdxuh6wzlo/AACEDHJWNpwI1ApPzbrojxKVa?dl=0">2017 RESULTS</a></li>
 						<li><a target="_blank"
 							href="https://docs.google.com/spreadsheets/d/1fVN-G5ftA--eqb1DRrJAubYEgSs8e3siQcyB5TtFnRY/edit#gid=0">2016

@@ -107,7 +107,7 @@ $("#intro").load("information/" + au_event + "_intro.php");
 		<div class="text-center">
 			<h4>
 				<a target="_blank"
-					href="https://www.dropbox.com/sh/1a0dumdxuh6wzlo/AACEDHJWNpwI1ApPzbrojxKVa?dl=0">2017
+					href="https://docs.google.com/spreadsheets/d/14x0hCkAPMbertFb8YOBZupYoh1EFa_ATBfazKcHZ6NQ">2018
 					RESULTS</a>
 			</h4>
 		</div>
