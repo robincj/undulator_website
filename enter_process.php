@@ -8,6 +8,14 @@ $entries_dir = "information/entries";
 
 $params = array_merge($_POST, $_GET);
 
+if (! ($params['firstname'] || ! $params['surname'] || ! $params['email'])) {
+    // Invalid form submission
+    messageModal("You did not complete the entry form correctly.  Please try again.<p>
+If you have any queries please contact: <p>
+Chris Martin, phone: 021 2166436 or email: info@aorangiundulator.org");
+    exit();
+}
+
 $price = $params['price'];
 $A100 = false;
 
@@ -28,31 +36,7 @@ if (date("Ymd") < 20160601)
     $msg .= "Please also note that to secure the early-bird entry fee, 
 		full payment is required to be processed by " . EARLY_ENTRY_DATE . ", after this date and the standard entry fee will be payable.";
 
-// Launch a modal with the message
-echo <<<EOH
-	<div class="modal fade" id="enteredModal" tabindex="-1" role="dialog"
-		aria-labelledby="enteredModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">$msg</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script>
-		$('#enteredModal').modal('show');
-	</script>		
-
-EOH;
+messageModal($msg);
 
 // Add to entrylist csv file
 $entrylist_file = "information/entries/" . ENTRIES_FILE_AU;
@@ -81,11 +65,11 @@ foreach ($params as $key => &$val) {
         $val = str_replace("\n", "<br>", $val);
         $val = str_replace("\r", "", $val);
     }
-	$params['merchandise'] = $merchandise;
+    $params['merchandise'] = $merchandise;
 }
 
-//$merchandise = $merchandise ? json_encode($merchandise, true) : '';
-$params['merchandise'] = str_replace("}",'"',str_replace("{",'"',str_replace('"',"'",json_encode($merchandise))));
+// $merchandise = $merchandise ? json_encode($merchandise, true) : '';
+$params['merchandise'] = str_replace("}", '"', str_replace("{", '"', str_replace('"', "'", json_encode($merchandise))));
 
 /*
  * params:
@@ -195,8 +179,41 @@ function file_rowcount($filename, $ignoreblanks = FALSE)
             }
             $linecount ++;
         }
-        
+
         fclose($handle);
     }
     return $linecount;
+}
+
+/**
+ *
+ * @param string $msg
+ */
+function messageModal($msg)
+{
+    // Launch a modal with the message
+    echo <<<EOH
+	<div class="modal fade" id="enteredModal" tabindex="-1" role="dialog"
+		aria-labelledby="enteredModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">$msg</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		$('#enteredModal').modal('show');
+	</script>
+	
+EOH;
 }
