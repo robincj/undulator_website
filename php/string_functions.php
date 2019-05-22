@@ -10,6 +10,7 @@
 function ucname($text) {
 	return preg_replace_callback ( "/(\w+)/", function ($m) {
 		$part = strtolower ( $m [0] );
+		$ending = [ ];
 		if (preg_match ( "/^mc(.*)/", $part, $ending )) {
 			return "Mc" . ucfirst ( $ending [1] );
 		} elseif (preg_match ( "/^mac(.*)/", $part, $ending )) {
@@ -23,7 +24,8 @@ function ucname($text) {
  * Like ucwords except this works on hyphenated names or names with apostrophes in.
  * Also handles Mc and Mac.
  *
- * @param string (ref) $text        	
+ * @param
+ *        	string (ref) $text
  * @return string
  */
 function ucname_(&$text) {

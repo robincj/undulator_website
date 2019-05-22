@@ -1,4 +1,10 @@
 <?php require_once 'config.php'?>
+<?php
+/**
+ *
+ * @var string $banner_image_other
+ */
+?>
 <style>
 .links_col img {
 	margin: auto;

@@ -71,7 +71,7 @@ function category($age) {
 			40 => 'open',
 			50 => 'vet',
 			60 => 'super vet',
-			150 => 'super duper vet' 
+			150 => 'super duper vet'
 	);
 	$category = 'unknown';
 	if (is_numeric ( $age )) {
@@ -113,8 +113,18 @@ function entries_table($title, $csvfile, $max_entries) {
 			continue;
 		// Fields:
 		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,MERCHANDISE,FEE,LOCATION,MEDICAL
+		/**
+		 *
+		 * @var string $email
+		 * @var string $paid
+		 * @var string $wait
+		 * @var string $gender
+		 * @var string $predicted
+		 * @var string $merchandise
+		 * @var string $fee
+		 */
 		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender, $predicted, $merchandise, $fee, $location ) = $entry;
-		
+
 		// use existing cat if no age supplied
 		if (! $cat || is_numeric ( $age ))
 			$cat = category ( $age );
@@ -150,12 +160,12 @@ function waitlist_table($title, $csv, $max_entries) {
 				continue;
 			if ($count ++ <= $max_entries)
 				continue;
-			
+
 			$csvdata [] = $entry;
 		}
 	} else
 		$csvdata = $csv;
-	
+
 	echo "<h3>$title Wait-List</h3>
 	The following people have missed out on $title entries for the moment but are in line to get one as soon as any become available.
 	";
@@ -178,14 +188,14 @@ function waitlist_table($title, $csv, $max_entries) {
 		// Fields:
 		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE
 		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender ) = $entry;
-		
+
 		// use existing cat if no age supplied
 		if (! $cat || is_numeric ( $age ))
 			$cat = category ( $age );
 		$cat = ucwords ( $cat );
 		$previousEnc = htmlentities ( $previous, ENT_QUOTES, NULL, FALSE );
 		ucname_ ( $name );
-		
+
 		print "<tr data-toggle='tooltip' title='$previousEnc' data-placement='top' ><td>$count</td><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
 		$count ++;
 	}

@@ -17,6 +17,10 @@ Chris Martin, phone: 021 2166436 or email: info@aorangiundulator.org");
 }
 
 $price = $params['price'];
+/**
+ * 
+ * @var string $A100
+ */
 $A100 = false;
 
 $event_fullname = "Aorangi Undulator";

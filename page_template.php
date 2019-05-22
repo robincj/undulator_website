@@ -1,4 +1,11 @@
 <?php require_once 'config.php'?>
+<?php
+/**
+ *
+ * @var string $banner_image_other
+ * @var string $au_event
+ */
+?>
 <!DOCTYPE html>
 <?php
 // Allow urls to be used to trigger the index page to load s specific maincontent by ajax.

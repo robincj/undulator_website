@@ -1,6 +1,12 @@
 <?php
 file_exists ( 'config.php' ) ? require_once 'config.php' : require_once '../config.php';
 $dateFormat = "D jS M";
+/**
+ *
+ * @var string $day1
+ * @var string $day2
+ * @var string $day3
+ */
 $day1 = date ( $dateFormat, strtotime ( DATE_A100_DAY1 ) );
 $day2 = date ( $dateFormat, strtotime ( DATE_A100_DAY2 ) );
 $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
@@ -32,10 +38,10 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
  -->
 <p>Race officials will be at the edge of Lake Oneke (which is the new
 	finish of Day 1) from 12- 6pm.</p>
-<p>Our vans will be dropping
-	you at either Pinnacles' Camp Site of accommodation that you have organised
-	between Pinnacles and Mangatoetoe Valley. Your accommodation needs to be along
-	this road unless you arrange your own transport.</p>
+<p>Our vans will be dropping you at either Pinnacles' Camp Site of
+	accommodation that you have organised between Pinnacles and Mangatoetoe
+	Valley. Your accommodation needs to be along this road unless you
+	arrange your own transport.</p>
 <p>WE WILL SUPPLY DETAILED MAPS WITH COMMENTS. YOU WILL STILL NEED YOUR
 	OWN TOPO MAPS THOUGH.</p>
 
@@ -56,18 +62,17 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
 
 <p>Then once around that head down to the coast. The track branches left
 	or right near the coast take either one they both about same time.</p>
+<p>Once you hit coast run around coast track staying towards the coast
+	the whole way. You will hit a small gate that says private. The owner
+	does not mind if you run through. It's only about 1 km.</p>
+<p>Then you hit the beach and the rocks (very large rocks about 5 metres
+	high) you can run through these rocks by using a narrow corridor that
+	is not immediately obvious until you approach them (this will be marked
+	this year) onto the beach.</p>
 <p>
-	Once you hit coast run around coast track staying towards the coast the
-	whole way. You will hit a small gate that says private. The owner does
-	not mind if you run through. It's only about 1 km.</p>
-<p>Then you hit the beach
-	and the rocks (very large rocks about 5 metres high) you can run
-	through these rocks by using a narrow corridor that is not immediately
-	obvious until you approach them (this will be marked this year) onto
-	the beach.</p>
-<p>There will be a marshal here to direct you as last year
-	people did not take the beach route and they ned to follow the beach
-	around the inlet. There may be a shallow inlet crossing if at all. <img
+	There will be a marshal here to direct you as last year people did not
+	take the beach route and they ned to follow the beach around the inlet.
+	There may be a shallow inlet crossing if at all. <img
 		src='images/maps/A100/A100_Day_1_coast_photo.jpg' width='50%'
 		style='float: left; margin: 1em;' />
 </p>
@@ -77,22 +82,19 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
 	paved road and run to the head of Orongaronga Valley by the road.</p>
 <p>There will be a bridge where a marshal will be. This marshal at the
 	head of the valley will take your name and send you up the main
-	Orongorongo Valley. </p>
-<p>You find your way up the valley for approx 10km
-	until you will see another marshal. He will point you up towards the Mt
-	Matthews track. </p>
-<p>Take this track following markers until you hit the
-	intersection that goes left (up to Mt Matthews ) or right (up to South
-	Saddle) you need to take right up to South Saddle. Do NOT go up Mt
-	Matthews.</p>
-<p> Once you hit the South saddle you will see an iron pole at top
-	(this will be marked with tape) . If you look down the other
-	side (it is not immediately obvious) you will see a track that descends
-	down a narrow gully with trees to MukaMuka Valley. It is well marked by
-	DOC. </p>
-<p>Keep following this gnarly track down to main valley and descend
-	down to coast. At coast turn left and follow the 4wd or the beach to
-	the finish flags at the edge of Lake Oneke. </p>
+	Orongorongo Valley.</p>
+<p>You find your way up the valley for approx 10km until you will see
+	another marshal. He will point you up towards the Mt Matthews track.</p>
+<p>Take this track following markers until you hit the intersection that
+	goes left (up to Mt Matthews ) or right (up to South Saddle) you need
+	to take right up to South Saddle. Do NOT go up Mt Matthews.</p>
+<p>Once you hit the South saddle you will see an iron pole at top (this
+	will be marked with tape) . If you look down the other side (it is not
+	immediately obvious) you will see a track that descends down a narrow
+	gully with trees to MukaMuka Valley. It is well marked by DOC.</p>
+<p>Keep following this gnarly track down to main valley and descend down
+	to coast. At coast turn left and follow the 4wd or the beach to the
+	finish flags at the edge of Lake Oneke.</p>
 
 <p>
 	Topo Map - please note that the route on this map does not show the
