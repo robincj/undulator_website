@@ -49,7 +49,7 @@ class Tiler {
 		$bigside = $this->bigside;
 		$photodir_url = $this->photodirUrl;
 		?>
-<script type="text/javascript" src="/lightbox/dist/ekko-lightbox.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <script>
 		$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     		event.preventDefault();

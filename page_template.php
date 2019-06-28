@@ -56,6 +56,8 @@ $main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
 	rel='stylesheet' type='text/css'>
 <link href='css/main.css?v=1' rel='stylesheet' type='text/css'>
 <link href='css/unseen-column.css' rel='stylesheet' type='text/css'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css' rel='stylesheet' type='text/css'>
+
 <!-- 
 <link type="text/css"
 	href="js/timepicker/css/bootstrap-timepicker.min.css" />
