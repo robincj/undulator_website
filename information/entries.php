@@ -112,24 +112,19 @@ function entries_table($title, $csvfile, $max_entries) {
 		if (! $entry || preg_match ( '/^#/', reset ( $entry ) ) || preg_match ( '/^\s*$/', reset ( $entry ) ))
 			continue;
 		// Fields:
-		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,MERCHANDISE,FEE,LOCATION,MEDICAL
-		/**
-		 *
-		 * @var string $email
-		 * @var string $paid
-		 * @var string $wait
-		 * @var string $gender
-		 * @var string $predicted
-		 * @var string $merchandise
-		 * @var string $fee
-		 */
-		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender, $predicted, $merchandise, $fee, $location ) = $entry;
+		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,MERCHANDISE,FEE,LOCATION,MEDICAL,completed_AU,completed_A100
+		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender, $predicted, $merchandise, $fee, $location, $medical, $completedAU, $completedA100) = $entry;
 
 		// use existing cat if no age supplied
 		if (! $cat || is_numeric ( $age ))
 			$cat = category ( $age );
 		$cat = ucwords ( $cat );
 		$previousEnc = htmlentities ( $previous, ENT_QUOTES, NULL, FALSE );
+                $previousUndulators = $completedAU ? " <b>Undulators:</b> $completedAU" : '';
+                $previousUndulators .= $completedA100 ? "  <b>A100:</b> $completedAU" : '';
+                $previousUndulators = $previousUndulators ? "<b>Completed</b>$previousUndulators<br/>" : '';
+                $previous = $previousUndulators.$previous;
+
 		if ($count > $max_entries) {
 			break;
 		}
@@ -186,15 +181,20 @@ function waitlist_table($title, $csv, $max_entries) {
 	$count = 1;
 	foreach ( $csvdata as $entry ) {
 		// Fields:
-		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,T-SIZE,T-QUANTITY,FEE
-		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender ) = $entry;
+		// NAME,EMAIL,CATEGORY,PAID,EXPERIENCE,WAITLIST,AGE,GENDER,PREDICTED,,merchandise,price,homelocation,medical,completed_AU,completed_A100
+		list ( $name, $email, $cat, $paid, $previous, $wait, $age, $gender, $estTime, $merch, $price, $loc, $medical, $completedAU, $completedA100 ) = $entry;
 
 		// use existing cat if no age supplied
 		if (! $cat || is_numeric ( $age ))
 			$cat = category ( $age );
 		$cat = ucwords ( $cat );
-		$previousEnc = htmlentities ( $previous, ENT_QUOTES, NULL, FALSE );
 		ucname_ ( $name );
+		$previousEnc = htmlentities ( $previous, ENT_QUOTES, NULL, FALSE );
+		$previousUndulators = $completedAU ? " <b>Undulators:</b> $completedAU" : '';
+		$previousUndulators .= $completedA100 ? "  <b>A100:</b> $completedAU" : '';
+		$previousUndulators = $previousUndulators ? "<b>Completed</b>$previousUndulators<br/>" : '';
+		$previous = $previousUndulators.$previous;
+		
 
 		print "<tr data-toggle='tooltip' title='$previousEnc' data-placement='top' ><td>$count</td><td>$name</td><td>$cat</td><td>$previous</td></tr>\n";
 		$count ++;
