@@ -99,9 +99,13 @@ if ($entrycount === 0) {
     $row = "# name,email,,,previous_events,,age,gender,estimated_time,merchandise,price,homelocation,medical,completed_AU,completed_A100";
     file_put_contents($entrylist_file, $row, FILE_APPEND);
 }
-$row = "{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$params['previous_events']}\",";
+$homelocation=str_replace('"', "'", $params['homelocation']);
+$medical=str_replace('"', "'", $params['medical']);
+$previous_events=str_replace('"', "'", $params['previous_events']);
+
+$row = "{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$previous_events}\",";
 $row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},{$params['merchandise']},{$params['price']}";
-$row .= ",{$params['homelocation']},{$params['medical']},{$params['completed_AU']},{$params['completed_A100']}";
+$row .= ",\"{$homelocation}\",\"{$medical}\",{$params['completed_AU']},{$params['completed_A100']}";
 $row = trim($row) . "\n";
 file_put_contents($entrylist_file, $row, FILE_APPEND);
 
