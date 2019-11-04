@@ -107,7 +107,7 @@ $("#intro").load("information/" + au_event + "_intro.php");
 		<div class="text-center">
 			<h4>
 				<a target="_blank"
-					href="https://drive.google.com/file/d/0B0kHo5rD1yVIb1ZnX19Qdm5KcWZzR1BaTDkwcEM1bE1OWkdn">2019
+					href="results/A100 and Undulator times 2019.xlsx">2019
 					RESULTS</a>
 			</h4>
 		</div>

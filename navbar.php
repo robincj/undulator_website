@@ -120,7 +120,7 @@ nav .other_event_link img {
 						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
 								Records</a></li>
 						<li><a target="_blank"
-							href="https://drive.google.com/file/d/0B0kHo5rD1yVIb1ZnX19Qdm5KcWZzR1BaTDkwcEM1bE1OWkdn">2019
+							href="results/A100 and Undulator times 2019.xlsx">2019
 								RESULTS</a></li>		
 						<li><a target="_blank"
 							href="https://docs.google.com/spreadsheets/d/14x0hCkAPMbertFb8YOBZupYoh1EFa_ATBfazKcHZ6NQ">2018
