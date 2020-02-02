@@ -96,7 +96,7 @@ $params['merchandise'] = str_replace("}", '"', str_replace("{", '"', str_replace
  */
 if ($entrycount === 0) {
     // Add header row
-    $row = "# name,email,,,previous_events,,age,gender,estimated_time,merchandise,price,homelocation,medical,completed_AU,completed_A100";
+    $row = "# name,email,,,previous_events,,age,gender,estimated_time,merchandise,price,homelocation,medical,completed_AU,completed_A100\n";
     file_put_contents($entrylist_file, $row, FILE_APPEND);
 }
 $homelocation=str_replace('"', "'", $params['homelocation']);

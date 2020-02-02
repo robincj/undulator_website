@@ -1,11 +1,11 @@
 <?php
 // Config - define some constants
-define("EVENT_YEAR", 2019);
+define("EVENT_YEAR", 2020);
 $event_year = EVENT_YEAR;
-define("DATE_AU", "$event_year-11-02");
-define("DATE_A100_DAY1", "$event_year-11-01");
+define("DATE_AU", "$event_year-11-07");
+define("DATE_A100_DAY1", "$event_year-11-06");
 define("DATE_A100_DAY2", DATE_AU);
-define("DATE_A100_DAY3", "$event_year-11-03");
+define("DATE_A100_DAY3", "$event_year-11-08");
 define("ENTRIES_FILE_AU", "entries_au_$event_year.csv");
 define("ENTRIES_FILE_A100", "entries_a100_$event_year.csv");
 define("MAX_ENTRIES_AU", 120);
@@ -15,7 +15,7 @@ define("PRICE_A100", 180);
 define("PRICE_A100_EARLY", 150);
 define("PRICE_AU", 70);
 define("PRICE_AU_EARLY", 50);
-define("ENTRIES_OPEN_DATE", '2018-02-22');
+define("ENTRIES_OPEN_DATE", '2020-01-24');
 define("ENTRIES_OPEN", (strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_A100_DAY1) > time()));
 define("MERCHANDISE", [
     'THIR-Undulator-headband' => [
