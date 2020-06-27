@@ -28,17 +28,17 @@ define("MERCHANDISE", [
     ],
     'T-Shirt' => [
         'display_name' => 'T-Shirt',
-        'price' => 25,
+        'price' => 40,
         'sizes' => [
             'S',
             'M',
             'L'
         ],
         'colours' => [
-            'electric blue'
+            'copper'
         ],
         'description' => 'Undulator T-shirt',
-        'image' => "images/logos/t-shirt_black.png"
+        'image' => "images/logos/undulator_tshirt_copper.png"
     ],
     /*
     'THIR-BSR-headband' => [
