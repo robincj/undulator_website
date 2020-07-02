@@ -10,24 +10,24 @@
 <?php
 // Allow urls to be used to trigger the index page to load s specific maincontent by ajax.
 $maincontent = 'home.php';
-if (! empty ( $_REQUEST ['page'] )) {
-	$maincontent = $_REQUEST ['page'] . ".php?";
+if (! empty($_REQUEST['page'])) {
+    $maincontent = $_REQUEST['page'] . ".php?";
 }
-if (! empty ( $_REQUEST ['event'] ) && $_REQUEST ['event'] != $au_event) {
-	$previous = $au_event;
-	$au_event = $_REQUEST ['event'];
-	$au_other_event = $previous;
+if (! empty($_REQUEST['event']) && $_REQUEST['event'] != $au_event) {
+    $previous = $au_event;
+    $au_event = $_REQUEST['event'];
+    $au_other_event = $previous;
 }
-if (! empty ( $_REQUEST ['gallerypage'] )) {
-	$maincontent .= "&gallerypage=" . $_REQUEST ['gallerypage'];
+if (! empty($_REQUEST['gallerypage'])) {
+    $maincontent .= "&gallerypage=" . $_REQUEST['gallerypage'];
 }
-if (! empty ( $_REQUEST ['year'] )) {
-	$maincontent .= "&year=" . $_REQUEST ['year'];
+if (! empty($_REQUEST['year'])) {
+    $maincontent .= "&year=" . $_REQUEST['year'];
 }
 
 $banner_image = "images/logos/{$au_event}_banner.png";
 $banner_image_other = "images/logos/{$au_other_event}_banner.png";
-$main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
+$main_css = "css/{$au_event}_main.css?" . date("YmdHis");
 
 ?>
 <html lang="en">
@@ -56,7 +56,9 @@ $main_css = "css/{$au_event}_main.css?" . date ( "YmdHis" );
 	rel='stylesheet' type='text/css'>
 <link href='css/main.css?v=1' rel='stylesheet' type='text/css'>
 <link href='css/unseen-column.css' rel='stylesheet' type='text/css'>
-<link href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css' rel='stylesheet' type='text/css'>
+<link
+	href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css'
+	rel='stylesheet' type='text/css'>
 
 <!-- 
 <link type="text/css"
@@ -145,12 +147,23 @@ function loadmaincontent(contentfile, nojump){
 	<div id="footer">
 		<div class="container">
 			<div class="row">
-				<div class='col-sm-6'>
-					<div>
-						Main sponsor <a href="http://www.powerco.co.nz/"><img
-							style="padding: 3px;" src="images/sponsors/powerco_logo.png" /></a>
+				<div class='col-sm-3'>
+					<?php
+    // Main sponsor <a href="http://www.powerco.co.nz/"><img
+    // style="padding: 3px;" src="images/sponsors/powerco_logo.png" /></a>
+    ?>
+					
+				<a href="/"> <img class="img-responsive" data-toggle="tooltip"
+							data-placement="top" title="The 1-day Aorangi Undulator"
+							src="<?php echo $banner_image ?>" />
+						</a>
 					</div>
-				</div>
+					<div class='col-sm-3'>
+						<a href="/A100.php"> <img class="img-responsive"
+							data-toggle="tooltip" data-placement="top"
+							title="The 3-day Aorangi Undulator 100"
+							src="<?php echo $banner_image_other ?>" /></a>
+					</div>
 				<div class='col-sm-6 contact'>
 					<div style="text-align: right">
 						<br />Contact: Chris Martin 021 2166436 or email:

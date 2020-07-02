@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 body {
-	background-image: url(/images/textures/background.png);
+	background-image: url(../images/textures/background.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'Montserrat', sans-serif;
@@ -19,7 +19,7 @@ header .row {
 
 #main {
 	background-color: #dedede;
-	background-image: url(/images/textures/p2.png);
+	background-image: url(../images/textures/p2.png);
 	background-repeat: repeat;
 	border-radius: 10px;
 	padding: 1em;
@@ -176,6 +176,11 @@ html, body {
 	border-radius: 10px;
 	color: #aaa;
 	/*margin: 2em;*/
+}
+
+#footer img {
+	max-height: 3em;
+	margin-top: 6px;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */

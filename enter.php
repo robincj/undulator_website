@@ -132,13 +132,21 @@ function entryForm()
 		</div>
 
 		<div class="form-group">
+			<label for="team_mates" class="<?=$labelClass?>">Team mate</label>
+			<div class="col-xs-3 col-sm-3">
+				<input type='text' name="team_mates" class="form-control"
+					id="team_mates"
+					title="First time entrants without have significant wilderness experience must run with another entrant.  Supply their name here." />
+			</div>
+		</div>
+
+		<div class="form-group">
 			<label for="estimated_time" class="<?=$labelClass?>">Estimated time</label>
 			<div class="col-xs-3 col-sm-3">
 				<input type='text' name="estimated_time" class="form-control"
 					id="estimated_time"
 					title="If this is your first event of this type then estimate your road-marathon (42km) time and double it." />
 			</div>
-
 		</div>
 
 		<div class="form-group">
@@ -150,6 +158,7 @@ function entryForm()
 					placeholder="Please let us know some of your previous running events and times"></textarea>
 			</div>
 		</div>
+		
 		<div class="form-group">
 			<label for="undulator_events" class="<?=$labelClass?>">Undulator
 				Events Completed</label>

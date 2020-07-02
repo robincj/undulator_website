@@ -128,9 +128,11 @@ $("#intro").load("information/" + au_event + "_intro.php");
 <div class="row">
 	<div class='mainsponsor col-xs-12'
 		style='background-color: #662d91; color: white;'>
-		Brought to you with a big thanks to our main sponsor <a
-			href="http://www.powerco.co.nz/"><img style="padding: 3px;"
-			src="images/sponsors/powerco_logo.png" /></a>
+		<?php 
+// 		Brought to you with a big thanks to our main sponsor <a
+// 			href="http://www.powerco.co.nz/"><img style="padding: 3px;"
+// 			src="images/sponsors/powerco_logo.png" /></a>
+			?>
 	</div>
 	<div class='quotebox col-xs-12' style='display: none;'><?php include "information/quotes.php"?></div>
 </div>

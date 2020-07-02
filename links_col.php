@@ -60,10 +60,7 @@ $(function () {
 			<small>Sponsors</small>
 			<div class="row">
 				<div class="col-xs-12">
-					<a href="http://www.powerco.co.nz/"><img class="img-responsive"
-						width="160px" style="padding: 3px; display: inline;"
-						src="images/sponsors/powerco_logo.png" /></a> <a
-						href="http://www.spotnz.com/"><img class="img-responsive"
+					<a href="http://www.spotnz.com/"><img class="img-responsive"
 						width="160px"
 						style="padding: 3px; display: inline; background-color: #354041;"
 						src="images/sponsors/spotnzlogo.png" /></a> <a
