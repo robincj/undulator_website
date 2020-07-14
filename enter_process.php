@@ -77,18 +77,18 @@ $params['merchandise'] = str_replace("}", '"', str_replace("{", '"', str_replace
 
 /*
  * params:
- * firstname: Malcolm
- * surname: Kerr (Virdie)
- * email: mkerr2004@yahoo.co.uk
+ * firstname: Robin
+ * surname: Cam
+ * email: cj@yahoo.co.uk
  * homelocation: Wellington
  * event: au
  * age: 33
  * gender: M
- * estimated_time: 9 hours? No idea what average is
+ * estimated_time: 9 hours
  * previous_events: WUU2k, Tawawera, Mount Everest Marathon
  * completed_AU: 0
  * completed_A100: 0
- * medical: I have a tendency to swear a lot when having to go up gnarly hills. (It's mainly directed at how much I hate the race director at that moment in time)
+ * medical: diabetic
  * THIR-Undulator-headband-quantity: 0
  * query: Won entry through Cassie's fundraiser
  * price: 75
@@ -96,7 +96,7 @@ $params['merchandise'] = str_replace("}", '"', str_replace("{", '"', str_replace
  */
 if ($entrycount === 0) {
     // Add header row
-    $row = "# name,email,,,previous_events,,age,gender,estimated_time,merchandise,price,homelocation,medical,completed_AU,completed_A100\n";
+    $row = "# name,email,,,previous_events,,age,gender,estimated_time,merchandise,price,homelocation,medical,completed_AU,completed_A100,team_mate\n";
     file_put_contents($entrylist_file, $row, FILE_APPEND);
 }
 $homelocation=str_replace('"', "'", $params['homelocation']);
@@ -105,7 +105,7 @@ $previous_events=str_replace('"', "'", $params['previous_events']);
 
 $row = "{$params['firstname']} {$params['surname']},{$params['email']},,,\"{$previous_events}\",";
 $row .= ",{$params['age']},{$params['gender']},{$params['estimated_time']},{$params['merchandise']},{$params['price']}";
-$row .= ",\"{$homelocation}\",\"{$medical}\",{$params['completed_AU']},{$params['completed_A100']}";
+$row .= ",\"{$homelocation}\",\"{$medical}\",{$params['completed_AU']},{$params['completed_A100']},{$params['team_mate']}";
 $row = trim($row) . "\n";
 file_put_contents($entrylist_file, $row, FILE_APPEND);
 

@@ -50,8 +50,13 @@ function entryForm()
 	<h4>I am not weak and therefore would love to enter the Aorangi
 		Undulator.</h4>
 
-	<p>Please complete and submit the following form. Payment details will
-		be sent to your email addresss.</p>
+	<p>
+	Please complete and submit the following form then kindly deposit the entry fee into this account:	
+    <b>Account name:</b> Aorangi Undulator<br/>
+    <b>Account num:</b>  02 0576 0059160 01<br/>
+    Use your full name as the reference.<br/>
+    Payment would be appreciated within 7 days of registering.
+	</p>
 
 	<form class="form-horizontal" id="enter" name="enter">
 		<div class="form-group">
