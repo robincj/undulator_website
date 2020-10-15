@@ -107,16 +107,19 @@ leads to
 .
 
 <h3>KAWAKAWA HUT</h3>
-Kawakawa Hut is on true right of river, and marshalled. A 4WD track
+Kawakawa Hut is on true right of the river, and marshalled. A 4WD track
 crosses river at hut. You MUST GET CHECKED BY MARSHAL at the hut.
+Note that there is a 3 hour cut-off time at Kawakawa Hut.  
+If you reach the hut more than 3 hours after starting the event then you will not be allowed to continue and 
+will be directed out to the nearest road end via Otakaha Stream - a very nice walk in itself!
 <br />
-Kawakawa hut to Pararaki HutHead upstream crossing creek regularly for
-10 to 15 mins. Turn left at ‘Pararaki Hut’ wooden sign.
+Kawakawa hut to Pararaki Hut:  Head upstream crossing creek regularly for
+10 to 15 mins. Turn left at "Pararaki Hut" wooden sign.
 
 
 <h3>UNDULATION #2</h3>
-Approx. 310m vertical climb. Steep climb up narrow ridge – careful,
-don’t fall off. Long cambered sidle to saddle.
+Approx. 310m vertical climb. Steep climb up narrow ridge, be careful,
+don't fall off. Long cambered sidle to saddle.
 <br />
 When you hit the BIG fallen log look hard left for the track not
 straight ahead.

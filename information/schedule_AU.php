@@ -23,6 +23,14 @@ around 6:30am.
 	<small><?=$eventDate?>, 7am</small> <br /> Race Start
 </h3>
 The race will start from the Mangatoetoe valley entrance at 7am.
+
+<h3>
+	<small><?=$eventDate?>, 3 hours after race start</small> <br /> Cut-Off at Kawakawa Hut
+</h3>
+Note that there is a 3 hour cut-off time at Kawakawa Hut.  
+If you reach the hut more than 3 hours after starting the event then you will not be allowed to continue and 
+will be directed out to the nearest road end via Otakaha Stream - a very nice walk in itself!
+
 <h3>
 	<small><?=$eventDate?></small> <br /> Race Finish
 </h3>
@@ -45,7 +53,7 @@ if you left it at the start.
 <p>Ring Chris Martin on 0212166436 if you have any questions.</p>
 <h3>MOBILE RECEPTION: THERE ISN'T ANY</h3>
 <p>
-	THE AORANGI COAST AREA HAS NO CELLUAR NETWORK COVERAGE, SO YOU CAN'T USE
-	PHONE!!! <br /> But this is the beauty of the region, it's back to
+	THE AORANGI COAST AREA HAS NO CELLULAR NETWORK COVERAGE, SO YOU CAN'T USE MOBILE
+	PHONES!!! <br /> But this is the beauty of the region, it's back to
 	basics...
 </p>
