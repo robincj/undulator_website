@@ -54,7 +54,7 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
 <p>Run around the coast until about 1km before the lighthouse.  There
 	is a small track that climbs up the hill to your left (this will be
 	marked) . Take that and it will take you to a stile, hop over that and
-	continue down the track to the lake.</p>s	
+	continue down the track to the lake.</p>
 
 <a href="images/maps/A100/A100_Day_1_east_harbour_map.jpg"
 	target="_blank"><img class="img-responsive"
@@ -70,11 +70,9 @@ there should be a marshal here to guide you right and back down to the coast.</p
 	does not mind if you run through. It's only about 1 km.</p>
 <p>Then you hit the beach and the rocks (very large rocks about 5 metres
 	high) you can run through these rocks by using a narrow corridor that
-	is not immediately obvious until you approach them (this will be marked
-	this year) onto the beach.</p>
+	is not immediately obvious until you approach them (this will be marked) onto the beach.</p>
 <p>
-	There will be a marshal here to direct you as last year people did not
-	take the beach route and they ned to follow the beach around the inlet.
+	There will be a marshal here to direct you to follow the beach around the inlet.
 	There may be a shallow inlet crossing if at all. <img
 		src='images/maps/A100/A100_Day_1_coast_photo.jpg' width='50%'
 		style='float: left; margin: 1em;' />
