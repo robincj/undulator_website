@@ -18,9 +18,9 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
 	starts. You will be running 50km which is expected to take competitors
 	from 5 to 11 hours.</p>
 
+<!--
 <div id="day1-garmin"></div>
-
-<!-- <iframe src='https://connect.garmin.com/activity/embed/817983777' width='465' height='500' frameborder='0' align='middle'></iframe>
+ <iframe src='https://connect.garmin.com/activity/embed/817983777' width='465' height='500' frameborder='0' align='middle'></iframe>
 -->
 <!-- 
 <p>
@@ -38,7 +38,7 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
  -->
 <p>Race officials will be at the edge of Lake Oneke (which is the new
 	finish of Day 1) from 12- 6pm.</p>
-<p>Our vans will be dropping you at either Pinnacles' Camp Site of
+<p>Our vans will be dropping you at either Pinnacles Camp Site or
 	accommodation that you have organised between Pinnacles and Mangatoetoe
 	Valley. Your accommodation needs to be along this road unless you
 	arrange your own transport.</p>
@@ -50,18 +50,21 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
 </a>
 
 <h4>Route</h4>
-<p>Run around the coast until a k or 2 before the end (lighthouse) there
-	is a small track that sidles up the hill to your left (this will be
-	marked) . Take that and it will take you to a stall hop over that and
-	continue down the track. Take the first left that takes you around the
-	first East Harbour Lake.</p>
+<h5>PLEASE NOTE THAT AS OF 2020 THE DAY 1 COURSE HAS CHANGED FROM PREVIOUS YEARS</h5>
+<p>Run around the coast until about 1km before the lighthouse.  There
+	is a small track that climbs up the hill to your left (this will be
+	marked) . Take that and it will take you to a stile, hop over that and
+	continue down the track to the lake.</p>s	
 
 <a href="images/maps/A100/A100_Day_1_east_harbour_map.jpg"
 	target="_blank"><img class="img-responsive"
 	src="images/maps/A100/A100_Day_1_east_harbour_map.jpg" /></a>
 
-<p>Then once around that head down to the coast. The track branches left
-	or right near the coast take either one they both about same time.</p>
+<p>Unlike previous years, you must now turn RIGHT here and head towards the coast.  
+Turn left when you reach the coast, cross the stream and take the next track on your left back up into the hills.
+At the top of this hill you should reach a farm track intersection, 
+there should be a marshal here to guide you right and back down to the coast.</p>
+
 <p>Once you hit coast run around coast track staying towards the coast
 	the whole way. You will hit a small gate that says private. The owner
 	does not mind if you run through. It's only about 1 km.</p>
