@@ -9,7 +9,7 @@ define("DATE_A100_DAY3", "$event_year-11-08");
 define("ENTRIES_FILE_AU", "entries_au_$event_year.csv");
 define("ENTRIES_FILE_A100", "entries_a100_$event_year.csv");
 define("MAX_ENTRIES_AU", 120);
-define("MAX_ENTRIES_A100", 30);
+define("MAX_ENTRIES_A100", 34);
 define("EARLY_ENTRY_DATE", "October 1st, $event_year");
 define("PRICE_A100", 180);
 define("PRICE_A100_EARLY", 150);
