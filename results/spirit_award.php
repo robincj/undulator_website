@@ -28,12 +28,22 @@
 <p>
 <h3>Spirit Award Recipients</h3>
 <ul>
-	<li>2014 - Steve Neary who managed to embody the Spirit of the A100
+	<li>2014 - Steve Neary. Managed to embody the Spirit of the A100
 		while blitzing the field in it's inagural year.</li>
-	<li>2015 - Susanne Ebert who trained for the A100 using the stairwells
+	<li>2015 - Susanne Eberti. Trained for the A100 using the stairwells
 		of Dubai's skyscrapers and described the A100 as a "very pleasant
 		run".</li>
-	<li>2016 - Seanoa Isaac well and truly stretched his comfort zone in
+	<li>2016 - Seanoa Isaac. Well and truly stretched his comfort zone in
 		the A100 while still being the most helpful and jolly competitor out
 		there.</li>
+	<li>
+	2017 - Nicole Vaughan. Melbournite who is a machine (Well known Victoria Ultra runner). Lovely demeanor and I saw she was off running around Ruapehu plateau the week after A100! She never stops.
+	</li>
+	<li>
+	2018 - Katie Titch. Scottish doctor who always had a smile and also did battlefield surgery on Josh at end of day 2. 
+	</li>
+	<li>
+	2019 - Josh Campbell. Got lost twice. Fell quite heavily on day 2 and cut his head but never once complained or gave up. Received on-site surgery to his head with no anaesthetic, embodied the never give up attitude.
+	</li>
+
 </ul>

@@ -57,7 +57,8 @@ $a100Msg = '<div class="A100">';
 
 if (! ENTRIES_OPEN) {
 	$a100Msg = '';
-	$auMsg = "<div><h5>Entries are not yet open for the next event.</h5></div>";
+	//$auMsg = "<div><h5>Entries are not yet open for the next event.</h5></div>";
+	$auMsg = "<div><h5>Entries are now closed for this year's event.</h5></div>";
 } elseif ($entriesLeft <= 0)
 	$a100Msg .= $full;
 else {

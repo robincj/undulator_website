@@ -16,7 +16,8 @@ define("PRICE_A100_EARLY", 150);
 define("PRICE_AU", 70);
 define("PRICE_AU_EARLY", 50);
 define("ENTRIES_OPEN_DATE", '2020-01-24');
-define("ENTRIES_OPEN", (strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_A100_DAY1) > time()));
+//define("ENTRIES_OPEN", (strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_A100_DAY1) > time()));
+define("ENTRIES_OPEN", false);
 define("MERCHANDISE", [
     'THIR-Undulator-headband' => [
         'display_name' => 'THIR Undulator headband',
