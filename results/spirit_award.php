@@ -29,7 +29,7 @@
 <h3>Spirit Award Recipients</h3>
 <ul>
 	<li>2014 - Steve Neary. Managed to embody the Spirit of the A100
-		while blitzing the field in it's inagural year.</li>
+		while blitzing the field in its inaugural year.</li>
 	<li>2015 - Susanne Eberti. Trained for the A100 using the stairwells
 		of Dubai's skyscrapers and described the A100 as a "very pleasant
 		run".</li>
