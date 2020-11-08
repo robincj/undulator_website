@@ -1,6 +1,6 @@
 <?php require_once 'config.php'?>
 <?php
-$tstamp = date ( "Ymdhis" );
+$tstamp = date("Ymdhis");
 ?>
 <script>
 	var tstamp = <?= $tstamp ?>;
@@ -119,9 +119,12 @@ nav .other_event_link img {
 							href="#">A100 Spirit Award</a></li>
 						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
 								Records</a></li>
+						<li><a target="_blank" href="results/A100_Results_2020.pdf">2020
+								A100 RESULTS</a></li>
+						<li><a target="_blank" href="results/AU_Results_2020.pdf">2020 AU
+								RESULTS</a></li>
 						<li><a target="_blank"
-							href="results/A100 and Undulator times 2019.xlsx">2019
-								RESULTS</a></li>		
+							href="results/A100 and Undulator times 2019.xlsx">2019 RESULTS</a></li>
 						<li><a target="_blank"
 							href="https://docs.google.com/spreadsheets/d/14x0hCkAPMbertFb8YOBZupYoh1EFa_ATBfazKcHZ6NQ">2018
 								RESULTS</a></li>
@@ -173,11 +176,11 @@ nav .other_event_link img {
 					style="display: none" href="/A100.php">AORANGI UNDULATOR 100</a></li>
 			-->
 				<?php
-				/**
-				 *
-				 * @var string $banner_image_other
-				 */
-				?>
+    /**
+     *
+     * @var string $banner_image_other
+     */
+    ?>
 				<li><a class="A100 other_event_link" href="/"> <img
 						class="img-responsive" data-toggle="tooltip" data-placement="top"
 						title="For something a little lighter, try the 1-day Aorangi Undulator"

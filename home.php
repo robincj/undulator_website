@@ -109,8 +109,13 @@ $("#intro").load("information/" + au_event + "_intro.php");
 		<div class="text-center">
 			<h4>
 				<a target="_blank"
-					href="results/A100 and Undulator times 2019.xlsx">2019
-					RESULTS</a>
+					href="results/AU_Results_2020.pdf">
+					2020 Aorangi Undulator 1-day Results</a>
+			</h4>
+			<h4>
+				<a target="_blank"
+					href="results/A100_Results_2020.pdf">
+					2020 Aorangi Undulator 100 Results</a>
 			</h4>
 		</div>
 	</div>
