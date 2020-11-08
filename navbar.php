@@ -119,9 +119,9 @@ nav .other_event_link img {
 							href="#">A100 Spirit Award</a></li>
 						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
 								Records</a></li>
-						<li><a target="_blank" href="results/A100_Results_2020.pdf">2020
+						<li><a target="_blank" href="results/A100_results_2020.pdf">2020
 								A100 RESULTS</a></li>
-						<li><a target="_blank" href="results/AU_Results_2020.pdf">2020 AU
+						<li><a target="_blank" href="results/AU_results_2020.pdf">2020 AU
 								RESULTS</a></li>
 						<li><a target="_blank"
 							href="results/A100 and Undulator times 2019.xlsx">2019 RESULTS</a></li>

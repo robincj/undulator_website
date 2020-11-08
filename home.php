@@ -109,12 +109,12 @@ $("#intro").load("information/" + au_event + "_intro.php");
 		<div class="text-center">
 			<h4>
 				<a target="_blank"
-					href="results/AU_Results_2020.pdf">
+					href="results/AU_results_2020.pdf">
 					2020 Aorangi Undulator 1-day Results</a>
 			</h4>
 			<h4>
 				<a target="_blank"
-					href="results/A100_Results_2020.pdf">
+					href="results/A100_results_2020.pdf">
 					2020 Aorangi Undulator 100 Results</a>
 			</h4>
 		</div>
