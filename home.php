@@ -58,7 +58,7 @@ $a100Msg = '<div class="A100">';
 if (! ENTRIES_OPEN) {
 	$a100Msg = '';
 	$auMsg = "<div><h4>Entries are not yet open for the next event.</h4></div>";
-} elseif (! ONLINE_ENTRIES_OPEN) {
+} elseif (ONLINE_ENTRIES_CLOSED) {
     $auMsg = "<div><h4>Online entries are now closed but entries for the 1-day event can be made on the event day at a cost of $".PRICE_AU_LATE.".</h4></div>";
 } elseif ($entriesLeft <= 0)
 	$a100Msg .= $full;

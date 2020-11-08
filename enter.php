@@ -4,9 +4,10 @@
 <div>
 	<h4 style="color: red;">
 	<? // ENTRIES_OPEN? "Entries are now open for the ".EVENT_YEAR." event.":"Entries are not yet open for the next event."?>
-	<?= ONLINE_ENTRIES_OPEN ? "Entries are now open for the ".EVENT_YEAR." event."
-        : ENTRIES_OPEN ? "Online entries are now closed but entries for the 1-day event can be made on the event day at a cost of $".PRICE_AU_LATE."."
-        :"Entries are not yet open for the next event."?>
+	<?= ENTRIES_OPEN 
+	? (ONLINE_ENTRIES_CLOSED 
+	   ? "Online entries are now closed but entries for the 1-day event can be made on the event day at a cost of $" . PRICE_AU_LATE . "." : "Entries are now open for the " . EVENT_YEAR . " event."
+	    ) : "Entries are not yet open for the next event."?>
 	</h4>
 </div>
 <div class="panel-group" id="prices_accordion" role="tablist"
@@ -54,9 +55,11 @@ function entryForm()
 		Undulator.</h4>
 
 	<p>
-	Please complete and submit the following form then kindly deposit the entry fee into this account:<br/>
-    <b>Account name:</b> Aorangi Undulator &nbsp; <b>Account num:</b>  02 0576 0059160 01<br/>
-    Use your full name as the reference.  Payment would be appreciated within 7 days of registering.
+		Please complete and submit the following form then kindly deposit the
+		entry fee into this account:<br /> <b>Account name:</b> Aorangi
+		Undulator &nbsp; <b>Account num:</b> 02 0576 0059160 01<br /> Use your
+		full name as the reference. Payment would be appreciated within 7 days
+		of registering.
 	</p>
 
 	<form class="form-horizontal" id="enter" name="enter">
@@ -164,7 +167,7 @@ function entryForm()
 					placeholder="Please let us know some of your previous running events and times"></textarea>
 			</div>
 		</div>
-		
+
 		<div class="form-group">
 			<label for="undulator_events" class="<?=$labelClass?>">Undulator
 				Events Completed</label>
@@ -253,7 +256,7 @@ function entryForm()
 			</div>
 		</div>
 			<?php endif;
-        
+
     endforeach
     ;
     ?>
