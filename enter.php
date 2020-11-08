@@ -4,7 +4,9 @@
 <div>
 	<h4 style="color: red;">
 	<? // ENTRIES_OPEN? "Entries are now open for the ".EVENT_YEAR." event.":"Entries are not yet open for the next event."?>
-	<?= ENTRIES_OPEN? "Entries are now open for the ".EVENT_YEAR." event.":"Entries are not yet open for the next event. <br/> Entries for the 1-day event can be made on the event day at a cost of $80."?>
+	<?= ONLINE_ENTRIES_OPEN ? "Entries are now open for the ".EVENT_YEAR." event."
+        : ENTRIES_OPEN ? "Online entries are now closed but entries for the 1-day event can be made on the event day at a cost of $".PRICE_AU_LATE."."
+        :"Entries are not yet open for the next event."?>
 	</h4>
 </div>
 <div class="panel-group" id="prices_accordion" role="tablist"

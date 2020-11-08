@@ -57,8 +57,9 @@ $a100Msg = '<div class="A100">';
 
 if (! ENTRIES_OPEN) {
 	$a100Msg = '';
-	//$auMsg = "<div><h5>Entries are not yet open for the next event.</h5></div>";
-	$auMsg = "<div><h5>Online entries are now closed for this year's event.   <br/> Entries for the 1-day event can be made on the event day at a cost of $80.</h5></div>";
+	$auMsg = "<div><h4>Entries are not yet open for the next event.</h4></div>";
+} elseif (! ONLINE_ENTRIES_OPEN) {
+    $auMsg = "<div><h4>Online entries are now closed but entries for the 1-day event can be made on the event day at a cost of $".PRICE_AU_LATE.".</h4></div>";
 } elseif ($entriesLeft <= 0)
 	$a100Msg .= $full;
 else {
