@@ -69,9 +69,9 @@
 				<td>5:39:00</td>
 			</tr>
 			<tr>
-				<td>Will Parker</td>
+				<td>Adrian Jurke</td>
 				<td>AU/SVM</td>
-				<td>5:39:00</td>
+				<td>5:37:00</td>
 			</tr>
 		</tbody>
 	</table>
