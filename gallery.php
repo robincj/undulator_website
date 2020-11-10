@@ -10,10 +10,7 @@ if (isset ( $_REQUEST ['gallerypage'] )) {
 	$page = $_REQUEST ['gallerypage'];
 }
 
-$years = array (
-		2014,
-		2015 
-);
+$years = [ 2015, 2018, 2020 ];
 $year = 2015;
 if (!empty($_REQUEST ['year'])) {
 	$year = $_REQUEST ['year'];

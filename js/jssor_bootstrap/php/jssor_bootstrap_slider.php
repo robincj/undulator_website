@@ -20,39 +20,45 @@
 	<div u="slides"
 		style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 642px; overflow: hidden; background-color: #000;">
 	<?php
-	$photodir = "images/photos";
-	$displayNum = 7;
-	// $photolist = explode(", ", "10689813_10152947587125695_4811765621027737093_n.jpg, 20.jpg, 10619916_10154865765765287_6749377587880673130_o.jpg, 5.jpg, A100_undies.jpg, image006.jpg, 11203537_977989312212363_6885734874301767830_o.jpg");
-	$imgFileList = array ();
-	$numImages = 0;
-	foreach ( scandir ( $photodir ) as $filename ) {
-		if (! preg_match ( "/(jpg|png|jpeg)$/i", $filename ))
-			continue;
-		
-		$numImages ++;
-		$file = "$photodir/$filename";
-		// We only want portrait style photos
-		list ( $width, $height ) = getimagesize ( $file );
-		if ($height > $width)
-			continue;
-		
-		$imgFileList [] = "$photodir/$filename";
-	}
-	
-	// Randomly pick $displayNum photos from the list
-	$count = 0;
-	while ( $count < $displayNum && $count <= count ( $imgFileList ) ) {		
-		$rand = rand ( 1, count ( $imgFileList ) - 1 );
-		$file = $imgFileList [$rand];
-		echo <<<EOH
+$photodirs = [
+    "images/photos/2015",
+    "images/photos/2018",
+    "images/photos/2020"
+];
+$displayNum = 7;
+// $photolist = explode(", ", "10689813_10152947587125695_4811765621027737093_n.jpg, 20.jpg, 10619916_10154865765765287_6749377587880673130_o.jpg, 5.jpg, A100_undies.jpg, image006.jpg, 11203537_977989312212363_6885734874301767830_o.jpg");
+$imgFileList = array();
+$numImages = 0;
+foreach ($photodirs as $photodir) {
+    foreach (scandir($photodir) as $filename) {
+        if (! preg_match("/(jpg|png|jpeg)$/i", $filename))
+            continue;
+
+        $numImages ++;
+        $file = "$photodir/$filename";
+        // We only want portrait style photos
+        list ($width, $height) = getimagesize($file);
+        if ($height > $width)
+            continue;
+
+        $imgFileList[] = "$photodir/$filename";
+    }
+}
+
+// Randomly pick $displayNum photos from the list
+$count = 0;
+while ($count < $displayNum && $count <= count($imgFileList)) {
+    $rand = rand(1, count($imgFileList) - 1);
+    $file = $imgFileList[$rand];
+    echo <<<EOH
 							<div>
 							<img u="image" src2="$file" />
 							</div>
 EOH;
-		$count++;
-	}
-	
-	?>							
+    $count ++;
+}
+
+?>							
 						</div>
 	<!-- Bullet Navigator Skin Begin -->
 	<style>
