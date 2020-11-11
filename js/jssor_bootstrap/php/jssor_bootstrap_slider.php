@@ -25,7 +25,7 @@ $photodirs = [
     "images/photos/2018",
     "images/photos/2020"
 ];
-$displayNum = 7;
+$displayNum = 15;
 // $photolist = explode(", ", "10689813_10152947587125695_4811765621027737093_n.jpg, 20.jpg, 10619916_10154865765765287_6749377587880673130_o.jpg, 5.jpg, A100_undies.jpg, image006.jpg, 11203537_977989312212363_6885734874301767830_o.jpg");
 $imgFileList = array();
 $numImages = 0;

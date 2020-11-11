@@ -64,14 +64,24 @@
 				<td>5:22:00</td>
 			</tr>
 			<tr>
+				<td>Adrian Jurke</td>
+				<td>AU/SVM</td>
+				<td>5:37:00</td>
+			</tr>
+			<tr>
 				<td>Jill Westenra</td>
 				<td>AU/SVW</td>
 				<td>5:39:00</td>
 			</tr>
 			<tr>
-				<td>Adrian Jurke</td>
-				<td>AU/SVM</td>
-				<td>5:37:00</td>
+				<td>Georgia Whiting</td>
+				<td>AU/YW</td>
+				<td>6:09:00</td>
+			</tr>
+			<tr>
+				<td>Andrew Shackleton</td>
+				<td>AU/SDVM</td>
+				<td>8:21:00</td>
 			</tr>
 		</tbody>
 	</table>
