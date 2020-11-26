@@ -119,6 +119,7 @@ nav .other_event_link img {
 							href="#">A100 Spirit Award</a></li>
 						<li onClick="loadmaincontent('results/records.php')"><a href="#">Course
 								Records</a></li>
+						<li onClick="loadmaincontent('results/Master_Results.xlsx')"><a href="#" title="All results for every year in one spreadsheet">MASTER RESULTS</a></li>
 						<li><a target="_blank" href="results/A100_Results_2020.pdf">2020
 								A100 RESULTS</a></li>
 						<li><a target="_blank" href="results/AU_Results_2020.pdf">2020 AU
