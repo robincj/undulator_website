@@ -121,7 +121,7 @@ function entries_table($title, $csvfile, $max_entries) {
 		$cat = ucwords ( $cat );
 		$previousEnc = htmlentities ( $previous, ENT_QUOTES, NULL, FALSE );
                 $previousUndulators = $completedAU ? " <b>Undulators:</b> $completedAU" : '';
-                $previousUndulators .= $completedA100 ? "  <b>A100:</b> $completedAU" : '';
+                $previousUndulators .= $completedA100 ? "  <b>A100:</b> $completedA100" : '';
                 $previousUndulators = $previousUndulators ? "<b>Completed</b>$previousUndulators<br/>" : '';
                 $previous = $previousUndulators.$previous;
 
