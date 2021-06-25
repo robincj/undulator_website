@@ -1,6 +1,6 @@
 <?php
 // Config - define some constants
-define("EVENT_YEAR", 2020);
+define("EVENT_YEAR", 2021);
 $event_year = EVENT_YEAR;
 define("DATE_AU", "$event_year-11-07");
 define("DATE_A100_DAY1", "$event_year-11-06");
@@ -16,7 +16,7 @@ define("PRICE_A100_EARLY", 150);
 define("PRICE_AU", 70);
 define("PRICE_AU_EARLY", 50);
 define("PRICE_AU_LATE", 80);
-define("ENTRIES_OPEN_DATE", '2020-01-24');
+define("ENTRIES_OPEN_DATE", '2021-01-24');
 define("ONLINE_ENTRIES_CLOSED", (strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_A100_DAY1) - (60*60*7) > time())); // close online entries 5pm before day 1
 define("ENTRIES_OPEN", (strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_AU) > time()));
 //define("ENTRIES_OPEN", false);

@@ -1,5 +1,5 @@
 ﻿<?php
-include_once 'php/createthumbs.php';
+include_once 'php/lib/createthumbs.php';
 $originals = "images/photos/originals";
 $photodir = "images/photos";
 $thumbdir = "images/photos/thumbs";
