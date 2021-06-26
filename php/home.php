@@ -131,7 +131,7 @@ $("#intro").load("php/information/" + au_event + "_intro.php");
 <div class="row">
 	<div class='col-xs-12'>
 		<div class="text-center">
-			<a href="#" onClick="loadmaincontent('information/course_notes.php')">Detailed
+			<a href="#" onClick="loadmaincontent('information/course_notes/course_notes.php')">Detailed
 				course maps</a>
 		</div>
 	</div>

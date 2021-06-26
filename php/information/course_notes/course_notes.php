@@ -1,5 +1,4 @@
-<?php include '../../piwik_track.php'?>
-<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
+<?php require('../../include_common.php'); ?>
 <style>
 #course_notes {
 	background-image: none;

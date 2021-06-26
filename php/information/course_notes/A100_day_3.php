@@ -1,4 +1,4 @@
-<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
+<?php require('../../include_common.php'); ?>
  &nbsp;
 <p>Day 3 of the Aorangi Undulator 100 starts on
 <?=date ( "l jS F", strtotime ( DATE_A100_DAY3 ) );?>.
@@ -32,11 +32,12 @@
 	you get to bottom turn right and follow 4wd that keeps crossing river.
 	It eventually gets to a last uphill.</p>
 <p>
-<a target='_blank' title='Click to download full size version from dropbox'
-	href="https://www.dropbox.com/s/yrpe93ryelddb8m/Undulator_Day3_A3_Print_Size_MagneticNorth.jpg?dl=0">
-	<img src="images/maps/topo/day3_topo_small.jpg" class="img-responsive" 
-	style="margin: 1em;" />
-</a>
+	<a target='_blank'
+		title='Click to download full size version from dropbox'
+		href="https://www.dropbox.com/s/yrpe93ryelddb8m/Undulator_Day3_A3_Print_Size_MagneticNorth.jpg?dl=0">
+		<img src="images/maps/topo/day3_topo_small.jpg" class="img-responsive"
+		style="margin: 1em;" />
+	</a>
 </p>
 <p>At the top of this you have a final k descent then you will see
 	Waikuku Lodge and finishing flags!</p>

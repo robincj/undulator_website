@@ -1,4 +1,4 @@
-<?php file_exists('config.php')?require_once 'config.php':require_once '../config.php'?>
+<?php require('../../include_common.php'); ?>
 &nbsp;
 <p class="A100">
 	You will be starting your second day with the 1-day event competitors.<br />
@@ -87,9 +87,10 @@ DOC orange marks where possible.
 <br />
 Exit fork from river well marked by cut cabbage tree stump in river.
 
-<a target='_blank' title='Click to download full size version from dropbox'
+<a target='_blank'
+	title='Click to download full size version from dropbox'
 	href="https://www.dropbox.com/s/0hqpbfqtns1zoc6/Undulator_Day2_A3_Print_Size_with_MagneticNorth.jpg?dl=0">
-	<img src="images/maps/topo/day2_topo_small.jpg" class="img-responsive" 
+	<img src="images/maps/topo/day2_topo_small.jpg" class="img-responsive"
 	style="width: 50%; margin: 1em; float: left;" />
 </a>
 
@@ -108,12 +109,13 @@ leads to
 
 <h3>KAWAKAWA HUT</h3>
 Kawakawa Hut is on true right of the river, and marshalled. A 4WD track
-crosses river at hut. You MUST GET CHECKED BY MARSHAL at the hut.
-Note that there is a 3 hour cut-off time at Kawakawa Hut.  
-If you reach the hut more than 3 hours after starting the event then you will not be allowed to continue and 
-will be directed out to the nearest road end via Otakaha Stream - a very nice walk in itself!
+crosses river at hut. You MUST GET CHECKED BY MARSHAL at the hut. Note
+that there is a 3 hour cut-off time at Kawakawa Hut. If you reach the
+hut more than 3 hours after starting the event then you will not be
+allowed to continue and will be directed out to the nearest road end via
+Otakaha Stream - a very nice walk in itself!
 <br />
-Kawakawa hut to Pararaki Hut:  Head upstream crossing creek regularly for
+Kawakawa hut to Pararaki Hut: Head upstream crossing creek regularly for
 10 to 15 mins. Turn left at "Pararaki Hut" wooden sign.
 
 

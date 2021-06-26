@@ -1,5 +1,5 @@
+<?php require('../../include_common.php'); ?>
 <?php
-file_exists ( 'config.php' ) ? require_once 'config.php' : require_once '../config.php';
 $dateFormat = "D jS M";
 /**
  *
@@ -7,9 +7,9 @@ $dateFormat = "D jS M";
  * @var string $day2
  * @var string $day3
  */
-$day1 = date ( $dateFormat, strtotime ( DATE_A100_DAY1 ) );
-$day2 = date ( $dateFormat, strtotime ( DATE_A100_DAY2 ) );
-$day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
+$day1 = date($dateFormat, strtotime(DATE_A100_DAY1));
+$day2 = date($dateFormat, strtotime(DATE_A100_DAY2));
+$day3 = date($dateFormat, strtotime(DATE_A100_DAY3));
 ?>
 &nbsp;
 
@@ -50,9 +50,10 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
 </a>
 
 <h4>Route</h4>
-<h5>PLEASE NOTE THAT AS OF 2020 THE DAY 1 COURSE HAS CHANGED FROM PREVIOUS YEARS</h5>
-<p>Run around the coast until about 1km before the lighthouse.  There
-	is a small track that climbs up the hill to your left (this will be
+<h5>PLEASE NOTE THAT AS OF 2020 THE DAY 1 COURSE HAS CHANGED FROM
+	PREVIOUS YEARS</h5>
+<p>Run around the coast until about 1km before the lighthouse. There is
+	a small track that climbs up the hill to your left (this will be
 	marked) . Take that and it will take you to a stile, hop over that and
 	continue down the track to the lake.</p>
 
@@ -60,20 +61,22 @@ $day3 = date ( $dateFormat, strtotime ( DATE_A100_DAY3 ) );
 	target="_blank"><img class="img-responsive"
 	src="images/maps/A100/A100_Day_1_east_harbour_map.jpg" /></a>
 
-<p>Unlike previous years, you must now turn RIGHT here and head towards the coast.  
-Turn left when you reach the coast, cross the stream and take the next track on your left back up into the hills.
-At the top of this hill you should reach a farm track intersection, 
-there should be a marshal here to guide you right and back down to the coast.</p>
+<p>Unlike previous years, you must now turn RIGHT here and head towards
+	the coast. Turn left when you reach the coast, cross the stream and
+	take the next track on your left back up into the hills. At the top of
+	this hill you should reach a farm track intersection, there should be a
+	marshal here to guide you right and back down to the coast.</p>
 
 <p>Once you hit coast run around coast track staying towards the coast
 	the whole way. You will hit a small gate that says private. The owner
 	does not mind if you run through. It's only about 1 km.</p>
 <p>Then you hit the beach and the rocks (very large rocks about 5 metres
 	high) you can run through these rocks by using a narrow corridor that
-	is not immediately obvious until you approach them (this will be marked) onto the beach.</p>
+	is not immediately obvious until you approach them (this will be
+	marked) onto the beach.</p>
 <p>
-	There will be a marshal here to direct you to follow the beach around the inlet.
-	There may be a shallow inlet crossing if at all. <img
+	There will be a marshal here to direct you to follow the beach around
+	the inlet. There may be a shallow inlet crossing if at all. <img
 		src='images/maps/A100/A100_Day_1_coast_photo.jpg' width='50%'
 		style='float: left; margin: 1em;' />
 </p>
