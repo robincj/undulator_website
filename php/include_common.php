@@ -1,6 +1,9 @@
 <?php
-file_exists('piwik_track.php') ? include 'piwik_track.php' : include '../piwik_track.php';
-file_exists('config.php') ? require_once 'config.php' : (file_exists('../config.php') ? require_once '../config.php' : require_once '../../config.php');
-file_exists('php/lib') ? require_once 'php/lib/string_functions.php' : (file_exists('lib') ? require_once 'lib/string_functions.php' : (file_exists('../lib') ? require_once '../lib/string_functions.php' : require_once '../../lib/string_functions.php'));
-
+$piwik = 'piwik_track.php';
+$piwik = file_exists($piwik) ? $piwik : (file_exists("../$piwik") ? "../$piwik" : (file_exists("../../$piwik") ? "../../$piwik" : ''));
+include $piwik;
+$configFile = file_exists('config.php') ? 'config.php' : (file_exists('../config.php') ? '../config.php' : '../../config.php');
+require_once $configFile;
+$stringFuncFile = file_exists('php/lib') ? 'php/lib/string_functions.php' : (file_exists('lib') ? 'lib/string_functions.php' : (file_exists('../lib') ? '../lib/string_functions.php' : '../../lib/string_functions.php'));
+require_once $stringFuncFile;
 ?>

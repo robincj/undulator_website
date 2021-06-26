@@ -1,26 +1,36 @@
 <?php require('include_common.php'); ?>
 
 <?php
-function file_rowcount($filename, $ignoreblanks = FALSE) {
-	$linecount = 0;
-	$handle = fopen ( $filename, "r" );
-	while ( ! feof ( $handle ) ) {
-		$line = fgets ( $handle );
-		if ($ignoreblanks && preg_match ( "/^(#.*|\s*)$/", $line )) {
-			continue;
-		}
-		$linecount ++;
-	}
-	
-	fclose ( $handle );
-	
-	return $linecount;
+
+define('INFO_DIR', 'information/');
+define('ENTRIES_DIR', INFO_DIR . "entries/");
+
+function file_rowcount($filename, $ignoreblanks = FALSE)
+{
+    $linecount = 0;
+    if (file_exists($filename) && $handle = fopen($filename, "r")) {
+        while (! feof($handle)) {
+            $line = fgets($handle);
+            if ($ignoreblanks && preg_match("/^(#.*|\s*)$/", $line)) {
+                continue;
+            }
+            $linecount ++;
+        }
+
+        fclose($handle);
+    }
+
+    return $linecount;
 }
 
-$entrylist_file = "information/entries/" . ENTRIES_FILE_AU;
-if (! file_exists ( $entrylist_file ))
-	file_put_contents ( $entrylist_file, '' );
-$entrycount = file_rowcount ( $entrylist_file, TRUE );
+if (! file_exists(ENTRIES_DIR))
+    mkdir(ENTRIES_DIR);
+
+$entrylist_file = ENTRIES_DIR . ENTRIES_FILE_AU;
+if (! file_exists($entrylist_file))
+    file_put_contents($entrylist_file, '');
+
+$entrycount = file_rowcount($entrylist_file, TRUE);
 $entriesLeft = MAX_ENTRIES_AU - $entrycount;
 $notFull = <<<EOH
 		<h4>
@@ -41,29 +51,29 @@ EOH;
 
 $auMsg = '<div class="AU">';
 if ($entriesLeft <= 0)
-	$auMsg .= $full;
+    $auMsg .= $full;
 else {
-	$auMsg .= $notFull;
-	$auMsg .= $entriesLeft < MAX_ENTRIES_AU * 0.8 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+    $auMsg .= $notFull;
+    $auMsg .= $entriesLeft < MAX_ENTRIES_AU * 0.8 ? "<div class='AU'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
 
-$entrylist_file = "information/entries/" . ENTRIES_FILE_A100;
-if (! file_exists ( $entrylist_file ))
-	file_put_contents ( $entrylist_file, '' );
-$entrycount = file_rowcount ( $entrylist_file, TRUE );
+$entrylist_file = ENTRIES_DIR . ENTRIES_FILE_A100;
+if (! file_exists($entrylist_file))
+    file_put_contents($entrylist_file, '');
+$entrycount = file_rowcount($entrylist_file, TRUE);
 $entriesLeft = MAX_ENTRIES_A100 - $entrycount;
 $a100Msg = '<div class="A100">';
 
 if (! ENTRIES_OPEN) {
-	$a100Msg = '';
-	$auMsg = "<div><h4>Entries are not yet open for the next event.</h4></div>";
+    $a100Msg = '';
+    $auMsg = "<div><h4>Entries are not yet open for the next event.</h4></div>";
 } elseif (ONLINE_ENTRIES_CLOSED) {
-    $auMsg = "<div><h4>Online entries are now closed but entries for the 1-day event can be made on the event day at a cost of $".PRICE_AU_LATE.".</h4></div>";
+    $auMsg = "<div><h4>Online entries are now closed but entries for the 1-day event can be made on the event day at a cost of $" . PRICE_AU_LATE . ".</h4></div>";
 } elseif ($entriesLeft <= 0)
-	$a100Msg .= $full;
+    $a100Msg .= $full;
 else {
-	$a100Msg .= $notFull;
-	$auMsg .= $entriesLeft < MAX_ENTRIES_A100 * 0.6 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
+    $a100Msg .= $notFull;
+    $auMsg .= $entriesLeft < MAX_ENTRIES_A100 * 0.6 ? "<div class='A100'><h4>Only $entriesLeft entries Left!</h4></div>" : '';
 }
 // OVERRIDE ENTRY MESSAGE FOR RESULTS
 // $a100Msg = '';
@@ -107,14 +117,12 @@ $("#intro").load("php/information/" + au_event + "_intro.php");
 	<div class='col-xs-12'>
 		<div class="text-center">
 			<h4>
-				<a target="_blank"
-					href="results/AU_Results_2020.pdf">
-					2020 Aorangi Undulator 1-day Results</a>
+				<a target="_blank" href="results/AU_Results_2020.pdf"> 2020 Aorangi
+					Undulator 1-day Results</a>
 			</h4>
 			<h4>
-				<a target="_blank"
-					href="results/A100_Results_2020.pdf">
-					2020 Aorangi Undulator 100 Results</a>
+				<a target="_blank" href="results/A100_Results_2020.pdf"> 2020
+					Aorangi Undulator 100 Results</a>
 			</h4>
 		</div>
 	</div>
@@ -134,13 +142,13 @@ $("#intro").load("php/information/" + au_event + "_intro.php");
 <div class="row">
 	<div class='mainsponsor col-xs-12'
 		style='background-color: #662d91; color: white;'>
-		<?php 
-// 		Brought to you with a big thanks to our main sponsor <a
-// 			href="http://www.powerco.co.nz/"><img style="padding: 3px;"
-// 			src="images/sponsors/powerco_logo.png" /></a>
-			?>
+		<?php
+// Brought to you with a big thanks to our main sponsor <a
+// href="http://www.powerco.co.nz/"><img style="padding: 3px;"
+// src="images/sponsors/powerco_logo.png" /></a>
+?>
 	</div>
-	<div class='quotebox col-xs-12' style='display: none;'><?php include "information/quotes.php"?></div>
+	<div class='quotebox col-xs-12' style='display: none;'><?php include INFO_DIR."quotes.php"?></div>
 </div>
 <script>$(document).ready(function(){
 	setTimeout(function(){ $('.mainsponsor').hide('slow'); $('.quotebox').show('slow');}, 8000);
