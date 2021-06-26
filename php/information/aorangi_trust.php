@@ -1,7 +1,7 @@
 <?php require('include_common.php'); ?>
 <div class="row text-center">
 	<a href="http://www.aorangitrust.org.nz/"> <img class="img-responsive"
-		style="margin: 0 auto;" src="images/logos/aorangi_trust_logo.png" />
+		style="margin: 0 auto;" src="/images/logos/aorangi_trust_logo.png" />
 	</a>
 </div>
 <br />

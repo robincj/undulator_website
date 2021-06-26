@@ -174,7 +174,7 @@ nav .other_event_link img {
 				<!-- 
 				<li id="othereventlink"><a class="A100" style="display: none"
 					href="/">AORANGI UNDULATOR (1 day)</a> <a class="AU"
-					style="display: none" href="/A100.php">AORANGI UNDULATOR 100</a></li>
+					style="display: none" href="/php/A100.php">AORANGI UNDULATOR 100</a></li>
 			-->
 				<?php
     /**
@@ -186,7 +186,7 @@ nav .other_event_link img {
 						class="img-responsive" data-toggle="tooltip" data-placement="top"
 						title="For something a little lighter, try the 1-day Aorangi Undulator"
 						src="<?php echo $banner_image_other ?>" />
-				</a> <a class="AU other_event_link" href="/A100.php"> <img
+				</a> <a class="AU other_event_link" href="/php/A100.php"> <img
 						class="img-responsive" data-toggle="tooltip" data-placement="top"
 						title="Sounds too easy? Try the Aorangi	Undulator 100"
 						src="<?php echo $banner_image_other ?>" /></a></li>

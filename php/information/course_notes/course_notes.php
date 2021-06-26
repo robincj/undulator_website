@@ -163,7 +163,7 @@
 	if ( au_event == "A100" ) {
 		$(function() {		
 			$('#coursenotes_tab a:first').tab('show');
-			document.getElementById('A100_overview_map').innerHTML = '<h3>Overview Map</h3><a href="images/maps/A100/A100_overview_map.jpg" target="_blank"><img width="200px" class="img-responsive" src="images/maps/A100/A100_overview_map.jpg" /></a>';
+			document.getElementById('A100_overview_map').innerHTML = '<h3>Overview Map</h3><a href="images/maps/A100/A100_overview_map.jpg" target="_blank"><img width="200px" class="img-responsive" src="/images/maps/A100/A100_overview_map.jpg" /></a>';
 		});
 	};	
 	

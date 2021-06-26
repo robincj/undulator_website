@@ -33,10 +33,10 @@
 <div class="row">
 	<div class="col-sm-12" title="Click to enlarge">
 		<a href="images/maps/AU_route.png" target="_blank"> <img
-			class="AU img-responsive" src="images/maps/AU_route.png" />
+			class="AU img-responsive" src="/images/maps/AU_route.png" />
 		</a> <a href="images/maps/A100/A100-day2-route.png" target="_blank"> <img
 			class="A100 img-responsive"
-			src="images/maps/A100/A100-day2-route.png" />
+			src="/images/maps/A100/A100-day2-route.png" />
 		</a>
 	</div>
 </div>
@@ -90,7 +90,7 @@ Exit fork from river well marked by cut cabbage tree stump in river.
 <a target='_blank'
 	title='Click to download full size version from dropbox'
 	href="https://www.dropbox.com/s/0hqpbfqtns1zoc6/Undulator_Day2_A3_Print_Size_with_MagneticNorth.jpg?dl=0">
-	<img src="images/maps/topo/day2_topo_small.jpg" class="img-responsive"
+	<img src="/images/maps/topo/day2_topo_small.jpg" class="img-responsive"
 	style="width: 50%; margin: 1em; float: left;" />
 </a>
 

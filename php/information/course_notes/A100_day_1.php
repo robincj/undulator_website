@@ -45,8 +45,8 @@ $day3 = date($dateFormat, strtotime(DATE_A100_DAY3));
 <p>WE WILL SUPPLY DETAILED MAPS WITH COMMENTS. YOU WILL STILL NEED YOUR
 	OWN TOPO MAPS THOUGH.</p>
 
-<a href="images/maps/A100/A100-day1-route.png" target="_blank"> <img
-	class="img-responsive" src="images/maps/A100/A100-day1-route.png" />
+<a href="/images/maps/A100/A100-day1-route.png" target="_blank"> <img
+	class="img-responsive" src="/images/maps/A100/A100-day1-route.png" />
 </a>
 
 <h4>Route</h4>
@@ -57,9 +57,9 @@ $day3 = date($dateFormat, strtotime(DATE_A100_DAY3));
 	marked) . Take that and it will take you to a stile, hop over that and
 	continue down the track to the lake.</p>
 
-<a href="images/maps/A100/A100_Day_1_east_harbour_map.jpg"
+<a href="/images/maps/A100/A100_Day_1_east_harbour_map.jpg"
 	target="_blank"><img class="img-responsive"
-	src="images/maps/A100/A100_Day_1_east_harbour_map.jpg" /></a>
+	src="/images/maps/A100/A100_Day_1_east_harbour_map.jpg" /></a>
 
 <p>Unlike previous years, you must now turn RIGHT here and head towards
 	the coast. Turn left when you reach the coast, cross the stream and
@@ -77,7 +77,7 @@ $day3 = date($dateFormat, strtotime(DATE_A100_DAY3));
 <p>
 	There will be a marshal here to direct you to follow the beach around
 	the inlet. There may be a shallow inlet crossing if at all. <img
-		src='images/maps/A100/A100_Day_1_coast_photo.jpg' width='50%'
+		src='/images/maps/A100/A100_Day_1_coast_photo.jpg' width='50%'
 		style='float: left; margin: 1em;' />
 </p>
 <p>Run along the sand bypassing the Wainuiomata river that lagoons into
@@ -105,11 +105,11 @@ $day3 = date($dateFormat, strtotime(DATE_A100_DAY3));
 	final 6km to Lake Oneke.<br /> <a target='_blank'
 		title='Click to download full size version from dropbox'
 		href="https://www.dropbox.com/s/v7qjylj2wnfvfrt/Undulator_Day1_A3_Print_Size_with_MagneticNorth.jpg?dl=0">
-		<img src="images/maps/topo/day1_topo_small.jpg" class="img-responsive"
+		<img src="/images/maps/topo/day1_topo_small.jpg" class="img-responsive"
 		style="margin: 1em;" />
 	</a>
 </p>
 <p>
-	<a href="images/maps/A100/A100_Day_1_elev_profile.jpg" target="_blank"><img
+	<a href="/images/maps/A100/A100_Day_1_elev_profile.jpg" target="_blank"><img
 		class="img-responsive"
-		src="images/maps/A100/A100_Day_1_elev_profile.jpg" /></a>
+		src="/images/maps/A100/A100_Day_1_elev_profile.jpg" /></a>

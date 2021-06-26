@@ -145,7 +145,7 @@ $("#intro").load("php/information/" + au_event + "_intro.php");
 		<?php
 // Brought to you with a big thanks to our main sponsor <a
 // href="http://www.powerco.co.nz/"><img style="padding: 3px;"
-// src="images/sponsors/powerco_logo.png" /></a>
+// src="/images/sponsors/powerco_logo.png" /></a>
 ?>
 	</div>
 	<div class='quotebox col-xs-12' style='display: none;'><?php include INFO_DIR."quotes.php"?></div>

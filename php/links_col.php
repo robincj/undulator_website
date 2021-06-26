@@ -38,7 +38,7 @@ $(function () {
 				title="For something a little lighter,<br/> try the 1-day Aorangi
 				Undulator"
 			src="<?php echo $banner_image_other ?>" />
-			</a> <a class="AU other_event_link" href="/A100.php"> <img
+			</a> <a class="AU other_event_link" href="/php/A100.php"> <img
 				class="img-responsive" data-toggle="tooltip" data-placement="top"
 				title="Sounds too easy? <br/> Try the Aorangi
 				Undulator 100"
@@ -51,7 +51,7 @@ $(function () {
 			<a href="#"
 				onClick="loadmaincontent('information/aorangi_trust.php')"><img
 				class="img-responsive" width="165px"
-				src="images/logos/aorangi_trust_logo.png" /></a>
+				src="/images/logos/aorangi_trust_logo.png" /></a>
 		</div>
 	</div>
 	<br />
@@ -63,22 +63,22 @@ $(function () {
 					<a href="http://www.spotnz.com/"><img class="img-responsive"
 						width="160px"
 						style="padding: 3px; display: inline; background-color: #354041;"
-						src="images/sponsors/spotnzlogo.png" /></a> <a
+						src="/images/sponsors/spotnzlogo.png" /></a> <a
 						href="http://www.bivouac.co.nz/"><img class="img-responsive"
 						width="160px" style="padding: 3px; display: inline;"
-						src="images/sponsors/bivouac.png" /></a> <a
+						src="/images/sponsors/bivouac.png" /></a> <a
 						href="http://www.macpac.co.nz/"><img class="img-responsive"
 						width="160px" style="padding: 3px; display: inline;"
-						src="images/sponsors/macpac.png" /></a> <a
+						src="/images/sponsors/macpac.png" /></a> <a
 						href="http://www.thriveadventure.com/"> <img
 						class="img-responsive" width="160px"
 						style="padding: 3px; display: inline;"
 						title="The Luxurious gateway to the Tararuas"
-						src="images/sponsors/thrive.jpg" /></a> <a
+						src="/images/sponsors/thrive.jpg" /></a> <a
 						href="http://www.sandpit.kiwi/"> <img class="img-responsive"
 						width="160px" style="padding: 3px; display: inline;"
 						title="Architectural Design & Draughting for your residential projects"
-						src="images/sponsors/sandpit.jpg" /></a>
+						src="/images/sponsors/sandpit.jpg" /></a>
 				</div>
 			</div>
 		</div>

@@ -13,7 +13,7 @@
 	</p>
 	<p>
 		Those inclined towards longer distance events may want to look at the
-		<a href="A100.php">Aorangi Undulator 100</a>, a 100km 3 day race
+		<a href="php/A100.php">Aorangi Undulator 100</a>, a 100km 3 day race
 		starting in Eastbourne and finishing at Waikuku Lodge in the Aorangi
 		forest park.
 	</p>

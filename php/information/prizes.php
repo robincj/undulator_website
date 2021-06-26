@@ -10,11 +10,11 @@
 </div>
 <div class="row">
 	<div class="col-md-6">
-		<img class="img-responsive" src="images/prizes/salomon_skin_pack.jpg" />
+		<img class="img-responsive" src="/images/prizes/salomon_skin_pack.jpg" />
 	</div>
 
 	<div class="col-md-6">
 		<img class="img-responsive"
-			src="images/prizes/salomon_skin_pack_front.jpg" />
+			src="/images/prizes/salomon_skin_pack_front.jpg" />
 	</div>
 </div>

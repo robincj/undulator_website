@@ -3,7 +3,7 @@
 <h2>A100 Spirit Award</h2>
 
 <p>
-	The <a href="/A100.php">Aorangi 100</a> is an unrelenting 3-day
+	The <a href="/php/A100.php">Aorangi 100</a> is an unrelenting 3-day
 	adventure trail running event that demands respect. Competitors must
 	possess uncommon focus, drive and determination to complete the arduous
 	course. A100 category winners deserve the praise heaped upon them, for
