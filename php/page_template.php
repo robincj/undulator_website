@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <?php require('include_common.php'); ?>
 <?php
 /**
@@ -5,9 +8,6 @@
  * @var string $banner_image_other
  * @var string $au_event
  */
-?>
-<!DOCTYPE html>
-<?php
 // Allow urls to be used to trigger the index page to load s specific maincontent by ajax.
 $maincontent = 'home.php';
 if (! empty($_REQUEST['page'])) {
@@ -30,8 +30,6 @@ $banner_image_other = "/images/logos/{$au_other_event}_banner.png";
 $main_css = "/css/{$au_event}_main.css?" . date("YmdHis");
 
 ?>
-<html lang="en">
-<head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -104,7 +102,7 @@ function loadmaincontent(contentfile, nojump){
 
 <body>
 	<script type="text/javascript" src="/piwik/piwik.js"></script>
-<div id='wrap'>
+	<div id='wrap'>
 		<header>
 			<div class="container">
 				<div class="row">
