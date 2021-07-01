@@ -1,11 +1,11 @@
 <?php
 // Config - define some constants
-define("EVENT_YEAR", 2020);
+define("EVENT_YEAR", 2021);
 $event_year = EVENT_YEAR;
-define("DATE_AU", "$event_year-11-07");
-define("DATE_A100_DAY1", "$event_year-11-06");
+define("DATE_AU", "$event_year-11-06");
+define("DATE_A100_DAY1", "$event_year-11-05");
 define("DATE_A100_DAY2", DATE_AU);
-define("DATE_A100_DAY3", "$event_year-11-08");
+define("DATE_A100_DAY3", "$event_year-11-07");
 define("ENTRIES_FILE_AU", "entries_au_$event_year.csv");
 define("ENTRIES_FILE_A100", "entries_a100_$event_year.csv");
 define("MAX_ENTRIES_AU", 120);
@@ -16,10 +16,10 @@ define("PRICE_A100_EARLY", 150);
 define("PRICE_AU", 70);
 define("PRICE_AU_EARLY", 50);
 define("PRICE_AU_LATE", 80);
-define("ENTRIES_OPEN_DATE", '2020-01-24');
-define("ONLINE_ENTRIES_CLOSED", (strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_A100_DAY1) - (60*60*7) > time())); // close online entries 5pm before day 1
+define("ENTRIES_OPEN_DATE", '2021-03-20');
+define("ONLINE_ENTRIES_CLOSED", !(strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_A100_DAY1) - (60*60*7) > time())); // close online entries 5pm before day 1
 define("ENTRIES_OPEN", (strtotime(ENTRIES_OPEN_DATE) < time() && strtotime(DATE_AU) > time()));
-//define("ENTRIES_OPEN", false);
+// define("ENTRIES_OPEN", true);
 define("MERCHANDISE", [
     'THIR-Undulator-headband' => [
         'display_name' => 'THIR Undulator headband',
